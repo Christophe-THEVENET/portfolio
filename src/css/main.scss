@@ -1,15 +1,5 @@
-@font-face {
-  font-family: 'GRIFTER Bold 700';
-  src: url('../fonts/GRIFTER Bold 700.TTF') format('truetype');
-}
-
-@font-face {
-  font-family: 'Nexa-Trial-Regular';
-  src: url('../fonts/Nexa-Trial-Regular.TTF') format('truetype');
-}
-
-
-
 @import 'base';
-
 @import 'layout';
+@import 'composants';
+
+
