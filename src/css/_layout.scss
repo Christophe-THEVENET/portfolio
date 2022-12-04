@@ -1,8 +1,9 @@
 body {
- /*  height: 100vh; */
- /*  overflow: hidden; */
-  /* background-color: rgb(3, 9, 15); */
+  min-height: 100vh; 
+ background-image: url('./../img/background.jpg');
+ background-size: cover;
   margin: 0;
+
 }
 
 h1 {
@@ -10,8 +11,8 @@ h1 {
   color: aliceblue;
 }
 
-
 p {
   color: azure;
   font-family: 'Nexa-Trial-Regular';
 }
+

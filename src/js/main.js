@@ -1,3 +1,2 @@
 import '../css/main.scss';
-import './particules.js' ;
-
+import './particules.js';
