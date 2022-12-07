@@ -7,10 +7,35 @@
   src: url('../fonts/Nexa-Trial-Regular.TTF') format('truetype');
 }
 
-/* *,
+
+*,
 ::after,
 ::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-} */
+  /* border: 1px solid red; */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@mixin centerElement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+// polices
+$titleFamily: 'GRIFTER Bold 700';
+$texteFamily: 'Nexa-Trial-Regular';
+
+// couleurs
+$primary: #14191f;
+$secondary: #3a4555;
+$text: #f8fafb;
+$flashy: #dcf7ff;
+
+

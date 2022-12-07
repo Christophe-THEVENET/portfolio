@@ -4,11 +4,86 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./src/css/main.scss">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
 </head>
 
 <body>
+
+  <!-- ****************** HEADER *********************** -->
+  <header class="header">
+
+    <!-- logo -->
+    <div class="header__logo">
+      <a href="#"><img class="header__logo__img" src="./src/img/logo_digitob.png" alt="" srcset=""></a>
+    </div>
+
+    <!-- nav-->
+    <nav class="header__nav">
+
+      <!-- btn burger -->
+      <div class="header__nav__btn">
+        <a id="openIcon" class="header__nav__menu openIcon" href="#">
+          <i class="fa-solid fa-bars openIcon--btn"></i>
+        </a>
+        <a id="closeIcon" class="header__nav__menu closeIcon" href="#">
+          <i class="fa-solid fa-xmark closeIcon--btn"></i>
+        </a>
+      </div>
+
+      <!-- list lien -->
+      <ul class="menu">
+        <li class="header__nav__item">
+          <a href="#" class="nav__link">A propos</a>
+        </li>
+        <li class="header__nav__item">
+          <a href="#" class="nav__link">Services</a>
+        </li>
+        <li class="header__nav__item">
+          <a href="#" class="nav__link">Réalisation</a>
+        </li>
+        <li class="header__nav__item">
+          <a href="#" class="nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ****************** FIN HEADER *********************** -->
+
+
+  <!-- ************ MODALE MENU HAMBURGER ******************* -->
+  <div class="menu-modal">
+    <ul>
+      <li class="header__nav__item">
+        <a href="#" class="nav__link">A propos</a>
+      </li>
+      <li class="header__nav__item">
+        <a href="#" class="nav__link">Services</a>
+      </li>
+      <li class="header__nav__item">
+        <a href="#" class="nav__link">Réalisation</a>
+      </li>
+      <li class="header__nav__item">
+        <a href="#" class="nav__link">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <!-- *********** FIN MODALE MENU HAMBURGER ***************** -->
+
+
+
+
+
+
+
+
+
+
 
 
 

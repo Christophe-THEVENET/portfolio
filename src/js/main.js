@@ -1,2 +1,11 @@
+import './particules';
 import '../css/main.scss';
-import './particules.js';
+
+
+// ajout supp classe open sur les boutons hamburger
+let toggle = document.querySelector('.header__nav__btn');
+
+toggle.addEventListener('click', () => {
+  // permet de savoir si le menu est ouvert
+  document.body.classList.toggle('open');
+})

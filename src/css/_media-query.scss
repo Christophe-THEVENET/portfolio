@@ -1,0 +1,26 @@
+// ================= MEDIA QUERY > 732PX (ORDINATEUR) =================
+
+@media screen and (min-width: 732px) {
+  // ************** HEADER ******************
+  .header {
+    &__logo {
+      padding-left: 4rem;
+      margin: 0;
+    }
+    // affiche la nav
+    &__nav {
+      &__btn {
+        display: none;
+      }
+
+      .menu {
+        display: flex;
+      }
+    }
+  }
+
+  // ********** MODALE MENU HAMBURGER**********
+  .menu-modal {
+    display: none;
+  }
+}
