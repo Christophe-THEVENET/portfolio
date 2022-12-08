@@ -12,7 +12,7 @@ import {
   /*  Clock, */
 } from 'three';
 
-const slideHome = document.querySelector('.filter-home');
+const slideHome = document.querySelector('.slide-home');
 
 // import pour debug
 /* import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'; */
@@ -90,7 +90,7 @@ const renderer = new WebGLRenderer({
 renderer.setClearColor(0x000000, 0);
 
 // taille  du rendu (fullscreen)
-renderer.setSize(window.innerWidth, window.innerHeight);
+ renderer.setSize(window.innerWidth, window.innerHeight); 
 
 // si ecran > fullHD
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));

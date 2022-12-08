@@ -10,3 +10,11 @@ toggle.addEventListener('click', () => {
   document.body.classList.toggle('open');
 })
 
+
+
+let homeBlock = document.querySelector('.content-home')
+
+
+
+
+/* homeBlock.style.display = 'none'; */

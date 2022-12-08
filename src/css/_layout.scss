@@ -21,7 +21,6 @@ body {
   background-image: url('../img/background.jpg');
   background-position: center;
   background-size: cover;
-
   scroll-snap-align: center;
 }
 
@@ -34,45 +33,49 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /*   width: 100vw;
+  height: 100vh; */
 }
 
-h1,
-h2 {
-  color: rgb(129, 211, 184);
-  font-size: 45px;
-  font-family: 'GRIFTER Bold 700';
-}
-
-// ************* PAGE ACCEUIL ******************
+// ************************* PAGE ACCEUIL ****************************
 .filter-home {
+  height: 0;
+
   .content-home {
+    color: $text;
+    margin-top: 100vh;
+    padding: 1rem;
     h1,
     h2 {
-      font-size: 45px;
-      font-family: 'GRIFTER Bold 700';
-      position: relative;
-      left: 50%;
+      font-size: 3.5vmax;
+      font-family: $titleFamily;
+    }
+    h3 {
+      font-size: 1.8vmax;
+
+      font-family: $texteRegular;
+      color: $flashy;
+      margin: 2rem 0 4rem;
     }
 
     p {
-      font-size: 16px;
-      font-family: 'Nexa-Trial-Regular';
-      color: rgb(129, 211, 184);
-      position: relative;
-      left: 50%;
+      font-size: 1.7rem;
+      font-family: $texteRegular;
+      color: $text;
+      text-align: justify;
     }
   }
 }
 
-// ************* PAGE A PROPOS MOBILE ******************
+// ************************* PAGE A PROPOS MOBILE *********************
 .filter-about {
   width: 100%;
   height: 100%;
   background-color: rgb(2, 11, 31);
-  opacity: 0.90;
+  opacity: 0.9;
 }
 
-// ************* PAGE SERVICES MOBILE ******************
+// ************************* PAGE SERVICES MOBILE **********************
 .filter-services {
   width: 100%;
   height: 100%;
@@ -80,7 +83,7 @@ h2 {
   opacity: 0.3;
 }
 
-// ************* PAGE REALISATIONS MOBILE ******************
+// *********************** PAGE REALISATIONS MOBILE *********************
 .filter-project {
   width: 100%;
   height: 100%;
@@ -88,7 +91,7 @@ h2 {
   opacity: 0.85;
 }
 
-// ************* PAGE CONTACT MOBILE ******************
+// *************************** PAGE CONTACT MOBILE **********************
 
 .filter-contact {
   width: 100%;

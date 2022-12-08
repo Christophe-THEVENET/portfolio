@@ -97,18 +97,15 @@
   display: block;
 }
 
-.openIcon--btn {
+.openIcon--btn, .closeIcon--btn {
   color: $flashy;
 }
 
-.closeIcon--btn {
-  color: $primary;
-}
 
 // --------------- modale menu hamburger ------------
 
 .menu-modal {
-  background-color: $flashy;
+  background-color: $primary;
   position: absolute;
   top: 0;
   left: 0;
@@ -121,7 +118,7 @@
   ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
     min-height: 100vh;
@@ -133,7 +130,7 @@
       padding: 1em;
       margin-top: 0.7rem;
       font-family: $titleFamily;
-      color: $primary;
+      color: $flashy;
       font-size: 2rem;
     }
   }

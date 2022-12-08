@@ -3,10 +3,12 @@
   src: url('../fonts/GRIFTER Bold 700.TTF') format('truetype');
 }
 @font-face {
-  font-family: 'Nexa-Trial-Regular';
-  src: url('../fonts/Nexa-Trial-Regular.TTF') format('truetype');
+  font-family: 'Coves Light';
+  src: url('../fonts/Coves Light.ttf') format('truetype');
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,700;1,400&display=swap');
 
 *,
 ::after,
@@ -14,7 +16,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /*  border: 1px solid red;  */
+  /* border: 1px solid red;   */
 }
 
 html {
@@ -30,12 +32,10 @@ html {
 
 // polices
 $titleFamily: 'GRIFTER Bold 700';
-$texteFamily: 'Nexa-Trial-Regular';
+$texteRegular: 'Coves Light', sans-serif;
 
 // couleurs
 $primary: #14191f;
 $secondary: #3a4555;
 $text: #f8fafb;
 $flashy: #dcf7ff;
-
-
