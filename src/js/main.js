@@ -9,3 +9,4 @@ toggle.addEventListener('click', () => {
   // permet de savoir si le menu est ouvert
   document.body.classList.toggle('open');
 })
+

@@ -1,11 +1,10 @@
 // ================= MEDIA QUERY > 732PX (ORDINATEUR) =================
 
-@media screen and (min-width: 732px) {
+@media screen and (min-width: 740px) {
   // ************** HEADER ******************
   .header {
     &__logo {
-      padding-left: 4rem;
-      margin: 0;
+     
     }
     // affiche la nav
     &__nav {
@@ -22,5 +21,28 @@
   // ********** MODALE MENU HAMBURGER**********
   .menu-modal {
     display: none;
+  }
+
+  // ********** PAGE ACCEUIL **********
+
+  .filter-home {
+    .content-home {
+      position: relative;
+      width: 1000px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 255, 255, 0.418);
+      h1,
+      h2 {
+        font-size: 45px;
+        font-family: 'GRIFTER Bold 700';
+      }
+
+      p {
+        font-size: 16px;
+        font-family: 'Nexa-Trial-Regular';
+        color: #81d3b8;
+      }
+    }
   }
 }
