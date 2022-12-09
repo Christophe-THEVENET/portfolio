@@ -62,7 +62,7 @@ const geometry = new BufferGeometry();
 geometry.setAttribute('position', new Float32BufferAttribute(points, 3));
 
 const pointMaterial = new PointsMaterial({
-  color: 0xdcf7ff,
+  color: 0xDCF7FF,
   size: 0.01,
   map: circleTexture, // texture des points
   alphaTest: 0.01, // transparent

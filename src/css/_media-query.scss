@@ -26,9 +26,9 @@
       margin-top: 100vh;
       margin-left: -5vw;
       padding: 5rem;
-      p {
-        width: 70vw;
-        text-align: justify;
+
+      .text-btn-block {
+        width: 80%;
       }
     }
   }
@@ -59,15 +59,17 @@
 
   .filter-home {
     .content-home {
-      /* position: relative;
-      top: 45rem; */
       margin-top: 100vh;
       margin-left: -10vw;
       padding: 5rem;
-      p {
-        width: 35vw;
-        text-align: justify;
+      h3 {
+        font-size: 3rem;
       }
+      
+      .text-btn-block {
+        width: 35vw;
+      }
+  
     }
   }
 }
@@ -78,10 +80,9 @@
       margin-top: 110vh;
       margin-left: -2vw;
       padding: 5rem;
-      p {
+      .text-btn-block {
         width: 100%;
         max-width: 60rem;
-        text-align: justify;
       }
     }
   }
