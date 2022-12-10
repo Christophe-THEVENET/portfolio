@@ -1,5 +1,6 @@
-//  souligne menu hever ----------
+// ************************ HEADER **************************
 
+//  souligne menu hever ----------
 header nav ul li {
   display: inline-block;
 }
@@ -19,9 +20,8 @@ li a:hover:after {
   background: #444;
 }
 
+ // icon scroll -----------------------
 @media screen and (min-width: 940px) {
-  // icon scroll -----------------------
-
   .scroll-icon {
     position: absolute;
     bottom: 4rem;
@@ -67,5 +67,7 @@ li a:hover:after {
     }
   }
 
-  // }
 }
+
+// ************************ PAGE ACCEUIL **************************
+
