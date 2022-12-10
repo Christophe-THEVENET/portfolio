@@ -27,5 +27,5 @@ let textNbPages = document.querySelectorAll('.text-nb-pages');
 setTimeout(() => {
   scrollMouseIcon.style.opacity = 1;
   textUseScroll.style.opacity = 1;
-
 }, 7000);
+
