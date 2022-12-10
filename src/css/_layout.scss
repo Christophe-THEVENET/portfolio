@@ -40,7 +40,6 @@ body {
 // ************************* PAGE ACCEUIL ****************************
 .filter-home {
   height: 0;
-
   .content-home {
     color: $text;
     margin-top: 100vh;
@@ -53,7 +52,7 @@ body {
     h3 {
       font-size: 2rem;
       font-family: $texteRegular;
-      color: $flashy;
+      color: $green;
       margin: 2rem 0 4rem;
     }
 
@@ -72,6 +71,14 @@ body {
       text-align: justify;
     }
   }
+}
+
+.slide-home {
+position: relative;
+}
+
+.scroll-icon {
+  display: none;
 }
 
 // ************************* PAGE A PROPOS MOBILE *********************

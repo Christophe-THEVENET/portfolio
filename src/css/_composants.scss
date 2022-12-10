@@ -1,12 +1,13 @@
+// boutons -----------------
 .btn {
   background-color: rgba(250, 235, 215, 0.575);
-  padding: 0.5rem 3rem;
+  padding: 0.7rem 3rem;
   border-radius: 5px;
   font-size: 1.5rem;
   font-family: $texteRegular;
   text-decoration: none;
   margin-left: 2rem;
-  z-index: 50;
+  z-index: 8;
   transition: 0.4s;
 }
 
@@ -16,6 +17,9 @@
   font-weight: bold;
 
   &:hover {
+    border-style: inset;
+    border: none;
+    box-shadow: 0px 0px 0px 1px $flashy inset;
     background-color: $primary;
     color: $flashy;
   }
@@ -30,6 +34,7 @@
     border-style: inset;
     border: none;
     box-shadow: 0px 0px 0px 1px $flashy inset;
+    background-color: $primary;
     color: $flashy;
   }
 }

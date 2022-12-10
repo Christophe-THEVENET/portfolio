@@ -20,7 +20,7 @@
 
     <!-- logo -->
     <div class="header__logo">
-      <a href="#"><img class="header__logo__img" src="./src/img/logo_green.png" alt="" srcset=""></a>
+      <a href="#slide-home"><img class="header__logo__img" src="./src/img/logo_green.png" alt="" srcset=""></a>
     </div>
 
     <!-- nav-->
@@ -39,16 +39,16 @@
       <!-- list lien -->
       <ul class="menu">
         <li class="header__nav__item">
-          <a href="#" class="nav__link">A propos</a>
+          <a href="#slide-about" class="nav__link">A propos</a>
         </li>
         <li class="header__nav__item">
-          <a href="#" class="nav__link">Services</a>
+          <a href="#slide-services" class="nav__link">Services</a>
         </li>
         <li class="header__nav__item">
-          <a href="#" class="nav__link">Réalisation</a>
+          <a href="#slide-project" class="nav__link">Réalisation</a>
         </li>
         <li class="header__nav__item">
-          <a href="#" class="nav__link">Contact</a>
+          <a href="#slide-contact" class="nav__link">Contact</a>
         </li>
       </ul>
     </nav>
@@ -60,16 +60,16 @@
   <div class="menu-modal">
     <ul>
       <li class="header__nav__item">
-        <a href="#" class="nav__link">A propos</a>
+        <a href="#slide-about" class="nav__link about-link nav__link--mobile">A propos</a>
       </li>
       <li class="header__nav__item">
-        <a href="#" class="nav__link">Services</a>
+        <a href="#slide-services" class="nav__link nav__link--mobile">Services</a>
       </li>
       <li class="header__nav__item">
-        <a href="#" class="nav__link">Réalisation</a>
+        <a href="#slide-project" class="nav__link nav__link--mobile">Réalisation</a>
       </li>
       <li class="header__nav__item">
-        <a href="#" class="nav__link">Contact</a>
+        <a href="#slide-contact" class="nav__link nav__link--mobile">Contact</a>
       </li>
     </ul>
   </div>
@@ -84,12 +84,15 @@
   <main class="container">
 
     <!-- *************** PAGE ACCEUIL ******************* -->
-    <section class="slide slide-home">
+    <section class="slide slide-home" id="slide-home">
+        <!--  icon scroll -->
+        <a href="#" class="scroll-icon"></a>
       <div class="page filter-home">
         <div class="content-home">
           <h2>Bonjour,</h2>
           <h1>je m'apelle Christophe THEVENET</h1>
           <h3>Je suis Développeur Web</h3>
+         
           <div class="text-btn-block">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quidem maiores similique distinctio
               amet vero! Odit perspiciatis iusto explicabo dolorem alias corrupti, et necessitatibus nulla, neque
@@ -104,6 +107,7 @@
               <a href="#" class="btn btn-secondary">Contact</a>
             </div>
           </div>
+         
         </div>
       </div>
     </section>
@@ -111,21 +115,21 @@
 
 
     <!-- ************** PAGE A PROPOS ***************** -->
-    <section class="slide slide-about">
+    <section class="slide slide-about" id="slide-about">
       <div class="page filter-about">
         <h2>A propos</h2>
       </div>
     </section>
 
     <!-- *********** PAGE A SERVICES ***************** -->
-    <section class="slide slide-services">
+    <section class="slide slide-services" id="slide-services">
       <div class="page filter-services">
         <h2>Services</h2>
       </div>
     </section>
 
     <!-- *********** PAGE REALISATIONS ***************** -->
-    <section class="slide slide-project">
+    <section class="slide slide-project" id="slide-project">
       <div class="page filter-project">
 
         <h2>Réalisations</h2>
@@ -134,7 +138,7 @@
     </section>
 
     <!-- *********** PAGE CONTACT ***************** -->
-    <section class="slide slide-contact">
+    <section class="slide slide-contact" id="slide-contact">
       <div class="page filter-contact">
 
         <h1>Contact</h1>
