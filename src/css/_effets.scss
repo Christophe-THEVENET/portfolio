@@ -35,7 +35,8 @@ li a:hover:after {
     color: rgba(#dcf7ff, 0.3);
     border-radius: 2em;
     border: solid 3px;
-    transition: 0.4s;
+    transition: 2s;
+    opacity: 0;
   }
 
   .scroll-icon:hover {
@@ -66,6 +67,22 @@ li a:hover:after {
       opacity: 0;
     }
   }
+
+  .text-use-mouse {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1rem;
+    color: rgba(#dcf7ff, 0.3);
+    font-family: $texteRegular;
+    font-size: 1.5rem;
+    transition: 2s;
+    opacity: 0;
+  }
+
+
+
+
+
 
 }
 

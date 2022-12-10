@@ -50,10 +50,10 @@ body {
       font-family: $titleFamily;
     }
     h3 {
-      font-size: 2rem;
+      font-size: 2.3rem;
       font-family: $texteRegular;
       color: $green;
-      margin: 2rem 0 4rem;
+      margin: 2rem 0 2rem;
     }
 
     .text-btn-block {
@@ -65,7 +65,7 @@ body {
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: $fontSizeText;
       font-family: $texteRegular;
       color: $text;
       text-align: justify;

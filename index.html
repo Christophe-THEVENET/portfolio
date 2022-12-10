@@ -3,11 +3,13 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="./src/img/favicon_digitob.png" type="image/x-icon">
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./src/css/main.scss">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
@@ -19,13 +21,13 @@
   <header class="header">
 
     <!-- logo -->
-    <div class="header__logo">
-      <a href="#slide-home"><img class="header__logo__img" src="./src/img/logo_green.png" alt="" srcset=""></a>
+    <div class="header__logo" data-aos="fade-down-right" data-aos-delay="3000" data-aos-duration="3000">
+      <a href="http://127.0.0.1:5173/"><img class="header__logo__img" src="./src/img/logo_green.png" alt=""
+          srcset=""></a>
     </div>
 
     <!-- nav-->
     <nav class="header__nav">
-
       <!-- btn burger -->
       <div class="header__nav__btn">
         <a id="openIcon" class="header__nav__menu openIcon" href="#">
@@ -35,9 +37,8 @@
           <i class="fa-solid fa-xmark closeIcon--btn"></i>
         </a>
       </div>
-
       <!-- list lien -->
-      <ul class="menu">
+      <ul class="menu" data-aos="fade-down-left" data-aos-delay="3000" data-aos-duration="3000">
         <li class="header__nav__item">
           <a href="#slide-about" class="nav__link">A propos</a>
         </li>
@@ -66,7 +67,7 @@
         <a href="#slide-services" class="nav__link nav__link--mobile">Services</a>
       </li>
       <li class="header__nav__item">
-        <a href="#slide-project" class="nav__link nav__link--mobile">Réalisation</a>
+        <a href="#slide-project" class="nav__link nav__link--mobile">Réalisations</a>
       </li>
       <li class="header__nav__item">
         <a href="#slide-contact" class="nav__link nav__link--mobile">Contact</a>
@@ -85,29 +86,29 @@
 
     <!-- *************** PAGE ACCEUIL ******************* -->
     <section class="slide slide-home" id="slide-home">
-        <!--  icon scroll -->
-        <a href="#" class="scroll-icon"></a>
+      <!--  icon scroll -->
+      <p class="text-use-mouse">Utilisez la roulette</p>
+      <a href="#slide-about" class="scroll-icon"></a>
       <div class="page filter-home">
         <div class="content-home">
-          <h2>Bonjour,</h2>
-          <h1>je m'apelle Christophe THEVENET</h1>
-          <h3>Je suis Développeur Web</h3>
-         
-          <div class="text-btn-block">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quidem maiores similique distinctio
-              amet vero! Odit perspiciatis iusto explicabo dolorem alias corrupti, et necessitatibus nulla, neque
-              mollitia
-              soluta ratione pariatur!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quidem maiores similique distinctio
-              amet vero! Odit perspiciatis iusto explicabo dolorem alias corrupti, et necessitatibus nulla, neque
-              mollitia
-              soluta ratione pariatur!</p>
+          <h2 data-aos="slide-right" data-aos-easing="ease-in-out-cubic" data-aos-offset="50" data-aos-duration="1200">
+            Bonjour,</h2>
+          <h1 data-aos="fade-right" data-aos-delay="1200" data-aos-duration="2000">je m'apelle Christophe THEVENET</h1>
+          <h3 class="text-btn-block" data-aos="zoom-in-up" data-aos-delay="2000" data-aos-duration="2000">Je suis
+            Développeur Web</h3>
+
+          <div class="text-btn-block" data-aos="zoom-out-up" data-aos-delay="3000" data-aos-duration="3000">
+            <p> Aujourd'hui et demain, la dématérialisation va s'accentuer. Les mails ont révolutionné le courrier, la
+              prise de rendez-vous en ligne permet à un entrepreneur d'être moins sollicité par le téléphone, je propose
+              donc à mes clients un accompagnement vers la digitalisation de leur activité.
+              Passionné de longue date par le numérique, je fabrique un site internet comme un artisan fabrique un
+              meuble.</p>
             <div class="btn-block">
-              <a href="#" class="btn btn-primary">Services</a>
-              <a href="#" class="btn btn-secondary">Contact</a>
+              <a href="#slide-services" class="btn btn-primary">Services</a>
+              <a href="#slide-contact" class="btn btn-secondary">Contact</a>
             </div>
           </div>
-         
+
         </div>
       </div>
     </section>
@@ -150,12 +151,11 @@
 
 
 
-
-
-
-
-
   <script type="module" src="./src/js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
