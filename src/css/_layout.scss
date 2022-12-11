@@ -83,107 +83,99 @@ body {
   display: none;
 }
 
-// ************************* PAGE A PROPOS MOBILE *********************
+// ************************* PAGE A PROPOS MOBILE **********************
 .filter-about {
   width: 100%;
   height: 100%;
   background-color: rgb(7, 10, 19);
   opacity: 0.9;
+  color: $secondary;
+  font-family: $titleFamily;
+  font-size: 4rem;
+}
 
-  .about-technos-block {
+// section about -----------------------------------
+.about {
+  flex: 1;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  padding: 14rem 1rem 1rem 1rem;
+  h2 {
+    font-family: $titleFamily;
+    font-size: 3.5vmax;
+    color: $secondary;
+  }
+
+  // block titre - - - - - - - - -
+  &__title {
+    display: flex;
+    align-items: flex-start;
+    width: 70%;
+
+    &__border-right {
+      flex: 1;
+      height: 1px;
+      background-color: $secondary;
+      margin-left: 2rem;
+      margin-top: 2%;
+    }
+  }
+
+  // block contenu - - - - - - - - -
+  &__content {
+    display: flex;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 14rem 1rem 1rem 1rem;
-    h2 {
-      font-family: $titleFamily;
-      font-size: 3.5vmax;
-      color: $secondary;
+
+    &__border-left {
+      margin-left: 0.1rem;
+      width: 1px;
+      max-height: 70%;
+      background-color: $secondary;
     }
 
-    // section about -----------------------------------
-    .about {
-      flex: 1;
-      margin: 0.5rem;
+    // block contenu - - - - - - - - -
+    &__block {
+      width: 100%;
+      height: 100%;
+      padding: 2rem;
+      font-family: $texteRegular;
+      font-size: $fontSizeText;
+      text-align: justify;
       display: flex;
       flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
 
-      // block titre - - - - - - - - -
-      &__title {
-        display: flex;
-        align-items: flex-start;
-        width: 70%;
+      .container {
+        width: 100%;
+        height: 100%;
+        margin: 1rem;
+        border-radius: 5px;
+        padding: 1rem;
+        background-color: #3a455598;
+        color: $text;
 
-        &__border-right {
-          flex: 1;
-          height: 1px;
-          background-color: $secondary;
-          margin-left: 2rem;
-          margin-top: 2%;
+        h3 {
+          color: $green;
+          text-align: center;
+          text-transform: capitalize;
         }
       }
-
-      // block contenu - - - - - - - - -
-      &__content {
-        display: flex;
-
-        &__border-left {
-          margin-left: 0.1rem;
-          width: 1px;
-          background-color: $secondary;
-        }
-
-        &__text {
-          padding: 2rem;
-          color: $text;
-          font-family: $texteRegular;
-          font-size: $fontSizeText;
-          text-align: justify;
-        }
+      /* 
+      &__site {
       }
-    }
-
-    // section compétences ---------------------------------
-
-    .competences {
-      flex: 1;
-      margin: 0.5rem;
-      display: flex;
-      flex-direction: column;
-
-      &__title {
-        display: flex;
-        align-items: flex-start;
-        width: 70%;
-
-        &__border-right {
-          flex: 1;
-          height: 1px;
-          background-color: $secondary;
-          margin-left: 2rem;
-          margin-top: 2%;
-        }
+      &__spec {
       }
 
-
-      &__content {
-        display: flex;
-
-        &__border-left {
-          margin-left: 0.1rem;
-          width: 1px;
-          background-color: $secondary;
-        }
-
-        &__text {
-          padding: 2rem;
-          color: $text;
-          font-family: $texteRegular;
-          font-size: $fontSizeText;
-          text-align: justify;
-        }
-      }
+      &__freelance {
+      } */
     }
   }
 }
@@ -192,17 +184,8 @@ body {
 .filter-services {
   width: 100%;
   height: 100%;
-  background-color: #37afd4e1;
-  opacity: 0.9;
-  color: $secondary;
-  font-family: $titleFamily;
-  font-size: 4rem;
-}
-
-// *********************** PAGE REALISATIONS MOBILE *********************
-.filter-project {
-  width: 100%;
-  height: 100%;
+  /* background-color: #37afd4e1;
+  opacity: 0.9; */
   background-color: rgb(7, 10, 19);
   opacity: 0.9;
   color: $secondary;
@@ -210,14 +193,286 @@ body {
   font-size: 4rem;
 }
 
-// *************************** PAGE CONTACT MOBILE **********************
-
-.filter-contact {
+// section services -----------------------------------
+.services {
+  flex: 1;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: #3fc7f0e1;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  padding: 14rem 1rem 1rem 1rem;
+  h2 {
+    font-family: $titleFamily;
+    font-size: 3.5vmax;
+    color: $secondary;
+  }
+
+  // block titre - - - - - - - - -
+  &__title {
+    display: flex;
+    align-items: flex-start;
+    width: 70%;
+
+    &__border-right {
+      flex: 1;
+      height: 1px;
+      background-color: $secondary;
+      margin-left: 2rem;
+      margin-top: 2%;
+    }
+  }
+
+  // block contenu - - - - - - - - -
+  &__content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    &__border-left {
+      margin-left: 0.1rem;
+      width: 1px;
+      max-height: 70%;
+      background-color: $secondary;
+    }
+
+    // block contenu - - - - - - - - -
+    &__block {
+      width: 100%;
+      height: 100%;
+      padding: 2rem;
+      font-family: $texteRegular;
+      font-size: $fontSizeText;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      .container {
+        width: 100%;
+        height: 100%;
+        margin: 1rem;
+        border-radius: 5px;
+        padding: 1rem;
+        background-color: #3a455598;
+        color: $text;
+
+        h3 {
+          color: $green;
+          text-align: center;
+          text-transform: capitalize;
+        }
+      }
+      /* 
+      &__site {
+      }
+      &__spec {
+      }
+
+      &__freelance {
+      } */
+    }
+  }
+}
+
+// ************************* PAGE REALISATIONS MOBILE **********************
+.filter-project {
+  width: 100%;
+  height: 100%;
+  /* background-color: #37afd4e1;
+  opacity: 0.9; */
+  background-color: rgb(7, 10, 19);
   opacity: 0.9;
   color: $secondary;
   font-family: $titleFamily;
   font-size: 4rem;
+}
+
+// section project -----------------------------------
+.project {
+  flex: 1;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  padding: 14rem 1rem 1rem 1rem;
+  h2 {
+    font-family: $titleFamily;
+    font-size: 3.5vmax;
+    color: $secondary;
+  }
+
+  // block titre - - - - - - - - -
+  &__title {
+    display: flex;
+    align-items: flex-start;
+    width: 70%;
+
+    &__border-right {
+      flex: 1;
+      height: 1px;
+      background-color: $secondary;
+      margin-left: 2rem;
+      margin-top: 2%;
+    }
+  }
+
+  // block contenu - - - - - - - - -
+  &__content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    &__border-left {
+      margin-left: 0.1rem;
+      width: 1px;
+      max-height: 70%;
+      background-color: $secondary;
+    }
+
+    // block contenu - - - - - - - - -
+    &__block {
+      width: 100%;
+      height: 100%;
+      padding: 2rem;
+      font-family: $texteRegular;
+      font-size: $fontSizeText;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      .container {
+        width: 100%;
+        height: 100%;
+        margin: 1rem;
+        border-radius: 5px;
+        padding: 1rem;
+        background-color: #3a455598;
+        color: $text;
+
+        h3 {
+          color: $green;
+          text-align: center;
+          text-transform: capitalize;
+        }
+      }
+      /* 
+      &__site {
+      }
+      &__spec {
+      }
+
+      &__freelance {
+      } */
+    }
+  }
+}
+
+// ************************* PAGE CONTACT MOBILE **********************
+.filter-contact {
+  width: 100%;
+  height: 100%;
+  /* background-color: #37afd4e1;
+  opacity: 0.9; */
+  background-color: rgb(7, 10, 19);
+  opacity: 0.9;
+  color: $secondary;
+  font-family: $titleFamily;
+  font-size: 4rem;
+}
+
+// section contact -----------------------------------
+.contact {
+  flex: 1;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  padding: 14rem 1rem 1rem 1rem;
+  h2 {
+    font-family: $titleFamily;
+    font-size: 3.5vmax;
+    color: $secondary;
+  }
+
+  // block titre - - - - - - - - -
+  &__title {
+    display: flex;
+    align-items: flex-start;
+    width: 70%;
+
+    &__border-right {
+      flex: 1;
+      height: 1px;
+      background-color: $secondary;
+      margin-left: 2rem;
+      margin-top: 2%;
+    }
+  }
+
+  // block contenu - - - - - - - - -
+  &__content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    &__border-left {
+      margin-left: 0.1rem;
+      width: 1px;
+      max-height: 70%;
+      background-color: $secondary;
+    }
+
+    // block contenu - - - - - - - - -
+    &__block {
+      width: 100%;
+      height: 100%;
+      padding: 2rem;
+      font-family: $texteRegular;
+      font-size: $fontSizeText;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      .container {
+        width: 100%;
+        height: 100%;
+        margin: 1rem;
+        border-radius: 5px;
+        padding: 1rem;
+        background-color: #3a455598;
+        color: $text;
+
+        h3 {
+          color: $green;
+          text-align: center;
+          text-transform: capitalize;
+        }
+      }
+      /* 
+      &__site {
+      }
+      &__spec {
+      }
+
+      &__freelance {
+      } */
+    }
+  }
 }
