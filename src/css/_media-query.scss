@@ -79,7 +79,7 @@
   }
 
   // ********************* PAGE A PROPOS ************************
-  
+
   .about {
     padding: 14rem 4rem 4rem 8rem;
 
@@ -87,10 +87,12 @@
       flex-direction: row;
       padding: 8rem;
 
-      .container {
-        margin: 2rem;
+      .text__presentation {
+        padding: 2rem;
       }
     }
+
+    
   }
 
 
@@ -109,38 +111,35 @@
     }
   }
 
-// ********************* PAGE REALISATIONS ************************
+  // ********************* PAGE REALISATIONS ************************
 
-.project {
-  padding: 14rem 4rem 4rem 8rem;
+  .project {
+    padding: 14rem 4rem 4rem 8rem;
 
-  &__content__block {
-    flex-direction: row;
-    padding: 8rem;
+    &__content__block {
+      flex-direction: row;
+      padding: 8rem;
 
-    .container {
-      margin: 2rem;
+      .container {
+        margin: 2rem;
+      }
     }
   }
-}
 
+  // ********************* PAGE CONTACT ************************
 
-// ********************* PAGE CONTACT ************************
+  .contact {
+    padding: 14rem 4rem 4rem 8rem;
 
-.contact {
-  padding: 14rem 4rem 4rem 8rem;
+    &__content__block {
+      flex-direction: row;
+      padding: 8rem;
 
-  &__content__block {
-    flex-direction: row;
-    padding: 8rem;
-
-    .container {
-      margin: 2rem;
+      .container {
+        margin: 2rem;
+      }
     }
   }
-}
-
-
 }
 
 //
