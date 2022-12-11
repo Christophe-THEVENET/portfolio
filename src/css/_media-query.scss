@@ -1,6 +1,6 @@
 //
 //
-// ================= MEDIA QUERY > 740PX (TABLETTE) =================
+// ================= MEDIA QUERY > 740PX (TABLETTE) =========================
 @media screen and (min-width: 740px) {
   // ************** HEADER ******************
 
@@ -35,12 +35,22 @@
   }
 
   // ********************* PAGE A PROPOS ************************
+
+
+
+
+
+
+
+
+
+
 }
 
 //
 //
 //
-// ================= MEDIA QUERY > 940PX (PC) =================
+// ======================= MEDIA QUERY > 940PX (PC) ===========================
 
 @media screen and (min-width: 940px) {
   // ************** HEADER ******************
@@ -107,7 +117,7 @@
 //
 //
 //
-// ================= MEDIA QUERY > ORIENTATION PAYSAGE =================
+// ======================== MEDIA QUERY > ORIENTATION PAYSAGE ========================
 
 @media (orientation: landscape) {
   .filter-home {

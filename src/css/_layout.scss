@@ -96,17 +96,94 @@ body {
     display: flex;
     flex-direction: column;
     padding: 14rem 1rem 1rem 1rem;
-
-    .about {
-      flex: 1;
-      margin: 1rem;
-      background-color: aliceblue;
+    h2 {
+      font-family: $titleFamily;
+      font-size: 3.5vmax;
+      color: $secondary;
     }
 
-    .technos {
+    // section about -----------------------------------
+    .about {
       flex: 1;
-      margin: 1rem;
-      background-color: rgba(137, 184, 224, 0.795);
+      margin: 0.5rem;
+      display: flex;
+      flex-direction: column;
+
+      // block titre - - - - - - - - -
+      &__title {
+        display: flex;
+        align-items: flex-start;
+        width: 70%;
+
+        &__border-right {
+          flex: 1;
+          height: 1px;
+          background-color: $secondary;
+          margin-left: 2rem;
+          margin-top: 2%;
+        }
+      }
+
+      // block contenu - - - - - - - - -
+      &__content {
+        display: flex;
+
+        &__border-left {
+          margin-left: 0.1rem;
+          width: 1px;
+          background-color: $secondary;
+        }
+
+        &__text {
+          padding: 2rem;
+          color: $text;
+          font-family: $texteRegular;
+          font-size: $fontSizeText;
+          text-align: justify;
+        }
+      }
+    }
+
+    // section compétences ---------------------------------
+
+    .competences {
+      flex: 1;
+      margin: 0.5rem;
+      display: flex;
+      flex-direction: column;
+
+      &__title {
+        display: flex;
+        align-items: flex-start;
+        width: 70%;
+
+        &__border-right {
+          flex: 1;
+          height: 1px;
+          background-color: $secondary;
+          margin-left: 2rem;
+          margin-top: 2%;
+        }
+      }
+
+
+      &__content {
+        display: flex;
+
+        &__border-left {
+          margin-left: 0.1rem;
+          width: 1px;
+          background-color: $secondary;
+        }
+
+        &__text {
+          padding: 2rem;
+          color: $text;
+          font-family: $texteRegular;
+          font-size: $fontSizeText;
+          text-align: justify;
+        }
+      }
     }
   }
 }
