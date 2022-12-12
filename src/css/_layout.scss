@@ -168,9 +168,41 @@ body {
       &__presentation {
         overflow: scroll;
 
+        .title-formation {
+          font-family: $titleFamily;
+          color: $secondary;
+          font-size: 3vmax;
+          margin: 1rem 0;
+
+
+
+
+
+        }
+
         /*  flex: 1; */
         /* background-color: rgba(238, 92, 104, 0.13); */
       }
+
+
+
+
+
+
+      .text-presentation span {
+        color: $flashy;
+        font-size: 1.4vmax;
+      }
+    
+
+
+
+
+
+
+
+
+
       &__competences {
         overflow: scroll;
         display: flex;
