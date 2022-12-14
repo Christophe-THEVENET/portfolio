@@ -87,8 +87,8 @@ body {
 .filter-about {
   width: 100%;
   height: 100%;
-  background-color: rgb(7, 10, 19);
-  opacity: 0.9;
+ /*  background-color: rgb(20, 22, 31);
+  opacity: 0.95; */
   color: $secondary;
   font-family: $titleFamily;
   font-size: 4rem;
@@ -109,21 +109,22 @@ body {
   h2 {
     font-family: $titleFamily;
     font-size: 3.5vmax;
-    color: $secondary;
+    color: $flashy;
   }
 
   // block titre - - - - - - - - -
   &__title {
+    margin-top: -1rem;
     display: flex;
     align-items: flex-start;
-    width: 70%;
+    width: 97%;
 
     &__border-right {
       flex: 1;
       height: 1px;
-      background-color: $secondary;
-      margin-left: 2rem;
-      margin-top: 2%;
+      background-color: $flashy;
+      margin-left: 0.5rem;
+      margin-top: 2.5%;
     }
   }
 
@@ -137,8 +138,10 @@ body {
       margin-left: 0.1rem;
       width: 1px;
       max-height: 70%;
-      background-color: $secondary;
+      background-color: $flashy;
     }
+
+   
 
     // block contenu - - - - - - - - -
     &__block {
@@ -153,12 +156,10 @@ body {
 
       .about-card {
         width: 100%;
-        margin: 0.3rem;
+        margin: 0.3rem 0.3rem 0 0.3rem;
         border-radius: 5px;
-        padding: 0.5rem;
+        padding: 0.5rem 0.5rem 0 0.5rem;
         color: $text;
-        font-size: 2vmax;
-
 
         &-block {
           padding: 0.1rem;
@@ -167,12 +168,15 @@ body {
 
       &__presentation {
         overflow: scroll;
+       margin-bottom: 0;
+       padding-bottom: 0;
+
 
         .title-formation {
           font-family: $titleFamily;
-          color: $secondary;
-          font-size: 3vmax;
-          margin: 1rem 0;
+          color: $flashy;
+          font-size: 2vmax;
+          margin: 0.8rem 0;
 
 
 
@@ -189,9 +193,16 @@ body {
 
 
 
-      .text-presentation span {
+      .text-presentation {
+        font-size: 2vmax;
+      }
+      
+      
+      
+      span {
         color: $flashy;
-        font-size: 1.4vmax;
+        font-size: 1.5vmax;
+        font-style: italic;
       }
     
 
@@ -208,51 +219,68 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        /* flex: 2; */
-        /*  background-color: rgba(238, 92, 104, 0.13); */
+        
 
         .title_competences {
           font-family: $titleFamily;
-          color: $secondary;
-          font-size: 3vmax;
-          margin: -0.5rem 0 1rem 0;
+          color: $flashy;
+          font-size: 2vmax;
+          margin: 0rem 0 0.3rem 0;
         }
 
         .about-card-block {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
+          padding: 0;
+          margin: 0.2rem 0;
+
+
+          .title-icon-flex {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+          }
+
 
           h3 {
             color: $green;
-            text-align: start;
-            text-transform: capitalize;
+            font-weight: bold;
+            font-size: 2vmax;
+            flex: 3;
           }
 
+       
           .about__icon {
-            width: 100%;
+            flex: 1;
+
             display: flex;
             justify-content: flex-end;
             svg {
               width: 2.2rem;
               padding: 0.3rem;
-              filter: grayscale(1);
             }
           }
+
+          p {
+
+          }
+
         }
       }
     }
   }
 }
 
-// ************************* PAGE SERVICES MOBILE **********************
+// ************************* PAGE PRESTATIONS MOBILE **********************
 .filter-services {
   width: 100%;
   height: 100%;
   /* background-color: #37afd4e1;
   opacity: 0.9; */
-  background-color: rgb(7, 10, 19);
-  opacity: 0.9;
+ /*  background-color: rgb(7, 10, 19);
+  opacity: 0.9; */
   color: $secondary;
   font-family: $titleFamily;
   font-size: 4rem;
@@ -273,7 +301,7 @@ body {
   h2 {
     font-family: $titleFamily;
     font-size: 3.5vmax;
-    color: $secondary;
+    color: $text;
   }
 
   // block titre - - - - - - - - -
@@ -285,7 +313,7 @@ body {
     &__border-right {
       flex: 1;
       height: 1px;
-      background-color: $secondary;
+      background-color: $text;
       margin-left: 2rem;
       margin-top: 2%;
     }
@@ -301,7 +329,7 @@ body {
       margin-left: 0.1rem;
       width: 1px;
       max-height: 70%;
-      background-color: $secondary;
+      background-color: $text;
     }
 
     // block contenu - - - - - - - - -
@@ -323,11 +351,11 @@ body {
         margin: 1rem;
         border-radius: 5px;
         padding: 1rem;
-        background-color: #3a455598;
-        color: $text;
+        background-color: #28d49b88;
+        color: $flashy;
 
         h3 {
-          color: $green;
+          color: $text;
           text-align: center;
           text-transform: capitalize;
         }
@@ -350,8 +378,8 @@ body {
   height: 100%;
   /* background-color: #37afd4e1;
   opacity: 0.9; */
-  background-color: rgb(7, 10, 19);
-  opacity: 0.9;
+ /*  background-color: rgb(7, 10, 19);
+  opacity: 0.9; */
   color: $secondary;
   font-family: $titleFamily;
   font-size: 4rem;
@@ -372,7 +400,7 @@ body {
   h2 {
     font-family: $titleFamily;
     font-size: 3.5vmax;
-    color: $secondary;
+    color: $text;
   }
 
   // block titre - - - - - - - - -
@@ -384,7 +412,7 @@ body {
     &__border-right {
       flex: 1;
       height: 1px;
-      background-color: $secondary;
+      background-color: $text;
       margin-left: 2rem;
       margin-top: 2%;
     }
@@ -400,7 +428,7 @@ body {
       margin-left: 0.1rem;
       width: 1px;
       max-height: 70%;
-      background-color: $secondary;
+      background-color: $text;
     }
 
     // block contenu - - - - - - - - -
@@ -422,7 +450,7 @@ body {
         margin: 1rem;
         border-radius: 5px;
         padding: 1rem;
-        background-color: #3a455598;
+        background-color: #dcf7ff21;
         color: $text;
 
         h3 {
@@ -449,8 +477,8 @@ body {
   height: 100%;
   /* background-color: #37afd4e1;
   opacity: 0.9; */
-  background-color: rgb(7, 10, 19);
-  opacity: 0.9;
+  /* background-color: rgb(7, 10, 19);
+  opacity: 0.9; */
   color: $secondary;
   font-family: $titleFamily;
   font-size: 4rem;
@@ -471,7 +499,7 @@ body {
   h2 {
     font-family: $titleFamily;
     font-size: 3.5vmax;
-    color: $secondary;
+    color: $flashy;
   }
 
   // block titre - - - - - - - - -
@@ -483,7 +511,7 @@ body {
     &__border-right {
       flex: 1;
       height: 1px;
-      background-color: $secondary;
+      background-color: $flashy;
       margin-left: 2rem;
       margin-top: 2%;
     }
@@ -499,7 +527,7 @@ body {
       margin-left: 0.1rem;
       width: 1px;
       max-height: 70%;
-      background-color: $secondary;
+      background-color: $flashy;
     }
 
     // block contenu - - - - - - - - -
@@ -521,11 +549,11 @@ body {
         margin: 1rem;
         border-radius: 5px;
         padding: 1rem;
-        background-color: #3a455598;
+        background-color:#14191fa6;
         color: $text;
 
         h3 {
-          color: $green;
+          color: $flashy;
           text-align: center;
           text-transform: capitalize;
         }

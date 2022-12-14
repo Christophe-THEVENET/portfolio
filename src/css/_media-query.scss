@@ -4,6 +4,16 @@
 @media screen and (min-width: 740px) {
   // ************** HEADER ******************
 
+.header
+{
+  margin: 2rem auto;
+}
+
+.header__logo {
+  margin-left: 4rem;
+}
+
+
   // affiche la nav
   .header__nav {
     &__btn {
@@ -35,6 +45,23 @@
   }
 
   // ********************* PAGE A PROPOS ************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 //
@@ -69,7 +96,7 @@
       padding: 5rem;
 
       h3 {
-        font-size: 3rem;
+        font-size: 2vmax;
       }
 
       .text-btn-block {
@@ -83,15 +110,26 @@
   .about {
     padding: 14rem 4rem 4rem 8rem;
 
+
     &__content__block {
       flex-direction: row;
+      align-items: flex-start;
       padding: 8rem;
 
-      .text__presentation {
-        padding: 2rem;
+      .text-presentation {
+        padding: 1rem;
+        font-size: 1.2vmax;
       }
     }
 
+    &-card-block {
+
+
+      p {
+        font-size: 1.2vmax;
+
+      }
+    }
     
   }
 
