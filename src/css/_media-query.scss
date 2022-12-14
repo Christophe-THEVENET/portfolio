@@ -1,18 +1,16 @@
 //
 //
 // ================= MEDIA QUERY > 740PX (TABLETTE) =========================
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 768px) {
   // ************** HEADER ******************
 
-.header
-{
-  margin: 2rem auto;
-}
+  .header {
+    margin: 2rem auto;
+  }
 
-.header__logo {
-  margin-left: 4rem;
-}
-
+  .header__logo {
+    margin-left: 4rem;
+  }
 
   // affiche la nav
   .header__nav {
@@ -46,22 +44,33 @@
 
   // ********************* PAGE A PROPOS ************************
 
+  .about {
+    margin: 1rem;
 
+    &__title {
+      margin-top: 1rem;
+    }
 
+    &__content__block {
+      margin: 1rem;
 
+      .title-formation {
+        margin: 1rem 0;
+      }
 
+      .title_competences {
+        margin: 0.5rem 0;
+      }
 
+      .about-card-block {
+        margin: 0.5rem 0;
 
-
-
-
-
-
-
-
-
-
-
+        .title-icon-flex svg {
+          width: 2.5rem;
+        }
+      }
+    }
+  }
 }
 
 //
@@ -108,31 +117,77 @@
   // ********************* PAGE A PROPOS ************************
 
   .about {
-    padding: 14rem 4rem 4rem 8rem;
+    padding: 14rem 2rem 2rem 2rem;
 
+    &__title {
+      width: 80%;
+    }
 
-    &__content__block {
-      flex-direction: row;
-      align-items: flex-start;
-      padding: 8rem;
+    &__title__border-right {
+      margin-top: 1.5%;
+    }
 
+    &__content {
+      &__block {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 5rem;
+
+        // bloc gauche ------------------------------------
+        &__presentation {
+          flex: 1;
+          padding: 4rem;
+
+          .apropos-ordi {
+            margin-top: -4rem;
+            margin-bottom: 4rem;
+          }
+
+          .title-formation {
+            font-size: 1.5vmax;
+            color: $green;
+
+          }
+        }
+
+        // bloc droit --------------------------------------
+        &__competences {
+          flex: 2;
+          padding: 4rem;
+
+          .title_competences {
+            font-size: 1.5vmax;
+            color: $green;
+          }
+
+          // compétences title + text + logo ----------
+          .about-card-block {
+            margin: 0.5rem 0;
+
+            h3 {
+              font-size: 2.2rem;
+              color: $flashy;
+            }
+
+            p {
+            }
+
+            .about__icon svg {
+              width: 3.2rem;
+            }
+          }
+        }
+      }
+      // texte général ---------
       .text-presentation {
-        padding: 1rem;
-        font-size: 1.2vmax;
+        font-size: 1.8rem;
+        span {
+          font-size: 1.4rem;
+        }
       }
     }
-
-    &-card-block {
-
-
-      p {
-        font-size: 1.2vmax;
-
-      }
-    }
-    
   }
-
 
   // ********************* PAGE SERVICES ************************
 

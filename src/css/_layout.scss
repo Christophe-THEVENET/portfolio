@@ -87,7 +87,7 @@ body {
 .filter-about {
   width: 100%;
   height: 100%;
- /*  background-color: rgb(20, 22, 31);
+  /*  background-color: rgb(20, 22, 31);
   opacity: 0.95; */
   color: $secondary;
   font-family: $titleFamily;
@@ -141,8 +141,6 @@ body {
       background-color: $flashy;
     }
 
-   
-
     // block contenu - - - - - - - - -
     &__block {
       width: 100%;
@@ -153,73 +151,48 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
+      color: $text;
 
       .about-card {
-        width: 100%;
+      /*   width: 100%;
         margin: 0.3rem 0.3rem 0 0.3rem;
         border-radius: 5px;
         padding: 0.5rem 0.5rem 0 0.5rem;
-        color: $text;
+        color: $text; */
 
         &-block {
-          padding: 0.1rem;
+         /*  padding: 0.1rem; */
         }
       }
 
       &__presentation {
         overflow: scroll;
-       margin-bottom: 0;
-       padding-bottom: 0;
-
+      /*   margin-bottom: 0;
+        padding-bottom: 0; */
 
         .title-formation {
           font-family: $titleFamily;
           color: $flashy;
           font-size: 2vmax;
           margin: 0.8rem 0;
-
-
-
-
-
         }
-
-        /*  flex: 1; */
-        /* background-color: rgba(238, 92, 104, 0.13); */
       }
-
-
-
-
-
 
       .text-presentation {
         font-size: 2vmax;
       }
-      
-      
-      
+
       span {
         color: $flashy;
         font-size: 1.5vmax;
         font-style: italic;
       }
-    
-
-
-
-
-
-
-
-
 
       &__competences {
         overflow: scroll;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        
 
         .title_competences {
           font-family: $titleFamily;
@@ -235,7 +208,6 @@ body {
           padding: 0;
           margin: 0.2rem 0;
 
-
           .title-icon-flex {
             width: 100%;
             display: flex;
@@ -243,29 +215,21 @@ body {
             align-items: center;
           }
 
-
           h3 {
             color: $green;
             font-weight: bold;
             font-size: 2vmax;
-
           }
 
-       
           .about__icon {
-
             display: flex;
             justify-content: flex-end;
+
             svg {
               width: 2.2rem;
               padding: 0.3rem;
             }
           }
-
-          p {
-
-          }
-
         }
       }
     }
@@ -278,7 +242,7 @@ body {
   height: 100%;
   /* background-color: #37afd4e1;
   opacity: 0.9; */
- /*  background-color: rgb(7, 10, 19);
+  /*  background-color: rgb(7, 10, 19);
   opacity: 0.9; */
   color: $secondary;
   font-family: $titleFamily;
@@ -377,7 +341,7 @@ body {
   height: 100%;
   /* background-color: #37afd4e1;
   opacity: 0.9; */
- /*  background-color: rgb(7, 10, 19);
+  /*  background-color: rgb(7, 10, 19);
   opacity: 0.9; */
   color: $secondary;
   font-family: $titleFamily;
@@ -548,7 +512,7 @@ body {
         margin: 1rem;
         border-radius: 5px;
         padding: 1rem;
-        background-color:#14191fa6;
+        background-color: #14191fa6;
         color: $text;
 
         h3 {
