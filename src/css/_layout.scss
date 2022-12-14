@@ -239,7 +239,7 @@ body {
           .title-icon-flex {
             width: 100%;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
           }
 
@@ -248,12 +248,11 @@ body {
             color: $green;
             font-weight: bold;
             font-size: 2vmax;
-            flex: 3;
+
           }
 
        
           .about__icon {
-            flex: 1;
 
             display: flex;
             justify-content: flex-end;
