@@ -19,7 +19,7 @@ li a:hover:after {
   background: #444;
 }
 
- // icon scroll -----------------------
+// icon scroll -----------------------
 @media screen and (min-width: 940px) {
   .scroll-icon {
     position: absolute;
@@ -78,17 +78,32 @@ li a:hover:after {
     opacity: 0;
     display: block;
   }
-
-
-
-
-
-
 }
 
 // ************************ PAGE ACCEUIL **************************
 
-
 // ************************ PAGE A PROPOS **************************
 
+.reveal-left {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.reveal-left.not-visible {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+
+.reveal-right {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.reveal-right.not-visible {
+  transform: translateX(50px);
+  opacity: 0;
+}
 

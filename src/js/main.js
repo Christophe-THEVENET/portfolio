@@ -31,3 +31,41 @@ setTimeout(() => {
 
 
 
+// on instancie un observeur (pour check ds le viewport)
+const observer = new IntersectionObserver(
+  (entries) => {
+    for (const entry of entries) {
+      // si visible  ds le viewport
+      if (entry.isIntersecting) {
+        entry.target.classList.remove('not-visible');
+       
+      } else {
+        entry.target.classList.add('not-visible');
+      }
+    }
+  },
+  {
+    threshold: [0.5], 
+    // déclenche qd l'élément est visible a 50% ds le viewport
+  }
+);
+
+// on liste les éléments que l'on souhaite observer
+let itemsLeft = document.querySelectorAll('.reveal-left');
+
+itemsLeft.forEach((itemLeft) => {
+  itemLeft.classList.add('not-visible');
+
+  // observe ls éléments qd ils sont dans le viewport
+  observer.observe(itemLeft);
+});
+
+let itemsRight = document.querySelectorAll('.reveal-right');
+
+itemsRight.forEach((itemRight) => {
+  itemRight.classList.add('not-visible');
+
+  // observe ls éléments qd ils sont dans le viewport
+  observer.observe(itemRight);
+});
+
