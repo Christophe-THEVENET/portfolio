@@ -87,11 +87,13 @@ body {
 .filter-about {
   width: 100%;
   height: 100%;
-  /*  background-color: rgb(20, 22, 31);
-  opacity: 0.95; */
   color: $secondary;
   font-family: $titleFamily;
   font-size: 4rem;
+  background-image: url('../img/background_blur.jpg');
+  background-position: center;
+  background-size: cover;
+  scroll-snap-align: center;
 }
 
 // section about -----------------------------------
@@ -100,12 +102,9 @@ body {
   margin: 0.5rem;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
   max-width: 1400px;
-  display: flex;
-  flex-direction: column;
-  padding: 10rem 0.5rem 0.5rem 0.5rem;
+  margin-top: 6rem;
+
   h2 {
     font-family: $titleFamily;
     font-size: 3.5vmax;
@@ -114,10 +113,8 @@ body {
 
   // block titre - - - - - - - - -
   &__title {
-    margin-top: -1rem;
     display: flex;
     align-items: flex-start;
-    width: 97%;
 
     &__border-right {
       flex: 1;
@@ -131,8 +128,6 @@ body {
   // block contenu - - - - - - - - -
   &__content {
     display: flex;
-    width: 100%;
-    height: 100%;
 
     &__border-left {
       margin-left: 0.1rem;
@@ -143,43 +138,27 @@ body {
 
     // block contenu - - - - - - - - -
     &__block {
-      width: 100%;
-      height: 100%;
-      padding: 0rem 0.5rem;
+      padding: 0.5rem;
       font-family: $texteRegular;
       text-align: justify;
       display: flex;
       flex-direction: column;
-      align-items: center;
       color: $text;
-
-      .about-card {
-      /*   width: 100%;
-        margin: 0.3rem 0.3rem 0 0.3rem;
-        border-radius: 5px;
-        padding: 0.5rem 0.5rem 0 0.5rem;
-        color: $text; */
-
-        &-block {
-         /*  padding: 0.1rem; */
-        }
-      }
-
+      // bloc gauche ------------------------------------
       &__presentation {
         overflow: scroll;
-      /*   margin-bottom: 0;
-        padding-bottom: 0; */
 
         .title-formation {
           font-family: $titleFamily;
-          color: $flashy;
-          font-size: 2vmax;
-          margin: 0.8rem 0;
+          color: $green;
+          font-size: 2.2vmax;
+          margin: 1rem 0;
+
         }
       }
 
       .text-presentation {
-        font-size: 2vmax;
+        font-size: 2.1vmax;
       }
 
       span {
@@ -188,6 +167,7 @@ body {
         font-style: italic;
       }
 
+      // bloc droit --------------------------------------
       &__competences {
         overflow: scroll;
         display: flex;
@@ -196,39 +176,42 @@ body {
 
         .title_competences {
           font-family: $titleFamily;
-          color: $flashy;
-          font-size: 2vmax;
-          margin: 0rem 0 0.3rem 0;
+          color: $green;
+          font-size: 2.2vmax;
+          margin: 1rem 0;
         }
 
+        // compétences title + text + logo ----------
         .about-card-block {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-          padding: 0;
           margin: 0.2rem 0;
 
-          .title-icon-flex {
-            width: 100%;
+          .text-icon-flex {
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            p {
+              padding-right: 2rem;
+            }
           }
 
           h3 {
-            color: $green;
-            font-weight: bold;
-            font-size: 2vmax;
+            color: $flashy;
+            font-family: $titleFamily;
+            letter-spacing: 1px;
+            font-size: 1.8vmax;
           }
+         p{
+          flex: 7;
+         }
 
           .about__icon {
-            display: flex;
-            justify-content: flex-end;
-
-            svg {
-              width: 2.2rem;
-              padding: 0.3rem;
-            }
+          display: none;
+          flex: 1;
+          
           }
         }
       }

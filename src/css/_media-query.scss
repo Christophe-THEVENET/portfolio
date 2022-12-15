@@ -45,28 +45,26 @@
   // ********************* PAGE A PROPOS ************************
 
   .about {
-    margin: 1rem;
-
     &__title {
-      margin-top: 1rem;
     }
 
     &__content__block {
       margin: 1rem;
 
       .title-formation {
-        margin: 1rem 0;
+        margin: 2rem 0;
       }
 
       .title_competences {
-        margin: 0.5rem 0;
+        margin: 2rem 0;
       }
 
-      .about-card-block {
-        margin: 0.5rem 0;
+      // bloc droit --------------------------------------
+      &__competences {
+        .about-card-block {
+          margin: 0.5rem 0;
 
-        .title-icon-flex svg {
-          width: 2.5rem;
+       
         }
       }
     }
@@ -117,8 +115,6 @@
   // ********************* PAGE A PROPOS ************************
 
   .about {
-    padding: 14rem 2rem 2rem 2rem;
-
     &__title {
       width: 80%;
     }
@@ -147,7 +143,6 @@
           .title-formation {
             font-size: 1.5vmax;
             color: $green;
-
           }
         }
 
@@ -166,15 +161,30 @@
             margin: 0.5rem 0;
 
             h3 {
-              font-size: 2.2rem;
-              color: $flashy;
+              font-size: 1.9rem;
             }
-
-            p {
-            }
-
-            .about__icon svg {
-              width: 3.2rem;
+            .about__icon {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-end;
+  
+              .icon-block {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+              }
+  
+              svg {
+                width: 3rem;
+                height: 3rem;
+                margin: 0.2rem;
+              }
+              // logo figma veux pas se mettre comme les autres
+              .figma {
+                padding: 0.55rem;
+              }
             }
           }
         }
@@ -240,7 +250,7 @@
 //
 // ======================== MEDIA QUERY > ORIENTATION PAYSAGE ========================
 
-@media (orientation: landscape) {
+@media (orientation: landscape ) {
   .filter-home {
     .content-home {
       margin-top: 110vh;
@@ -259,4 +269,14 @@
       justify-content: space-around;
     }
   }
+
+
+
+
+
+
+
+
+
+
 }
