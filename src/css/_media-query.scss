@@ -49,22 +49,18 @@
     }
 
     &__content__block {
-      margin: 1rem;
+      .apropos-ordi {
+      }
 
       .title-formation {
-        margin: 2rem 0;
       }
 
       .title_competences {
-        margin: 2rem 0;
       }
 
       // bloc droit --------------------------------------
       &__competences {
         .about-card-block {
-          margin: 0.5rem 0;
-
-       
         }
       }
     }
@@ -76,7 +72,7 @@
 //
 // ======================= MEDIA QUERY > 940PX (PC) ===========================
 
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 960px) {
   // ************** HEADER ******************
 
   // affiche la nav
@@ -115,6 +111,7 @@
   // ********************* PAGE A PROPOS ************************
 
   .about {
+    padding: 0;
     &__title {
       width: 80%;
     }
@@ -128,57 +125,76 @@
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        margin-top: 5rem;
+        margin-top: 1rem;
 
         // bloc gauche ------------------------------------
         &__presentation {
           flex: 1;
-          padding: 4rem;
+          padding: 1rem;
 
           .apropos-ordi {
-            margin-top: -4rem;
-            margin-bottom: 4rem;
+            font-size: $fontSizeText;
           }
 
           .title-formation {
-            font-size: 1.5vmax;
+            font-size: 2vmax;
             color: $green;
+            margin: 1rem 0;
+          }
+
+          .text-presentation {
+            font-size: $fontSizeText;
+            span {
+              font-size: 1.4rem;
+            }
           }
         }
 
         // bloc droit --------------------------------------
         &__competences {
           flex: 2;
-          padding: 4rem;
+          padding: 1rem;
 
           .title_competences {
-            font-size: 1.5vmax;
+            margin-top: 0;
+            font-size: 2vmax;
             color: $green;
           }
 
           // compétences title + text + logo ----------
           .about-card-block {
-            margin: 0.5rem 0;
+            font-size: $fontSizeText;
+            margin: 0.8rem 0;
 
             h3 {
-              font-size: 1.9rem;
+              font-size: 1.6rem;
+              margin-bottom: -0.3rem;
             }
+
+            p {
+              font-size: $fontSizeText;
+            }
+
+            .text-icon-flex {
+              height: 80%;
+            }
+
             .about__icon {
               display: flex;
               flex-direction: row;
               align-items: center;
               justify-content: flex-end;
-  
+
               .icon-block {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
               }
-  
+
               svg {
-                width: 3rem;
-                height: 3rem;
+                width: 2.5rem;
+                height: 2.5rem;
                 margin: 0.2rem;
               }
               // logo figma veux pas se mettre comme les autres
@@ -187,13 +203,6 @@
               }
             }
           }
-        }
-      }
-      // texte général ---------
-      .text-presentation {
-        font-size: 1.8rem;
-        span {
-          font-size: 1.4rem;
         }
       }
     }
@@ -244,13 +253,118 @@
     }
   }
 }
+//
+//
+//
+// ======================= MEDIA QUERY > 120PX ( GRAND ECRAN ===========================
+@media screen and (min-width: 1200px) {
+  .about {
+    padding: 0;
+
+    &__content {
+      &__block {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0;
+
+        // bloc gauche ------------------------------------
+        &__presentation {
+          flex: 1;
+          padding: 6rem;
+          padding-left: 10rem;
+
+          .apropos-ordi {
+            font-size: $fontSizeText;
+          }
+
+          .title-formation {
+            font-size: 1.5vmax;
+            color: $green;
+            margin: 2rem 0 1.3rem;
+          }
+
+          
+          .item-formation {
+            margin-bottom: 0.6rem;
+            font-size: $fontSizeText;
+            span {
+              font-size: 1.1rem;
+            }
+          }
+        }
+
+        // bloc droit --------------------------------------
+        &__competences {
+          flex: 2;
+          padding: 6rem;
+
+          .title_competences {
+            margin-top: 0;
+            font-size: 1.5vmax;
+            color: $green;
+          }
+
+          // compétences title + text + logo ----------
+          .about-card-block {
+            font-size: $fontSizeText;
+            margin: 1rem 0;
+
+            h3 {
+              font-size: 1.6rem;
+              margin-bottom: -0.3rem;
+            }
+
+            p {
+              font-size: $fontSizeText;
+            }
+
+            .text-icon-flex {
+              height: 80%;
+            }
+
+            .about__icon {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-end;
+
+              .icon-block {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+              }
+
+              svg {
+                width: 2.5rem;
+                height: 2.5rem;
+                margin: 0.2rem;
+                transition: 0.5s ease-in-out;
+
+                &:hover {
+                  transform: scale(2);
+                  transition: 0.2s ;
+                }
+              }
+              // logo figma veux pas se mettre comme les autres
+              .figma {
+                padding: 0.55rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 //
 //
 //
 // ======================== MEDIA QUERY > ORIENTATION PAYSAGE ========================
 
-@media (orientation: landscape ) {
+@media (orientation: landscape) {
   .filter-home {
     .content-home {
       margin-top: 110vh;
@@ -269,14 +383,4 @@
       justify-content: space-around;
     }
   }
-
-
-
-
-
-
-
-
-
-
 }
