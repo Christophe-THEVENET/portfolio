@@ -46,8 +46,6 @@
 
   .about {
     margin-left: 1rem;
-    &__title {
-    }
 
     &__content__block {
       .apropos-ordi {
@@ -68,6 +66,10 @@
       &__competences {
         .about-card-block {
         padding: 0.5rem;
+
+        p {
+          text-align: left;
+        }
 
         }
       }
@@ -358,23 +360,38 @@
 //
 // ======================== MEDIA QUERY > ORIENTATION PAYSAGE ========================
 
-@media (orientation: landscape) {
-  .filter-home {
-    .content-home {
-      margin-top: 110vh;
-      margin-left: -2vw;
-      padding: 5rem;
-      .text-btn-block {
-        width: 100%;
-        max-width: 60rem;
-      }
-    }
-  }
+@media (orientation: landscape) and (max-height:420px) {
 
-  .menu-modal {
-    ul {
-      flex-direction: row;
-      justify-content: space-around;
-    }
-  }
+
+
+  
+.container .slide-home .page .content-home {
+  padding-top: 8rem;
+  } 
+
+ 
+.container .slide-about .page .about {
+
+
+.title-formation {
+  display: none;
+}
+
+.item-formation {
+  display: none;
+}
+
+.title_competences {
+  margin: 0;
+}
+
+
+
+
+
+
+} 
+
+
+
 }

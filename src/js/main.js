@@ -29,3 +29,5 @@ setTimeout(() => {
   textUseScroll.style.opacity = 1;
 }, 7000);
 
+
+
