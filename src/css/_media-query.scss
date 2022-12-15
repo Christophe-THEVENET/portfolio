@@ -3,6 +3,381 @@
 // ================= MEDIA QUERY > 740PX (TABLETTE) =========================
 @media screen and (min-width: 768px) {
   // ************** HEADER ******************
+
+  .header {
+    margin: 2rem auto;
+  }
+
+  .header__logo {
+    margin-left: 4rem;
+  }
+
+  // affiche la nav
+  .header__nav {
+    &__btn {
+      display: none;
+    }
+
+    .menu {
+      display: flex;
+    }
+  }
+
+  // ********** MODALE MENU HAMBURGER**********
+  .menu-modal {
+    display: none;
+  }
+
+  // ********************* PAGE ACCEUIL ************************
+
+  .filter-home {
+    .content-home {
+      margin-top: 100vh;
+      margin-left: -5vw;
+      padding: 5rem;
+
+      .text-btn-block {
+        width: 80%;
+      }
+    }
+  }
+
+  // ********************* PAGE A PROPOS ************************
+
+  .about {
+    margin-left: 1rem;
+
+    &__content__block {
+      .apropos-ordi {
+        padding: 0.5rem;
+      }
+
+      .title-formation {
+        padding: 0.5rem;
+      }
+
+      .title_competences {
+        padding: 0.5rem;
+      }
+
+      // bloc droit --------------------------------------
+      &__competences {
+        .about-card-block {
+          padding: 0.5rem;
+
+          p {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+//
+//
+//
+// ======================= MEDIA QUERY > 940PX (PC) ===========================
+
+@media screen and (min-width: 960px) {
+  // ************** HEADER ******************
+
+  // affiche la nav
+  .header__nav {
+    &__btn {
+      display: none;
+    }
+
+    .menu {
+      display: flex;
+    }
+  }
+
+  // ********** MODALE MENU HAMBURGER**********
+  .menu-modal {
+    display: none;
+  }
+
+  // ********************* PAGE ACCEUIL ************************
+  .filter-home {
+    .content-home {
+      margin-top: 100vh;
+      margin-left: -10vw;
+      padding: 5rem;
+
+      h3 {
+        font-size: 2vmax;
+      }
+
+      .text-btn-block {
+        width: 35vw;
+      }
+    }
+  }
+
+  // ********************* PAGE A PROPOS ************************
+
+  .about {
+    padding: 0;
+    &__title {
+      width: 80%;
+    }
+
+    &__title__border-right {
+      margin-top: 1.5%;
+    }
+
+    &__content {
+      &__block {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 1rem;
+
+        // bloc gauche ------------------------------------
+        &__presentation {
+          flex: 1;
+          padding: 1rem;
+
+          .apropos-ordi {
+            font-size: $fontSizeText;
+          }
+
+          .title-formation {
+            font-size: 2vmax;
+            color: $green;
+            margin: 1rem 0;
+          }
+
+          .text-presentation {
+            font-size: $fontSizeText;
+            span {
+              font-size: 0.8rem;
+            }
+          }
+        }
+
+        // bloc droit --------------------------------------
+        &__competences {
+          flex: 2;
+          padding: 1rem;
+
+          .title_competences {
+            margin-top: 0;
+            font-size: 2vmax;
+            color: $green;
+          }
+
+          // compétences title + text + logo ----------
+          .about-card-block {
+            font-size: $fontSizeText;
+            margin: 0.8rem 0;
+
+            h3 {
+              font-size: 1.6rem;
+              margin-bottom: -0.3rem;
+            }
+
+            p {
+              font-size: $fontSizeText;
+            }
+
+            .text-icon-flex {
+              height: 80%;
+            }
+
+            .about__icon {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-end;
+
+              .icon-block {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+              }
+
+              svg {
+                width: 2.5rem;
+                height: 2.5rem;
+                margin: 0.2rem;
+                transition: 0.1s;
+                filter: grayscale(0.6);
+
+                &:hover {
+                  transform: scale(2);
+                  filter: grayscale(0);
+                  z-index: 100;
+
+                  transition: 0.1s;
+                }
+              }
+              // logo figma veux pas se mettre comme les autres
+              .figma {
+                padding: 0.55rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // ********************* PAGE SERVICES ************************
+
+  .services {
+    padding: 14rem 4rem 4rem 8rem;
+
+    &__content__block {
+      flex-direction: row;
+      padding: 8rem;
+
+      .container {
+        margin: 2rem;
+      }
+    }
+  }
+
+  // ********************* PAGE REALISATIONS ************************
+
+  .project {
+    padding: 14rem 4rem 4rem 8rem;
+
+    &__content__block {
+      flex-direction: row;
+      padding: 8rem;
+
+      .container {
+        margin: 2rem;
+      }
+    }
+  }
+
+  // ********************* PAGE CONTACT ************************
+
+  .contact {
+    padding: 14rem 4rem 4rem 8rem;
+
+    &__content__block {
+      flex-direction: row;
+      padding: 8rem;
+
+      .container {
+        margin: 2rem;
+      }
+    }
+  }
+}
+//
+//
+//
+// ======================= MEDIA QUERY > 120PX ( GRAND ECRAN ===========================
+@media screen and (min-width: 1200px) {
+  
+  .about {
+    &__content {
+      &__block {
+        padding: 0;
+
+        // bloc gauche ------------------------------------
+        &__presentation {
+          padding: 6rem;
+          padding-left: 10rem;
+
+          .title-formation {
+            font-size: 1.5vmax;
+            margin: 4rem 0 1.3rem;
+          }
+
+          .item-formation {
+            margin-bottom: 0.6rem;
+            font-size: $fontSizeText;
+            span {
+              font-size: 1.1rem;
+            }
+          }
+        }
+
+        // bloc droit --------------------------------------
+        &__competences {
+          flex: 2;
+          padding: 6rem;
+
+          .title_competences {
+            margin-top: 0;
+            font-size: 1.5vmax;
+            color: $green;
+          }
+
+          // compétences title + text + logo ----------
+          .about-card-block {
+            font-size: $fontSizeText;
+            margin: 1rem 0;
+
+            h3 {
+              font-size: 1.6rem;
+              margin-bottom: -0.3rem;
+            }
+
+            p {
+              font-size: $fontSizeText;
+            }
+
+            .text-icon-flex {
+              height: 80%;
+            }
+
+            .about__icon {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-end;
+
+              .icon-block {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//
+//
+//
+// ======================== MEDIA QUERY > ORIENTATION PAYSAGE ========================
+
+@media (orientation: landscape) and (max-height: 420px) {
+  .container .slide-home .page .content-home {
+    padding-top: 8rem;
+  }
+
+  .container .slide-about .page .about {
+    .title-formation {
+      display: none;
+    }
+
+    .item-formation {
+      display: none;
+    }
+
+    .title_competences {
+      margin: 0;
+    }
+  }
+}
+//
+//
+// ================= MEDIA QUERY > 740PX (TABLETTE) =========================
+@media screen and (min-width: 768px) {
+  // ************** HEADER ******************
   .header {
     margin: 2rem auto;
   }
@@ -61,12 +436,7 @@
       &__competences {
         .about-card-block {
           padding: 0.5rem;
-        }      }
-
-        p {
-          text-align: left;
         }
-
       }
     }
   }
@@ -74,8 +444,6 @@
   // ********************* PAGE PRESTATIONS ************************
   .services {
     margin-left: 1rem;
-    &__title {
-    }
 
     &__content__block {
       .apropos-ordi {
@@ -102,8 +470,6 @@
   // ********************* PAGE REALISATIONS ************************
   .project {
     margin-left: 1rem;
-    &__title {
-    }
 
     &__content__block {
       .apropos-ordi {
@@ -130,8 +496,6 @@
   // ********************* PAGE CONTACT ************************
   .contact {
     margin-left: 1rem;
-    &__title {
-    }
 
     &__content__block {
       .apropos-ordi {
@@ -146,7 +510,6 @@
         padding: 0.5rem;
       }
 
-
       // bloc droit --------------------------------------
       &__competences {
         .contact-card-block {
@@ -156,7 +519,6 @@
     }
   }
 }
-  }
 
 //
 //
@@ -944,22 +1306,23 @@
 //
 // ======================== MEDIA QUERY > ORIENTATION PAYSAGE ========================
 
-@media (orientation: landscape) and (max-height: 420px) {
-  .container .slide-home .page .content-home {
-    padding-top: 8rem;
+@media (orientation: landscape) {
+  .filter-home {
+    .content-home {
+      margin-top: 110vh;
+      margin-left: -2vw;
+      padding: 5rem;
+      .text-btn-block {
+        width: 100%;
+        max-width: 60rem;
+      }
+    }
   }
 
-  .container .slide-about .page .about {
-    .title-formation {
-      display: none;
-    }
-
-    .item-formation {
-      display: none;
-    }
-
-    .title_competences {
-      margin: 0;
+  .menu-modal {
+    ul {
+      flex-direction: row;
+      justify-content: space-around;
     }
   }
 }
