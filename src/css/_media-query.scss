@@ -37,15 +37,12 @@
       margin-left: -5vw;
       padding: 5rem;
 
-       
-        h3,
-        h2,
-        h1, div {
-          margin-left: 2rem;
-       
-        }
-
-
+      h3,
+      h2,
+      h1,
+      div {
+        margin-left: 2rem;
+      }
 
       .text-btn-block {
         width: 80%;
@@ -84,22 +81,14 @@
     margin-left: 1rem;
 
     &__content__block {
-      .apropos-ordi {
-        padding: 0.5rem;
-      }
+      flex-wrap: wrap;
+      .services__wrapper {
+        p {
+          font-size: 2.2rem;
+        }
 
-      .title-formation {
-        padding: 0.5rem;
-      }
-
-      .title_competences {
-        padding: 0.5rem;
-      }
-
-      // bloc droit --------------------------------------
-      &__competences {
-        .services-card-block {
-          padding: 0.5rem;
+        ul li {
+          font-size: 1.6rem;
         }
       }
     }
@@ -211,7 +200,6 @@
 
     &__content {
       &__block {
-        display: flex;
         flex-direction: row;
         align-items: flex-start;
         margin-top: 1rem;
@@ -227,7 +215,6 @@
 
           .title-formation {
             font-size: 2vmax;
-            color: $green;
             margin: 1rem 0;
           }
 
@@ -247,7 +234,6 @@
           .title_competences {
             margin-top: 0;
             font-size: 2vmax;
-            color: $green;
           }
 
           // compétences title + text + logo ----------
@@ -321,97 +307,26 @@
 
     &__content {
       &__block {
-        display: flex;
         flex-direction: row;
         align-items: flex-start;
         margin-top: 1rem;
 
-        // bloc gauche ------------------------------------
-        &__presentation {
-          flex: 1;
-          padding: 1rem;
-
-          .apropos-ordi {
-            font-size: $fontSizeText;
+        // boites prestation ---------------------
+        .services__wrapper {
+          margin: 0.5rem;
+          &__title {
+            font-size: 1.9rem;
           }
 
-          .title-formation {
-            font-size: 2vmax;
-            color: $green;
-            margin: 1rem 0;
+          p {
+            font-size: 1.7rem;
           }
 
-          .text-presentation {
-            font-size: $fontSizeText;
-            span {
-              font-size: 0.8rem;
-            }
-          }
-        }
-
-        // bloc droit --------------------------------------
-        &__competences {
-          flex: 2;
-          padding: 1rem;
-
-          .title_competences {
-            margin-top: 0;
-            font-size: 2vmax;
-            color: $green;
+          .price {
+            font-size: 1.2rem;
+            margin-right: 6rem;
           }
 
-          // compétences title + text + logo ----------
-          .services-card-block {
-            font-size: $fontSizeText;
-            margin: 0.8rem 0;
-
-            h3 {
-              font-size: 1.6rem;
-              margin-bottom: -0.3rem;
-            }
-
-            p {
-              font-size: $fontSizeText;
-            }
-
-            .text-icon-flex {
-              height: 80%;
-            }
-
-            .services__icon {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              justify-content: flex-end;
-
-              .icon-block {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-              }
-
-              svg {
-                width: 2.5rem;
-                height: 2.5rem;
-                margin: 0.2rem;
-                transition: 0.1s;
-                filter: grayscale(0.6);
-
-                &:hover {
-                  transform: scale(2);
-                  filter: grayscale(0);
-                  z-index: 100;
-
-                  transition: 0.1s;
-                }
-              }
-              // logo figma veux pas se mettre comme les autres
-              .figma {
-                padding: 0.55rem;
-              }
-            }
-          }
         }
       }
     }
@@ -676,7 +591,6 @@
           .title_competences {
             margin-top: 0;
             font-size: 1.5vmax;
-            color: $green;
           }
 
           // compétences title + text + logo ----------
@@ -719,72 +633,11 @@
   // ********************* PAGE PRESTATIONS ************************
   .services {
     &__content {
+      height: auto;
       &__block {
-        padding: 0;
-
-        // bloc gauche ------------------------------------
-        &__presentation {
-          padding: 6rem;
-          padding-left: 10rem;
-
-          .title-formation {
-            font-size: 1.5vmax;
-            margin: 4rem 0 1.3rem;
-          }
-
-          .item-formation {
-            margin-bottom: 0.6rem;
-            font-size: $fontSizeText;
-            span {
-              font-size: 1.1rem;
-            }
-          }
-        }
-
-        // bloc droit --------------------------------------
-        &__competences {
-          flex: 2;
-          padding: 6rem;
-
-          .title_competences {
-            margin-top: 0;
-            font-size: 1.5vmax;
-            color: $green;
-          }
-
-          // compétences title + text + logo ----------
-          .services-card-block {
-            font-size: $fontSizeText;
-            margin: 1rem 0;
-
-            h3 {
-              font-size: 1.6rem;
-              margin-bottom: -0.3rem;
-            }
-
-            p {
-              font-size: $fontSizeText;
-            }
-
-            .text-icon-flex {
-              height: 80%;
-            }
-
-            .services__icon {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              justify-content: flex-end;
-
-              .icon-block {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-              }
-            }
-          }
-        }
+        height: auto;
+        padding: 4rem;
+        // bloc prestations------------------------------------
       }
     }
   }

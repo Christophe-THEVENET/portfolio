@@ -105,7 +105,6 @@ body {
   flex-direction: column;
   max-width: 1400px;
   margin-top: 6rem;
-  
 
   h2 {
     font-family: $titleFamily;
@@ -146,6 +145,7 @@ body {
       display: flex;
       flex-direction: column;
       color: $text;
+
       // bloc gauche ------------------------------------
       &__presentation {
         overflow: scroll;
@@ -153,9 +153,8 @@ body {
         .title-formation {
           font-family: $titleFamily;
           color: $green;
-          font-size: 2.2vmax;
+          font-size:$titleGreenMobile;
           margin: 1rem 0;
-
         }
       }
 
@@ -179,7 +178,7 @@ body {
         .title_competences {
           font-family: $titleFamily;
           color: $green;
-          font-size: 2.2vmax;
+          font-size: $titleGreenMobile;
           margin: 1rem 0;
         }
 
@@ -206,15 +205,15 @@ body {
             font-family: $titleFamily;
             letter-spacing: 1px;
             font-size: 1.8vmax;
+            text-transform: uppercase;
           }
-         p{
-          flex: 7;
-         }
+          p {
+            flex: 7;
+          }
 
           .about__icon {
-          display: none;
-          flex: 1;
-          
+            display: none;
+            flex: 1;
           }
         }
       }
@@ -242,8 +241,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 1400px;
-  margin-top: 6rem;
-  
+  padding-top: 14rem;
 
   h2 {
     font-family: $titleFamily;
@@ -265,9 +263,9 @@ body {
     }
   }
 
-  // block contenu - - - - - - - - -
   &__content {
     display: flex;
+    height: 100%;
 
     &__border-left {
       margin-left: 0.1rem;
@@ -276,84 +274,103 @@ body {
       background-color: $flashy;
     }
 
-    // block contenu - - - - - - - - -
+    // block contenu prestation -------------------
     &__block {
       padding: 0.5rem;
-      font-family: $texteRegular;
-      text-align: justify;
       display: flex;
       flex-direction: column;
-      color: $text;
-      // bloc gauche ------------------------------------
-      &__presentation {
-        overflow: scroll;
-
-        .title-formation {
-          font-family: $titleFamily;
-          color: $green;
-          font-size: 2.2vmax;
-          margin: 1rem 0;
-
-        }
-      }
-
-      .text-presentation {
-        font-size: 2.1vmax;
-      }
-
-      span {
-        color: $flashy;
-        font-size: 1.5vmax;
-        font-style: italic;
-      }
-
-      // bloc droit --------------------------------------
-      &__competences {
-        overflow: scroll;
+      height: 80vh;
+      width: 100%;
+      overflow: scroll;
+      // boite prestation ----------------------------------
+      .services__wrapper {
+        padding: 0;
+        flex: 1;
+        height: 100%;
+        margin: 3rem 0 0 0;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        align-items: center;
 
-        .title_competences {
+        &__title {
           font-family: $titleFamily;
           color: $green;
-          font-size: 2.2vmax;
-          margin: 1rem 0;
+          font-size: $titleGreenMobile;
+          margin: 2rem 0;
+          width: 100%;
+          text-align: center;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+        .trait {
+          width: 50%;
+          height: 2px;
+          background-color: $secondary;
+          margin: 0.7rem;
+
+          &-bas {
+            margin-bottom: 2rem;
+          }
         }
 
-        // compétences title + text + logo ----------
-        .services-card-block {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: flex-start;
-          margin: 0.2rem 0;
 
-          .text-icon-flex {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
 
-            p {
-              padding-right: 2rem;
-            }
-          }
+        p {
+          color: $flashy;
+          font-family: $texteRegular;
+          font-size: $fontSizeText;
+        }
 
-          h3 {
-            color: $flashy;
-            font-family: $titleFamily;
-            letter-spacing: 1px;
-            font-size: 1.8vmax;
-          }
-         p{
-          flex: 7;
-         }
+        ul {
+          margin-bottom: 1rem;
+        }
 
-          .services__icon {
-          display: none;
-          flex: 1;
-          
-          }
+        ul li {
+          color: $text;
+          font-family: $texteRegular;
+          font-size: $fontSizeText;
+          margin: 0.5rem 0;
+
+        }
+
+        .price {
+          font-family: $texteRegular;
+          font-size: 1.6vmax;
+          text-transform: uppercase;
+          color: $flashy;
+          align-self: end;
+          margin-right: 3rem;
+          margin-top: 1rem;
+        }
+      }
+      // site vitrine -----------------------------
+      .presta1 {
+        h4 {
+        }
+        p {
+        }
+      }
+      // site e-commerce --------------------------
+
+      .presta2 {
+        h4 {
+        }
+        p {
+        }
+      }
+      // application web --------------------------
+      .presta3 {
+        h4 {
+        }
+        p {
+        }
+      }
+      // autres prestations ------------------------
+
+      .presta4 {
+        h4 {
+        }
+        p {
         }
       }
     }
@@ -381,7 +398,6 @@ body {
   flex-direction: column;
   max-width: 1400px;
   margin-top: 6rem;
-  
 
   h2 {
     font-family: $titleFamily;
@@ -431,7 +447,6 @@ body {
           color: $green;
           font-size: 2.2vmax;
           margin: 1rem 0;
-
         }
       }
 
@@ -483,21 +498,19 @@ body {
             letter-spacing: 1px;
             font-size: 1.8vmax;
           }
-         p{
-          flex: 7;
-         }
+          p {
+            flex: 7;
+          }
 
           .project__icon {
-          display: none;
-          flex: 1;
-          
+            display: none;
+            flex: 1;
           }
         }
       }
     }
   }
 }
-
 
 // ************************* PAGE CONTACT MOBILE **********************
 .filter-contact {
@@ -520,7 +533,6 @@ body {
   flex-direction: column;
   max-width: 1400px;
   margin-top: 6rem;
-  
 
   h2 {
     font-family: $titleFamily;
@@ -570,7 +582,6 @@ body {
           color: $green;
           font-size: 2.2vmax;
           margin: 1rem 0;
-
         }
       }
 
@@ -622,14 +633,13 @@ body {
             letter-spacing: 1px;
             font-size: 1.8vmax;
           }
-         p{
-          flex: 7;
-         }
+          p {
+            flex: 7;
+          }
 
           .contact__icon {
-          display: none;
-          flex: 1;
-          
+            display: none;
+            flex: 1;
           }
         }
       }
