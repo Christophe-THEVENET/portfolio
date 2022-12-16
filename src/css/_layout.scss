@@ -153,7 +153,7 @@ body {
         .title-formation {
           font-family: $titleFamily;
           color: $green;
-          font-size:$titleGreenMobile;
+          font-size: $titleGreenMobile;
           margin: 1rem 0;
         }
       }
@@ -291,16 +291,21 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        transition: 0.4s;
+
+        &:hover {
+          background-color: #3a455536;
+          transition: 0.4s;
+        }
 
         &__title {
           font-family: $titleFamily;
           color: $green;
           font-size: $titleGreenMobile;
-          margin: 2rem 0;
+          margin: 2rem 0 1rem 0;
           width: 100%;
           text-align: center;
           letter-spacing: 1px;
-          text-transform: uppercase;
         }
         .trait {
           width: 50%;
@@ -313,12 +318,13 @@ body {
           }
         }
 
-
-
-        p {
+        .sentence {
           color: $flashy;
-          font-family: $texteRegular;
+          font-family: $titleFamily;
           font-size: $fontSizeText;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 1rem;
         }
 
         ul {
@@ -330,7 +336,6 @@ body {
           font-family: $texteRegular;
           font-size: $fontSizeText;
           margin: 0.5rem 0;
-
         }
 
         .price {
@@ -339,40 +344,9 @@ body {
           text-transform: uppercase;
           color: $flashy;
           align-self: end;
-          margin-right: 3rem;
-          margin-top: 1rem;
         }
       }
-      // site vitrine -----------------------------
-      .presta1 {
-        h4 {
-        }
-        p {
-        }
-      }
-      // site e-commerce --------------------------
-
-      .presta2 {
-        h4 {
-        }
-        p {
-        }
-      }
-      // application web --------------------------
-      .presta3 {
-        h4 {
-        }
-        p {
-        }
-      }
-      // autres prestations ------------------------
-
-      .presta4 {
-        h4 {
-        }
-        p {
-        }
-      }
+   
     }
   }
 }

@@ -82,8 +82,10 @@
 
     &__content__block {
       flex-wrap: wrap;
+      height: 100%;
+      overflow: hidden;
       .services__wrapper {
-        p {
+        .sentence {
           font-size: 2.2rem;
         }
 
@@ -315,11 +317,11 @@
         .services__wrapper {
           margin: 0.5rem;
           &__title {
-            font-size: 1.9rem;
+            font-size: 3rem;
           }
 
-          p {
-            font-size: 1.7rem;
+          .sentence {
+            font-size: 1.5rem;
           }
 
           .price {
