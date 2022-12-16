@@ -37,6 +37,16 @@
       margin-left: -5vw;
       padding: 5rem;
 
+       
+        h3,
+        h2,
+        h1, div {
+          margin-left: 2rem;
+       
+        }
+
+
+
       .text-btn-block {
         width: 80%;
       }
@@ -252,6 +262,7 @@
 
             p {
               font-size: $fontSizeText;
+              text-align: left;
             }
 
             .text-icon-flex {
@@ -951,6 +962,40 @@
     ul {
       flex-direction: row;
       justify-content: space-around;
+    }
+  }
+}
+
+//
+//
+//
+// ======================== MEDIA QUERY >  MOBILE ORIENTATION PAYSAGE ========================
+
+@media (orientation: landscape) and (max-height: 430px) {
+  // ***************** PAGE ACCEUIL *******************
+
+  .container .slide-home .filter-home .content-home {
+    h3,
+    h2,
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 2.8vmax;
+    }
+    h2 {
+      margin-top: 4rem;
+    }
+  }
+
+  // ***************** PAGE A PROPOS *******************
+  .title-formation,
+  .item-formation {
+    display: none;
+  }
+
+  .about-card {
+    .competence-bonus {
+      display: none;
     }
   }
 }
