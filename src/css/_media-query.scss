@@ -55,6 +55,10 @@
     margin-left: 1rem;
 
     &__content__block {
+      .text-presentation {
+        font-size: 1.6rem;
+      }
+
       .apropos-ordi {
         padding: 0.5rem;
       }
@@ -82,15 +86,24 @@
 
     &__content__block {
       flex-wrap: wrap;
-      height: 100%;
+      align-items: baseline;
+      align-content: space-around;
+      height: auto;
       overflow: hidden;
+      // boite prestation --------------------------
       .services__wrapper {
+        margin: 1rem;
+
+        &__title {
+          font-size: 3rem;
+        }
+
         .sentence {
-          font-size: 2.2rem;
+          font-size: 1.8rem;
         }
 
         ul li {
-          font-size: 1.6rem;
+          font-size: 1.8rem;
         }
       }
     }
@@ -299,6 +312,7 @@
   // ********************* PAGE PRESTATIONS ************************
   .services {
     padding: 0;
+    margin-top: 6rem;
     &__title {
       width: 80%;
     }
@@ -317,18 +331,25 @@
         .services__wrapper {
           margin: 0.5rem;
           &__title {
-            font-size: 3rem;
+            font-size: 2rem;
           }
 
           .sentence {
-            font-size: 1.5rem;
+            font-size: 1.1rem;
           }
 
           .price {
             font-size: 1.2rem;
-            margin-right: 6rem;
+           
           }
 
+          ul li {
+            font-size: 1.6rem;
+          }
+
+          .price {
+            font-size: 0.9rem;
+          }
         }
       }
     }
@@ -639,7 +660,20 @@
       &__block {
         height: auto;
         padding: 4rem;
-        // bloc prestations------------------------------------
+        // boites prestation ---------------------
+        .services__wrapper {
+          &__title {
+            font-size: 2.7rem;
+          }
+
+          .sentence {
+            font-size: 1.3rem;
+          }
+
+          .price {
+            font-size: 1.2rem;
+          }
+        }
       }
     }
   }
@@ -828,7 +862,6 @@
 
 @media (orientation: landscape) and (max-height: 430px) {
   // ***************** PAGE ACCEUIL *******************
-
   .container .slide-home .filter-home .content-home {
     h3,
     h2,
@@ -852,5 +885,35 @@
     .competence-bonus {
       display: none;
     }
+  }
+
+  // ***************** PAGE PRESTATIONS *******************
+
+  .services__content__block {
+    overflow: scroll;
+
+    .services__wrapper {
+      &__title {
+        font-size: 1.6rem;
+      }
+
+      .sentence {
+        font-size: 1rem;
+      }
+
+      ul li {
+        font-size: 1.2rem;
+      }
+
+      .price {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  // ***************** PAGE REALISATIONS *******************
+
+  .project {
+    margin-top: 14rem;
   }
 }
