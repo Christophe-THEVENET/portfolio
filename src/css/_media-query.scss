@@ -82,84 +82,43 @@
 
   // ********************* PAGE PRESTATIONS ************************
   .services {
-    margin-left: 1rem;
-
+    height: 80vh;
     &__content__block {
-      flex-wrap: wrap;
-      align-items: baseline;
-      align-content: space-around;
-      height: auto;
-      overflow: hidden;
+      grid-template-columns: 1fr 1fr;
+
       // boite prestation --------------------------
       .services__wrapper {
-        margin: 1rem;
-
-        &__title {
-          font-size: 3rem;
-        }
-
-        .sentence {
-          font-size: 1.8rem;
-        }
-
-        ul li {
-          font-size: 1.8rem;
-        }
+        height: 30vh;
       }
     }
   }
 
   // ********************* PAGE REALISATIONS ************************
   .project {
-    margin-left: 1rem;
-
     &__content__block {
-      .apropos-ordi {
-        padding: 0.5rem;
-      }
+      grid-template-columns: 1fr 1fr;
 
-      .title-formation {
-        padding: 0.5rem;
-      }
-
-      .title_competences {
-        padding: 0.5rem;
-      }
-
-      // bloc droit --------------------------------------
-      &__competences {
-        .project-card-block {
-          padding: 0.5rem;
-        }
+      // boite prestation --------------------------
+      .project__wrapper {
+        height: 40vh;
       }
     }
   }
 
   // ********************* PAGE CONTACT ************************
   .contact {
-    margin-left: 1rem;
-
+    height: 80vh;
     &__content__block {
-      .apropos-ordi {
-        padding: 0.5rem;
-      }
+      grid-template-columns: 1fr 1fr;
 
-      .title-formation {
-        padding: 0.5rem;
-      }
-
-      .title_competences {
-        padding: 0.5rem;
-      }
-
-      // bloc droit --------------------------------------
-      &__competences {
-        .contact-card-block {
-          padding: 0.5rem;
-        }
+      // boite prestation --------------------------
+      .contact__wrapper {
+        height: 30vh;
       }
     }
   }
+  //
+  //
 }
 
 //
@@ -311,45 +270,16 @@
 
   // ********************* PAGE PRESTATIONS ************************
   .services {
-    padding: 0;
-    margin-top: 6rem;
-    &__title {
-      width: 80%;
-    }
-
     &__title__border-right {
       margin-top: 1.5%;
     }
 
-    &__content {
-      &__block {
-        flex-direction: row;
-        align-items: flex-start;
-        margin-top: 1rem;
+    &__content__block {
+      .services__wrapper {
+        height: auto;
 
-        // boites prestation ---------------------
-        .services__wrapper {
-          margin: 0.5rem;
-          &__title {
-            font-size: 2rem;
-          }
-
-          .sentence {
-            font-size: 1.1rem;
-          }
-
-          .price {
-            font-size: 1.2rem;
-           
-          }
-
-          ul li {
-            font-size: 1.6rem;
-          }
-
-          .price {
-            font-size: 0.9rem;
-          }
+        ul li {
+          margin-bottom: 0.1rem;
         }
       }
     }
@@ -357,230 +287,34 @@
 
   // ********************* PAGE REALISATIONS ************************
   .project {
-    padding: 0;
-    &__title {
-      width: 80%;
-    }
-
     &__title__border-right {
       margin-top: 1.5%;
-    }
-
-    &__content {
-      &__block {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        margin-top: 1rem;
-
-        // bloc gauche ------------------------------------
-        &__presentation {
-          flex: 1;
-          padding: 1rem;
-
-          .apropos-ordi {
-            font-size: $fontSizeText;
-          }
-
-          .title-formation {
-            font-size: 2vmax;
-            color: $green;
-            margin: 1rem 0;
-          }
-
-          .text-presentation {
-            font-size: $fontSizeText;
-            span {
-              font-size: 0.8rem;
-            }
-          }
-        }
-
-        // bloc droit --------------------------------------
-        &__competences {
-          flex: 2;
-          padding: 1rem;
-
-          .title_competences {
-            margin-top: 0;
-            font-size: 2vmax;
-            color: $green;
-          }
-
-          // compétences title + text + logo ----------
-          .project-card-block {
-            font-size: $fontSizeText;
-            margin: 0.8rem 0;
-
-            h3 {
-              font-size: 1.6rem;
-              margin-bottom: -0.3rem;
-            }
-
-            p {
-              font-size: $fontSizeText;
-            }
-
-            .text-icon-flex {
-              height: 80%;
-            }
-
-            .project__icon {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              justify-content: flex-end;
-
-              .icon-block {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-              }
-
-              svg {
-                width: 2.5rem;
-                height: 2.5rem;
-                margin: 0.2rem;
-                transition: 0.1s;
-                filter: grayscale(0.6);
-
-                &:hover {
-                  transform: scale(2);
-                  filter: grayscale(0);
-                  z-index: 100;
-
-                  transition: 0.1s;
-                }
-              }
-              // logo figma veux pas se mettre comme les autres
-              .figma {
-                padding: 0.55rem;
-              }
-            }
-          }
-        }
-      }
     }
   }
 
   // ********************* PAGE CONTACT ************************
   .contact {
-    padding: 0;
-    &__title {
-      width: 80%;
-    }
-
     &__title__border-right {
       margin-top: 1.5%;
     }
 
-    &__content {
-      &__block {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        margin-top: 1rem;
+    &__content__block {
+      .contact__wrapper {
+        height: auto;
 
-        // bloc gauche ------------------------------------
-        &__presentation {
-          flex: 1;
-          padding: 1rem;
-
-          .apropos-ordi {
-            font-size: $fontSizeText;
-          }
-
-          .title-formation {
-            font-size: 2vmax;
-            color: $green;
-            margin: 1rem 0;
-          }
-
-          .text-presentation {
-            font-size: $fontSizeText;
-            span {
-              font-size: 0.8rem;
-            }
-          }
-        }
-
-        // bloc droit --------------------------------------
-        &__competences {
-          flex: 2;
-          padding: 1rem;
-
-          .title_competences {
-            margin-top: 0;
-            font-size: 2vmax;
-            color: $green;
-          }
-
-          // compétences title + text + logo ----------
-          .contact-card-block {
-            font-size: $fontSizeText;
-            margin: 0.8rem 0;
-
-            h3 {
-              font-size: 1.6rem;
-              margin-bottom: -0.3rem;
-            }
-
-            p {
-              font-size: $fontSizeText;
-            }
-
-            .text-icon-flex {
-              height: 80%;
-            }
-
-            .contact__icon {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              justify-content: flex-end;
-
-              .icon-block {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-              }
-
-              svg {
-                width: 2.5rem;
-                height: 2.5rem;
-                margin: 0.2rem;
-                transition: 0.1s;
-                filter: grayscale(0.6);
-
-                &:hover {
-                  transform: scale(2);
-                  filter: grayscale(0);
-                  z-index: 100;
-
-                  transition: 0.1s;
-                }
-              }
-              // logo figma veux pas se mettre comme les autres
-              .figma {
-                padding: 0.55rem;
-              }
-            }
-          }
+        ul li {
+          margin-bottom: 0.1rem;
         }
       }
     }
   }
-  //
-  //
-  //
 }
 //
 //
 //
 // ======================= MEDIA QUERY > 1200PX ( GRAND ECRAN ===========================
 @media screen and (min-width: 1200px) {
+  //
   // ********************* PAGE A PROPOS ************************
   .about {
     &__content {
@@ -655,24 +389,15 @@
 
   // ********************* PAGE PRESTATIONS ************************
   .services {
+    height: 45vh;
     &__content {
-      height: auto;
       &__block {
-        height: auto;
-        padding: 4rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+
         // boites prestation ---------------------
         .services__wrapper {
-          &__title {
-            font-size: 2.7rem;
-          }
-
-          .sentence {
-            font-size: 1.3rem;
-          }
-
-          .price {
-            font-size: 1.2rem;
-          }
+          height: 30rem;
         }
       }
     }
@@ -680,71 +405,23 @@
 
   // ********************* PAGE REALISATIONS ************************
   .project {
+    height: 65vh;
     &__content {
       &__block {
-        padding: 0;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
 
-        // bloc gauche ------------------------------------
-        &__presentation {
-          padding: 6rem;
-          padding-left: 10rem;
+        // boites prestation ---------------------
+        .project__wrapper {
+          height: 30vh;
 
-          .title-formation {
-            font-size: 1.5vmax;
-            margin: 4rem 0 1.3rem;
+          &__title {
           }
 
-          .item-formation {
-            margin-bottom: 0.6rem;
-            font-size: $fontSizeText;
-            span {
-              font-size: 1.1rem;
-            }
-          }
-        }
-
-        // bloc droit --------------------------------------
-        &__competences {
-          flex: 2;
-          padding: 6rem;
-
-          .title_competences {
-            margin-top: 0;
-            font-size: 1.5vmax;
-            color: $green;
+          .sentence {
           }
 
-          // compétences title + text + logo ----------
-          .project-card-block {
-            font-size: $fontSizeText;
-            margin: 1rem 0;
-
-            h3 {
-              font-size: 1.6rem;
-              margin-bottom: -0.3rem;
-            }
-
-            p {
-              font-size: $fontSizeText;
-            }
-
-            .text-icon-flex {
-              height: 80%;
-            }
-
-            .project__icon {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              justify-content: flex-end;
-
-              .icon-block {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-              }
-            }
+          .price {
           }
         }
       }
@@ -753,72 +430,15 @@
 
   // ********************* PAGE CONTACT ************************
   .contact {
+    height: 45vh;
     &__content {
       &__block {
-        padding: 0;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
 
-        // bloc gauche ------------------------------------
-        &__presentation {
-          padding: 6rem;
-          padding-left: 10rem;
-
-          .title-formation {
-            font-size: 1.5vmax;
-            margin: 4rem 0 1.3rem;
-          }
-
-          .item-formation {
-            margin-bottom: 0.6rem;
-            font-size: $fontSizeText;
-            span {
-              font-size: 1.1rem;
-            }
-          }
-        }
-
-        // bloc droit --------------------------------------
-        &__competences {
-          flex: 2;
-          padding: 6rem;
-
-          .title_competences {
-            margin-top: 0;
-            font-size: 1.5vmax;
-            color: $green;
-          }
-
-          // compétences title + text + logo ----------
-          .contact-card-block {
-            font-size: $fontSizeText;
-            margin: 1rem 0;
-
-            h3 {
-              font-size: 1.6rem;
-              margin-bottom: -0.3rem;
-            }
-
-            p {
-              font-size: $fontSizeText;
-            }
-
-            .text-icon-flex {
-              height: 80%;
-            }
-
-            .contact__icon {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              justify-content: flex-end;
-
-              .icon-block {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-              }
-            }
-          }
+        // boites prestation ---------------------
+        .contact__wrapper {
+          height: 30rem;
         }
       }
     }
@@ -888,32 +508,18 @@
   }
 
   // ***************** PAGE PRESTATIONS *******************
-
-  .services__content__block {
-    overflow: scroll;
-
-    .services__wrapper {
-      &__title {
-        font-size: 1.6rem;
-      }
-
-      .sentence {
-        font-size: 1rem;
-      }
-
-      ul li {
-        font-size: 1.2rem;
-      }
-
-      .price {
-        font-size: 0.8rem;
-      }
-    }
+  .services {
+    margin-top: 8rem;
   }
 
   // ***************** PAGE REALISATIONS *******************
-
   .project {
-    margin-top: 14rem;
+    margin-top: 8rem;
   }
+
+  // ***************** PAGE CONTACT *******************
+  .contact {
+    margin-top: 8rem;
+  }
+  //
 }

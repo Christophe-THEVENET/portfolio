@@ -7,7 +7,6 @@
   src: url('../fonts/Coves Light.ttf') format('truetype');
 }
 
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,700;1,400&display=swap');
 
 *,
@@ -16,7 +15,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-   /* border: 1px solid red;  */ 
+  /* border: 1px solid red;  */
 }
 
 html {
@@ -30,17 +29,30 @@ html {
   flex-wrap: wrap;
 }
 
-// polices
+// ---------------------------- éléments des cards 
+@mixin titleCard {
+  font-family: $titleFamily;
+  color: $green;
+  font-size: 2.5rem;
+}
+
+@mixin sentenceCard {
+  color: $flashy;
+  font-family: $titleFamily;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+//  ------------------------------------ polices
 $titleFamily: 'GRIFTER Bold 700';
 $texteRegular: 'Coves Light', sans-serif;
-$fontSizeText : 1.8rem;
-$titleGreenMobile : 2.2vmax; 
+$fontSizeText: 1.8rem;
+$titleGreenMobile: 2.2vmax;
 
-// couleurs
+// ------------------------------------- couleurs
 $primary: #14191f;
 $secondary: #3a4555;
 $text: #f8fafb;
 $flashy: #dcf7ff;
-$green: #28D49B;
-
-
+$green: #28d49b;
