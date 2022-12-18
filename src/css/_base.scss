@@ -15,8 +15,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 1px solid red;  */
-}
+  /*  border: 1px solid red;   */
+} 
 
 html {
   font-size: 62.5%;
@@ -28,6 +28,7 @@ html {
   align-items: center;
   flex-wrap: wrap;
 }
+
 
 // ---------------------------- éléments des cards 
 @mixin titleCard {

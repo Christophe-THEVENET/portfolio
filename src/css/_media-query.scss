@@ -101,6 +101,13 @@
       // boite prestation --------------------------
       .project__wrapper {
         height: 40vh;
+        &__modale {
+          padding: 3rem;
+        }
+
+        &__title {
+          font-size: 1.9rem;
+        }
       }
     }
   }
@@ -287,6 +294,9 @@
 
   // ********************* PAGE PRESTATIONS ************************
   .services {
+    &__title {
+      width: 80%;
+    }
     &__title__border-right {
       margin-top: 1.5%;
     }
@@ -304,13 +314,24 @@
 
   // ********************* PAGE REALISATIONS ************************
   .project {
+    &__title {
+      width: 80%;
+    }
     &__title__border-right {
       margin-top: 1.5%;
+    }
+
+    &__content__block {
+      .services__wrapper {
+      }
     }
   }
 
   // ********************* PAGE CONTACT ************************
   .contact {
+    &__title {
+      width: 80%;
+    }
     &__title__border-right {
       margin-top: 1.5%;
     }
@@ -402,9 +423,9 @@
 
   // ********************* PAGE PRESTATIONS ************************
   .services {
-    height: 55vh;
+    height: 65vh;
     &__content {
-      height: auto;
+      height: 40rem;
       &__border-left {
         max-height: 70%;
       }
@@ -415,10 +436,18 @@
 
         // boites prestation ---------------------
         .services__wrapper {
-          height: 32rem;
+          height: auto;
+
+          .title {
+            margin-bottom: 2rem;
+          }
+
+          .sentence {
+            margin-bottom: 2rem;
+          }
 
           ul li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
           }
         }
       }
@@ -427,15 +456,33 @@
 
   // ********************* PAGE REALISATIONS ************************
   .project {
-    height: 55vh;
+    height: 65vh;
     &__content {
       &__block {
+        margin: 5rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 10px;
 
         // boites prestation ---------------------
         .project__wrapper {
-          height: auto;
+          height: 25vh;
+
+          &__title {
+            margin: 0.5rem;
+            font-size: 1.8rem;
+          }
+
+          &__sentence {
+            margin: 0.5rem;
+            font-size: 1.2rem;
+          }
+
+          &__description {
+            font-size: 1.6rem;
+          }
+
+          &__link {
+          }
         }
       }
     }
@@ -548,8 +595,6 @@
         .sentence-form {
           margin: 0;
         }
-
-     
       }
     }
   }

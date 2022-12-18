@@ -133,7 +133,6 @@ body {
     &__border-left {
       margin-left: 0.1rem;
       width: 1px;
-      /*  max-height: 50vh; */
       background-color: $flashy;
     }
 
@@ -256,11 +255,11 @@ body {
     margin-bottom: 1rem;
 
     &__border-right {
-      flex: 1;
       height: 1px;
       background-color: $flashy;
       margin-left: 0.5rem;
       margin-top: 2.5%;
+      width: 70%;
     }
   }
 
@@ -313,13 +312,22 @@ body {
           margin-bottom: 0.5rem;
         }
 
+        ul {
+          margin-bottom: 1rem;
+        }
+
         .price {
           color: $flashy;
           font-family: $titleFamily;
-          font-size: 1.3rem;
+          font-size: 1rem;
           text-transform: uppercase;
           letter-spacing: 1px;
-          margin: 1rem 0 2rem;
+
+
+          span {
+            color: $green;
+          }
+
         }
       }
     }
@@ -368,11 +376,11 @@ body {
     margin-bottom: 1rem;
 
     &__border-right {
-      flex: 1;
       height: 1px;
       background-color: $flashy;
       margin-left: 0.5rem;
       margin-top: 2.5%;
+      width: 70%;
     }
   }
 
@@ -385,48 +393,137 @@ body {
       background-color: $flashy;
     }
 
-    // block contenu prestation -------------------
+    // ---------------------------------- block projets
     &__block {
-      background-color: rgba(210, 26, 238, 0.493);
       padding: 0.5rem;
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 5px;
-      width: 100vw;
       overflow: scroll;
-      // boite prestation ----------------------------------
+      // -------------------------------- boite projet
       .project__wrapper {
         height: 50vh;
-
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         transition: 0.4s;
-        background-color: rgba(17, 92, 105, 0.815);
 
-        &:hover {
-          background-color: #3a455567;
-          transition: 0.4s;
+        &__modale {
+          background-color: #3a4555;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem;
+          opacity: 0;
+          transition: 0.2s ease-in-out;
+
+
+          &:hover {
+            opacity: 1;
+            transition: 0.2s ease-in;
+          }
         }
+
 
         &__title {
           font-family: $titleFamily;
           color: $green;
           font-size: 2rem;
-          margin: 2rem 0 1rem 0;
+          margin: 2rem 0 2rem 0;
           letter-spacing: 1px;
         }
 
-        .sentence {
-          color: $flashy;
-          font-family: $titleFamily;
-          font-size: 1.6rem;
-          text-transform: uppercase;
-          letter-spacing: 1px;
+        &__sentence {
+          @include sentenceCard;
           margin-bottom: 1rem;
         }
+
+        &__description {
+          color: $text;
+          font-family: $texteRegular;
+          margin: 1rem 0;
+          text-align: justify;
+        }
+
+        &__link {
+          font-family: $texteRegular;
+          color: $flashy;
+          font-weight: bold;
+        }
+
+        &__link {
+          background-color: $primary;
+          padding: 0.5rem 1rem;
+          border-radius: 5px;
+          color: $text;
+          font-size: 1rem;
+          align-self: end;
+          text-decoration: none;
+          transition: 0.5s;
+          margin-top: 1rem;
+
+
+          &:hover {
+            background-color: $green;
+            color: $primary;
+            transition: 0.5s;
+          }
+        }
+
       }
+
+      .planchettes {
+        background-image: url('../img/planchettes.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .biodiversite {
+        background-image: url('../img/noe.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .reservia {
+        background-image: url('../img/reservia.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .portfolio {
+        background-image: url('../img/portfolio.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .dicefighter {
+        background-image: url('../img/DiceFighter.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .marcetpol {
+        background-image: url('../img/marcetpol.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .memory {
+        background-image: url('../img/memory.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .maquette {
+        background-image: url('../img/maquette.png');
+        background-size: cover;
+        background-position: center;
+      }
+
     }
   }
 }
@@ -466,11 +563,11 @@ body {
     margin-bottom: 1rem;
 
     &__border-right {
-      flex: 1;
       height: 1px;
       background-color: $flashy;
       margin-left: 0.5rem;
       margin-top: 2.5%;
+      width: 70%;
     }
   }
 
@@ -568,7 +665,7 @@ body {
               }
 
               &:focus {
-                outline: 1px solid $flashy;
+                outline: 2px solid $green;
               }
             }
           }
