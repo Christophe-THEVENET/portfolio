@@ -22,7 +22,6 @@ links.forEach((link) => {
 // apparition icone scroll décalé
 let scrollMouseIcon = document.querySelector('.scroll-icon');
 let textUseScroll = document.querySelector('.text-use-mouse');
-let textNbPages = document.querySelectorAll('.text-nb-pages');
 
 setTimeout(() => {
   scrollMouseIcon.style.opacity = 1;
@@ -45,7 +44,7 @@ const observer = new IntersectionObserver(
     }
   },
   {
-    threshold: [0.5], 
+    threshold: [0], 
     // déclenche qd l'élément est visible a 50% ds le viewport
   }
 );

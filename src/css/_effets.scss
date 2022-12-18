@@ -105,3 +105,10 @@ li a:hover:after {
   opacity: 0;
 }
 
+
+// titre qui clignote
+@keyframes blink { 
+  0% { opacity:0; }
+  50% { opacity:1; } 
+  100% { opacity:0; }
+}

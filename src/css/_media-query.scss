@@ -113,7 +113,24 @@
 
       // boite prestation --------------------------
       .contact__wrapper {
-        height: 30vh;
+        height: 50vh;
+
+        .title-form {
+          margin-bottom: 3rem;
+        }
+
+        .sentence-form {
+          margin-bottom: 5rem;
+        }
+        form {
+          .form-row input {
+            height: 3.5rem;
+          }
+
+          button {
+            padding: 1rem 1.5rem;
+          }
+        }
       }
     }
   }
@@ -279,7 +296,7 @@
         height: auto;
 
         ul li {
-          margin-bottom: 0.1rem;
+          margin-bottom: 0.2rem;
         }
       }
     }
@@ -301,10 +318,6 @@
     &__content__block {
       .contact__wrapper {
         height: auto;
-
-        ul li {
-          margin-bottom: 0.1rem;
-        }
       }
     }
   }
@@ -389,15 +402,24 @@
 
   // ********************* PAGE PRESTATIONS ************************
   .services {
-    height: 45vh;
+    height: 55vh;
     &__content {
+      height: auto;
+      &__border-left {
+        max-height: 70%;
+      }
+
       &__block {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 10px;
 
         // boites prestation ---------------------
         .services__wrapper {
-          height: 30rem;
+          height: 32rem;
+
+          ul li {
+            margin-bottom: 0.5rem;
+          }
         }
       }
     }
@@ -405,7 +427,7 @@
 
   // ********************* PAGE REALISATIONS ************************
   .project {
-    height: 65vh;
+    height: 55vh;
     &__content {
       &__block {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -413,16 +435,7 @@
 
         // boites prestation ---------------------
         .project__wrapper {
-          height: 30vh;
-
-          &__title {
-          }
-
-          .sentence {
-          }
-
-          .price {
-          }
+          height: auto;
         }
       }
     }
@@ -430,7 +443,7 @@
 
   // ********************* PAGE CONTACT ************************
   .contact {
-    height: 45vh;
+    height: 55vh;
     &__content {
       &__block {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -438,7 +451,11 @@
 
         // boites prestation ---------------------
         .contact__wrapper {
-          height: 30rem;
+          height: auto;
+
+          .title-form {
+            margin-top: -1rem;
+          }
         }
       }
     }
@@ -520,6 +537,21 @@
   // ***************** PAGE CONTACT *******************
   .contact {
     margin-top: 8rem;
+
+    &__content__block {
+      .contact__wrapper {
+        .title-form {
+          margin: 0;
+          margin-top: -1rem;
+        }
+
+        .sentence-form {
+          margin: 0;
+        }
+
+     
+      }
+    }
   }
   //
 }
