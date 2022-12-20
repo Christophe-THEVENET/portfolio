@@ -28,8 +28,6 @@ setTimeout(() => {
   textUseScroll.style.opacity = 1;
 }, 7000);
 
-
-
 // on instancie un observeur (pour check ds le viewport)
 const observer = new IntersectionObserver(
   (entries) => {
@@ -37,14 +35,13 @@ const observer = new IntersectionObserver(
       // si visible  ds le viewport
       if (entry.isIntersecting) {
         entry.target.classList.remove('not-visible');
-       
       } else {
         entry.target.classList.add('not-visible');
       }
     }
   },
   {
-    threshold: [0], 
+    threshold: [0],
     // déclenche qd l'élément est visible a 50% ds le viewport
   }
 );
@@ -68,3 +65,15 @@ itemsRight.forEach((itemRight) => {
   observer.observe(itemRight);
 });
 
+// -------------------------- bouton linkedln
+
+let linkedlnButton = document.querySelector('.linkedln-button');
+let linkedlnModal = document.querySelector('.modale-linkedln');
+
+linkedlnButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  linkedlnModal.style.display = 'block';
+  setTimeout(() => {
+    linkedlnModal.style.display = 'none';
+  }, 1500);
+});
