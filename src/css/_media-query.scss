@@ -34,7 +34,7 @@
   .filter-home {
     .content-home {
       margin-top: 100vh;
-      margin-left: -5vw;
+      margin-left: 1vw;
       padding: 5rem;
 
       h3,
@@ -52,29 +52,35 @@
 
   // ********************* PAGE A PROPOS ************************
   .about {
-    margin-left: 1rem;
-
     &__content__block {
-      .text-presentation {
-        font-size: 1.6rem;
-      }
+      grid-template-columns: 1fr 1fr;
 
-      .apropos-ordi {
-        padding: 0.5rem;
+      // ---------------------------  block présentation
+      &__presentation {
+        padding: 2rem;
       }
-
-      .title-formation {
-        padding: 0.5rem;
+      // ---------------------------  block formation
+      &__formations {
+        padding: 2rem;
+        .formations__title {
+          @include titleCard(2.3rem);
+        }
       }
-
-      .title_competences {
-        padding: 0.5rem;
-      }
-
-      // bloc droit --------------------------------------
+      // ---------------------------  block compétences
       &__competences {
-        .about-card-block {
-          padding: 0.5rem;
+        padding: 4rem;
+        grid-column: 1 / 3;
+        .competences__title {
+          @include titleCard(2.3rem);
+        }
+
+        .competences__card {
+          margin: 2rem 0;
+          display: grid;
+          gr &__sentence {
+            @include sentenceCard(1.4rem);
+            letter-spacing: 1px;
+          }
         }
       }
     }
@@ -82,7 +88,7 @@
 
   // ********************* PAGE PRESTATIONS ************************
   .services {
-    height: 80vh;
+    height: 75vh;
     &__content__block {
       grid-template-columns: 1fr 1fr;
 
@@ -96,14 +102,14 @@
   // ********************* PAGE REALISATIONS ************************
   .project {
     &__content__block {
+      padding: 30px;
       grid-template-columns: 1fr 1fr;
+      gap: 30px;
 
       // boite prestation --------------------------
       .project__wrapper {
         height: 40vh;
-        &__modale {
-          padding: 3rem;
-        }
+   
 
         &__title {
           font-size: 1.9rem;
@@ -123,6 +129,7 @@
         height: 50vh;
 
         .title-form {
+          font-size: 3.6rem;
           margin-bottom: 3rem;
         }
 
@@ -197,93 +204,57 @@
     }
 
     &__content {
+      // -----------------------------------  container
       &__block {
-        flex-direction: row;
-        align-items: flex-start;
-        margin-top: 1rem;
+        // ---------------------------  block presentation
 
-        // bloc gauche ------------------------------------
         &__presentation {
-          flex: 1;
           padding: 1rem;
-
-          .apropos-ordi {
-            font-size: $fontSizeText;
-          }
-
-          .title-formation {
-            font-size: 2vmax;
-            margin: 1rem 0;
-          }
-
-          .text-presentation {
-            font-size: $fontSizeText;
-            span {
-              font-size: 0.8rem;
-            }
-          }
         }
 
-        // bloc droit --------------------------------------
+        &__formations {
+          padding: 1rem;
+        }
+
+        // ---------------------------  block compétences
+
         &__competences {
           flex: 2;
           padding: 1rem;
 
-          .title_competences {
-            margin-top: 0;
-            font-size: 2vmax;
-          }
+          // ---------------------  compétences card
+          .competences__card {
+            margin: 1rem 0;
 
-          // compétences title + text + logo ----------
-          .about-card-block {
-            font-size: $fontSizeText;
-            margin: 0.8rem 0;
-
-            h3 {
-              font-size: 1.6rem;
-              margin-bottom: -0.3rem;
+            &__sentence {
+              @include sentenceCard(1.2rem);
+              letter-spacing: 1px;
             }
+            // ,,,,,,,,,,  texte + icones
+            &__text__icon {
+              display: grid;
+              grid-template-columns: 7fr 1fr;
 
-            p {
-              font-size: $fontSizeText;
-              text-align: left;
-            }
-
-            .text-icon-flex {
-              height: 80%;
-            }
-
-            .about__icon {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              justify-content: flex-end;
-
-              .icon-block {
+              // ,,,,,,,,,,  icones
+              .icon {
                 display: flex;
-                flex-direction: column;
+                justify-self: end;
                 align-items: center;
-                justify-content: center;
-              }
 
-              svg {
-                width: 2.5rem;
-                height: 2.5rem;
-                margin: 0.2rem;
-                transition: 0.1s;
-                filter: grayscale(0.6);
-
-                &:hover {
-                  transform: scale(2);
-                  filter: grayscale(0);
-                  z-index: 100;
-
-                  transition: 0.1s;
+                .icon-demi {
+                  display: flex;
+                  align-items: center;
                 }
-              }
-              // logo figma veux pas se mettre comme les autres
-              .figma {
-                padding: 0.55rem;
+
+                svg {
+                  width: 2rem;
+                  margin: 0.3rem;
+                }
+
+                // logo figma veux pas se dimensionner comme les autres
+                .figma {
+                  width: 1.6rem;
+                }
               }
             }
           }
@@ -314,6 +285,7 @@
 
   // ********************* PAGE REALISATIONS ************************
   .project {
+    height: 50vh;
     &__title {
       width: 80%;
     }
@@ -322,8 +294,7 @@
     }
 
     &__content__block {
-      .services__wrapper {
-      }
+
     }
   }
 
@@ -349,73 +320,42 @@
 // ======================= MEDIA QUERY > 1200PX ( GRAND ECRAN ===========================
 @media screen and (min-width: 1200px) {
   //
+
   // ********************* PAGE A PROPOS ************************
   .about {
     &__content {
+      height: 40rem;
+
+      &__border-left {
+        max-height: 90%;
+      }
       &__block {
-        padding: 0;
+        height: 45rem;
+        margin: 2rem;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
 
-        // bloc gauche ------------------------------------
+        // ---------------------------  block présentation
         &__presentation {
-          padding: 6rem;
-          padding-left: 10rem;
-
-          .title-formation {
-            font-size: 1.5vmax;
-            margin: 4rem 0 1.3rem;
-          }
-
-          .item-formation {
-            margin-bottom: 0.6rem;
-            font-size: $fontSizeText;
-            span {
-              font-size: 1.1rem;
-            }
-          }
+          margin-top: 0;
+          padding: 2rem;
         }
 
-        // bloc droit --------------------------------------
+        // ---------------------------  block formations
+        &__formations {
+          margin-top: 0;
+          padding: 2rem;
+          grid-column: 1 / 2;
+          grid-row: 2 / 3;
+        }
+
+        // ---------------------------  block compétences
         &__competences {
-          flex: 2;
-          padding: 6rem;
-
-          .title_competences {
-            margin-top: 0;
-            font-size: 1.5vmax;
-          }
-
-          // compétences title + text + logo ----------
-          .about-card-block {
-            font-size: $fontSizeText;
-            margin: 1rem 0;
-
-            h3 {
-              font-size: 1.6rem;
-              margin-bottom: -0.3rem;
-            }
-
-            p {
-              font-size: $fontSizeText;
-            }
-
-            .text-icon-flex {
-              height: 80%;
-            }
-
-            .about__icon {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              justify-content: flex-end;
-
-              .icon-block {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-              }
-            }
-          }
+          padding: 1rem;
+          margin-top: 0;
+          grid-column: 2 / 3;
+          grid-row: 1 / 3;
         }
       }
     }
@@ -427,7 +367,7 @@
     &__content {
       height: 40rem;
       &__border-left {
-        max-height: 70%;
+        max-height: 90%;
       }
 
       &__block {
@@ -436,7 +376,6 @@
 
         // boites prestation ---------------------
         .services__wrapper {
-          height: auto;
 
           .title {
             margin-bottom: 2rem;
@@ -456,16 +395,23 @@
 
   // ********************* PAGE REALISATIONS ************************
   .project {
-    height: 65vh;
+    height: 50vh;
     &__content {
+      height: 50rem;
+      &__border-left {
+        max-height: 80%;
+      }
       &__block {
-        margin: 5rem;
+
+        padding: 0;
+        margin: 3rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 10px;
 
         // boites prestation ---------------------
         .project__wrapper {
-          height: 25vh;
+          height: 100%;
+          
 
           &__title {
             margin: 0.5rem;
@@ -480,9 +426,6 @@
           &__description {
             font-size: 1.6rem;
           }
-
-          &__link {
-          }
         }
       }
     }
@@ -490,18 +433,25 @@
 
   // ********************* PAGE CONTACT ************************
   .contact {
-    height: 55vh;
+    height: 45vh;
     &__content {
+      height: 45rem;
+      &__border-left {
+        max-height: 90%;
+      }
       &__block {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 10px;
 
         // boites prestation ---------------------
         .contact__wrapper {
-          height: auto;
-
           .title-form {
             margin-top: -1rem;
+            margin-bottom: 1rem;
+          }
+
+          .sentence-form {
+            margin-bottom: 2rem;
           }
         }
       }
@@ -522,7 +472,6 @@
   .filter-home {
     .content-home {
       margin-top: 110vh;
-      margin-left: -2vw;
       padding: 5rem;
       .text-btn-block {
         width: 100%;

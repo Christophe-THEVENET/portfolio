@@ -20,7 +20,7 @@
   <!-- ************************** HEADER ****************************** -->
   <header class="header">
     <!-- logo -->
-    <div class="header__logo" data-aos="fade-down-right" data-aos-delay="3000" data-aos-duration="3000">
+    <div class="header__logo" data-aos="fade-down-right" data-aos-delay="3000" data-aos-duration="2000">
       <a href="http://127.0.0.1:5173/"><img class="header__logo__img" src="./src/img/logo_green.png" alt=""
           srcset=""></a>
     </div>
@@ -36,7 +36,7 @@
         </a>
       </div>
       <!-- list lien -->
-      <ul class="menu" data-aos="fade-down-left" data-aos-delay="3000" data-aos-duration="3000">
+      <ul class="menu" data-aos="fade-down-left" data-aos-delay="3000" data-aos-duration="2000">
         <li class="header__nav__item">
           <a href="#slide-about" class="nav__link">A propos</a>
         </li>
@@ -53,7 +53,7 @@
     </nav>
   </header>
 
-  <!-- ******************* MODALE MENU HAMBURGER *********************** -->
+  <!-- ******************* MODALE MENU &HAMBURGER *********************** -->
   <div class="menu-modal">
     <ul>
       <li class="header__nav__item">
@@ -82,12 +82,12 @@
       <div class="page filter-home">
         <!--  bloc contenu acceuil-->
         <div class="content-home">
-          <h2 data-aos="slide-right" data-aos-easing="ease-in-out-cubic" data-aos-offset="50" data-aos-duration="1200">
+          <h2 data-aos="fade-right" data-aos-delay="50" data-aos-duration="2000">
             Bonjour,</h2>
-          <h1 data-aos="fade-right" data-aos-delay="1200" data-aos-duration="2000">je m'apelle Christophe THEVENET</h1>
+          <h1 data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000">je m'apelle Christophe THEVENET</h1>
           <h3 data-aos="zoom-in-up" data-aos-delay="2000" data-aos-duration="2000">Je suis
             Développeur Web</h3>
-          <div class="text-btn-block" data-aos="zoom-out-up" data-aos-delay="3000" data-aos-duration="3000">
+          <div class="text-btn-block" data-aos="zoom-out-up" data-aos-delay="3000" data-aos-duration="2000">
             <p> Aujourd'hui et demain, la dématérialisation va s'accentuer. Les mails ont révolutionné le courrier, la
               prise de rendez-vous en ligne permet à un entrepreneur d'être moins sollicité par le téléphone, je propose
               donc à mes clients un accompagnement vers la digitalisation de leur activité.
@@ -112,38 +112,44 @@
           </div>
           <div class="about__content">
             <div class="about__content__border-left reveal-left"></div>
+            <!-- ________________________________________________________ container  -->
             <div class="about__content__block">
+              <!-- _______________________________________________ block presentation  -->
 
-              <!-- ************ block a propos *************** -->
-              <div class=" about-card about__content__block__presentation reveal-left">
-                <p class="text-presentation apropos-ordi">Après une formation initiale dans la qualité industrielle,
+              <div class="about__content__block__presentation reveal-left">
+                <p>Après une formation initiale dans la qualité industrielle,
                   j'ai travaillé 10 ans dans plusieurs grosses entreprises de la région Auvergne. Pendant ce temps,
                   j'étais en admiration devant les évolutions technologiques de l'internet. Je me suis auto-formé à
                   l'environnement Web 2.0. Ensuite, j'ai décroché plusieurs formations dans des écoles réputées.
                   Aujourd'hui, je démarre une carrière de Développeur Web freelance, avec pour principal objectif : la
                   satisfaction des clients.
                 </p>
+              </div>
+              <!-- __________________________________________________ block formation  -->
+
+              <div class="about__content__block__formations reveal-left">
                 <!-- - - - - - block formations- - - - -->
-                <h4 class="title-formation">Formations web</h4>
-                <p class="text-presentation item-formation"> - Développpeur Web <span>OPENCLASSROOM (2019)</span> </p>
-                <p class="text-presentation item-formation"> - Métiers du numérique <span>SIMPLON (2020)</span> </p>
-                <p class="text-presentation item-formation"> - Développeur Full-Stack (Design +) <span>STUDI
+                <h4 class="formations__title">Formations web</h4>
+                <p class="formations__text"> - Développpeur Web <span>OPENCLASSROOM (2019)</span> </p>
+                <p class="formations__text"> - Métiers du numérique <span>SIMPLON (2020)</span> </p>
+                <p class="formations__text"> - Développeur Full-Stack (Design +) <span>STUDI
                     (2021)</span>
                 </p>
               </div>
-              <!-- ************ block compétences **************** -->
-              <div class=" about-card about__content__block__competences reveal-right">
-                <h4 class="title_competences">Compétences</h4>
+              <!-- _________________________________________________ block compétences  -->
+
+              <div class="about__content__block__competences reveal-right">
+                <h4 class="competences__title">Compétences</h4>
 
                 <!-- - - - - - compétences 1 - - - - -->
-                <div class="about-card-block">
-                  <h3>Web design, UI/UX</h3>
-                  <div class="text-icon-flex">
-                    <p class="text-presentation">Design de l'identité numérique, logo, charte graphique, expérience de
+                <div class="competences__card">
+                  <h3 class="competences__card__sentence">Web design, UI/UX</h3>
+                  <div class="competences__card__text__icon">
+                    <p>Design de l'identité numérique, logo, charte graphique, expérience de
                       l'utilisateur, confort de l'interface
                     </p>
-                    <div class="about__icon">
-                      <div class="icon-block">
+                    <div class="icon">
+                      <div class="icon-demi">
                         <svg viewBox="0 0 240 234" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M42.5 0h155C221 0 240 19 240 42.5v149c0 23.5-19 42.5-42.5 42.5h-155C19 234 0 215 0 191.5v-149C0 19 19 0 42.5 0z"
@@ -163,7 +169,7 @@
                           </g>
                         </svg>
                       </div>
-                      <div class="icon-block">
+                      <div class="icon-demi">
                         <svg viewBox="0 0 174.38 174.38" xmlns="http://www.w3.org/2000/svg">
                           <circle cx="87.19" cy="87.19" fill="#23bec7" r="87.19" />
                           <path
@@ -186,17 +192,17 @@
                 </div>
 
                 <!-- - - - - - compétences 2 - - - - -->
-                <div class="about-card-block">
-                  <h3>Sites vitrine/vente en ligne</h3>
-                  <div class="text-icon-flex">
-                    <p class="text-presentation">Conception de sites vitrine, e-commerce, événementiel, avec animations
+                <div class="competences__card">
+                  <h3 class="competences__card__sentence">Sites vitrine/vente en ligne</h3>
+                  <div class="competences__card__text__icon">
+                    <p>Conception de sites vitrine, e-commerce, événementiel, avec animations
                       et
                       navigation intuitive. Ajout d'une interface d'administration pour gérer les clients et les
                       produits
                       ou services.
                     </p>
-                    <div class="about__icon">
-                      <div class="icon-block">
+                    <div class="icon">
+                      <div class="icon-demi">
                         <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 141.53199999999998">
                           <path d="M10.383 126.894L0 0l124 .255-10.979 126.639-50.553 14.638z" fill="#e34f26" />
                           <path d="M62.468 129.277V12.085l51.064.17-9.106 104.851z" fill="#ef652a" />
@@ -212,7 +218,7 @@
                             fill="#fff" />
                         </svg>
                       </div>
-                      <div class="icon-block">
+                      <div class="icon-demi">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1052 1052">
                           <path fill="#f0db4f" d="M0 0h1052v1052H0z" />
                           <path
@@ -245,7 +251,7 @@
                           </g>
                         </svg>
                       </div>
-                      <div class="icon-block">
+                      <div class="icon-demi">
                         <svg viewBox="0 0 256 153" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
                           <path
                             d="M23.759 0h208.378C245.325 0 256 10.675 256 23.863v79.541c0 13.188-10.675 23.863-23.863 23.863H157.41l10.257 25.118-45.109-25.118H23.863c-13.187 0-23.862-10.675-23.862-23.863V23.863C-.104 10.78 10.57 0 23.759 0z"
@@ -267,14 +273,14 @@
                 </div>
 
                 <!-- - - - - - compétences 3 - - - - -->
-                <div class="about-card-block">
-                  <h3>Applications/fonctionnalités spécifiques</h3>
-                  <div class="text-icon-flex">
-                    <p class="text-presentation">Conception/collaboration de projets sur mesure nécessitant
+                <div class="competences__card">
+                  <h3 class="competences__card__sentence">Applications/fonctionnalités spécifiques</h3>
+                  <div class="competences__card__text__icon">
+                    <p>Conception/collaboration de projets sur mesure nécessitant
                       l'exploitation de données et la programmation par algorithme.
                     </p>
-                    <div class="about__icon">
-                      <div class="icon-block">
+                    <div class="icon">
+                      <div class="icon-demi">
                         <svg viewBox="0 0 410 404" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M399.641 59.5246L215.643 388.545C211.844 395.338 202.084 395.378 198.228 388.618L10.5817 59.5563C6.38087 52.1896 12.6802 43.2665 21.0281 44.7586L205.223 77.6824C206.398 77.8924 207.601 77.8904 208.776 77.6763L389.119 44.8058C397.439 43.2894 403.768 52.1434 399.641 59.5246Z"
@@ -314,7 +320,7 @@
                           </g>
                         </svg>
                       </div>
-                      <div class="icon-block">
+                      <div class="icon-demi">
 
                         <svg viewBox="0 0 256 134" xmlns="http://www.w3.org/2000/svg"
                           preserveAspectRatio="xMinYMin meet">
@@ -339,14 +345,14 @@
 
                 </div>
                 <!-- - - - - - compétences 4  - - - - -->
-                <div class="about-card-block competence-bonus">
-                  <h3>Bonus</h3>
-                  <div class="text-icon-flex">
-                    <p class="text-presentation">Gestion de projet selon les méthodes agile, versionning selon workflow,
+                <div class="competences__card">
+                  <h3 class="competences__card__sentence">Bonus</h3>
+                  <div class="competences__card__text__icon">
+                    <p>Gestion de projet selon les méthodes agile, versionning selon workflow,
                       administration de serveurs web sous linux pour l'hébergement.
                     </p>
-                    <div class="about__icon">
-                      <div class="icon-block">
+                    <div class="icon">
+                      <div class="icon-demi">
                         <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"
                           preserveAspectRatio="xMinYMin meet">
                           <path
@@ -525,7 +531,7 @@
                           </g>
                         </svg>
                       </div>
-                      <div class="icon-block">
+                      <div class="icon-demi">
                         <svg fill="none" xmlns="http://www.w3.org/2000/svg"
                           viewBox="670.088 32.46226489559854 2224.1720000000005 2666.4877351044024">
                           <g fill="#61dafb">
@@ -571,7 +577,7 @@
                   <li>Charte graphique + logo</li>
                   <li>Hébergement et domaine 12 mois</li>
                   <li>Adapté à tous les écrans</li>
-                  <li>Formulaire de services</li>
+                  <li>Formulaire de contact</li>
                   <li>Optimisation du référencement</li>
                   <li>Site sécurisé + certificat SSL</li>
                   <li>Formation administration du site</li>
@@ -596,7 +602,7 @@
               <!-- _________________________________________  boite applications  -->
               <div class="services__wrapper reveal-right application">
                 <h4 class="title">Application web</h4>
-                <p class="sentence">Satisfaire tous les besoins</p>
+                <p class="sentence">besoin spécifique</p>
                 <ul>
                   <li>Charte graphique + logo</li>
                   <li>Hébergement et domaine 12 mois</li>
@@ -616,6 +622,7 @@
                 <ul>
                   <li>Ajout de fonctionnalités</li>
                   <li>Mise à jour du site</li>
+                  <li>Sauvegarde, débug</li>
                   <li>Autres</li>
                 </ul>
                 <p class="price">taux journalier moyen : <span>300€</span> </p>
@@ -645,93 +652,130 @@
 
               <!-- ___________________________________________ planchettes 1 -->
               <div class="project__wrapper reveal-left planchettes">
-                <div class="project__wrapper__modale">
-                  <h4 class="project__wrapper__title">Site wordpress</h4>
-                  <h5 class="project__wrapper__sentence">Pétanque des Planchettes</h5>
-                  <p class="project__wrapper__description">Site actif d'un club de pétanque. Développé sous wordpress
-                    sans template payant. C'est mon premier site en ligne.</p>
-                  <a href="https://www.petanquedesplanchettes.fr" target="_blank" class="project__wrapper__link">Voir le
-                    site</a>
+                <div class="filter-modale">
+
+                  <div class="project__wrapper__modale">
+                    <h4 class="project__wrapper__title">Site wordpress</h4>
+                    <h5 class="project__wrapper__sentence">Pétanque des Planchettes</h5>
+                    <p class="project__wrapper__description">Site actif d'un club de pétanque. Développé sous wordpress.
+                      Je l'ai fait du design à l'hébergement.</p>
+                    <a href="https://www.petanquedesplanchettes.fr" target="_blank" class="project__wrapper__link">Voir
+                      le
+                      site</a>
+                  </div>
                 </div>
               </div>
 
               <!-- ___________________________________________ noé biodiversité 2 -->
               <div class="project__wrapper reveal-left biodiversite">
-                <div class="project__wrapper__modale">
-                  <h4 class="project__wrapper__title">Site d'entraînement</h4>
-                  <h5 class="project__wrapper__sentence">noé biodiversité</h5>
-                  <p class="project__wrapper__description">Cette évaluation d'entraînement a été faite dans le cadre
-                    d'une formation chez Studi. Le but était d'appliquer mes connaissances en html, css, sass et bootstrap.
-                  </p>
-                  <a href="https://noebiodiversite.netlify.app/" target="_blank" class="project__wrapper__link">Voir le
-                    site</a>
+                <div class="filter-modale">
+                  <div class="filter-modale">
+                    <div class="project__wrapper__modale">
+                      <h4 class="project__wrapper__title">Site d'entraînement</h4>
+                      <h5 class="project__wrapper__sentence">noé biodiversité</h5>
+                      <p class="project__wrapper__description">Cette évaluation d'entraînement a été faite dans le cadre
+                        d'une formation chez Studi. Le but était d'appliquer mes connaissances en html, css, sass et
+                        bootstrap.
+                      </p>
+                      <a href="https://noebiodiversite.netlify.app/" target="_blank" class="project__wrapper__link">Voir
+                        le
+                        site</a>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-                    <!-- ___________________________________________ dicefighter 3  -->
-                    <div class="project__wrapper reveal-right dicefighter">
-                      <div class="project__wrapper__modale">
-                        <h4 class="project__wrapper__title">Jeu de dé</h4>
-                        <h5 class="project__wrapper__sentence">dicefighter</h5>
-                        <p class="project__wrapper__description">Cette évaluation d'entraînement (formation Studi) a été faite pour utiliser le javascript orienté objet. J'avais carte blanche pour le Design.</p>
-                        <a href="https://dicefighter.netlify.app/" target="_blank" class="project__wrapper__link">Voir le
-                          jeu</a>
-                      </div>
+              <!-- ___________________________________________ dicefighter 3  -->
+              <div class="project__wrapper reveal-right dicefighter">
+                <div class="filter-modale">
+
+                  <div class="filter-modale">
+                    <div class="project__wrapper__modale">
+                      <h4 class="project__wrapper__title">Jeu de dé</h4>
+                      <h5 class="project__wrapper__sentence">dicefighter</h5>
+                      <p class="project__wrapper__description">Cette évaluation d'entraînement (formation Studi) a été
+                        faite pour utiliser le javascript orienté objet. J'avais carte blanche pour le Design.</p>
+                      <a href="https://dicefighter.netlify.app/" target="_blank" class="project__wrapper__link">Voir le
+                        jeu</a>
                     </div>
+                  </div>
+                </div>
+              </div>
 
               <!-- ___________________________________________ portfolio 4 -->
               <div class="project__wrapper reveal-right portfolio">
-                <div class="project__wrapper__modale">
-                  <h4 class="project__wrapper__title">Portfolio</h4>
-                  <h5 class="project__wrapper__sentence">christophe thevenet</h5>
-                  <p class="project__wrapper__description">Fabrication de mon portfolio en html, css, javascript. J'ai
-                    utilisé le bundler vitejs et le préprocesseur sass. </p>
-                  <a href="https://christophethevenet.com" target="_blank" class="project__wrapper__link">Voir le
-                    portfolio</a>
+                <div class="filter-modale">
+                  <div class="project__wrapper__modale">
+                    <h4 class="project__wrapper__title">Portfolio</h4>
+                    <h5 class="project__wrapper__sentence">christophe thevenet</h5>
+                    <p class="project__wrapper__description">Fabrication de mon portfolio en html, css, javascript. J'ai
+                      utilisé le bundler vitejs et le préprocesseur sass. J'ai créé un Design unique pour me démarquer.
+                    </p>
+                    <a href="https://christophethevenet.com" target="_blank" class="project__wrapper__link">Voir le
+                      portfolio</a>
+                  </div>
                 </div>
               </div>
 
               <!-- ___________________________________________ reservia 5 -->
               <div class="project__wrapper reveal-left reservia">
-                <div class="project__wrapper__modale">
-                  <h4 class="project__wrapper__title">Intégration maquette</h4>
-                  <h5 class="project__wrapper__sentence">réservia</h5>
-                  <p class="project__wrapper__description">Cette évaluation d'entrainement à été faite dans le cadre d'une formation chez Openclassroom. L'objectif était de coder une page selon une maquette fournie.</p>
-                  <a href="https://christophe-thevenet.github.io/ChristopheThevenet_2_12102020/" target="_blank" class="project__wrapper__link">Voir la page</a>
+                <div class="filter-modale">
+                  <div class="project__wrapper__modale">
+                    <h4 class="project__wrapper__title">Intégration maquette</h4>
+                    <h5 class="project__wrapper__sentence">réservia</h5>
+                    <p class="project__wrapper__description">Cette évaluation d'entrainement à été faite dans le cadre
+                      d'une formation chez Openclassroom. L'objectif était de coder une page selon une maquette fournie.
+                    </p>
+                    <a href="https://christophe-thevenet.github.io/ChristopheThevenet_2_12102020/" target="_blank"
+                      class="project__wrapper__link">Voir la page</a>
+                  </div>
                 </div>
               </div>
-              
-         <!-- ___________________________________________ avengers memory 6 -->
-         <div class="project__wrapper reveal-left memory">
-          <div class="project__wrapper__modale">
-            <h4 class="project__wrapper__title">Jeu du memory</h4>
-            <h5 class="project__wrapper__sentence">avengers memory</h5>
-            <p class="project__wrapper__description">J'ai fait ce jeu en autodidacte car le memory est un incontournable dans la compréhension de javascript. J'ai utilisé la librairie Animate.css pour les animations</p>
-            <a href="https://avengers-memory.netlify.app/" target="_blank" class="project__wrapper__link">Voir le
-              jeu</a>
-          </div>
-        </div>
+
+              <!-- ___________________________________________ avengers memory 6 -->
+              <div class="project__wrapper reveal-left memory">
+                <div class="filter-modale">
+                  <div class="project__wrapper__modale">
+                    <h4 class="project__wrapper__title">Jeu du memory</h4>
+                    <h5 class="project__wrapper__sentence">avengers memory</h5>
+                    <p class="project__wrapper__description">J'ai fait ce jeu en autodidacte car le memory est un
+                      incontournable dans la compréhension de javascript. J'ai utilisé la librairie Animate.css pour les
+                      animations</p>
+                    <a href="https://avengers-memory.netlify.app/" target="_blank" class="project__wrapper__link">Voir
+                      le
+                      jeu</a>
+                  </div>
+                </div>
+              </div>
 
               <!-- ___________________________________________ marcetpol 7  -->
               <div class="project__wrapper reveal-right marcetpol">
-                <div class="project__wrapper__modale">
-                  <h4 class="project__wrapper__title">Evaluation wordpress</h4>
-                  <h5 class="project__wrapper__sentence">marcetpol</h5>
-                  <p class="project__wrapper__description">Cette évaluation d'entraînement a été faite dans le cadre d'une formation chez Studi. Développé sous Wordpress, le but était de simuler une agence de voyage avec 4 pages et une connexion utilisateur.</p>
-                  <a href="https://marcetpol.wordifysites.com/" target="_blank" class="project__wrapper__link">Voir le
-                    site</a>
+                <div class="filter-modale">
+                  <div class="project__wrapper__modale">
+                    <h4 class="project__wrapper__title">Evaluation wordpress</h4>
+                    <h5 class="project__wrapper__sentence">marcetpol</h5>
+                    <p class="project__wrapper__description">Cette évaluation d'entraînement a été faite dans le cadre
+                      d'une formation chez Studi. Développé sous Wordpress, le but était de simuler une agence de voyage
+                      avec 4 pages et une connexion utilisateur.</p>
+                    <a href="https://marcetpol.wordifysites.com/" target="_blank" class="project__wrapper__link">Voir le
+                      site</a>
+                  </div>
                 </div>
               </div>
-            
-            <!-- ___________________________________________ maquette 8  -->
-            <div class="project__wrapper reveal-right maquette">
-              <div class="project__wrapper__modale">
-                <h4 class="project__wrapper__title">Maquette Figma</h4>
-                <h5 class="project__wrapper__sentence">marcetpol</h5>
-                <p class="project__wrapper__description">Cette évaluation d'entraînement a été faite dans le cadre d'une formation chez Studi. Objectif : maîtriser Figma et AdobeXd.</p>
-                <a href="https://www.figma.com/proto/lZtWsTW3kZ66Gux7pa4ku7/MARK%26POL?node-id=92%3A2695&scaling=min-zoom&page-id=92%3A2694" target="_blank" class="project__wrapper__link">Voir la maquette</a>
+
+              <!-- ___________________________________________ maquette 8  -->
+              <div class="project__wrapper reveal-right maquette">
+                <div class="filter-modale">
+                  <div class="project__wrapper__modale">
+                    <h4 class="project__wrapper__title">Maquette Figma</h4>
+                    <h5 class="project__wrapper__sentence">marcetpol</h5>
+                    <p class="project__wrapper__description">Cette évaluation d'entraînement a été faite dans le cadre
+                      d'une formation chez Studi. Objectif : maîtriser Figma et AdobeXd.</p>
+                    <a href="https://www.figma.com/proto/lZtWsTW3kZ66Gux7pa4ku7/MARK%26POL?node-id=92%3A2695&scaling=min-zoom&page-id=92%3A2694"
+                      target="_blank" class="project__wrapper__link">Voir la maquette</a>
+                  </div>
+                </div>
               </div>
-            </div>
             </div>
         </article>
       </div>
@@ -755,7 +799,7 @@
               <div class="contact__wrapper">
                 <h4 class="title-form reveal-left">Un projet en tête ? <span>Discutons-en</span> !</h4>
                 <p class="sentence-form reveal-left">Disponible 7j/7 pour échanger et développer votre site internet.
-                  <span class="span-tel">(téléphone pro a partir de Juin 2023)</span>
+                  <span class="span-tel ">(téléphone pro a partir de Juin 2023)</span>
                 </p>
                 <!-- --------------------------------   formulaire de contact  -->
                 <form method="POST" action="#">

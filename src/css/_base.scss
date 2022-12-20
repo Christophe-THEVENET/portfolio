@@ -22,6 +22,7 @@ html {
   font-size: 62.5%;
 }
 
+// --------------------------------- centrer
 @mixin centerElement {
   display: flex;
   justify-content: center;
@@ -30,19 +31,21 @@ html {
 }
 
 
-// ---------------------------- éléments des cards 
-@mixin titleCard {
+// ------------------------------------- titre page
+@mixin titlePage {
   font-family: $titleFamily;
-  color: $green;
-  font-size: 2.5rem;
+  font-size: 3.5vmax;
+  color: $flashy;
 }
 
-@mixin sentenceCard {
-  color: $flashy;
-  font-family: $titleFamily;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+
+
+// ------------------------------------- text
+@mixin text($fontSize) {
+  font-family: $texteRegular;
+  font-size: $fontSize;
+  text-align: justify;
+  color: $text;
 }
 
 //  ------------------------------------ polices
@@ -57,3 +60,21 @@ $secondary: #3a4555;
 $text: #f8fafb;
 $flashy: #dcf7ff;
 $green: #28d49b;
+$alert: rgb(238, 122, 122);
+
+
+// ---------------------------- éléments des cards 
+@mixin titleCard($fontSize) {
+  font-family: $titleFamily;
+  color: $green;
+  font-size: $fontSize;
+  letter-spacing: 1px;
+}
+
+@mixin sentenceCard($fontSize) {
+  color: $flashy;
+  font-family: $titleFamily;
+  font-size: $fontSize;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
