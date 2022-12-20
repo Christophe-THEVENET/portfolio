@@ -147,6 +147,36 @@ body {
       // ---------------------------  block présentation
       &__presentation {
         margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        /*   .presentation__social__network {
+          @include centerElement;
+          margin: 1rem;
+          width: 30rem;
+          display: flex;
+          justify-content: space-around;
+
+          .git a svg,
+          .linkedln a svg {
+            width: 5rem;
+
+            path {
+              fill: $green;
+              transition: 0.2s;
+
+              &:hover {
+                fill: $flashy;
+                transition: 0.2s;
+              }
+            }
+          }
+
+          div p {
+            font-size: 1.2rem;
+            text-align: center;
+          }
+        } */
       }
 
       // ---------------------------  block formations
@@ -192,6 +222,31 @@ body {
               display: none;
             }
           }
+        }
+
+        .presentation__social__network {
+          @include centerElement;
+          width: 20rem;
+          display: flex;
+          justify-content: flex-start;
+
+          .git a svg,
+          .linkedln a svg {
+            width: 5rem;
+            margin-right: 2rem;
+
+            path {
+              fill: $green;
+              transition: 0.2s;
+
+              &:hover {
+                fill: $flashy;
+                transition: 0.2s;
+              }
+            }
+          }
+
+         
         }
       }
     }
