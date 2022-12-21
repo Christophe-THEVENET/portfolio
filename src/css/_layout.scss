@@ -605,7 +605,7 @@ body {
   &__content {
     height: 100%;
     display: flex;
-    
+
     &__border-left {
       max-height: 60%;
       margin-left: 0.1rem;
@@ -706,18 +706,18 @@ body {
             }
           }
           button {
-            background-color: $green;
+            background-color: $primary;
             padding: 0.7rem 1rem;
             border: none;
             border-radius: 5px;
-            color: $primary;
+            color: $text;
             transition: 0.5s;
             font-weight: bold;
             float: right;
 
             &:hover {
-              background-color: $primary;
-              color: $flashy;
+              background-color: $green;
+              color: $primary;
               transition: 0.5s;
               font-weight: bold;
             }
@@ -752,16 +752,20 @@ body {
         }
 
         #linkedlnFooter {
-          background-color: $primary;
+          background-color: $green;
+          color: $primary;
           position: absolute;
+          font-family: $titleFamily;
+          letter-spacing: 1px;
           z-index: 100;
-          position: absolute;
-          left: 55vw;
-          padding: 0.7rem 1rem;
+          padding:1rem;
           border-radius: 5px;
           display: none;
           font-weight: bold;
           font-size: 1.2rem;
+          bottom: 5rem;
+          left: 3rem;
+          width: 22rem;
         }
 
         .presentation__social__network {
@@ -769,11 +773,13 @@ body {
           width: 20rem;
           display: flex;
           justify-content: flex-start;
-
+          position: relative;
           .git a svg,
           .linkedln a svg {
             width: 2rem;
             margin-right: 2rem;
+
+           
 
             path {
               fill: $green;

@@ -143,7 +143,6 @@
 
         footer {
           flex-direction: row;
-          /* margin-top: 10vh; */
           flex-wrap: wrap;
         }
       }
@@ -488,14 +487,7 @@
               margin-left: 2rem;
             }
 
-            #linkedlnFooter {
-              background-color: $green;
-              color: $primary;
-              font-family: $titleFamily;
-              letter-spacing: 1px;
-              left: 20vw;
-              bottom: 5vh;
-            }
+           
           }
         }
       }
