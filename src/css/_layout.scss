@@ -130,8 +130,9 @@ body {
     display: flex;
 
     &__border-left {
+      max-height: 60%;
       margin-left: 0.1rem;
-      width: 1px;
+      width: 4px;
       background-color: $flashy;
     }
 
@@ -291,6 +292,7 @@ body {
     &__border-left {
       margin-left: 0.1rem;
       width: 1px;
+      max-height: 60%;
       background-color: $flashy;
     }
 
@@ -421,7 +423,8 @@ body {
 
     &__border-left {
       margin-left: 0.1rem;
-      width: 1px;
+      max-height: 60%;
+      width: 4px;
       background-color: $flashy;
     }
 
@@ -602,8 +605,9 @@ body {
   &__content {
     height: 100%;
     display: flex;
+    
     &__border-left {
-
+      max-height: 60%;
       margin-left: 0.1rem;
       width: 1px;
       max-height: 70%;
@@ -669,7 +673,7 @@ body {
           .form-row {
             display: flex;
             flex-direction: column;
-            margin: 2rem 0;
+            margin: 0.7rem 0;
 
             label {
               @include sentenceCard(1rem);
@@ -728,7 +732,7 @@ body {
         flex-direction: column;
         justify-content: space-around;
         top: 4rem;
-        color:$green;
+        color: $green;
         font-family: $texteRegular;
         font-size: 1.4rem;
 
@@ -761,7 +765,7 @@ body {
         }
 
         .presentation__social__network {
-           @include centerElement; 
+          @include centerElement;
           width: 20rem;
           display: flex;
           justify-content: flex-start;
@@ -782,13 +786,6 @@ body {
             }
           }
         }
-
-
-
-
-
-
-
       }
     }
   }

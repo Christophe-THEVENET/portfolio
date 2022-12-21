@@ -46,6 +46,7 @@ const observer = new IntersectionObserver(
   }
 );
 
+// ----------------------------reveal left ------------------------
 // on liste les éléments que l'on souhaite observer
 let itemsLeft = document.querySelectorAll('.reveal-left');
 
@@ -56,6 +57,7 @@ itemsLeft.forEach((itemLeft) => {
   observer.observe(itemLeft);
 });
 
+// ---------------------------reveal right ----------------------
 let itemsRight = document.querySelectorAll('.reveal-right');
 
 itemsRight.forEach((itemRight) => {
@@ -64,6 +66,22 @@ itemsRight.forEach((itemRight) => {
   // observe ls éléments qd ils sont dans le viewport
   observer.observe(itemRight);
 });
+
+
+// ---------------------------reveal right ----------------------
+let itemsBottom = document.querySelectorAll('.reveal-bottom');
+
+itemsBottom.forEach((itemBottom) => {
+  itemBottom.classList.add('not-visible');
+
+  // observe ls éléments qd ils sont dans le viewport
+  observer.observe(itemBottom);
+});
+
+
+
+
+
 
 // -------------------------- bouton linkedln
 

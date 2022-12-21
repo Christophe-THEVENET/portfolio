@@ -3,16 +3,17 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Christophe THEVENET Développeur web full-stack. Vous trouverez une description de ses compétences, ses prestations, ses réalisations, ainsi que ses coordonnées. Christophe THEVENET est un Développeur freelance qui fabrique des sites vitrine, sites de vente en ligne, et application web. Il travaille aussi en freelance pour des clients en ligne.">
+  <title>Portfolio de Christophe THEVENET</title>
   <link rel="shortcut icon" href="./src/img/favicon_digitob.png" type="image/x-icon">
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- animate on scroll -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./src/css/main.scss">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Christophe THEVENET</title>
 </head>
 
 <body>
@@ -71,7 +72,6 @@
     </ul>
   </div>
 
-  <!-- ************************** CONTENU ******************************* -->
   <main class="container">
 
     <!-- ********************* PAGE ACCEUIL ****************************** -->
@@ -107,11 +107,11 @@
       <div class="page filter-about">
         <article class="about">
           <div class="about__title">
-            <h2 class="reveal-left">A propos</h2>
-            <div class="about__title__border-right reveal-left"></div>
+            <h2 class="reveal-bottom">A propos</h2>
+            <div class="about__title__border-right reveal-bottom"></div>
           </div>
           <div class="about__content">
-            <div class="about__content__border-left reveal-left"></div>
+            <div class="about__content__border-left reveal-bottom"></div>
             <!-- ________________________________________________________ container  -->
             <div class="about__content__block">
               <!-- _______________________________________________ block presentation  -->
@@ -592,13 +592,13 @@
       <div class="page filter-services">
         <article class="services">
           <div class="services__title">
-            <h2 class="reveal-left">Prestations</h2>
-            <div class="services__title__border-right reveal-left"></div>
+            <h2 class="reveal-bottom">Prestations</h2>
+            <div class="services__title__border-right reveal-bottom"></div>
 
           </div>
           <div class="services__content">
 
-            <div class="services__content__border-left reveal-left"></div>
+            <div class="services__content__border-left reveal-bottom"></div>
 
             <!-- ************ block prestations *************** -->
             <div class="services__content__block">
@@ -676,11 +676,11 @@
       <div class="page filter-project">
         <article class="project">
           <div class="project__title">
-            <h2 class="reveal-left">Réalisations</h2>
-            <div class="project__title__border-right reveal-left"></div>
+            <h2 class="reveal-bottom">Réalisations</h2>
+            <div class="project__title__border-right reveal-bottom"></div>
           </div>
           <div class="project__content">
-            <div class="project__content__border-left reveal-left"></div>
+            <div class="project__content__border-left reveal-bottom"></div>
             <!-- ___________________________________________ block projets -->
             <div class="project__content__block">
 
@@ -820,24 +820,24 @@
       <div class="page filter-contact">
         <article class="contact">
           <div class="contact__title">
-            <h2 class="reveal-left">Contact</h2>
-            <div class="contact__title__border-right reveal-left"></div>
+            <h2 class="reveal-bottom">Contact</h2>
+            <div class="contact__title__border-right reveal-bottom"></div>
           </div>
           <div class="contact__content">
-            <div class="contact__content__border-left reveal-left"></div>
+            <div class="contact__content__border-left reveal-bottom"></div>
             <!-- ************ block contact *************** -->
-            <div class="contact__content__block reveal-left">
+            <div class="contact__content__block">
               <!-- ________________________________  boite formulaire de contact  -->
               <div class="contact__wrapper">
-                <h4 class="title-form">Un projet en tête ? <span>Discutons-en</span> !</h4>
-                <p class="sentence-form">Disponible 7j/7 pour échanger et développer votre site internet.
-                  <span class="span-tel">(a partir de Juin 2023)</span>
+                <h4 class="title-form  reveal-right">Un projet en tête ? <span>Discutons-en</span> !</h4>
+                <p class="sentence-form reveal-right">Disponible 7j/7 pour échanger et développer votre site internet.
+                  <span class="span-tel reveal-right">(a partir de Juin 2023)</span>
                 </p>
 
                 <!-- ****************************************************************************************************************************************************************************** -->
 
                 <!-- ___________________________________   formulaire de contact  -->
-                <form method="POST" action="#">
+                <form method="POST" action="#" class="reveal-right">
                   <div class="form-row">
                     <label for="name">Votre nom</label>
                     <input type="text" name="name" id="name" placeholder="Saisissez votre nom">
@@ -855,7 +855,7 @@
 
                 <!-- ****************************************************************************************************************************************************************************** -->
 
-                <footer>
+                <footer class="reveal-left">
                   <div>Christophe THEVENET - Copyright 2023 - <a href="mentions.html" target="_blank">Mentions
                       légales</a></div>
                   <!-- ________________________________ social icon  -->

@@ -80,8 +80,7 @@ li a:hover:after {
   }
 }
 
-
-// animation reveal -------------------
+// ---------- animation reveal left
 .reveal-left {
   transform: translateX(0);
   opacity: 1;
@@ -93,6 +92,7 @@ li a:hover:after {
   opacity: 0;
 }
 
+// ---------- animation reveal right
 
 .reveal-right {
   transform: translateX(0);
@@ -105,10 +105,32 @@ li a:hover:after {
   opacity: 0;
 }
 
+// ---------- animation reveal right
+
+.reveal-bottom {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.reveal-bottom.not-visible {
+  transform: translateY(25px);
+  opacity: 0;
+}
+
+
+
+
 
 // titre qui clignote
-@keyframes blink { 
-  0% { opacity:0; }
-  50% { opacity:1; } 
-  100% { opacity:0; }
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
