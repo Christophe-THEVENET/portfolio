@@ -109,7 +109,6 @@
       // boite prestation --------------------------
       .project__wrapper {
         height: 40vh;
-   
 
         &__title {
           font-size: 1.9rem;
@@ -144,6 +143,12 @@
           button {
             padding: 1rem 1.5rem;
           }
+        }
+
+        footer {
+          flex-direction: row;
+          margin-top: 10vh;
+          flex-wrap: wrap;
         }
       }
     }
@@ -254,13 +259,11 @@
 
                   &:hover {
                     transform: scale(2);
-                  filter: grayscale(0);
-                  z-index: 100;
+                    filter: grayscale(0);
+                    z-index: 100;
 
-                  transition: 0.2s;
-
+                    transition: 0.2s;
                   }
-
                 }
 
                 // logo figma veux pas se dimensionner comme les autres
@@ -306,8 +309,6 @@
     &__title__border-right {
       margin-top: 1.5%;
     }
-
-    
   }
 
   // ********************* PAGE CONTACT ************************
@@ -320,6 +321,7 @@
     }
 
     &__content__block {
+      
       .contact__wrapper {
         height: auto;
       }
@@ -383,13 +385,12 @@
       }
 
       &__block {
-      justify-items: stretch;
+        justify-items: stretch;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 0px;
 
         // boites prestation ---------------------
         .services__wrapper {
-
           .title {
             margin-bottom: 2rem;
           }
@@ -410,12 +411,11 @@
   .project {
     height: 55vh;
     &__content {
-      height: 50rem;
+      height: 55rem;
       &__border-left {
         max-height: 80%;
       }
       &__block {
-
         padding: 0;
         margin: 3rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -424,7 +424,6 @@
         // boites prestation ---------------------
         .project__wrapper {
           height: 100%;
-          
 
           &__title {
             margin: 0.5rem;
@@ -446,18 +445,20 @@
 
   // ********************* PAGE CONTACT ************************
   .contact {
-    height: 45vh;
+    height: 50vh;
     &__content {
-      height: 45rem;
-      &__border-left {
+      height: 100%;
+
+     /*  &__border-left {
         max-height: 90%;
-      }
+      } */
       &__block {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 10px;
+        margin-top: -3rem;
 
         // boites prestation ---------------------
         .contact__wrapper {
+          height: 100%;
+
           .title-form {
             margin-top: -1rem;
             margin-bottom: 1rem;
@@ -465,6 +466,31 @@
 
           .sentence-form {
             margin-bottom: 2rem;
+          }
+
+          footer {
+            margin-top: 1rem;
+            justify-content: flex-start;
+
+            div {
+              margin-right: 1rem;
+            }
+
+            .presentation__social__network {
+              width: 10rem;
+              margin-left: 2rem;
+            }
+
+           
+
+            #linkedlnFooter {
+              background-color: $green;
+              color: $primary;
+              font-family: $titleFamily;
+              letter-spacing: 1px;
+              left: 20vw;
+              bottom: 6vh;
+            }
           }
         }
       }

@@ -15,8 +15,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /*   border: 1px solid red; */   
-} 
+   /* border: 1px solid red;   */
+}
 
 html {
   font-size: 62.5%;
@@ -30,15 +30,12 @@ html {
   flex-wrap: wrap;
 }
 
-
 // ------------------------------------- titre page
 @mixin titlePage {
   font-family: $titleFamily;
   font-size: 3.5vmax;
   color: $flashy;
 }
-
-
 
 // ------------------------------------- text
 @mixin text($fontSize) {
@@ -62,8 +59,7 @@ $flashy: #dcf7ff;
 $green: #28d49b;
 $alert: rgb(238, 122, 122);
 
-
-// ---------------------------- éléments des cards 
+// ---------------------------- éléments des cards
 @mixin titleCard($fontSize) {
   font-family: $titleFamily;
   color: $green;

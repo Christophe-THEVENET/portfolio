@@ -102,6 +102,7 @@ body {
   margin: 0.5rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   max-width: 1400px;
   margin-top: 6rem;
 
@@ -198,13 +199,16 @@ body {
         }
 
         .modale-linkedln {
-          background-color: $primary;
+          background-color: $green;
+          color: $primary;
+          font-family: $titleFamily;
+          letter-spacing: 1px;
           position: absolute;
           z-index: 100;
           position: absolute;
           left: 16rem;
           @include centerElement;
-          padding: 0.7rem 1rem;
+          padding: 1rem;
           border-radius: 5px;
           display: none;
           font-weight: bold;
@@ -315,7 +319,6 @@ body {
         &:hover {
           background-color: #3a455585;
           transition: 0.4s;
-          cursor: none;
         }
 
         .title {
@@ -387,6 +390,8 @@ body {
 .project {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
   max-width: 1400px;
   height: 80vh; // a bouger en grand ecran
   margin-top: 4rem;
@@ -598,8 +603,10 @@ body {
     height: 100%;
     display: flex;
     &__border-left {
+
       margin-left: 0.1rem;
       width: 1px;
+      max-height: 70%;
       background-color: $flashy;
     }
 
@@ -712,6 +719,76 @@ body {
             }
           }
         }
+      }
+
+      footer {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        top: 4rem;
+        color:$green;
+        font-family: $texteRegular;
+        font-size: 1.4rem;
+
+        & div:hover {
+          color: $text;
+        }
+
+        a {
+          color: $green;
+          &:hover {
+            color: $text;
+          }
+        }
+
+        div {
+          margin-bottom: 0.5rem;
+        }
+
+        #linkedlnFooter {
+          background-color: $primary;
+          position: absolute;
+          z-index: 100;
+          position: absolute;
+          left: 55vw;
+          padding: 0.7rem 1rem;
+          border-radius: 5px;
+          display: none;
+          font-weight: bold;
+          font-size: 1.2rem;
+        }
+
+        .presentation__social__network {
+           @include centerElement; 
+          width: 20rem;
+          display: flex;
+          justify-content: flex-start;
+
+          .git a svg,
+          .linkedln a svg {
+            width: 2rem;
+            margin-right: 2rem;
+
+            path {
+              fill: $green;
+              transition: 0.2s;
+
+              &:hover {
+                fill: $flashy;
+                transition: 0.2s;
+              }
+            }
+          }
+        }
+
+
+
+
+
+
+
       }
     }
   }

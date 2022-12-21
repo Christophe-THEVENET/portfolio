@@ -69,11 +69,23 @@ itemsRight.forEach((itemRight) => {
 
 let linkedlnButton = document.querySelector('.linkedln-button');
 let linkedlnModal = document.querySelector('.modale-linkedln');
+let linkedlnButtonFooter = document.querySelector('#linkedln-button-footer');
+let linkedlnModalFooter = document.querySelector('#linkedlnFooter');
 
+// -------- boutons a porpos -------------
 linkedlnButton.addEventListener('click', (e) => {
   e.preventDefault();
   linkedlnModal.style.display = 'block';
   setTimeout(() => {
     linkedlnModal.style.display = 'none';
+  }, 1500);
+});
+
+// -------- boutons footer -------------
+linkedlnButtonFooter.addEventListener('click', (e) => {
+  e.preventDefault();
+  linkedlnModalFooter.style.display = 'block';
+  setTimeout(() => {
+    linkedlnModalFooter.style.display = 'none';
   }, 1500);
 });
