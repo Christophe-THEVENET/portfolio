@@ -180,7 +180,7 @@ form.addEventListener('submit', (e) => {
     // ------------------------ envoi du message asynchrone fetch
   } else {
     // ---------- méthode de Netlify ------------
-    /*   e.preventDefault();
+    e.preventDefault();
 
     const myForm = e.target;
     const formData = new FormData(myForm);
@@ -191,10 +191,10 @@ form.addEventListener('submit', (e) => {
       body: new URLSearchParams(formData).toString(),
     })
       .then(() => console.log('Form successfully submitted'))
-      .catch((error) => alert(error)); */
+      .catch((error) => alert(error));
 
     // ----------- méthode trouvé sur le net --------
-    form.addEventListener('submit', (e) => {
+    /*    form.addEventListener('submit', (e) => {
       e.preventDefault();
 
       const formData = new FormData(form);
@@ -213,6 +213,6 @@ form.addEventListener('submit', (e) => {
           });
         }
       });
-    });
+    }); */
   }
 });
