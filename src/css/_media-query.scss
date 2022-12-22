@@ -128,12 +128,6 @@
       .contact__wrapper {
         height: 50vh;
 
-        .success-message {
-          bottom: 55vh;
-          right: 15vw;
-          @include successMessageHide;
-        }
-
         .title-form {
           font-size: 3.6rem;
           margin-bottom: 2rem;
@@ -326,11 +320,7 @@
       .contact__wrapper {
         height: auto;
 
-        .success-message {
-          bottom: 59vh;
-          right: 20vw;
-          @include successMessageHide;
-        }
+      
       }
     }
   }
@@ -472,7 +462,6 @@
 
           .success-message {
             bottom: 14vh;
-            @include successMessageHide;
           }
 
           .title-form {

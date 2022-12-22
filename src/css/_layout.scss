@@ -1,5 +1,3 @@
-
-
 body {
   min-height: 100vh;
   width: 100%;
@@ -615,6 +613,18 @@ body {
   height: 80vh; // a bouger en grand ecran
   margin-top: 4rem;
 
+  // ------------------------------- popup message envoyé
+  .notification {
+    background-color: $green;
+    padding: 1.2rem 2.4rem;
+    border-radius: 5px;
+    z-index: 100;
+    font-size: 2rem;
+    position: fixed;
+    transition: all 0.4s;
+    bottom: -60rem;
+  }
+
   h2 {
     @include titlePage;
   }
@@ -662,22 +672,6 @@ body {
         position: relative;
         transition: 0.4s;
         width: 100%;
-
-        .success-message {
-          background-color: $green;
-          padding: 0.5rem 1rem;
-          border-radius: 5px;
-          position: absolute;
-          z-index: 100;
-          bottom:  6vh;
-          right: 1vw;
-          @include successMessageHide;
-        }
-
-
-
-
-
 
         .title-form {
           @include titleCard(1.6rem);

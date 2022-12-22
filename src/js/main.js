@@ -104,14 +104,27 @@ linkedlnButtonFooter.addEventListener('click', (e) => {
 
 // ------------------------ validation formulaire
 
-let form = document.querySelector('#contact');
-let inputName = document.querySelector('#name');
-let inputMail = document.querySelector('#email');
-let inputmessage = document.querySelector('#message');
-let nameError = document.querySelector('#name-error');
-let emailError = document.querySelector('#email-error');
-let messageError = document.querySelector('#message-error');
-let popupSuccessMessage = document.querySelector('.success-message');
+const form = document.querySelector('#contact');
+const inputName = document.querySelector('#name');
+const inputMail = document.querySelector('#email');
+const inputmessage = document.querySelector('#message');
+const nameError = document.querySelector('#name-error');
+const emailError = document.querySelector('#email-error');
+const messageError = document.querySelector('#message-error');
+
+const notification = document.querySelector('#notifiction');
+
+// alert sucess sublit message
+
+const showMessageSuccess = () => {
+  notification.classList.add('show');
+  setTimeout(() => {
+    notification.classList.remove('show');
+    inputName.value = '';
+    inputMail.value = '';
+    inputmessage.value = '';
+  }, 2000);
+};
 
 // accepte minus maj tiret espace
 let nameRegex = /^[a-zA-Z-\s]+$/;
@@ -184,14 +197,7 @@ form.addEventListener('submit', (e) => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => {
-        setTimeout(() => {
-          popupSuccessMessage.classList.add('show-success-message');
-        }, 7000);
-        popupSuccessMessage.classList.remove('show-success-message');
-      })
+      .then(() => showMessageSuccess)
       .catch((error) => alert(error));
   }
 });
-
-// alert sucess sublit message
