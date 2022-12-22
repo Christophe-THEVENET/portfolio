@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'GRIFTER Bold 700';
+  font-family: 'grifter';
   src: url('./../fonts/grifter.ttf') format('truetype');
 }
 @font-face {
@@ -46,7 +46,7 @@ html {
 }
 
 //  ------------------------------------ polices
-$titleFamily: 'GRIFTER Bold 700';
+$titleFamily: 'grifter';
 $texteRegular: 'Coves Light', sans-serif;
 $fontSizeText: 1.8rem;
 $titleGreenMobile: 2.2vmax;
