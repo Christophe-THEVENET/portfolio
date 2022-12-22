@@ -107,10 +107,10 @@ linkedlnButtonFooter.addEventListener('click', (e) => {
 let form = document.querySelector('#contact-digitob');
 let inputName = document.querySelector('#name');
 let inputMail = document.querySelector('#email');
-let inputComment = document.querySelector('#comment');
+let inputmessage = document.querySelector('#message');
 let nameError = document.querySelector('#name-error');
 let emailError = document.querySelector('#email-error');
-let commentError = document.querySelector('#comment-error');
+let messageError = document.querySelector('#message-error');
 
 // accepte minus maj tiret espace
 let nameRegex = /^[a-zA-Z-\s]+$/;
@@ -132,12 +132,12 @@ form.addEventListener('submit', (e) => {
     setTimeout(() => {
       emailError.textContent = '';
     }, 2000);
-    // comment
-  } else if (inputComment.value.trim() == '') {
+    // message
+  } else if (inputmessage.value.trim() == '') {
     e.preventDefault();
-    commentError.textContent = 'Veuillez entrer votre message';
+    messageError.textContent = 'Veuillez entrer votre message';
     setTimeout(() => {
-      commentError.textContent = '';
+      messageError.textContent = '';
     }, 2000);
     // !!!!!!!!!!! si un input est invalide !!!!!!!!!!!!!!!!!!!!!
     // nom
@@ -170,12 +170,35 @@ form.addEventListener('submit', (e) => {
     setTimeout(() => {
       emailError.textContent = '';
     }, 2000);
-    // comment
-  } else if (inputComment.value.length > 5000) {
+    // message
+  } else if (inputmessage.value.length > 5000) {
     e.preventDefault();
-    commentError.textContent = 'Le message doit avoir moins de 5000 charactères';
+    messageError.textContent = 'Le message doit avoir moins de 5000 charactères';
     setTimeout(() => {
-      commentError.textContent = '';
+      messageError.textContent = '';
     }, 2000);
+    // ------------------------ envoi du message asynchrone fetch
+  } else {
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      fetch(form.getAttribute('action'), {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
+          'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+        },
+        body: new URLSearchParams(formData).toString()
+      })
+      .then(res => {
+        if (res) {
+          M.toast({
+            html: 'Merci pour votre message!',
+            classes: 'pulse'
+          });
+        }
+      });
+    });
   }
 });
