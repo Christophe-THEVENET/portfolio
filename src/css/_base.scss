@@ -3,7 +3,7 @@
   src: url('./../fonts/grifter.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Coves Light';
+  font-family: 'coves';
   src: url('./../fonts/coves.ttf') format('truetype');
 }
 
@@ -47,7 +47,7 @@ html {
 
 //  ------------------------------------ polices
 $titleFamily: 'grifter';
-$texteRegular: 'Coves Light', sans-serif;
+$texteRegular: 'coves', sans-serif;
 $fontSizeText: 1.8rem;
 $titleGreenMobile: 2.2vmax;
 
