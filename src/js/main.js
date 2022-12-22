@@ -142,7 +142,7 @@ form.addEventListener('submit', (e) => {
     }, 2000);
     // !!!!!!!!!!! si un input est invalide !!!!!!!!!!!!!!!!!!!!!
     // nom
-  }  else if (emailRegex.test(inputMail.value) == false) {
+  } else if (emailRegex.test(inputMail.value) == false) {
     e.preventDefault();
     emailError.textContent = "Le format de l'email est invalide";
     setTimeout(() => {
@@ -185,12 +185,9 @@ form.addEventListener('submit', (e) => {
       body: new URLSearchParams(formData).toString(),
     }).then(() => {
       setTimeout(() => {
-        popupSuccessMessage.classList.remove('success-message');
         popupSuccessMessage.classList.add('show-success-message');
-      }, 3000);
-      popupSuccessMessage.classList.remove('show-success-message');
-      popupSuccessMessage.classList.add('success-message')
-      .catch((error) => alert(error));
+      }, 7000);
+      popupSuccessMessage.classList.remove('show-success-message').catch((error) => alert(error));
     });
   }
 });
