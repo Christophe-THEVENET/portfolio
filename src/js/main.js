@@ -67,7 +67,6 @@ itemsRight.forEach((itemRight) => {
   observer.observe(itemRight);
 });
 
-
 // ---------------------------reveal right ----------------------
 let itemsBottom = document.querySelectorAll('.reveal-bottom');
 
@@ -77,11 +76,6 @@ itemsBottom.forEach((itemBottom) => {
   // observe ls éléments qd ils sont dans le viewport
   observer.observe(itemBottom);
 });
-
-
-
-
-
 
 // -------------------------- bouton linkedln
 
@@ -106,4 +100,82 @@ linkedlnButtonFooter.addEventListener('click', (e) => {
   setTimeout(() => {
     linkedlnModalFooter.style.display = 'none';
   }, 1500);
+});
+
+// ------------------------ validation formulaire
+
+let form = document.querySelector('#contact-digitob');
+let inputName = document.querySelector('#name');
+let inputMail = document.querySelector('#email');
+let inputComment = document.querySelector('#comment');
+let nameError = document.querySelector('#name-error');
+let emailError = document.querySelector('#email-error');
+let commentError = document.querySelector('#comment-error');
+
+// accepte minus maj tiret espace
+let nameRegex = /^[a-zA-Z-\s]+$/;
+let emailRegex = /^([0-9a-zA-Z].*?@([0-9a-zA-Z].*\.\w{2,4}))$/;
+
+form.addEventListener('submit', (e) => {
+  // !!!!!!!!!!! si un input est vide !!!!!!!!!!!!!!!!!!!!!
+  // nom
+  if (inputName.value.trim() == '') {
+    e.preventDefault();
+    nameError.textContent = 'Veuillez entrer votre nom';
+    setTimeout(() => {
+      nameError.textContent = '';
+    }, 2000);
+    // mail
+  } else if (inputMail.value.trim() == '') {
+    e.preventDefault();
+    emailError.textContent = 'Veuillez entrer votre email';
+    setTimeout(() => {
+      emailError.textContent = '';
+    }, 2000);
+    // comment
+  } else if (inputComment.value.trim() == '') {
+    e.preventDefault();
+    commentError.textContent = 'Veuillez entrer votre message';
+    setTimeout(() => {
+      commentError.textContent = '';
+    }, 2000);
+    // !!!!!!!!!!! si un input est invalide !!!!!!!!!!!!!!!!!!!!!
+    // nom
+  } else if (nameRegex.test(inputName.value) == false) {
+    e.preventDefault();
+    nameError.textContent = 'Le nom doit comporter des lettres ou tirets ou espace uniquements.';
+    setTimeout(() => {
+      nameError.textContent = '';
+    }, 2000);
+    // mail
+  } else if (emailRegex.test(inputMail.value) == false) {
+    e.preventDefault();
+    emailError.textContent = "Le format de l'email est invalide";
+    setTimeout(() => {
+      emailError.textContent = '';
+    }, 2000);
+    // !!!!!!!!!!! si un input est trop long !!!!!!!!!!!!!!!!!!!!!
+    // nom
+  } else if (inputName.value.length > 50) {
+    console.log(inputName.value.lenght);
+    e.preventDefault();
+    nameError.textContent = 'Le nom ne doit pas dépasser 50 charctères';
+    setTimeout(() => {
+      nameError.textContent = '';
+    }, 2000);
+    // mail
+  } else if (inputMail.value.length > 50) {
+    e.preventDefault();
+    emailError.textContent = 'L\'email ne doit pas dépasser 50 charactères';
+    setTimeout(() => {
+      emailError.textContent = '';
+    }, 2000);
+    // comment
+  } else if (inputComment.value.length > 5000) {
+    e.preventDefault();
+    commentError.textContent = 'Le message doit avoir moins de 5000 charactères';
+    setTimeout(() => {
+      commentError.textContent = '';
+    }, 2000);
+  }
 });

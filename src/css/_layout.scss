@@ -319,7 +319,7 @@ body {
         height: auto;
 
         &:hover {
-          background-color: #3a455585;
+          background-color: #3a455541;
           transition: 0.4s;
         }
 
@@ -451,7 +451,7 @@ body {
         }
         // ----------------------------------- modale
         &__modale {
-          background-color: #3a4555;
+          background-color: $secondary;
           height: 100%;
           width: 100%;
           display: flex;
