@@ -183,12 +183,14 @@ form.addEventListener('submit', (e) => {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(formData).toString(),
-    }).then(() => {
-      setTimeout(() => {
-        popupSuccessMessage.classList.add('show-success-message');
-      }, 7000);
-      popupSuccessMessage.classList.remove('show-success-message').catch((error) => alert(error));
-    });
+    })
+      .then(() => {
+        setTimeout(() => {
+          popupSuccessMessage.classList.add('show-success-message');
+        }, 7000);
+        popupSuccessMessage.classList.remove('show-success-message');
+      })
+      .catch((error) => alert(error));
   }
 });
 
