@@ -449,7 +449,7 @@ body {
           width: 100%;
           background-color: #3a45554f;
         }
-        // ---------------- modale
+        // ----------------------------------- modale
         &__modale {
           background-color: #3a4555;
           height: 100%;
@@ -460,22 +460,51 @@ body {
           justify-content: center;
           padding: 1rem;
           opacity: 0;
-          transition: 0.3s ease-in-out;
+          transition: 0.2s cubic-bezier(0.56, 0.15, 0.93, 0.38);
 
           &:hover {
             opacity: 1;
-            transition: 0.3s ease-in;
+            transition: 0.2s cubic-bezier(0.56, 0.15, 0.93, 0.38);
+
+            // ----------------------------- effet reveal top
+            & .project__wrapper__title {
+              transform: translateY(0);
+              opacity: 1;
+              transition: 0.2s cubic-bezier(0.56, 0.15, 0.93, 0.38);
+            }
+
+            & .project__wrapper__sentence {
+              opacity: 1;
+              transform: translateY(0);
+              transition: 0.3s cubic-bezier(0.56, 0.15, 0.93, 0.38);
+            }
+
+            & .project__wrapper__description {
+              opacity: 1;
+              transition: 0.6s ease-in-out;
+            }
+
+            & .project__wrapper__link {
+              opacity: 1;
+              transition: 0.6s ease-in-out;
+            }
           }
         }
 
         &__title {
           @include titleCard(2.4rem);
           margin: 2rem 0 2rem 0;
+          transform: translateY(-30px);
+          opacity: 0;
+          transition: 0.2s cubic-bezier(0.05, 1.01, 0.96, 0.2);
         }
 
         &__sentence {
           @include sentenceCard(1.4rem);
           margin-bottom: 1rem;
+          transform: translateY(-25px);
+          opacity: 0;
+          transition: 0.3s cubic-bezier(0.56, 0.15, 0.93, 0.38) s;
         }
 
         &__description {
@@ -483,15 +512,14 @@ body {
           font-family: $texteRegular;
           margin: 1rem 0;
           text-align: justify;
+          opacity: 0;
+          transition: 0.6s ease-in-out;
         }
 
         &__link {
           font-family: $texteRegular;
           color: $flashy;
           font-weight: bold;
-        }
-
-        &__link {
           background-color: $primary;
           padding: 0.5rem 1rem;
           border-radius: 5px;
@@ -501,6 +529,8 @@ body {
           text-decoration: none;
           transition: 0.5s;
           margin-top: 1rem;
+          opacity: 0;
+          transition: 0.6s ease-in-out;
 
           &:hover {
             background-color: $green;
@@ -758,7 +788,7 @@ body {
           font-family: $titleFamily;
           letter-spacing: 1px;
           z-index: 100;
-          padding:1rem;
+          padding: 1rem;
           border-radius: 5px;
           display: none;
           font-weight: bold;
@@ -778,8 +808,6 @@ body {
           .linkedln a svg {
             width: 2rem;
             margin-right: 2rem;
-
-           
 
             path {
               fill: $green;

@@ -1,6 +1,6 @@
 // ************************ HEADER **************************
 
-//  souligne menu hever ----------
+// ---------------------------  souligne menu hover 
 header nav ul li {
   display: inline-block;
 }
@@ -19,7 +19,7 @@ li a:hover:after {
   background: #444;
 }
 
-// icon scroll -----------------------
+// -------------------------------------- icon scroll 
 @media screen and (min-width: 940px) {
   .scroll-icon {
     position: absolute;
@@ -80,7 +80,7 @@ li a:hover:after {
   }
 }
 
-// ---------- animation reveal left
+// ------------------------------- animation reveal left
 .reveal-left {
   transform: translateX(0);
   opacity: 1;
@@ -92,7 +92,7 @@ li a:hover:after {
   opacity: 0;
 }
 
-// ---------- animation reveal right
+// ------------------------------- animation reveal right
 
 .reveal-right {
   transform: translateX(0);
@@ -105,7 +105,7 @@ li a:hover:after {
   opacity: 0;
 }
 
-// ---------- animation reveal right
+// ------------------------------- animation reveal bottom
 
 .reveal-bottom {
   transform: translateY(0);
