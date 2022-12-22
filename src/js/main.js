@@ -142,14 +142,7 @@ form.addEventListener('submit', (e) => {
     }, 2000);
     // !!!!!!!!!!! si un input est invalide !!!!!!!!!!!!!!!!!!!!!
     // nom
-  } else if (nameRegex.test(inputName.value) == false) {
-    e.preventDefault();
-    nameError.textContent = 'Le nom doit comporter des lettres ou tirets ou espace uniquements.';
-    setTimeout(() => {
-      nameError.textContent = '';
-    }, 2000);
-    // mail
-  } else if (emailRegex.test(inputMail.value) == false) {
+  }  else if (emailRegex.test(inputMail.value) == false) {
     e.preventDefault();
     emailError.textContent = "Le format de l'email est invalide";
     setTimeout(() => {
@@ -192,9 +185,12 @@ form.addEventListener('submit', (e) => {
       body: new URLSearchParams(formData).toString(),
     }).then(() => {
       setTimeout(() => {
+        popupSuccessMessage.classList.remove('success-message');
         popupSuccessMessage.classList.add('show-success-message');
       }, 3000);
-      popupSuccessMessage.classList.remove('show-success-message').catch((error) => alert(error));
+      popupSuccessMessage.classList.remove('show-success-message');
+      popupSuccessMessage.classList.add('success-message')
+      .catch((error) => alert(error));
     });
   }
 });
