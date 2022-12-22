@@ -111,6 +111,7 @@ let inputmessage = document.querySelector('#message');
 let nameError = document.querySelector('#name-error');
 let emailError = document.querySelector('#email-error');
 let messageError = document.querySelector('#message-error');
+let popupSuccessMessage = document.querySelector('.success-message');
 
 // accepte minus maj tiret espace
 let nameRegex = /^[a-zA-Z-\s]+$/;
@@ -189,35 +190,13 @@ form.addEventListener('submit', (e) => {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(formData).toString(),
-    })
-      .then(() =>
-        M.toast({
-          html: 'Merci pour votre message!',
-          classes: 'pulse',
-        })
-      )
-      .catch((error) => alert(error));
-
-    // ----------- méthode trouvé sur le net --------
-    /*    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      const formData = new FormData(form);
-      fetch(form.getAttribute('action'), {
-        method: 'POST',
-        headers: {
-          Accept: 'application/x-www-form-urlencoded;charset=UTF-8',
-          'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
-        },
-        body: new URLSearchParams(formData).toString(),
-      }).then((res) => {
-        if (res) {
-          M.toast({
-            html: 'Merci pour votre message!',
-            classes: 'pulse',
-          });
-        }
-      });
-    }); */
+    }).then(() => {
+      setTimeout(() => {
+        popupSuccessMessage.classList.add('show-success-message');
+      }, 3000);
+      popupSuccessMessage.classList.remove('show-success-message').catch((error) => alert(error));
+    });
   }
 });
+
+// alert sucess sublit message

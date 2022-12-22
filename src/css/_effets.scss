@@ -1,6 +1,6 @@
 // ************************ HEADER **************************
 
-// ---------------------------  souligne menu hover 
+// ---------------------------  souligne menu hover
 header nav ul li {
   display: inline-block;
 }
@@ -19,7 +19,7 @@ li a:hover:after {
   background: #444;
 }
 
-// -------------------------------------- icon scroll 
+// -------------------------------------- icon scroll
 @media screen and (min-width: 940px) {
   .scroll-icon {
     position: absolute;
@@ -118,10 +118,6 @@ li a:hover:after {
   opacity: 0;
 }
 
-
-
-
-
 // titre qui clignote
 @keyframes blink {
   0% {
@@ -133,4 +129,10 @@ li a:hover:after {
   100% {
     opacity: 0;
   }
+}
+
+// ---------------------------------- popup success message
+
+.show-success-message {
+  @include successMessageShow;
 }
