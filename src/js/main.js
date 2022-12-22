@@ -190,7 +190,12 @@ form.addEventListener('submit', (e) => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => console.log('Form successfully submitted'))
+      .then(() =>
+        M.toast({
+          html: 'Merci pour votre message!',
+          classes: 'pulse',
+        })
+      )
       .catch((error) => alert(error));
 
     // ----------- méthode trouvé sur le net --------
