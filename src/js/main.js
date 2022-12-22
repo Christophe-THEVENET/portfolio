@@ -104,7 +104,7 @@ linkedlnButtonFooter.addEventListener('click', (e) => {
 
 // ------------------------ validation formulaire
 
-let form = document.querySelector('#contact-digitob');
+let form = document.querySelector('#contact');
 let inputName = document.querySelector('#name');
 let inputMail = document.querySelector('#email');
 let inputmessage = document.querySelector('#message');
