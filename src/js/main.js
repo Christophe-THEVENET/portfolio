@@ -166,7 +166,7 @@ form.addEventListener('submit', (e) => {
     // mail
   } else if (inputMail.value.length > 50) {
     e.preventDefault();
-    emailError.textContent = 'L\'email ne doit pas dépasser 50 charactères';
+    emailError.textContent = "L'email ne doit pas dépasser 50 charactères";
     setTimeout(() => {
       emailError.textContent = '';
     }, 2000);
@@ -179,23 +179,37 @@ form.addEventListener('submit', (e) => {
     }, 2000);
     // ------------------------ envoi du message asynchrone fetch
   } else {
-    form.addEventListener('submit', e => {
+    // ---------- méthode de Netlify ------------
+    /*   e.preventDefault();
+
+    const myForm = e.target;
+    const formData = new FormData(myForm);
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => console.log('Form successfully submitted'))
+      .catch((error) => alert(error)); */
+
+    // ----------- méthode trouvé sur le net --------
+    form.addEventListener('submit', (e) => {
       e.preventDefault();
 
       const formData = new FormData(form);
       fetch(form.getAttribute('action'), {
         method: 'POST',
         headers: {
-          'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
-          'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+          Accept: 'application/x-www-form-urlencoded;charset=UTF-8',
+          'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
         },
-        body: new URLSearchParams(formData).toString()
-      })
-      .then(res => {
+        body: new URLSearchParams(formData).toString(),
+      }).then((res) => {
         if (res) {
           M.toast({
             html: 'Merci pour votre message!',
-            classes: 'pulse'
+            classes: 'pulse',
           });
         }
       });
