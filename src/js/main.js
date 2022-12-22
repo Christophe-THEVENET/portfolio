@@ -107,7 +107,7 @@ linkedlnButtonFooter.addEventListener('click', (e) => {
 const form = document.querySelector('#contact');
 const inputName = document.querySelector('#name');
 const inputMail = document.querySelector('#email');
-const inputmessage = document.querySelector('#message');
+const inputMessage = document.querySelector('#message');
 const nameError = document.querySelector('#name-error');
 const emailError = document.querySelector('#email-error');
 const messageError = document.querySelector('#message-error');
@@ -118,11 +118,11 @@ const notification = document.querySelector('#notification');
 
 const showMessageSuccess = () => {
   notification.classList.add('show');
+  inputName.value = '';
+  inputMail.value = '';
+  inputMessage.value = '';
   setTimeout(() => {
     notification.classList.remove('show');
-    inputName.value = '';
-    inputMail.value = '';
-    inputmessage.value = '';
   }, 2000);
 };
 
@@ -147,7 +147,7 @@ form.addEventListener('submit', (e) => {
       emailError.textContent = '';
     }, 2000);
     // message
-  } else if (inputmessage.value.trim() == '') {
+  } else if (inputMessage.value.trim() == '') {
     e.preventDefault();
     messageError.textContent = 'Veuillez entrer votre message';
     setTimeout(() => {
@@ -178,7 +178,7 @@ form.addEventListener('submit', (e) => {
       emailError.textContent = '';
     }, 2000);
     // message
-  } else if (inputmessage.value.length > 5000) {
+  } else if (inputMessage.value.length > 5000) {
     e.preventDefault();
     messageError.textContent = 'Le message doit avoir moins de 5000 charactères';
     setTimeout(() => {
