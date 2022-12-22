@@ -112,7 +112,7 @@ const nameError = document.querySelector('#name-error');
 const emailError = document.querySelector('#email-error');
 const messageError = document.querySelector('#message-error');
 
-const notification = document.querySelector('#notifiction');
+const notification = document.querySelector('#notification');
 
 // alert sucess sublit message
 
