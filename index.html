@@ -23,7 +23,7 @@
   <header class="header">
     <!-- logo -->
     <div class="header__logo" data-aos="fade-down-right" data-aos-delay="3000" data-aos-duration="2000">
-      <a href="http://127.0.0.1:5173/"><img class="header__logo__img" src="./src/img/logo_green.png" alt=""
+      <a href="http://christophethevenet.fr/"><img class="header__logo__img" src="./src/img/logo_green.png" alt=""
           srcset=""></a>
     </div>
     <!-- nav-->
@@ -820,7 +820,7 @@
     <section class="slide slide-contact" id="me-contacter">
       <div class="page filter-contact">
         <article class="contact">
-        
+
           <div class="contact__title">
             <h2 class="reveal-bottom">Contact</h2>
             <div class="contact__title__border-right reveal-bottom"></div>
@@ -836,12 +836,14 @@
                   <span class="span-tel reveal-right">(a partir de Juin 2023)</span>
                 </p>
 
-                <!-- ****************************************************************************************************************************************************************************** -->
-
-               
-
                 <!-- ___________________________________   formulaire de contact  -->
-                <form name="contact" id="contact" method="POST" action="/#contact" data-netlify="true"  class="reveal-left">
+                <form name="contact" id="contact" method="POST" action="/#contact" netlify-honeypot="bot-field" data-netlify-recaptcha="true"
+                  data-netlify="true" class="reveal-left">
+                  <div class="hidden-captcha">
+                    <label>
+                      Don’t fill this out if you’re human: <input name="bot-field" />
+                    </label>
+                  </div>
                   <input type="hidden" name="form-name" value="contact">
                   <div class="form-row">
                     <label for="name">Votre nom <span class="error" id="name-error"></span></label>
@@ -859,11 +861,9 @@
                   <div class="notification" id="notification">Merci pour votre message!</div>
                 </form>
 
-
-                <!-- ****************************************************************************************************************************************************************************** -->
-
                 <footer>
-                  <div  class="reveal-left">Christophe THEVENET développeur web- Copyright 2023 - <a href="mentions.html" target="_blank">Mentions
+                  <div class="reveal-left">Christophe THEVENET développeur web- Copyright 2023 - <a href="mentions.html"
+                      target="_blank">Mentions
                       légales</a></div>
                   <!-- ________________________________ social icon  -->
                   <div class="presentation__social__network reveal-left">
@@ -909,9 +909,6 @@
         </article>
       </div>
     </section>
-
-
-
 
 
   </main>

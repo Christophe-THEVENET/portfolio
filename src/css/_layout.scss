@@ -622,7 +622,7 @@ body {
     font-size: 2rem;
     /* position: fixed; */
     transform: translateX(-70rem);
-    transition: all 1s cubic-bezier(1,-0.01,1,-1.13);
+    transition: all 1s cubic-bezier(1, -0.01, 1, -1.13);
   }
 
   h2 {
@@ -766,6 +766,11 @@ body {
             }
           }
         }
+
+        .hidden-captcha {
+          display: none;
+        }
+
       }
 
       footer {

@@ -13,7 +13,7 @@ const notification = document.querySelector('#notification');
 // alert sucess submit message
 
 
-
+// notif succée et vide les inputs
 const showMessageSuccess = () => {
   notification.classList.add('show');
   inputName.value = '';
@@ -26,14 +26,10 @@ const showMessageSuccess = () => {
 
 
 
-
-
-
-
-
 // accepte minus maj tiret espace
 let emailRegex = /^([0-9a-zA-Z].*?@([0-9a-zA-Z].*\.\w{2,4}))$/;
 
+// a la soumission du formulaire
  form.addEventListener('submit', (e) => {
   // !!!!!!!!!!! si un input est vide !!!!!!!!!!!!!!!!!!!!!
   // nom
