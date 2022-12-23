@@ -101,7 +101,7 @@ let emailRegex = /^([0-9a-zA-Z].*?@([0-9a-zA-Z].*\.\w{2,4}))$/;
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => showMessageSuccess)
+      .then(() => showMessageSuccess())
       .catch((error) => alert(error));
   }
 }); 
