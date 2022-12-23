@@ -23,7 +23,7 @@
   <header class="header">
     <!-- logo -->
     <div class="header__logo" data-aos="fade-down-right" data-aos-delay="3000" data-aos-duration="2000">
-      <a href="http://christophethevenet.fr/"><img class="header__logo__img" src="./src/img/logo_green.png" alt=""
+      <a href="https://christophethevenet.fr/"><img class="header__logo__img" src="./src/img/logo_green.png" alt=""
           srcset=""></a>
     </div>
     <!-- nav-->
@@ -837,8 +837,8 @@
                 </p>
 
                 <!-- ___________________________________   formulaire de contact  -->
-                <form name="contact" id="contact" method="POST" action="/#contact" netlify-honeypot="bot-field" data-netlify-recaptcha="true"
-                  data-netlify="true" class="reveal-left">
+                <form name="contact" id="contact" method="POST" action="/#contact" netlify-honeypot="bot-field"
+                  data-netlify-recaptcha="true" data-netlify="true" class="reveal-left">
                   <div class="hidden-captcha">
                     <label>
                       Don’t fill this out if you’re human: <input name="bot-field" />
@@ -857,6 +857,7 @@
                     <label for="message">Commentaire <span class="error" id="message-error"></span></label>
                     <textarea rows="4" name="message" id="message" placeholder="Ajoutez votre commentaire"></textarea>
                   </div>
+                  <div data-netlify-recaptcha="true"></div>
                   <button id="btn-message" type="submit">Envoyer le message</button>
                   <div class="notification" id="notification">Merci pour votre message!</div>
                 </form>
