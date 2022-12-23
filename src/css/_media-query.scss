@@ -319,8 +319,6 @@
     &__content__block {
       .contact__wrapper {
         height: auto;
-
-      
       }
     }
   }
@@ -443,13 +441,18 @@
   // ********************* PAGE CONTACT ************************
   .contact {
     height: 50vh;
+
+    .contact__title {
+      margin-bottom: 4rem; //
+    }
+
     &__content {
       height: 100%;
 
       &__block {
         margin-top: -3rem;
 
-        // boites prestation ---------------------
+        // boite contact ---------------------
         .contact__wrapper {
           margin-left: 3rem;
           display: grid;
@@ -478,6 +481,7 @@
           form {
             grid-column: 1 / 2;
             grid-row: 1 / 4;
+            margin-bottom: -2rem; //
           }
 
           footer {
@@ -490,8 +494,7 @@
               font-size: 1.8rem;
 
               a {
-              font-size: 1.8rem;
-
+                font-size: 1.8rem;
               }
             }
 
