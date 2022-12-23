@@ -487,11 +487,24 @@
 
             div {
               margin-right: 1rem;
+              font-size: 1.8rem;
+
+              a {
+              font-size: 1.8rem;
+
+              }
             }
 
             .presentation__social__network {
-              width: 10rem;
+              width: 20rem;
               margin-left: 2rem;
+
+              .linkedln-button svg {
+                width: 4rem;
+              }
+              .git a svg {
+                width: 4rem;
+              }
             }
           }
         }

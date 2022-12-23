@@ -620,9 +620,9 @@ body {
     border-radius: 5px;
     z-index: 100;
     font-size: 2rem;
-    position: fixed;
-    transition: all 0.4s;
-    bottom: -60rem;
+    /* position: fixed; */
+    transform: translateX(-70rem);
+    transition: all 1s cubic-bezier(1,-0.01,1,-1.13);
   }
 
   h2 {

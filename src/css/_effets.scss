@@ -133,5 +133,7 @@ li a:hover:after {
 
 // -------------------------------- popup message envoyé
 .notification.show {
-bottom: 2rem;
+  transform: translateX(0);
+
+  transition: all 1s cubic-bezier(.92,.08,.28,1.46);
 }
