@@ -49,3 +49,25 @@ linkedlnButtonFooter.addEventListener('click', (e) => {
     linkedlnModalFooter.style.display = 'none';
   }, 1500);
 });
+
+// ***************** boutons mentions légales *************************
+//
+
+let mentionsBtn = document.querySelector('#mentions-link');
+let closeMentionsBtn = document.querySelector('#btn-close-mentions');
+let modaleMentions = document.querySelector('#mentions');
+
+// -------- boutons lien mentions-------------
+mentionsBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  console.log('toto');
+  modaleMentions.classList.add('show');
+});
+
+// -------- boutons fermer modale mentions -------------
+closeMentionsBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  modaleMentions.classList.remove('show');
+});
+
+

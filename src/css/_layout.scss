@@ -621,7 +621,7 @@ body {
     z-index: 100;
     font-size: 1.8rem;
     text-align: center;
-    /* position: fixed; */
+    opacity: 0;
     transform: translateX(-90rem);
     transition: all 1s cubic-bezier(1, -0.01, 1, -1.13);
   }
@@ -772,7 +772,6 @@ body {
         .hidden-captcha {
           display: none;
         }
-
       }
 
       footer {
@@ -841,6 +840,65 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+// ************************* MODALE MENTIONS LEGALES **********************
+
+.slide-contact {
+  /*  position: relative; */
+
+  .mentions {
+    background-color: $green;
+    color: $secondary;
+    font-weight: bold;
+    text-align: justify;
+    font-family: 'coves', sans-serif;
+    padding: 4rem;
+    font-size: 1.6rem;
+    position: relative;
+    top: -90vh;
+    left: 10vw;
+    width: 80%;
+    height: 80vh;
+    overflow: scroll;
+    border-radius: 5px;
+    transform: translateX(-300rem);
+    opacity: 0;
+    transition: all 1s cubic-bezier(1, -0.01, 1, -1.13);
+
+    &__header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 3rem;
+
+      h1 {
+        flex: 1;
+        @include titlePage;
+        color: $primary;
+      }
+
+      .btn-close-mentions {
+        color: rgba(255, 0, 0, 0.829);
+        font-size: 4rem;
+        z-index: 100;
+        transition: all 0.2s cubic-bezier(0.92, 0.08, 0.28, 1.46);
+
+        &:hover {
+          color: red;
+          transition: all 0.2s cubic-bezier(0.92, 0.08, 0.28, 1.46);
+        }
+      }
+    }
+
+    h3 {
+      margin: 1rem 0;
+      text-decoration: underline;
+      @include sentenceCard(2rem);
+      color: $primary;
+      font-weight: bold;
     }
   }
 }

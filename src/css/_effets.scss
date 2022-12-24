@@ -134,6 +134,15 @@ li a:hover:after {
 // -------------------------------- popup message envoyé
 .notification.show {
   transform: translateX(0);
-
   transition: all 1s cubic-bezier(.92,.08,.28,1.46);
+  opacity: 1;
+}
+
+
+// -------------------------------- modale mentions
+.mentions.show {
+  transform: translateX(0);
+  transition: all 1s cubic-bezier(.92,.08,.28,1.46);
+  opacity: 1;
+
 }
