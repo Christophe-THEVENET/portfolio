@@ -618,11 +618,10 @@ body {
     background-color: $green;
     color: $primary;
     letter-spacing: 1px;
-    padding: 1.2rem 2.4rem;
+    padding: 1.5rem 1rem;
     border-radius: 5px;
     z-index: 100;
     font-size: 1.8rem;
-    text-align: center;
     opacity: 0;
     transform: translateX(-90rem);
     transition: all 1s cubic-bezier(1, -0.01, 1, -1.13);
