@@ -351,13 +351,13 @@
     // ********************* PAGE A PROPOS ************************
     .about {
         &__content {
-            height: 40rem;
+           /*  height: 40rem; */
 
             &__border-left {
                 max-height: 90%;
             }
             &__block {
-                height: 45rem;
+              /*   height: 45rem; */
                 margin: 2rem;
                 grid-template-columns: 1fr 2fr;
                 grid-template-rows: 1fr 1fr;
@@ -391,7 +391,7 @@
     // ********************* PAGE PRESTATIONS ************************
     .services {
         &__content {
-            height: 40rem;
+           /*  height: 40rem; */
             &__border-left {
                 max-height: 90%;
             }
@@ -426,7 +426,7 @@
     // ********************* PAGE REALISATIONS ************************
     .project {
         &__content {
-            height: 55rem;
+            /* height: 55rem; */
             &__border-left {
                 max-height: 80%;
             }
@@ -460,7 +460,7 @@
 
     // ********************* PAGE CONTACT ************************
     .contact {
-        height: 50vh;
+       /*  height: 50vh; */
 
         &__content {
             height: 100%;
