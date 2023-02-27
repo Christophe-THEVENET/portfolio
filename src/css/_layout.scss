@@ -299,14 +299,13 @@ body {
 
         //  -------------------------  block contenu prestation
         &__block {
-            padding: 0.5rem;
+            padding: 1rem;
             display: grid;
-            /*  justify-items: center; */
             grid-template-columns: 1fr;
             gap: 10px;
             overflow: scroll;
             transition: 0.4s;
-            height: 70vh;
+            height: 70vh; 
             width: 100%;
 
             //--------------------------  boite prestations
@@ -318,7 +317,6 @@ body {
                 transition: 0.4s;
                 padding: 1rem;
                 width: 32rem;
-                height: auto;
                 width: 100%;
 
                 &:hover {
@@ -328,7 +326,7 @@ body {
 
                 .title {
                     @include titleCard(2.3rem);
-                    margin: 4rem 0 2rem 0;
+                    margin: 1rem 0 ;
                     letter-spacing: 1px;
                 }
 
@@ -342,6 +340,9 @@ body {
                     color: $text;
                     font-family: $texteRegular;
                     margin-bottom: 0.5rem;
+                    transition: 0.1s ease-in-out;
+                    padding: 0.2rem 0.5rem;
+                    border-radius: 5px;
                 }
 
                 ul {
@@ -354,13 +355,16 @@ body {
                     font-size: 1.2rem;
                     text-transform: uppercase;
                     letter-spacing: 1px;
-                    align-self: flex-end;
-                    margin-right: 5rem;
 
                     span {
                         color: $green;
                     }
                 }
+
+                .spec {
+                    margin-left: 2rem;
+                }
+
             }
         }
     }
@@ -438,7 +442,7 @@ body {
 
             // -------------------------------- boite projet
             .project__wrapper {
-               /*  height: 20vh; */
+                /*  height: 20vh; */
                 font-size: 1.8rem;
                 display: flex;
                 flex-direction: column;

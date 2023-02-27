@@ -4,7 +4,6 @@
 @media screen and (min-width: 500px) {
     // ********************* PAGE REALISATIONS > 500px < 768px  ************************
     .project {
-
         &__content__block {
             grid-template-columns: 1fr 1fr;
 
@@ -148,14 +147,14 @@
 
     // ********************* PAGE CONTACT ************************
     .contact {
-       /*  margin-top: 25vh; */
+        /*  margin-top: 25vh; */
 
         &__content__block {
             grid-template-columns: 1fr 1fr;
 
             // boite contact--------------------------
             .contact__wrapper {
-               /*  height: 50vh; */
+                /*  height: 50vh; */
 
                 .title-form {
                     font-size: 3.6rem;
