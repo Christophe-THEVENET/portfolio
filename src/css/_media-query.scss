@@ -581,6 +581,12 @@
     }
 
     // ***************** PAGE A PROPOS *******************
+
+.about {
+    padding-top: 3rem;
+}
+
+
     .title-formation,
     .item-formation {
         display: none;
@@ -594,17 +600,18 @@
 
     // ***************** PAGE PRESTATIONS *******************
     .services {
-        margin-top: 8rem;
+        padding-top: 3rem;
     }
 
     // ***************** PAGE REALISATIONS *******************
     .project {
-        margin-top: 8rem;
+        padding-top: 2rem;
+
     }
 
     // ***************** PAGE CONTACT *******************
     .contact {
-        margin-top: 8rem;
+        padding-top: 3rem;
 
         &__content__block {
             .contact__wrapper {
