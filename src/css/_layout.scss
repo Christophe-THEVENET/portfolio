@@ -434,9 +434,11 @@ body {
             grid-template-columns: 1fr;
             gap: 5px;
             overflow: scroll;
+            height: 90%;
+
             // -------------------------------- boite projet
             .project__wrapper {
-                height: 30vh;
+               /*  height: 20vh; */
                 font-size: 1.8rem;
                 display: flex;
                 flex-direction: column;
@@ -451,7 +453,7 @@ body {
                 // ----------------------------------- modale
                 &__modale {
                     background-color: $secondary;
-                    min-height: 25rem;
+                    /* min-height: 25rem; */
                     height: 100%;
                     width: 100%;
                     display: flex;
@@ -664,6 +666,7 @@ body {
         height: 100%;
         display: flex;
         width: 100%;
+        /*  height: auto; */
 
         &__border-left {
             height: 50vh;
@@ -688,6 +691,7 @@ body {
                 align-items: center;
                 position: relative;
                 transition: 0.4s;
+                height: 100%;
 
                 .title-form {
                     @include titleCard(1.6rem);

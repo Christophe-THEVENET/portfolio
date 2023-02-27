@@ -1,10 +1,27 @@
 //
 
-//
+// ================= MEDIA QUERY >500px  <768PX (TABLETTE) =========================
+@media screen and (min-width: 500px) {
+    // ********************* PAGE REALISATIONS > 500px < 768px  ************************
+    .project {
 
+        &__content__block {
+            grid-template-columns: 1fr 1fr;
+
+            // boite réalisations --------------------------
+            .project__wrapper {
+                margin: 1rem;
+                /* height: 30vh; */
+                &__title {
+                    font-size: 1.9rem;
+                }
+            }
+        }
+    }
+}
 //
 //
-// ================= MEDIA QUERY > 740PX (TABLETTE) =========================
+// ================= MEDIA QUERY > 768PX (TABLETTE) =========================
 @media screen and (min-width: 768px) {
     // ************** HEADER ******************
     .header {
@@ -53,6 +70,8 @@
 
     // ********************* PAGE A PROPOS ************************
     .about {
+        margin-top: 25vh;
+
         &__content__block {
             grid-template-columns: 1fr 1fr;
 
@@ -89,6 +108,8 @@
 
     // ********************* PAGE PRESTATIONS ************************
     .services {
+        margin-top: 25vh;
+
         &__content__block {
             grid-template-columns: 1fr 1fr;
 
@@ -103,15 +124,23 @@
 
     // ********************* PAGE REALISATIONS ************************
     .project {
+        margin-top: 25vh;
+
         &__content__block {
             grid-template-columns: 1fr 1fr;
 
             // boite réalisations --------------------------
             .project__wrapper {
                 margin: 1rem;
-                height: 30vh;
+                /* height: 30vh; */
                 &__title {
-                    font-size: 1.9rem;
+                    font-size: 1.5vmax;
+                }
+                &__sentence {
+                    font-size: 1vmax;
+                }
+                &__description {
+                    font-size: 1.4vmax;
                 }
             }
         }
@@ -119,12 +148,14 @@
 
     // ********************* PAGE CONTACT ************************
     .contact {
+       /*  margin-top: 25vh; */
+
         &__content__block {
             grid-template-columns: 1fr 1fr;
 
             // boite contact--------------------------
             .contact__wrapper {
-                height: 50vh;
+               /*  height: 50vh; */
 
                 .title-form {
                     font-size: 3.6rem;
@@ -143,6 +174,7 @@
                 footer {
                     flex-direction: row;
                     flex-wrap: wrap;
+                    margin-top: 2rem;
                 }
             }
         }
@@ -317,6 +349,8 @@
             // -----------------------------------  container
             &__block {
                 padding: 2rem 4rem;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 10px;
             }
         }
     }
@@ -462,7 +496,6 @@
 
     // ********************* PAGE CONTACT ************************
     .contact {
-
         &__content {
             height: 50rem;
 
@@ -582,10 +615,9 @@
 
     // ***************** PAGE A PROPOS *******************
 
-.about {
-    padding-top: 3rem;
-}
-
+    .about {
+        padding-top: 3rem;
+    }
 
     .title-formation,
     .item-formation {
@@ -606,7 +638,6 @@
     // ***************** PAGE REALISATIONS *******************
     .project {
         padding-top: 2rem;
-
     }
 
     // ***************** PAGE CONTACT *******************
