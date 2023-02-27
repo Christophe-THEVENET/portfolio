@@ -89,33 +89,27 @@
 
     // ********************* PAGE PRESTATIONS ************************
     .services {
-        height: 75vh;
         &__content__block {
             grid-template-columns: 1fr 1fr;
 
-             .blink  {
+            .blink {
                 grid-column-start: 1;
                 grid-column-end: 3;
-            } 
+            }
 
             // boite prestation --------------------------
-            .services__wrapper {
-                height: 30vh;
-            }
         }
     }
 
     // ********************* PAGE REALISATIONS ************************
     .project {
         &__content__block {
-            padding: 30px;
             grid-template-columns: 1fr 1fr;
-            gap: 30px;
 
-            // boite prestation --------------------------
+            // boite réalisations --------------------------
             .project__wrapper {
-                height: 40vh;
-
+                margin: 1rem;
+                height: 30vh;
                 &__title {
                     font-size: 1.9rem;
                 }
@@ -125,11 +119,10 @@
 
     // ********************* PAGE CONTACT ************************
     .contact {
-        height: 80vh;
         &__content__block {
             grid-template-columns: 1fr 1fr;
 
-            // boite prestation --------------------------
+            // boite contact--------------------------
             .contact__wrapper {
                 height: 50vh;
 
@@ -161,7 +154,7 @@
 //
 //
 //
-// ======================= MEDIA QUERY > 940PX (PC) ===========================
+// ======================= MEDIA QUERY > 960PX (PC) ===========================
 
 @media screen and (min-width: 960px) {
     // ************** HEADER ******************
@@ -200,7 +193,8 @@
 
     // ********************* PAGE A PROPOS ************************
     .about {
-        padding: 0;
+        padding-top: 10rem;
+        margin: 5rem;
         &__title {
             width: 80%;
         }
@@ -212,6 +206,7 @@
         &__content {
             // -----------------------------------  container
             &__block {
+                padding: 0 4rem;
                 // ---------------------------  block presentation
 
                 &__presentation {
@@ -240,6 +235,9 @@
                         &__text__icon {
                             display: grid;
                             grid-template-columns: 7fr 1fr;
+                            p {
+                                padding-right: 2rem;
+                            }
 
                             // ,,,,,,,,,,  icones
                             .icon {
@@ -281,6 +279,9 @@
 
     // ********************* PAGE PRESTATIONS ************************
     .services {
+        padding-top: 10rem;
+        margin: 5rem;
+
         &__title {
             width: 80%;
         }
@@ -289,8 +290,6 @@
         }
 
         &__content__block {
-            padding: 0;
-            margin: 0;
             .services__wrapper {
                 height: auto;
 
@@ -303,19 +302,33 @@
 
     // ********************* PAGE REALISATIONS ************************
     .project {
-        height: 50vh;
+        padding-top: 10rem;
+        margin: 5rem;
+
         &__title {
             width: 80%;
+            margin-top: -4rem;
         }
         &__title__border-right {
             margin-top: 1.5%;
+        }
+
+        &__content {
+            // -----------------------------------  container
+            &__block {
+                padding: 2rem 4rem;
+            }
         }
     }
 
     // ********************* PAGE CONTACT ************************
     .contact {
+        padding-top: 10rem;
+        margin: 5rem;
         &__title {
             width: 80%;
+            margin-top: -4rem;
+
         }
         &__title__border-right {
             margin-top: 1.5%;
@@ -377,7 +390,6 @@
 
     // ********************* PAGE PRESTATIONS ************************
     .services {
-        height: 65vh;
         &__content {
             height: 40rem;
             &__border-left {
@@ -385,9 +397,13 @@
             }
 
             &__block {
-                justify-items: stretch;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 grid-gap: 0px;
+
+                .blink {
+                    grid-column-start: 1;
+                    grid-column-end: 5;
+                }
 
                 // boites prestation ---------------------
                 .services__wrapper {
@@ -409,7 +425,6 @@
 
     // ********************* PAGE REALISATIONS ************************
     .project {
-        height: 55vh;
         &__content {
             height: 55rem;
             &__border-left {
