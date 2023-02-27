@@ -1,48 +1,50 @@
 @font-face {
-  font-family: 'grifter';
-  src: url('./../fonts/grifter.ttf') format('truetype');
+    font-family: 'grifter';
+    src: url('./../fonts/grifter.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'coves';
-  src: url('./../fonts/coves.ttf') format('truetype');
+    font-family: 'coves';
+    src: url('./../fonts/coves.ttf') format('truetype');
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,700;1,400&display=swap');
 
 *,
 ::after,
 ::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  /* border: 1px solid red;   */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   /*  border: 1px solid red;   */ 
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 // --------------------------------- centrer
 @mixin centerElement {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 // ------------------------------------- titre page
 @mixin titlePage {
-  font-family: $titleFamily;
-  font-size: 3.5vmax;
-  color: $flashy;
+    font-family: $titleFamily;
+    font-size: 3.5vmax;
+    color: $flashy;
 }
 
 // ------------------------------------- text
 @mixin text($fontSize) {
-  font-family: $texteRegular;
-  font-size: $fontSize;
-  text-align: justify;
-  color: $text;
+    font-family: $texteRegular;
+    font-size: $fontSize;
+    text-align: justify;
+    color: $text;
 }
 
 //  ------------------------------------ polices
@@ -61,19 +63,16 @@ $alert: rgb(238, 122, 122);
 
 // ---------------------------- éléments des cards
 @mixin titleCard($fontSize) {
-  font-family: $titleFamily;
-  color: $green;
-  font-size: $fontSize;
-  letter-spacing: 1px;
+    font-family: $titleFamily;
+    color: $green;
+    font-size: $fontSize;
+    letter-spacing: 1px;
 }
 
 @mixin sentenceCard($fontSize) {
-  color: $flashy;
-  font-family: $titleFamily;
-  font-size: $fontSize;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+    color: $flashy;
+     font-family: $titleFamily; 
+    font-size: $fontSize;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
-
-
-

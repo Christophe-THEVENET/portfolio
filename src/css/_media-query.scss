@@ -6,151 +6,156 @@
 //
 // ================= MEDIA QUERY > 740PX (TABLETTE) =========================
 @media screen and (min-width: 768px) {
-  // ************** HEADER ******************
-  .header {
-    margin: 2rem auto;
-  }
-
-  .header__logo {
-    margin-left: 4rem;
-  }
-
-  // affiche la nav
-  .header__nav {
-    &__btn {
-      display: none;
+    // ************** HEADER ******************
+    .header {
+        margin: 2rem auto;
     }
 
-    .menu {
-      display: flex;
+    .header__logo {
+        margin-left: 4rem;
     }
-  }
 
-  // ********** MODALE MENU HAMBURGER**********
-  .menu-modal {
-    display: none;
-  }
+    // affiche la nav
+    .header__nav {
+        &__btn {
+            display: none;
+        }
 
-  // ********************* PAGE ACCEUIL ************************
-  .filter-home {
-    .content-home {
-      margin-top: 100vh;
-      margin-left: 1vw;
-      padding: 5rem;
-
-      h3,
-      h2,
-      h1,
-      div {
-        margin-left: 2rem;
-      }
-
-      .text-btn-block {
-        width: 80%;
-      }
+        .menu {
+            display: flex;
+        }
     }
-  }
 
-  // ********************* PAGE A PROPOS ************************
-  .about {
-    &__content__block {
-      grid-template-columns: 1fr 1fr;
-
-      // ---------------------------  block présentation
-      &__presentation {
-        padding: 2rem;
-      }
-      // ---------------------------  block formation
-      &__formations {
-        padding: 2rem;
-        .formations__title {
-          @include titleCard(2.3rem);
-        }
-      }
-      // ---------------------------  block compétences
-      &__competences {
-        padding: 4rem;
-        grid-column: 1 / 3;
-        .competences__title {
-          @include titleCard(2.3rem);
-        }
-
-        .competences__card {
-          margin: 2rem 0;
-          display: grid;
-          gr &__sentence {
-            @include sentenceCard(1.4rem);
-            letter-spacing: 1px;
-          }
-        }
-      }
+    // ********** MODALE MENU HAMBURGER**********
+    .menu-modal {
+        display: none;
     }
-  }
 
-  // ********************* PAGE PRESTATIONS ************************
-  .services {
-    height: 75vh;
-    &__content__block {
-      grid-template-columns: 1fr 1fr;
+    // ********************* PAGE ACCEUIL ************************
+    .filter-home {
+        .content-home {
+            margin-top: 100vh;
+            margin-left: 1vw;
+            padding: 5rem;
 
-      // boite prestation --------------------------
-      .services__wrapper {
-        height: 30vh;
-      }
+            h3,
+            h2,
+            h1,
+            div {
+                margin-left: 2rem;
+            }
+
+            .text-btn-block {
+                width: 80%;
+            }
+        }
     }
-  }
 
-  // ********************* PAGE REALISATIONS ************************
-  .project {
-    &__content__block {
-      padding: 30px;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
+    // ********************* PAGE A PROPOS ************************
+    .about {
+        &__content__block {
+            grid-template-columns: 1fr 1fr;
 
-      // boite prestation --------------------------
-      .project__wrapper {
-        height: 40vh;
+            // ---------------------------  block présentation
+            &__presentation {
+                padding: 2rem;
+            }
+            // ---------------------------  block formation
+            &__formations {
+                padding: 2rem;
+                .formations__title {
+                    @include titleCard(2.5rem);
+                }
+            }
+            // ---------------------------  block compétences
+            &__competences {
+                padding: 4rem;
+                grid-column: 1 / 3;
+                .competences__title {
+                    @include titleCard(2.5rem);
+                }
 
-        &__title {
-          font-size: 1.9rem;
+                .competences__card {
+                    margin: 2rem 0;
+                    display: grid;
+                    &__sentence {
+                        @include sentenceCard(1.5rem);
+                        letter-spacing: 1px;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 
-  // ********************* PAGE CONTACT ************************
-  .contact {
-    height: 80vh;
-    &__content__block {
-      grid-template-columns: 1fr 1fr;
+    // ********************* PAGE PRESTATIONS ************************
+    .services {
+        height: 75vh;
+        &__content__block {
+            grid-template-columns: 1fr 1fr;
 
-      // boite prestation --------------------------
-      .contact__wrapper {
-        height: 50vh;
+             .blink  {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            } 
 
-        .title-form {
-          font-size: 3.6rem;
-          margin-bottom: 2rem;
+            // boite prestation --------------------------
+            .services__wrapper {
+                height: 30vh;
+            }
         }
-
-        .sentence-form {
-          margin-bottom: 2rem;
-        }
-        form {
-          button {
-            padding: 1rem 1.5rem;
-          }
-        }
-
-        footer {
-          flex-direction: row;
-          flex-wrap: wrap;
-        }
-      }
     }
-  }
-  //
-  //
+
+    // ********************* PAGE REALISATIONS ************************
+    .project {
+        &__content__block {
+            padding: 30px;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+
+            // boite prestation --------------------------
+            .project__wrapper {
+                height: 40vh;
+
+                &__title {
+                    font-size: 1.9rem;
+                }
+            }
+        }
+    }
+
+    // ********************* PAGE CONTACT ************************
+    .contact {
+        height: 80vh;
+        &__content__block {
+            grid-template-columns: 1fr 1fr;
+
+            // boite prestation --------------------------
+            .contact__wrapper {
+                height: 50vh;
+
+                .title-form {
+                    font-size: 3.6rem;
+                    margin-bottom: 2rem;
+                }
+
+                .sentence-form {
+                    margin-bottom: 2rem;
+                }
+                form {
+                    button {
+                        padding: 1rem 1.5rem;
+                    }
+                }
+
+                footer {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+    //
+    //
 }
 
 //
@@ -159,360 +164,359 @@
 // ======================= MEDIA QUERY > 940PX (PC) ===========================
 
 @media screen and (min-width: 960px) {
-  // ************** HEADER ******************
-  // affiche la nav
-  .header__nav {
-    &__btn {
-      display: none;
-    }
-
-    .menu {
-      display: flex;
-    }
-  }
-
-  // ********** MODALE MENU HAMBURGER**********
-  .menu-modal {
-    display: none;
-  }
-
-  // ********************* PAGE ACCEUIL ************************
-  .filter-home {
-    .content-home {
-      margin-top: 100vh;
-      margin-left: -10vw;
-      padding: 5rem;
-
-      h3 {
-        font-size: 2vmax;
-      }
-
-      .text-btn-block {
-        width: 35vw;
-      }
-    }
-  }
-
-  // ********************* PAGE A PROPOS ************************
-  .about {
-    padding: 0;
-    &__title {
-      width: 80%;
-    }
-
-    &__title__border-right {
-      margin-top: 1.5%;
-    }
-
-    &__content {
-      // -----------------------------------  container
-      &__block {
-        // ---------------------------  block presentation
-
-        &__presentation {
-          padding: 1rem;
+    // ************** HEADER ******************
+    // affiche la nav
+    .header__nav {
+        &__btn {
+            display: none;
         }
 
-        &__formations {
-          padding: 1rem;
+        .menu {
+            display: flex;
         }
+    }
 
-        // ---------------------------  block compétences
+    // ********** MODALE MENU HAMBURGER**********
+    .menu-modal {
+        display: none;
+    }
 
-        &__competences {
-          flex: 2;
-          padding: 1rem;
+    // ********************* PAGE ACCEUIL ************************
+    .filter-home {
+        .content-home {
+            margin-top: 100vh;
+            margin-left: -10vw;
+            padding: 5rem;
 
-          // ---------------------  compétences card
-          .competences__card {
-            margin: 1rem 0;
-
-            &__sentence {
-              @include sentenceCard(1.2rem);
-              letter-spacing: 1px;
+            h3 {
+                font-size: 2vmax;
             }
-            // ,,,,,,,,,,  texte + icones
-            &__text__icon {
-              display: grid;
-              grid-template-columns: 7fr 1fr;
 
-              // ,,,,,,,,,,  icones
-              .icon {
-                display: flex;
-                justify-self: end;
-                align-items: center;
-
-                .icon-demi {
-                  display: flex;
-                  align-items: center;
-                }
-
-                svg {
-                  width: 2rem;
-                  margin: 0.3rem;
-                  filter: grayscale(0.6);
-                  transition: 0.2s;
-
-                  &:hover {
-                    transform: scale(2);
-                    filter: grayscale(0);
-                    z-index: 100;
-
-                    transition: 0.2s;
-                  }
-                }
-
-                // logo figma veux pas se dimensionner comme les autres
-                .figma {
-                  width: 1.6rem;
-                }
-              }
+            .text-btn-block {
+                width: 35vw;
             }
-          }
         }
-      }
-    }
-  }
-
-  // ********************* PAGE PRESTATIONS ************************
-  .services {
-    &__title {
-      width: 80%;
-    }
-    &__title__border-right {
-      margin-top: 1.5%;
     }
 
-    &__content__block {
-      padding: 0;
-      margin: 0;
-      .services__wrapper {
-        height: auto;
-
-        ul li {
-          margin-bottom: 0.2rem;
+    // ********************* PAGE A PROPOS ************************
+    .about {
+        padding: 0;
+        &__title {
+            width: 80%;
         }
-      }
-    }
-  }
 
-  // ********************* PAGE REALISATIONS ************************
-  .project {
-    height: 50vh;
-    &__title {
-      width: 80%;
-    }
-    &__title__border-right {
-      margin-top: 1.5%;
-    }
-  }
+        &__title__border-right {
+            margin-top: 1.5%;
+        }
 
-  // ********************* PAGE CONTACT ************************
-  .contact {
-    &__title {
-      width: 80%;
-    }
-    &__title__border-right {
-      margin-top: 1.5%;
+        &__content {
+            // -----------------------------------  container
+            &__block {
+                // ---------------------------  block presentation
+
+                &__presentation {
+                    padding: 1rem;
+                }
+
+                &__formations {
+                    padding: 1rem;
+                }
+
+                // ---------------------------  block compétences
+
+                &__competences {
+                    flex: 2;
+                    padding: 1rem;
+
+                    // ---------------------  compétences card
+                    .competences__card {
+                        margin: 1rem 0;
+
+                        &__sentence {
+                            /*  @include sentenceCard(1.2rem); */
+                            letter-spacing: 1px;
+                        }
+                        // ,,,,,,,,,,  texte + icones
+                        &__text__icon {
+                            display: grid;
+                            grid-template-columns: 7fr 1fr;
+
+                            // ,,,,,,,,,,  icones
+                            .icon {
+                                display: flex;
+                                justify-self: end;
+                                align-items: center;
+
+                                .icon-demi {
+                                    display: flex;
+                                    align-items: center;
+                                }
+
+                                svg {
+                                    width: 2rem;
+                                    margin: 0.3rem;
+                                    filter: grayscale(0.6);
+                                    transition: 0.2s;
+
+                                    &:hover {
+                                        transform: scale(2);
+                                        filter: grayscale(0);
+                                        z-index: 100;
+
+                                        transition: 0.2s;
+                                    }
+                                }
+
+                                // logo figma veux pas se dimensionner comme les autres
+                                .figma {
+                                    width: 1.6rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    &__content__block {
-      .contact__wrapper {
-        height: auto;
-      }
+    // ********************* PAGE PRESTATIONS ************************
+    .services {
+        &__title {
+            width: 80%;
+        }
+        &__title__border-right {
+            margin-top: 1.5%;
+        }
+
+        &__content__block {
+            padding: 0;
+            margin: 0;
+            .services__wrapper {
+                height: auto;
+
+                ul li {
+                    margin-bottom: 0.2rem;
+                }
+            }
+        }
     }
-  }
+
+    // ********************* PAGE REALISATIONS ************************
+    .project {
+        height: 50vh;
+        &__title {
+            width: 80%;
+        }
+        &__title__border-right {
+            margin-top: 1.5%;
+        }
+    }
+
+    // ********************* PAGE CONTACT ************************
+    .contact {
+        &__title {
+            width: 80%;
+        }
+        &__title__border-right {
+            margin-top: 1.5%;
+        }
+
+        &__content__block {
+            .contact__wrapper {
+                height: auto;
+            }
+        }
+    }
 }
 //
 //
 //
 // ======================= MEDIA QUERY > 1200PX ( GRAND ECRAN ===========================
 @media screen and (min-width: 1200px) {
-  //
+    //
 
-  // ********************* PAGE A PROPOS ************************
-  .about {
-    &__content {
-      height: 40rem;
+    // ********************* PAGE A PROPOS ************************
+    .about {
+        &__content {
+            height: 40rem;
 
-      &__border-left {
-        max-height: 90%;
-      }
-      &__block {
-        height: 45rem;
-        margin: 2rem;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px;
+            &__border-left {
+                max-height: 90%;
+            }
+            &__block {
+                height: 45rem;
+                margin: 2rem;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 10px;
 
-        // ---------------------------  block présentation
-        &__presentation {
-          margin-top: 0;
-          padding: 2rem;
+                // ---------------------------  block présentation
+                &__presentation {
+                    margin-top: 0;
+                    padding: 2rem;
+                }
+
+                // ---------------------------  block formations
+                &__formations {
+                    margin-top: 0;
+                    padding: 2rem;
+                    grid-column: 1 / 2;
+                    grid-row: 2 / 3;
+                }
+
+                // ---------------------------  block compétences
+                &__competences {
+                    padding: 1rem;
+                    margin-top: 0;
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 3;
+                }
+            }
         }
-
-        // ---------------------------  block formations
-        &__formations {
-          margin-top: 0;
-          padding: 2rem;
-          grid-column: 1 / 2;
-          grid-row: 2 / 3;
-        }
-
-        // ---------------------------  block compétences
-        &__competences {
-          padding: 1rem;
-          margin-top: 0;
-          grid-column: 2 / 3;
-          grid-row: 1 / 3;
-        }
-      }
     }
-  }
 
-  // ********************* PAGE PRESTATIONS ************************
-  .services {
-    height: 65vh;
-    &__content {
-      height: 40rem;
-      &__border-left {
-        max-height: 90%;
-      }
-
-      &__block {
-        justify-items: stretch;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 0px;
-
-        // boites prestation ---------------------
-        .services__wrapper {
-          .title {
-            margin-bottom: 2rem;
-          }
-
-          .sentence {
-            margin-bottom: 2rem;
-          }
-
-          ul li {
-            margin-bottom: 0.6rem;
-          }
-        }
-      }
-    }
-  }
-
-  // ********************* PAGE REALISATIONS ************************
-  .project {
-    height: 55vh;
-    &__content {
-      height: 55rem;
-      &__border-left {
-        max-height: 80%;
-      }
-      &__block {
-        padding: 0;
-        margin: 3rem;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 10px;
-
-        // boites prestation ---------------------
-        .project__wrapper {
-          height: 100%;
-
-          &__title {
-            margin: 0.5rem;
-            font-size: 1.8rem;
-          }
-
-          &__sentence {
-            margin: 0.5rem;
-            font-size: 1.2rem;
-          }
-
-          &__description {
-            font-size: 1.6rem;
-          }
-        }
-      }
-    }
-  }
-
-  // ********************* PAGE CONTACT ************************
-  .contact {
-    height: 50vh;
-
-    &__content {
-      height: 100%;
-
-      &__block {
-
-        // boite contact ---------------------
-        .contact__wrapper {
-          margin-left: 3rem;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: 1fr 1fr 1fr 1fr;
-          align-items: center;
-          justify-items: center;
-          gap: 5px;
-          height: 100%;
-
-          .success-message {
-            bottom: 14vh;
-          }
-
-          .title-form {
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
-            margin-bottom: -12rem;
-          }
-          .sentence-form {
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-            margin-bottom: -6rem;
-          }
-
-          form {
-            grid-column: 1 / 2;
-            grid-row: 1 / 4;
-            margin-bottom: -2rem; //
-          }
-
-          footer {
-            grid-row: 4 / 5;
-            grid-column: 1 / 3;
-            margin-top: 1rem;
-
-            div {
-              margin-right: 1rem;
-              font-size: 1.8rem;
-
-              a {
-                font-size: 1.8rem;
-              }
+    // ********************* PAGE PRESTATIONS ************************
+    .services {
+        height: 65vh;
+        &__content {
+            height: 40rem;
+            &__border-left {
+                max-height: 90%;
             }
 
-            .presentation__social__network {
-              width: 20rem;
-              margin-left: 2rem;
+            &__block {
+                justify-items: stretch;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-gap: 0px;
 
-              .linkedln-button svg {
-                width: 4rem;
-              }
-              .git a svg {
-                width: 4rem;
-              }
+                // boites prestation ---------------------
+                .services__wrapper {
+                    .title {
+                        margin-bottom: 2rem;
+                    }
+
+                    .sentence {
+                        margin-bottom: 2rem;
+                    }
+
+                    ul li {
+                        margin-bottom: 0.6rem;
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
 
-  //
-  //
-  //
+    // ********************* PAGE REALISATIONS ************************
+    .project {
+        height: 55vh;
+        &__content {
+            height: 55rem;
+            &__border-left {
+                max-height: 80%;
+            }
+            &__block {
+                padding: 0;
+                margin: 3rem;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-gap: 10px;
+
+                // boites prestation ---------------------
+                .project__wrapper {
+                    height: 100%;
+
+                    &__title {
+                        margin: 0.5rem;
+                        font-size: 1.8rem;
+                    }
+
+                    &__sentence {
+                        margin: 0.5rem;
+                        font-size: 1.2rem;
+                    }
+
+                    &__description {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // ********************* PAGE CONTACT ************************
+    .contact {
+        height: 50vh;
+
+        &__content {
+            height: 100%;
+
+            &__block {
+                // boite contact ---------------------
+                .contact__wrapper {
+                    margin-left: 3rem;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
+                    align-items: center;
+                    justify-items: center;
+                    gap: 5px;
+                    height: 100%;
+
+                    .success-message {
+                        bottom: 14vh;
+                    }
+
+                    .title-form {
+                        grid-column: 2 / 3;
+                        grid-row: 1 / 2;
+                        margin-bottom: -12rem;
+                    }
+                    .sentence-form {
+                        grid-column: 2 / 3;
+                        grid-row: 2 / 3;
+                        margin-bottom: -6rem;
+                    }
+
+                    form {
+                        grid-column: 1 / 2;
+                        grid-row: 1 / 4;
+                        margin-bottom: -2rem; //
+                    }
+
+                    footer {
+                        grid-row: 4 / 5;
+                        grid-column: 1 / 3;
+                        margin-top: 1rem;
+
+                        div {
+                            margin-right: 1rem;
+                            font-size: 1.8rem;
+
+                            a {
+                                font-size: 1.8rem;
+                            }
+                        }
+
+                        .presentation__social__network {
+                            width: 20rem;
+                            margin-left: 2rem;
+
+                            .linkedln-button svg {
+                                width: 4rem;
+                            }
+                            .git a svg {
+                                width: 4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //
+    //
+    //
 }
 
 //
@@ -521,23 +525,23 @@
 // ======================== MEDIA QUERY > ORIENTATION PAYSAGE ========================
 
 @media (orientation: landscape) {
-  .filter-home {
-    .content-home {
-      margin-top: 110vh;
-      padding: 5rem;
-      .text-btn-block {
-        width: 100%;
-        max-width: 60rem;
-      }
+    .filter-home {
+        .content-home {
+            margin-top: 110vh;
+            padding: 5rem;
+            .text-btn-block {
+                width: 100%;
+                max-width: 60rem;
+            }
+        }
     }
-  }
 
-  .menu-modal {
-    ul {
-      flex-direction: row;
-      justify-content: space-around;
+    .menu-modal {
+        ul {
+            flex-direction: row;
+            justify-content: space-around;
+        }
     }
-  }
 }
 
 //
@@ -546,58 +550,58 @@
 // ======================== MEDIA QUERY >  MOBILE ORIENTATION PAYSAGE ========================
 
 @media (orientation: landscape) and (max-height: 430px) {
-  // ***************** PAGE ACCEUIL *******************
-  .container .slide-home .filter-home .content-home {
-    h3,
-    h2,
-    h1 {
-      margin: 0;
-      padding: 0;
-      font-size: 2.8vmax;
-    }
-    h2 {
-      margin-top: 4rem;
-    }
-  }
-
-  // ***************** PAGE A PROPOS *******************
-  .title-formation,
-  .item-formation {
-    display: none;
-  }
-
-  .about-card {
-    .competence-bonus {
-      display: none;
-    }
-  }
-
-  // ***************** PAGE PRESTATIONS *******************
-  .services {
-    margin-top: 8rem;
-  }
-
-  // ***************** PAGE REALISATIONS *******************
-  .project {
-    margin-top: 8rem;
-  }
-
-  // ***************** PAGE CONTACT *******************
-  .contact {
-    margin-top: 8rem;
-
-    &__content__block {
-      .contact__wrapper {
-        .title-form {
-          margin: 0;
-          margin-top: -1rem;
+    // ***************** PAGE ACCEUIL *******************
+    .container .slide-home .filter-home .content-home {
+        h3,
+        h2,
+        h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 2.8vmax;
         }
-
-        .sentence-form {
-          margin: 0;
+        h2 {
+            margin-top: 4rem;
         }
-      }
     }
-  }
-  //
+
+    // ***************** PAGE A PROPOS *******************
+    .title-formation,
+    .item-formation {
+        display: none;
+    }
+
+    .about-card {
+        .competence-bonus {
+            display: none;
+        }
+    }
+
+    // ***************** PAGE PRESTATIONS *******************
+    .services {
+        margin-top: 8rem;
+    }
+
+    // ***************** PAGE REALISATIONS *******************
+    .project {
+        margin-top: 8rem;
+    }
+
+    // ***************** PAGE CONTACT *******************
+    .contact {
+        margin-top: 8rem;
+
+        &__content__block {
+            .contact__wrapper {
+                .title-form {
+                    margin: 0;
+                    margin-top: -1rem;
+                }
+
+                .sentence-form {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    //
 }
