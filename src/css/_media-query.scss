@@ -76,18 +76,18 @@
 
             // ---------------------------  block présentation
             &__presentation {
-                padding: 2rem;
+                padding: 3rem;
             }
             // ---------------------------  block formation
             &__formations {
-                padding: 2rem;
+                padding: 3rem;
                 .formations__title {
                     @include titleCard(2.5rem);
                 }
             }
             // ---------------------------  block compétences
             &__competences {
-                padding: 4rem;
+                padding: 3rem;
                 grid-column: 1 / 3;
                 .competences__title {
                     @include titleCard(2.5rem);
@@ -240,35 +240,27 @@
                 padding: 0 4rem;
                 // ---------------------------  block presentation
 
-                &__presentation {
-                    padding: 1rem;
-                }
-
-                &__formations {
-                    padding: 1rem;
-                }
+             
 
                 // ---------------------------  block compétences
 
                 &__competences {
                     flex: 2;
-                    padding: 1rem;
 
                     // ---------------------  compétences card
                     .competences__card {
-                        margin: 1rem 0;
+                        margin: 1rem;
 
                         &__sentence {
-                            /*  @include sentenceCard(1.2rem); */
                             letter-spacing: 1px;
                         }
                         // ,,,,,,,,,,  texte + icones
                         &__text__icon {
                             display: grid;
+                            align-items: center;
                             grid-template-columns: 7fr 1fr;
-                            p {
-                                padding-right: 2rem;
-                            }
+                            margin-bottom: 0;
+                          
 
                             // ,,,,,,,,,,  icones
                             .icon {
@@ -398,20 +390,17 @@
                 // ---------------------------  block présentation
                 &__presentation {
                     margin-top: 0;
-                    padding: 2rem;
                 }
 
                 // ---------------------------  block formations
                 &__formations {
                     margin-top: 0;
-                    padding: 2rem;
                     grid-column: 1 / 2;
                     grid-row: 2 / 3;
                 }
 
                 // ---------------------------  block compétences
                 &__competences {
-                    padding: 1rem;
                     margin-top: 0;
                     grid-column: 2 / 3;
                     grid-row: 1 / 3;
