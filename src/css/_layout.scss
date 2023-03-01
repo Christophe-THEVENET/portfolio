@@ -104,7 +104,9 @@ body {
     flex-direction: column;
     justify-content: center;
     max-width: 1400px;
-    margin-top: 6rem;
+    margin-top: 12rem;
+    height: 80vh; // a bouger en grand ecran
+
 
     h2 {
         @include titlePage;
@@ -128,6 +130,7 @@ body {
 
     // ------------------------------ block  border-left
     &__content {
+        height: 100%;
         display: flex;
 
         &__border-left {
@@ -145,7 +148,8 @@ body {
             grid-template-columns: 1fr;
             gap: 10px;
             overflow: scroll;
-            height: 70vh;
+            height: 90%;
+
 
             // ---------------------------  block présentation
             &__presentation {
@@ -188,7 +192,7 @@ body {
                 }
 
                 .formations__title {
-                    @include titleCard(2.3rem);
+                    @include titleCard(1.8rem);
                     margin-bottom: 2rem;
                 }
 
@@ -203,7 +207,6 @@ body {
             // ---------------------------  block compétences
             &__competences {
                 padding: 1rem;
-
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -224,7 +227,7 @@ body {
                 }
 
                 .competences__title {
-                    @include titleCard(2rem);
+                    @include titleCard(1.8rem);
                     margin-bottom: 2rem;
                 }
 
@@ -234,7 +237,7 @@ body {
                     margin-bottom: 2rem;
 
                     &__sentence {
-                        @include sentenceCard(1.2rem);
+                        @include sentenceCard(1.3rem);
                         letter-spacing: 1px;
                     }
                     // ,,,,,,,,,,  texte + icones
@@ -247,32 +250,17 @@ body {
                     }
                 }
 
-                .modale-linkedln {
-                    background-color: $green;
-                    color: $primary;
-                    font-family: $titleFamily;
-                    letter-spacing: 1px;
-                    position: absolute;
-                    z-index: 100;
-                    position: absolute;
-                    left: 16rem;
-                    @include centerElement;
-                    padding: 1rem;
-                    border-radius: 5px;
-                    display: none;
-                    font-weight: bold;
-                    font-size: 1.2rem;
-                }
-
                 .presentation__social__network {
                     @include centerElement;
-                    width: 20rem;
+                    width: 10rem;
                     display: flex;
                     justify-content: space-around;
+                    position: relative;
+                    transition: 1s;
 
                     .git a svg,
                     .linkedln a svg {
-                        width: 5rem;
+                        width: 3rem;
 
                         path {
                             fill: $green;
@@ -284,6 +272,24 @@ body {
                             }
                         }
                     }
+                }
+
+                .modale-linkedln {
+                    background-color: $green;
+                    color: $primary;
+                    font-family: $titleFamily;
+                    letter-spacing: 1px;
+                    position: absolute;
+                    width: 30vh;
+                    text-align: center;
+                    z-index: 100;
+                    bottom: 5rem;
+                    @include centerElement;
+                    padding: 1rem;
+                    border-radius: 5px;
+                    display: none;
+                    font-weight: bold;
+                    font-size: 1.2rem;
                 }
             }
         }
@@ -310,8 +316,9 @@ body {
     flex-direction: column;
     justify-content: center;
     max-width: 1400px;
-    margin-top: 6rem;
+    margin-top: 12rem;
     width: 100%;
+    height: 80vh; // a bouger en grand ecran
 
     h2 {
         @include titlePage;
@@ -351,20 +358,23 @@ body {
             padding: 1rem;
             display: grid;
             justify-items: center;
+            align-items: flex-start;
             grid-template-columns: 1fr;
-            gap: 10px;
+            gap: 20px;
             overflow: scroll;
             transition: 0.4s;
-            height: 70vh;
+           /*  height: 70vh; */
             width: 100%;
+            height: 90%;
 
             //--------------------------  boite prestations
             .services__wrapper {
+                height: 100%;
                 font-size: 1.6rem;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding: 1rem;
+                padding: 2rem 0;
                 margin: 1rem;
                 width: 32rem;
                 border-radius: 10px;
@@ -383,13 +393,13 @@ body {
                 }
 
                 .title {
-                    @include titleCard(2.3rem);
+                    @include titleCard(2rem);
                     margin: 1rem 0;
                     letter-spacing: 1px;
                 }
 
                 .sentence {
-                    @include sentenceCard(1.2rem);
+                    @include sentenceCard(1.4rem);
                     margin-bottom: 1rem;
                 }
 
@@ -583,7 +593,7 @@ body {
 
                     &.connect {
                         font-family: $titleFamily;
-                        color: $green;
+                        color: $secondary;
                         margin: 0;
                         padding: 0;
                     }

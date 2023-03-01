@@ -84,6 +84,7 @@
                 .formations__title {
                     @include titleCard(2.5rem);
                 }
+                
             }
             // ---------------------------  block compétences
             &__competences {
@@ -97,7 +98,7 @@
                     margin: 2rem 0;
                     display: grid;
                     &__sentence {
-                        @include sentenceCard(1.5rem);
+                        @include sentenceCard(1.7rem);
                         letter-spacing: 1px;
                     }
                 }
@@ -381,7 +382,7 @@
                 max-height: 90%;
             }
             &__block {
-                height: 50rem;
+               /*  height: 50rem; */
                 margin: 2rem;
                 grid-template-columns: 1fr 2fr;
                 grid-template-rows: 1fr 1fr;
