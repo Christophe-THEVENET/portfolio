@@ -177,6 +177,12 @@
                     flex-direction: row;
                     flex-wrap: wrap;
                     margin-top: 2rem;
+
+                    .presentation__social__network {
+                       justify-content: center;
+                       width: 10rem;
+                    }
+                    
                 }
             }
         }
@@ -550,12 +556,7 @@
                             width: 20rem;
                             margin-left: 2rem;
 
-                            .linkedln-button svg {
-                                width: 4rem;
-                            }
-                            .git a svg {
-                                width: 4rem;
-                            }
+                         
                         }
                     }
                 }

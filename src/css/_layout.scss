@@ -107,7 +107,6 @@ body {
     margin-top: 12rem;
     height: 80vh; // a bouger en grand ecran
 
-
     h2 {
         @include titlePage;
     }
@@ -149,7 +148,6 @@ body {
             gap: 10px;
             overflow: scroll;
             height: 90%;
-
 
             // ---------------------------  block présentation
             &__presentation {
@@ -260,7 +258,7 @@ body {
 
                     .git a svg,
                     .linkedln a svg {
-                        width: 3rem;
+                        width: 2.5rem;
 
                         path {
                             fill: $green;
@@ -363,7 +361,7 @@ body {
             gap: 20px;
             overflow: scroll;
             transition: 0.4s;
-           /*  height: 70vh; */
+            /*  height: 70vh; */
             width: 100%;
             height: 90%;
 
@@ -496,7 +494,6 @@ body {
             height: 50vh;
             width: 4px;
             background-color: $flashy;
-            
         }
 
         // ---------------------------------- block projets
@@ -570,7 +567,7 @@ body {
 
                 &__title {
                     @include titleCard(rem);
-                    margin: 1rem 0 ;
+                    margin: 1rem 0;
                     transform: translateY(-30px);
                     opacity: 0;
                     transition: 0.2s cubic-bezier(0.05, 1.01, 0.96, 0.2);
@@ -916,6 +913,7 @@ body {
                     display: flex;
                     justify-content: flex-start;
                     position: relative;
+
                     .git a svg,
                     .linkedln a svg {
                         width: 2rem;
