@@ -382,7 +382,6 @@
                 max-height: 90%;
             }
             &__block {
-               /*  height: 50rem; */
                 margin: 2rem;
                 grid-template-columns: 1fr 2fr;
                 grid-template-rows: 1fr 1fr;
@@ -419,6 +418,7 @@
             }
 
             &__block {
+                margin: 0 2rem;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 grid-template-rows: 3rem 1fr;
                 grid-gap: 0px;
@@ -453,7 +453,7 @@
         &__content {
             height: 50rem;
             &__border-left {
-                max-height: 80%;
+                max-height: 90%;
             }
             &__block {
                 padding: 0;
@@ -487,6 +487,9 @@
     .contact {
         &__content {
             height: 50rem;
+            &__border-left {
+                max-height: 90%;
+            }
 
             &__block {
                 // boite contact ---------------------
