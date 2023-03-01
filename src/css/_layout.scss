@@ -569,8 +569,8 @@ body {
                 }
 
                 &__title {
-                    @include titleCard(2.4rem);
-                    margin: 2rem 0 2rem 0;
+                    @include titleCard(rem);
+                    margin: 1rem 0 ;
                     transform: translateY(-30px);
                     opacity: 0;
                     transition: 0.2s cubic-bezier(0.05, 1.01, 0.96, 0.2);

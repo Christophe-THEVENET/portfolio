@@ -369,8 +369,8 @@
 //
 //
 //
-// ======================= MEDIA QUERY > 1200PX ( GRAND ECRAN ===========================
-@media screen and (min-width: 1200px) {
+// ======================= MEDIA QUERY > 1250PX ( GRAND ECRAN ===========================
+@media screen and (min-width: 1240px) {
     //
 
     // ********************* PAGE A PROPOS ************************
@@ -432,6 +432,7 @@
 
                 // boites prestation ---------------------
                 .services__wrapper {
+                    width: 95%; 
                     .title {
                         margin-bottom: 2rem;
                     }
@@ -459,15 +460,15 @@
                 padding: 0;
                 margin: 3rem;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
-                grid-gap: 10px;
+                grid-gap: 0px;
 
                 // boites prestation ---------------------
                 .project__wrapper {
-                    height: 100%;
+                    height: 90%;
 
                     &__title {
                         margin: 0.5rem;
-                        font-size: 1.8rem;
+                        font-size: 1.6rem;
                     }
 
                     &__sentence {
