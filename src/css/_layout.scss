@@ -147,7 +147,7 @@ body {
             grid-template-columns: 1fr;
             gap: 10px;
             overflow: scroll;
-            height: 90%;
+            height: 95%;
 
             // ---------------------------  block présentation
             &__presentation {
@@ -340,7 +340,7 @@ body {
 
     &__content {
         height: 100%;
-        width: 100%;
+        width: 95%;
 
         display: flex;
 
@@ -503,7 +503,7 @@ body {
             grid-template-columns: 1fr;
             gap: 20px;
             overflow: scroll;
-            height: 90%;
+            height: 100%;
 
             // -------------------------------- boite projet
             .project__wrapper {
@@ -752,7 +752,7 @@ body {
             padding: 0.5rem;
             @include centerElement;
             overflow: scroll;
-            width: 100%;
+            width: 90%;
 
             //--------------------------  boite contact
             .contact__wrapper {
