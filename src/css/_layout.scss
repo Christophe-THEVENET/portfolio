@@ -503,7 +503,7 @@ body {
             grid-template-columns: 1fr;
             gap: 20px;
             overflow: scroll;
-            height: 100%;
+            height: 97%;
 
             // -------------------------------- boite projet
             .project__wrapper {
@@ -752,7 +752,7 @@ body {
             padding: 0.5rem;
             @include centerElement;
             overflow: scroll;
-            width: 90%;
+            width: 100%;
 
             //--------------------------  boite contact
             .contact__wrapper {
@@ -764,6 +764,7 @@ body {
                 position: relative;
                 transition: 0.4s;
                 height: 100%;
+
 
                 .title-form {
                     @include titleCard(1.6rem);
