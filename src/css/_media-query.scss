@@ -125,8 +125,6 @@
     .project {
         margin-top: 10vh;
 
-
-
         &__content__block {
             grid-template-columns: 1fr 1fr;
 
@@ -359,9 +357,12 @@
     .contact {
         padding-top: 10rem;
         margin: 5rem;
+        
 
         &__title {
             margin-top: -4rem;
+            width: 90%;
+
         }
         &__title__border-right {
             margin-top: 1.5%;
