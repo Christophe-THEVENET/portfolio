@@ -221,7 +221,6 @@ body {
                         letter-spacing: 2px;
                         transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
                     }
-                  
                 }
 
                 .competences__title {
@@ -532,34 +531,28 @@ body {
                     justify-content: center;
                     padding: 1rem;
                     opacity: 0;
-                    transition: 0.2s cubic-bezier(0.56, 0.15, 0.93, 0.38);
+                    transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
 
                     &:hover {
                         opacity: 1;
                         background-color: $primaryHover;
-                        transition: 0.2s cubic-bezier(0.56, 0.15, 0.93, 0.38);
 
                         // ----------------------------- effet reveal top
                         & .project__wrapper__title {
-                            transform: translateY(0);
+                            letter-spacing: 2px;
                             opacity: 1;
-                            transition: 0.2s cubic-bezier(0.56, 0.15, 0.93, 0.38);
                         }
 
                         & .project__wrapper__sentence {
                             opacity: 1;
-                            transform: translateY(0);
-                            transition: 0.3s cubic-bezier(0.56, 0.15, 0.93, 0.38);
                         }
 
                         & .project__wrapper__description {
                             opacity: 1;
-                            transition: 0.6s ease-in-out;
                         }
 
                         & .project__wrapper__link {
                             opacity: 1;
-                            transition: 0.6s ease-in-out;
                         }
                     }
                 }
@@ -567,17 +560,15 @@ body {
                 &__title {
                     @include titleCard(rem);
                     margin: 1rem 0;
-                    transform: translateY(-30px);
                     opacity: 0;
-                    transition: 0.2s cubic-bezier(0.05, 1.01, 0.96, 0.2);
+                    transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
                 }
 
                 &__sentence {
                     @include sentenceCard(1.4rem);
                     margin-bottom: 1rem;
-                    transform: translateY(-25px);
                     opacity: 0;
-                    transition: 0.3s cubic-bezier(0.56, 0.15, 0.93, 0.38) s;
+                    transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
                 }
 
                 &__description {
@@ -586,13 +577,14 @@ body {
                     margin: 1rem 0;
                     text-align: justify;
                     opacity: 0;
-                    transition: 0.6s ease-in-out;
+                    transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
 
                     &.connect {
                         font-family: $titleFamily;
                         color: $secondary;
                         margin: 0;
                         padding: 0;
+                        transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
                     }
                 }
 
@@ -610,7 +602,7 @@ body {
                     transition: 0.5s;
                     margin-top: 1rem;
                     opacity: 0;
-                    transition: 0.6s ease-in-out;
+                    transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
 
                     &:hover {
                         background-color: $green;
