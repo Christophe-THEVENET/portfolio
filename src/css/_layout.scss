@@ -147,7 +147,6 @@ body {
             grid-template-columns: 1fr;
             gap: 10px;
             overflow: scroll;
-            height: 95%;
 
             // ---------------------------  block présentation
             &__presentation {
@@ -316,7 +315,7 @@ body {
     max-width: 1400px;
     margin-top: 12rem;
     width: 100%;
-    height: 80vh; // a bouger en grand ecran
+     height: 75vh;  // a bouger en grand ecran
 
     h2 {
         @include titlePage;
@@ -340,7 +339,7 @@ body {
 
     &__content {
         height: 100%;
-        width: 95%;
+        width: 100%;
 
         display: flex;
 
@@ -361,9 +360,8 @@ body {
             gap: 20px;
             overflow: scroll;
             transition: 0.4s;
-            /*  height: 70vh; */
             width: 100%;
-            height: 90%;
+            height: 100%;
 
             //--------------------------  boite prestations
             .services__wrapper {
@@ -463,7 +461,7 @@ body {
     flex-direction: column;
     justify-content: center;
     max-width: 1400px;
-    height: 80vh; // a bouger en grand ecran
+    height: 75vh; // a bouger en grand ecran
     margin-top: 12rem;
 
     h2 {
@@ -503,7 +501,6 @@ body {
             grid-template-columns: 1fr;
             gap: 20px;
             overflow: scroll;
-            height: 97%;
 
             // -------------------------------- boite projet
             .project__wrapper {
@@ -697,7 +694,7 @@ body {
     flex-direction: column;
     justify-content: center;
     max-width: 1400px;
-    height: 80vh; // a bouger en grand ecran
+    height: 75vh; // a bouger en grand ecran
     margin-top: 12rem;
     width: 100%;
 
@@ -738,7 +735,6 @@ body {
         height: 100%;
         display: flex;
         width: 100%;
-        /*  height: auto; */
 
         &__border-left {
             height: 50vh;
@@ -753,6 +749,7 @@ body {
             @include centerElement;
             overflow: scroll;
             width: 100%;
+            height: 100%;
 
             //--------------------------  boite contact
             .contact__wrapper {
@@ -764,7 +761,6 @@ body {
                 position: relative;
                 transition: 0.4s;
                 height: 100%;
-
 
                 .title-form {
                     @include titleCard(1.6rem);

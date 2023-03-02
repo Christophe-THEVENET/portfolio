@@ -69,7 +69,7 @@
 
     // ********************* PAGE A PROPOS ************************
     .about {
-        margin-top: 25vh;
+        margin-top: 15vh;
 
         &__content__block {
             grid-template-columns: 1fr 1fr;
@@ -84,7 +84,6 @@
                 .formations__title {
                     @include titleCard(2.5rem);
                 }
-                
             }
             // ---------------------------  block compétences
             &__competences {
@@ -108,7 +107,7 @@
 
     // ********************* PAGE PRESTATIONS ************************
     .services {
-        margin-top: 25vh;
+        margin-top: 15vh;
 
         &__content__block {
             grid-template-columns: 1fr 1fr;
@@ -124,7 +123,7 @@
 
     // ********************* PAGE REALISATIONS ************************
     .project {
-        margin-top: 25vh;
+        margin-top: 15vh;
 
         &__content__block {
             grid-template-columns: 1fr 1fr;
@@ -148,15 +147,13 @@
 
     // ********************* PAGE CONTACT ************************
     .contact {
-        /*  margin-top: 25vh; */
+        margin-top: 15vh;
 
         &__content__block {
             grid-template-columns: 1fr 1fr;
 
             // boite contact--------------------------
             .contact__wrapper {
-                /*  height: 50vh; */
-
                 .title-form {
                     font-size: 2.4rem;
                     margin-bottom: 2rem;
@@ -165,7 +162,6 @@
                 .sentence-form {
                     margin-bottom: 2rem;
                     font-size: 1.4rem;
-
                 }
                 form {
                     button {
@@ -179,10 +175,9 @@
                     margin-top: 2rem;
 
                     .presentation__social__network {
-                       justify-content: center;
-                       width: 10rem;
+                        justify-content: center;
+                        width: 10rem;
                     }
-                    
                 }
             }
         }
@@ -249,8 +244,6 @@
                 padding: 0 4rem;
                 // ---------------------------  block presentation
 
-             
-
                 // ---------------------------  block compétences
 
                 &__competences {
@@ -269,7 +262,6 @@
                             align-items: center;
                             grid-template-columns: 7fr 1fr;
                             margin-bottom: 0;
-                          
 
                             // ,,,,,,,,,,  icones
                             .icon {
@@ -336,6 +328,7 @@
     .project {
         padding-top: 10rem;
         margin: 5rem;
+        height: 80vh; // a bouger en grand ecran
 
         &__title {
             width: 80%;
@@ -359,7 +352,7 @@
     .contact {
         padding-top: 10rem;
         margin: 5rem;
-        
+
         &__title {
             margin-top: -4rem;
         }
@@ -372,9 +365,6 @@
                 height: auto;
             }
         }
-
-
-
     }
 }
 //
@@ -443,7 +433,7 @@
 
                 // boites prestation ---------------------
                 .services__wrapper {
-                    width: 95%; 
+                    width: 95%;
                     .title {
                         margin-bottom: 2rem;
                     }
@@ -535,7 +525,6 @@
                         grid-row: 1 / 4;
                         margin-bottom: -2rem; //
                         width: 80%;
-                       
                     }
 
                     footer {
@@ -555,8 +544,6 @@
                         .presentation__social__network {
                             width: 20rem;
                             margin-left: 2rem;
-
-                         
                         }
                     }
                 }
