@@ -937,9 +937,8 @@ body {
 // ************************* MODALE MENTIONS LEGALES **********************
 
 .mentions {
-    background-color: $green;
-    color: $secondary;
-    font-weight: bold;
+    background-color: $primaryHover;
+    color: $text;
     text-align: justify;
     font-family: 'coves', sans-serif;
     padding: 4rem;
@@ -983,8 +982,12 @@ body {
     h3 {
         margin: 1rem 0;
         text-decoration: underline;
-        @include sentenceCard(2rem);
-        color: $primary;
+        @include sentenceCard(1.5rem);
+        color: $flashy;
         font-weight: bold;
+    }
+
+    h1 {
+        color: $green;
     }
 }
