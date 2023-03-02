@@ -1,7 +1,7 @@
 //
 
 // ================= MEDIA QUERY >500px  <768PX (TABLETTE) =========================
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 500px) /* and (max-width: 767px) */ {
     // ********************* PAGE REALISATIONS > 500px < 768px  ************************
     .project {
         &__content__block {
@@ -21,7 +21,7 @@
 //
 //
 // ================= MEDIA QUERY > 768PX (TABLETTE) =========================
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) /* and (max-width: 959px) */ {
     // ************** HEADER ******************
     .header {
         margin: 2rem auto;
@@ -69,7 +69,7 @@
 
     // ********************* PAGE A PROPOS ************************
     .about {
-        margin-top: 15vh;
+        margin-top: 10vh;
 
         &__content__block {
             grid-template-columns: 1fr 1fr;
@@ -107,7 +107,7 @@
 
     // ********************* PAGE PRESTATIONS ************************
     .services {
-        margin-top: 15vh;
+        margin-top: 10vh;
 
         &__content__block {
             grid-template-columns: 1fr 1fr;
@@ -123,7 +123,9 @@
 
     // ********************* PAGE REALISATIONS ************************
     .project {
-        margin-top: 15vh;
+        margin-top: 10vh;
+
+
 
         &__content__block {
             grid-template-columns: 1fr 1fr;
@@ -147,7 +149,8 @@
 
     // ********************* PAGE CONTACT ************************
     .contact {
-        margin-top: 15vh;
+        margin-top: 10vh;
+
 
         &__content__block {
             grid-template-columns: 1fr 1fr;
@@ -191,7 +194,7 @@
 //
 // ======================= MEDIA QUERY > 960PX (PC) ===========================
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 960px) /* and (max-width: 1239px) */ {
     // ************** HEADER ******************
     // affiche la nav
     .header__nav {
@@ -607,7 +610,8 @@
     // ***************** PAGE A PROPOS *******************
 
     .about {
-        padding-top: 3rem;
+        height: 70vh;
+        padding-top: 0rem;
     }
 
     .title-formation,
@@ -623,12 +627,16 @@
 
     // ***************** PAGE PRESTATIONS *******************
     .services {
-        padding-top: 3rem;
+        padding-top:0rem;
+        height: 70vh;
+
     }
 
     // ***************** PAGE REALISATIONS *******************
     .project {
-        padding-top: 2rem;
+        padding-top: 0rem;
+        height: 70vh;
+
     }
 
     // ***************** PAGE CONTACT *******************
@@ -648,5 +656,41 @@
             }
         }
     }
+    //
+}
+
+
+// ================= MEDIA QUERY > 768PX < 960 & height < 740 ( PETIT ECRAN PAYSAGE ) =========================
+@media screen and (min-width:768px) and (max-width: 960px) and (max-height: 740px) {
+    // ************** HEADER ******************
+   
+
+    // ********************* PAGE A PROPOS ************************
+    .about {
+        margin-top: 20vh;
+        height: 70vh;
+    }
+
+    // ********************* PAGE PRESTATIONS ************************
+    .services {
+        margin-top: 20vh;
+        height: 70vh;
+
+    }
+
+    // ********************* PAGE REALISATIONS ************************
+    .project {
+        margin-top: 20vh;
+        height: 70vh;
+
+    }
+
+    // ********************* PAGE CONTACT ************************
+    .contact {
+        margin-top: 20vh;
+        height: 70vh;
+
+    }
+    //
     //
 }
