@@ -1,57 +1,46 @@
 // boutons -----------------
 .btn {
-  background-color: rgba(250, 235, 215, 0.575);
-  padding: 0.7rem 3rem;
-  border-radius: 5px;
-  font-size: $fontSizeText;
-  font-family: $texteRegular;
-  text-decoration: none;
-  margin-left: 2rem;
-  z-index: 8;
+    background-color: rgba(250, 235, 215, 0.575);
+    padding: 0.7rem 3rem;
+    border-radius: 5px;
+    font-size: $fontSizeText;
+    font-family: $texteRegular;
+    text-decoration: none;
+    margin-left: 2rem;
+    z-index: 8;
+    font-weight: bold;
+    transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
 }
 
 .btn-primary {
-  background-color: $flashy;
-  color: $primary;
-  font-weight: bold;
-  transition: 0.5s;
-
-
-
-  &:hover {
-    border-style: inset;
-    border: none;
-    box-shadow: 0px 0px 0px 1px $secondary inset;
-    background-color: $green;
+    background-color: $flashy;
     color: $primary;
-  }
+
+    &:hover {
+        border-style: inset;
+        border: none;
+        box-shadow: 0px 0px 0px 1px $secondary inset;
+        background-color: $green;
+        color: $primary;
+        font-weight: bold;
+    }
 }
 
 .btn-secondary {
-  background-color: $secondary;
-  color: $text;
-  font-weight: bold;
-  transition: 0.5s;
-
-
-
-  &:hover {
-    border-style: inset;
-    border: none;
-    box-shadow: 0px 0px 0px 1px $green inset;
     background-color: $secondary;
     color: $text;
 
-  }
+    &:hover {
+        border-style: inset;
+        border: none;
+        background-color: $primaryHover;
+    }
 }
-
-
 
 // ------------------------- error formulaire
 
-
 .error {
-  color: red;
-  text-transform: lowercase;
-margin-left: 2rem;
+    color: red;
+    text-transform: lowercase;
+    margin-left: 2rem;
 }

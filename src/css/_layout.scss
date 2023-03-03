@@ -833,20 +833,16 @@ body {
                         }
                     }
                     button {
-                        background-color: $primary;
+                        background-color: rgb(80, 99, 114);
                         padding: 0.7rem 1rem;
                         border: none;
                         border-radius: 5px;
-                        color: $text;
-                        transition: 0.5s;
-                        font-weight: bold;
+                        color: $flashy;
+                        transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
                         float: right;
 
                         &:hover {
-                            background-color: $green;
-                            color: $primary;
-                            transition: 0.5s;
-                            font-weight: bold;
+                            background-color: $primaryHover;
                         }
                     }
                 }
