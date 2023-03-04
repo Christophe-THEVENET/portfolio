@@ -1,6 +1,5 @@
 // boutons -----------------
 .btn {
-    background-color: rgba(250, 235, 215, 0.575);
     padding: 0.7rem 3rem;
     border-radius: 5px;
     font-size: $fontSizeText;
@@ -9,7 +8,12 @@
     margin-left: 2rem;
     z-index: 8;
     font-weight: bold;
+    width: 12rem;
     transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
 }
 
 .btn-primary {
@@ -17,9 +21,6 @@
     color: $primary;
 
     &:hover {
-        border-style: inset;
-        border: none;
-        box-shadow: 0px 0px 0px 1px $secondary inset;
         background-color: $green;
         color: $primary;
         font-weight: bold;
@@ -31,8 +32,6 @@
     color: $text;
 
     &:hover {
-        border-style: inset;
-        border: none;
         background-color: $primaryHover;
     }
 }

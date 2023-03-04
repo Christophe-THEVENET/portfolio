@@ -248,16 +248,16 @@ body {
                 }
 
                 .presentation__social__network {
-                    @include centerElement;
                     width: 10rem;
                     display: flex;
                     justify-content: space-around;
+                    align-items: center;
                     position: relative;
                     transition: 1s;
 
                     .git a svg,
                     .linkedln a svg {
-                        width: 2.5rem;
+                        width: 3rem;
 
                         path {
                             fill: $green;
@@ -770,6 +770,7 @@ body {
                     color: $text;
                     font-family: $texteRegular;
                     font-size: 1.6rem;
+                    margin-top: -3rem;
 
                     .span-tel {
                         color: $alert;
@@ -853,14 +854,15 @@ body {
             }
 
             footer {
-                margin-top: -2rem;
+                margin-top: -3rem;
                 width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 30px 80px 40px;
+                justify-items: center;
                 color: $green;
                 font-family: $texteRegular;
-                font-size: 1.4rem;
+                font-size: 1.6rem;
 
                 & div:hover {
                     color: $text;
@@ -868,6 +870,7 @@ body {
 
                 a {
                     color: $green;
+                    text-decoration: none;
                     &:hover {
                         color: $text;
                     }
@@ -889,22 +892,21 @@ body {
                     display: none;
                     font-weight: bold;
                     font-size: 1.2rem;
-                    bottom: 5rem;
-                    left: 3rem;
+                    bottom: 8rem;
+                    left: -1rem;
                     width: 22rem;
                 }
 
                 .presentation__social__network {
                     @include centerElement;
-                    width: 20rem;
                     display: flex;
-                    justify-content: flex-start;
-                    position: relative;
+                    align-items: center;
+                    justify-content: space-around;
+                    width: 50%;
 
                     .git a svg,
                     .linkedln a svg {
-                        width: 2rem;
-                        margin-right: 2rem;
+                        width: 5rem;
 
                         path {
                             fill: $green;
@@ -916,6 +918,25 @@ body {
                             }
                         }
                     }
+                }
+
+                .footer-grid-1 {
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                    padding: 0;
+                    margin: 0;
+                }
+                .footer-grid-2 {
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                    padding: 0;
+                    margin: 0;
+                }
+                .footer-grid-3 {
+                    grid-column: 1/2;
+                    grid-row: 3/4;
+                    padding: 0;
+                    margin: 0;
                 }
             }
         }
@@ -932,15 +953,16 @@ body {
     padding: 4rem;
     font-size: 1.6rem;
     position: relative;
-    top: -90vh;
-    left: 10vw;
-    width: 80%;
-    height: 80vh;
+    top: -95vh;
+    left: 5vw;
+    width: 90%;
+    height: 90vh;
     overflow: scroll;
     border-radius: 5px;
     transform: translateX(-300rem);
     opacity: 0;
     transition: all 1s cubic-bezier(1, -0.01, 1, -1.13);
+    z-index: 100;
 
     &__header {
         display: flex;
@@ -949,6 +971,7 @@ body {
         margin-bottom: 3rem;
 
         h1 {
+            text-align: center;
             flex: 1;
             @include titlePage;
             color: $primary;
@@ -969,7 +992,6 @@ body {
 
     h3 {
         margin: 1rem 0;
-        text-decoration: underline;
         @include sentenceCard(1.5rem);
         color: $flashy;
         font-weight: bold;

@@ -1,148 +1,140 @@
 // ************************ HEADER **************************
 
-// ---------------------------  souligne menu hover
+// ---------------------------  menu hover
 header nav ul li {
-  display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17rem;
 }
 
-header nav ul li a:after {
-  content: '';
-  display: block;
-  margin: auto;
-  height: 1px;
-  width: 0;
-  background: transparent;
-  transition: width 0.5s ease, background-color 0.5s ease;
-}
-li a:hover:after {
-  width: 90%;
-  background: #444;
+.header__nav .menu a:hover {
+    color: $green;
+    letter-spacing: 2px;
 }
 
 // -------------------------------------- icon scroll
 @media screen and (min-width: 940px) {
-  .scroll-icon {
-    position: absolute;
-    bottom: 4rem;
-    right: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2.7em;
-    width: 1.5em;
-    font-size: 22px;
-    color: rgba(#dcf7ff, 0.3);
-    border-radius: 2em;
-    border: solid 3px;
-    transition: 2s;
-    opacity: 0;
-  }
-
-  .scroll-icon:hover {
-    background-color: rgba(#dcf7ff, 0.05);
-    color: #dcf7ff;
-  }
-
-  .scroll-icon::after {
-    content: '';
-    width: 5px;
-    height: 5px;
-    background-color: #dcf7ff79;
-    border-radius: 50%;
-    animation: scroll-icon 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
-  }
-
-  @keyframes scroll-icon {
-    0% {
-      transform: translateY(-12px);
-      opacity: 0;
+    .scroll-icon {
+        position: absolute;
+        bottom: 4rem;
+        right: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.7em;
+        width: 1.5em;
+        font-size: 22px;
+        color: rgba(#dcf7ff, 0.3);
+        border-radius: 2em;
+        border: solid 3px;
+        transition: 2s;
+        opacity: 0;
     }
-    30%,
-    70% {
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(12px);
-      opacity: 0;
-    }
-  }
 
-  .text-use-mouse {
-    position: absolute;
-    bottom: 1.5rem;
-    right: 1rem;
-    color: rgba(#dcf7ff, 0.3);
-    font-family: $texteRegular;
-    font-size: 1.5rem;
-    transition: 2s;
-    opacity: 0;
-    display: block;
-  }
+    .scroll-icon:hover {
+        background-color: rgba(#dcf7ff, 0.05);
+        color: #dcf7ff;
+    }
+
+    .scroll-icon::after {
+        content: '';
+        width: 5px;
+        height: 5px;
+        background-color: #dcf7ff79;
+        border-radius: 50%;
+        animation: scroll-icon 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+    }
+
+    @keyframes scroll-icon {
+        0% {
+            transform: translateY(-12px);
+            opacity: 0;
+        }
+        30%,
+        70% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(12px);
+            opacity: 0;
+        }
+    }
+
+    .text-use-mouse {
+        position: absolute;
+        bottom: 1.5rem;
+        right: 1rem;
+        color: rgba(#dcf7ff, 0.3);
+        font-family: $texteRegular;
+        font-size: 1.5rem;
+        transition: 2s;
+        opacity: 0;
+        display: block;
+    }
 }
 
 // ------------------------------- animation reveal left
 .reveal-left {
-  transform: translateX(0);
-  opacity: 1;
-  transition: transform 0.4s, opacity 0.4s;
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.4s, opacity 0.4s;
 }
 
 .reveal-left.not-visible {
-  transform: translateX(-50px);
-  opacity: 0;
+    transform: translateX(-50px);
+    opacity: 0;
 }
 
 // ------------------------------- animation reveal right
 
 .reveal-right {
-  transform: translateX(0);
-  opacity: 1;
-  transition: transform 0.4s, opacity 0.4s;
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.4s, opacity 0.4s;
 }
 
 .reveal-right.not-visible {
-  transform: translateX(50px);
-  opacity: 0;
+    transform: translateX(50px);
+    opacity: 0;
 }
 
 // ------------------------------- animation reveal bottom
 
 .reveal-bottom {
-  transform: translateY(0);
-  opacity: 1;
-  transition: transform 0.4s, opacity 0.4s;
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.4s, opacity 0.4s;
 }
 
 .reveal-bottom.not-visible {
-  transform: translateY(25px);
-  opacity: 0;
+    transform: translateY(25px);
+    opacity: 0;
 }
 
 // titre qui clignote
 @keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 // -------------------------------- popup message envoyé
 .notification.show {
-  transform: translateX(0);
-  transition: all 1s cubic-bezier(.92,.08,.28,1.46);
-  opacity: 1;
+    transform: translateX(0);
+    transition: all 1s cubic-bezier(0.92, 0.08, 0.28, 1.46);
+    opacity: 1;
 }
-
 
 // -------------------------------- modale mentions
 .mentions.show {
-  transform: translateX(0);
-  transition: all 1s cubic-bezier(.92,.08,.28,1.46);
-  opacity: 1;
-
+    transform: translateX(0);
+    transition: all 1s cubic-bezier(0.92, 0.08, 0.28, 1.46);
+    opacity: 1;
 }
