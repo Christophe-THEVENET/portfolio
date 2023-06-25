@@ -1,4 +1,4 @@
-//  ------------  apparition icone scroll décalé
+//  ------------  apparition icone scroll delay
 let scrollMouseIcon = document.querySelector('.scroll-icon');
 let textUseScroll = document.querySelector('.text-use-mouse');
 

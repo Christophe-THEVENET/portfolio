@@ -9,7 +9,7 @@ import '../css/main.scss';
 let toggle = document.querySelector('.header__nav__btn');
 
 toggle.addEventListener('click', () => {
-  // permet de savoir si le menu est ouvert
+  // ajoute et supprime la classe open au body (permet de savoir si la menu est ouvert)
   document.body.classList.toggle('open');
 });
 
@@ -18,7 +18,7 @@ let links = document.querySelectorAll('.nav__link--mobile');
 
 links.forEach((link) => {
   link.addEventListener('click', () => {
-    // permet de savoir si le menu est ouvert
+   // ajoute et supprime la classe open au body (permet de savoir si la menu est ouvert)
     document.body.classList.toggle('open');
   });
 });
