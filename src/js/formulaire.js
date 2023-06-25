@@ -32,7 +32,6 @@ let emailRegex = /^([0-9a-zA-Z].*?@([0-9a-zA-Z].*\.\w{2,4}))$/;
 // a la soumission du formulaire
  form.addEventListener('submit', (e) => {
   // !!!!!!!!!!! si un input est vide !!!!!!!!!!!!!!!!!!!!!
-  // nom
   if (inputName.value.trim() == '') {
     e.preventDefault();
     nameError.textContent = 'Veuillez entrer votre nom';
