@@ -70,7 +70,7 @@ closeMentionsBtn.addEventListener('click', (e) => {
     modaleMentions.classList.remove('show');
 });
 
-// ***************** modale info *************************
+// ***************** modale info realisations *************************
 
 //   -------- freelance ----------
 let infoButtonFreelance = document.querySelector('#info-icon-freelance');
