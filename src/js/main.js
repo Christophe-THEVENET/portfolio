@@ -87,8 +87,6 @@ closeButtonFreelance.addEventListener('click', (e) => {
     infoModalFreelance.style.display = 'none';
 });
 
-
-
 //   -------- vitrine ----------
 let infoButtonVitrine = document.querySelector('#info-icon-vitrine');
 let infoModalVitrine = document.querySelector('#info-modal-vitrine');
@@ -124,7 +122,6 @@ let infoButtonApplication = document.querySelector('#info-icon-application');
 let infoModalApplication = document.querySelector('#info-modal-application');
 let closeButtonApplication = document.querySelector('.close-modal-icon-application');
 
-
 infoButtonApplication.addEventListener('click', (e) => {
     e.preventDefault();
     infoModalApplication.style.display = 'flex';
@@ -134,6 +131,4 @@ closeButtonApplication.addEventListener('click', (e) => {
     e.preventDefault();
     infoModalApplication.style.display = 'none';
 });
-
-
 

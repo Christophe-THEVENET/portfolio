@@ -59,11 +59,11 @@
 }
 
 .info-modal {
-    background-color: $primaryHover;
+    background-color: #7a8491;
     font-family: $texteRegular;
     color: $text;
     font-size: 1.6rem;
-    line-height: 2.2rem;
+    line-height: 2rem;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -74,12 +74,13 @@
     display: none;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-top: 4rem;
 
     p {
        text-align: justify;
-       padding: 2rem;
+       padding: 1rem 2rem;
     }
     
 }
@@ -99,4 +100,5 @@
 
 .tarif-modale {
     color: $green;
+    font-weight: bold;
 }

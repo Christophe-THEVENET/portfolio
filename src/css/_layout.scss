@@ -246,12 +246,17 @@ body {
                 }
 
                 .presentation__social__network {
-                    width: 10rem;
+                    width: 100%;
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: center;
                     align-items: center;
                     position: relative;
                     transition: 1s;
+
+
+                    .git, .linkedln {
+                        padding: 1rem;
+                    }
 
                     .git a svg,
                     .linkedln a svg {
@@ -275,7 +280,6 @@ body {
                     font-family: $titleFamily;
                     letter-spacing: 1px;
                     position: absolute;
-                    width: 30vh;
                     text-align: center;
                     z-index: 100;
                     bottom: 5rem;
