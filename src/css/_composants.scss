@@ -46,11 +46,11 @@
 
 // ------------------------- modales prestations
 .info-icon {
-    transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+    transition: 0.5s;
     z-index: 5;
 
     &:hover {
-        transform: scale(1.6);
+        transform: scale(1.4);
         cursor: pointer;
     }
     g:hover {
@@ -59,7 +59,7 @@
 }
 
 .info-modal {
-    background-color: #4f5e72;
+    background-color: #27323f;
     font-family: $texteRegular;
     color: $text;
     font-size: 1.6rem;
@@ -70,7 +70,6 @@
     top: 0;
     right: 0rem;
     border-radius: 10px;
-    transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
     display: none;
     flex-direction: column;
     flex-wrap: wrap;
@@ -79,10 +78,9 @@
     padding-top: 4rem;
 
     p {
-       text-align: justify;
-       padding: 1rem 2rem;
+        text-align: justify;
+        padding: 1rem 2rem;
     }
-    
 }
 
 .close-modal-icon {
@@ -92,8 +90,8 @@
     fill: $secondary;
     transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
 
-    &:hover{
-    fill: $flashy;
+    &:hover {
+        fill: $flashy;
         cursor: pointer;
     }
 }
