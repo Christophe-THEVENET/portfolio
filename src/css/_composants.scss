@@ -43,3 +43,60 @@
     text-transform: lowercase;
     margin-left: 2rem;
 }
+
+// ------------------------- modales prestations
+.info-icon {
+    transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+    z-index: 5;
+
+    &:hover {
+        transform: scale(1.6);
+        cursor: pointer;
+    }
+    g:hover {
+        fill: #28d49b;
+    }
+}
+
+.info-modal {
+    background-color: $primaryHover;
+    font-family: $texteRegular;
+    color: $text;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0rem;
+    border-radius: 10px;
+    transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    p {
+       text-align: justify;
+       padding: 2rem;
+    }
+    
+}
+
+.close-modal-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    fill: $secondary;
+    transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+
+    &:hover{
+    fill: $flashy;
+        cursor: pointer;
+    }
+}
+
+.tarif-modale {
+    color: $green;
+}
