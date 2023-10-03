@@ -20,7 +20,7 @@ body {
     background-image: url('../img/background.jpg');
     background-position: center;
     background-size: cover;
-    scroll-snap-align: center; 
+    scroll-snap-align: center;
 }
 
 /*  cacher barre de scroll pour chrome */
@@ -36,7 +36,6 @@ body {
 
 // ************************* PAGE ACCEUIL ****************************
 .filter-home {
-    
     height: 0;
     .content-home {
         color: $text;
@@ -247,12 +246,17 @@ body {
                 }
 
                 .presentation__social__network {
-                    width: 10rem;
+                    width: 100%;
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: center;
                     align-items: center;
                     position: relative;
                     transition: 1s;
+
+
+                    .git, .linkedln {
+                        padding: 1rem;
+                    }
 
                     .git a svg,
                     .linkedln a svg {
@@ -276,7 +280,6 @@ body {
                     font-family: $titleFamily;
                     letter-spacing: 1px;
                     position: absolute;
-                    width: 30vh;
                     text-align: center;
                     z-index: 100;
                     bottom: 5rem;
@@ -376,6 +379,7 @@ body {
                 transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
                 box-shadow: 1px 1px 8px -2px $primary;
                 background-color: $secondaryHover;
+                position: relative;
 
                 &:hover {
                     background-color: $primaryHover;
@@ -431,14 +435,14 @@ body {
         }
     }
     // titre  qui clignote a partir de juin 2023
-    .blink {
+    /*     .blink {
         color: $alert;
         font-family: $titleFamily;
         font-weight: bold;
         font-size: 1.8rem;
         text-align: center;
         animation: blink 5s infinite;
-    }
+    } */
 }
 
 // ************************* PAGE REALISATIONS MOBILE **********************
@@ -585,6 +589,13 @@ body {
                     }
                 }
 
+                &__links {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
                 &__link {
                     font-family: $texteRegular;
                     color: $flashy;
@@ -594,10 +605,8 @@ body {
                     border-radius: 5px;
                     color: $text;
                     font-size: 1rem;
-                    align-self: end;
                     text-decoration: none;
                     transition: 0.5s;
-                    margin-top: 1rem;
                     opacity: 0;
                     transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
 
@@ -606,7 +615,27 @@ body {
                         color: $primary;
                         transition: 0.5s;
                     }
+
+                    &--github {
+                        margin-top: 0.5rem;
+                        .github-icon {
+                            width: 2.2rem;
+                            transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+        
+                            & g {
+                                transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+                                &:hover {
+                                    fill: $green;
+                                }
+                                
+                            }
+                        }
+                    }
                 }
+
+
+
+                
             }
 
             .ecf {
