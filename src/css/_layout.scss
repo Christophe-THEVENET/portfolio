@@ -605,7 +605,6 @@ body {
                     border-radius: 5px;
                     color: $text;
                     font-size: 1rem;
-                    /* align-self: end; */
                     text-decoration: none;
                     transition: 0.5s;
                     opacity: 0;
@@ -616,19 +615,27 @@ body {
                         color: $primary;
                         transition: 0.5s;
                     }
-                }
 
-                .github-icon {
-                    width: 2.2rem;
-                    transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
-
-                    & g {
-                        transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
-                        &:hover {
-                            fill: $green;
+                    &--github {
+                        margin-top: 0.5rem;
+                        .github-icon {
+                            width: 2.2rem;
+                            transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+        
+                            & g {
+                                transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+                                &:hover {
+                                    fill: $green;
+                                }
+                                
+                            }
                         }
                     }
                 }
+
+
+
+                
             }
 
             .ecf {
