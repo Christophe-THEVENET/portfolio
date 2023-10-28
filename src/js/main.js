@@ -75,61 +75,55 @@ closeMentionsBtn.addEventListener('click', (e) => {
 //   -------- freelance ----------
 let infoButtonFreelance = document.querySelector('#info-icon-freelance');
 let infoModalFreelance = document.querySelector('#info-modal-freelance');
-let closeButtonFreelance = document.querySelector('.close-modal-icon-freelance');
 
-infoButtonFreelance.addEventListener('click', (e) => {
+infoButtonFreelance.addEventListener('mouseover', (e) => {
     e.preventDefault();
     infoModalFreelance.classList.add('info-modal-show');
 });
 
-closeButtonFreelance.addEventListener('click', (e) => {
+infoModalFreelance.addEventListener('mouseleave', (e) => {
     e.preventDefault();
     infoModalFreelance.classList.remove('info-modal-show');
-
 });
 
 //   -------- vitrine ----------
 let infoButtonVitrine = document.querySelector('#info-icon-vitrine');
 let infoModalVitrine = document.querySelector('#info-modal-vitrine');
-let closeButtonVitrine = document.querySelector('.close-modal-icon-vitrine');
 
-infoButtonVitrine.addEventListener('click', (e) => {
+infoButtonVitrine.addEventListener('mouseover', (e) => {
     e.preventDefault();
-    infoModalVitrine.style.display = 'flex';
+    infoModalVitrine.classList.add('info-modal-show');
 });
 
-closeButtonVitrine.addEventListener('click', (e) => {
+infoModalVitrine.addEventListener('mouseleave', (e) => {
     e.preventDefault();
-    infoModalVitrine.style.display = 'none';
+    infoModalVitrine.classList.remove('info-modal-show');
 });
 
 //   -------- commerce ----------
 let infoButtonCommerce = document.querySelector('#info-icon-commerce');
 let infoModalCommerce = document.querySelector('#info-modal-commerce');
-let closeButtonCommerce = document.querySelector('.close-modal-icon-commerce');
 
-infoButtonCommerce.addEventListener('click', (e) => {
+infoButtonCommerce.addEventListener('mouseover', (e) => {
     e.preventDefault();
-    infoModalCommerce.style.display = 'flex';
+    infoModalCommerce.classList.add('info-modal-show');
 });
 
-closeButtonCommerce.addEventListener('click', (e) => {
+infoModalCommerce.addEventListener('mouseleave', (e) => {
     e.preventDefault();
-    infoModalCommerce.style.display = 'none';
+    infoModalCommerce.classList.remove('info-modal-show');
 });
 
 //   -------- application ----------
 let infoButtonApplication = document.querySelector('#info-icon-application');
 let infoModalApplication = document.querySelector('#info-modal-application');
-let closeButtonApplication = document.querySelector('.close-modal-icon-application');
 
-infoButtonApplication.addEventListener('click', (e) => {
+infoButtonApplication.addEventListener('mouseover', (e) => {
     e.preventDefault();
-    infoModalApplication.style.display = 'flex';
+    infoModalApplication.classList.add('info-modal-show');
 });
 
-closeButtonApplication.addEventListener('click', (e) => {
+infoModalApplication.addEventListener('mouseleave', (e) => {
     e.preventDefault();
-    infoModalApplication.style.display = 'none';
+    infoModalApplication.classList.remove('info-modal-show');
 });
-

@@ -716,7 +716,7 @@
 
         &__content__block {
             .services__wrapper {
-                height: auto;
+               /*  height: auto; */
 
                 ul li {
                     margin-bottom: 0.2rem;
@@ -879,10 +879,6 @@
                 .services__wrapper {
                     width: 95%;
                     .title {
-                        margin-bottom: 2rem;
-                    }
-
-                    .sentence {
                         margin-bottom: 2rem;
                     }
 

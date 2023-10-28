@@ -59,9 +59,8 @@
 }
 
 .info-modal {
-    background-color: #27323f;
+    background-color: #1f2938;
     font-family: $texteRegular;
-    color: $text;
     font-size: 1.6rem;
     line-height: 2rem;
     height: 100%;
@@ -69,47 +68,30 @@
     position: absolute;
     top: 0;
     right: 0rem;
+    padding: 2rem 0;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
     align-items: center;
-    padding-top: 4rem;
     transform: translateY(100%);
-    display: flex;
-    transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+    transition: all 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
 
-
-    p {
-        text-align: justify;
-        padding: 1rem 2rem;
+    & > .title {
+        letter-spacing: 1px !important;
     }
 }
 
 .info-modal.info-modal-show {
     transform: translateY(0);
- /*    display: flex; */
- transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+    transition: all 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
 
-}
-
-
-
-.close-modal-icon {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    fill: $secondary;
-    transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
-
-    &:hover {
-        fill: $flashy;
-        cursor: pointer;
+    & > .title {
+        color: $flashy;
+        margin-bottom: 3rem;
+        letter-spacing: 2px !important;
     }
-}
 
-.tarif-modale {
-    color: $green;
-    font-weight: bold;
+    ul li {
+        color: $text;
+    }
 }
