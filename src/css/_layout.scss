@@ -253,8 +253,8 @@ body {
                     position: relative;
                     transition: 1s;
 
-
-                    .git, .linkedln {
+                    .git,
+                    .linkedln {
                         padding: 1rem;
                     }
 
@@ -359,7 +359,6 @@ body {
             justify-items: center;
             align-items: flex-start;
             grid-template-columns: 1fr;
-            gap: 20px;
             overflow: scroll;
             transition: 0.4s;
             width: 100%;
@@ -367,12 +366,12 @@ body {
 
             //--------------------------  boite prestations
             .services__wrapper {
-                height: 100%;
+                min-height: 45rem;
                 font-size: 1.6rem;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding: 2rem 0;
+                padding: 2rem 0.4rem;
                 margin: 1rem;
                 width: 32rem;
                 border-radius: 10px;
@@ -380,11 +379,11 @@ body {
                 box-shadow: 1px 1px 8px -2px $primary;
                 background-color: $secondaryHover;
                 position: relative;
+                overflow: hidden;
 
                 &:hover {
                     background-color: $primaryHover;
                     box-shadow: 2px 2px 10px -2px $primary;
-
                     .title {
                         transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
                         letter-spacing: 2px;
@@ -399,7 +398,9 @@ body {
 
                 .sentence {
                     @include sentenceCard(1.4rem);
-                    margin-bottom: 1rem;
+                    margin-bottom: 0.5rem;
+                    text-decoration: underline;
+
                 }
 
                 ul li {
@@ -417,11 +418,13 @@ body {
                 }
 
                 .price {
-                    color: $flashy;
+                    color: $text;
                     font-family: $titleFamily;
                     font-size: 1.2rem;
                     text-transform: uppercase;
                     letter-spacing: 1px;
+                    margin: -0.3rem 1rem;
+
 
                     span {
                         color: $green;
@@ -430,6 +433,21 @@ body {
 
                 .spec {
                     margin-left: 2rem;
+                }
+
+                &__content {
+                    margin-top: 1.5rem;
+
+                    .description {
+                        font-size: 1.6rem;
+                        line-height: 1.7rem;
+                        color: $text;
+                        font-family: $texteRegular;
+                        transition: 0.1s ease-in-out;
+                        padding: 1rem;
+                        border-radius: 5px;
+                        text-align: justify;
+                    }
                 }
             }
         }
@@ -621,21 +639,16 @@ body {
                         .github-icon {
                             width: 2.2rem;
                             transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
-        
+
                             & g {
                                 transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
                                 &:hover {
                                     fill: $green;
                                 }
-                                
                             }
                         }
                     }
                 }
-
-
-
-                
             }
 
             .ecf {
@@ -891,7 +904,8 @@ body {
                 grid-template-columns: 1fr;
                 grid-template-rows: 30px 80px 40px;
                 justify-items: center;
-                color: $green;
+                color: $text;
+                font-weight: bold;
                 font-family: $texteRegular;
                 font-size: 1.6rem;
 
@@ -900,7 +914,7 @@ body {
                 }
 
                 a {
-                    color: $green;
+                    color: $text;
                     text-decoration: none;
                     &:hover {
                         color: $text;
