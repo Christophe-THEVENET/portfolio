@@ -5,7 +5,7 @@
     // ********************* PAGE PRESTATION > 500px < 768px  ************************
 
     .services__content__block {
-        gap: calc(50rem + -20vh) 20px;
+        gap: calc(40rem + -60vh) 20px;
     }
 }
 
@@ -14,7 +14,7 @@
     // ********************* PAGE PRESTATION > 500px < 768px  ************************
 
     .services__content__block {
-        gap: calc(50rem + -20vh) 20px;
+        gap: calc(40rem + -35vh) 20px;
     }
 
     // ********************* PAGE REALISATIONS > 500px < 768px  ************************
@@ -715,6 +715,7 @@
         }
 
         &__content__block {
+            gap: calc(40rem + -45vh) 20px;
             .services__wrapper {
                /*  height: auto; */
 
