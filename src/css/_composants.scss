@@ -70,18 +70,31 @@
     top: 0;
     right: 0rem;
     border-radius: 10px;
-    display: none;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     padding-top: 4rem;
+    transform: translateY(100%);
+    display: flex;
+    transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+
 
     p {
         text-align: justify;
         padding: 1rem 2rem;
     }
 }
+
+.info-modal.info-modal-show {
+    transform: translateY(0);
+ /*    display: flex; */
+ transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+
+}
+
+
 
 .close-modal-icon {
     position: absolute;

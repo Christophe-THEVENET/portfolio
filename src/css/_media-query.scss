@@ -1,7 +1,22 @@
 //
 
+// ================= MEDIA QUERY  <500PX (MOBILE) =========================
+@media screen and (min-width: 100px) /* and (max-width: 767px) */ {
+    // ********************* PAGE PRESTATION > 500px < 768px  ************************
+
+    .services__content__block {
+        gap: calc(50rem + -20vh) 20px;
+    }
+}
+
 // ================= MEDIA QUERY >500px  <768PX (TABLETTE) =========================
 @media screen and (min-width: 500px) /* and (max-width: 767px) */ {
+    // ********************* PAGE PRESTATION > 500px < 768px  ************************
+
+    .services__content__block {
+        gap: calc(50rem + -20vh) 20px;
+    }
+
     // ********************* PAGE REALISATIONS > 500px < 768px  ************************
     .project {
         &__content__block {
@@ -18,6 +33,7 @@
         }
     }
 }
+
 //
 //
 // ================= MEDIA QUERY > 768PX (TABLETTE) =========================
@@ -111,6 +127,7 @@
 
         &__content__block {
             grid-template-columns: 1fr 1fr;
+            gap: calc(50rem + -40vh) 20px;
 
             .blink {
                 grid-column-start: 1;

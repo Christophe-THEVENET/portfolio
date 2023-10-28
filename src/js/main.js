@@ -79,12 +79,13 @@ let closeButtonFreelance = document.querySelector('.close-modal-icon-freelance')
 
 infoButtonFreelance.addEventListener('click', (e) => {
     e.preventDefault();
-    infoModalFreelance.style.display = 'flex';
+    infoModalFreelance.classList.add('info-modal-show');
 });
 
 closeButtonFreelance.addEventListener('click', (e) => {
     e.preventDefault();
-    infoModalFreelance.style.display = 'none';
+    infoModalFreelance.classList.remove('info-modal-show');
+
 });
 
 //   -------- vitrine ----------
