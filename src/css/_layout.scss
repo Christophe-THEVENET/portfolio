@@ -166,6 +166,7 @@ body {
 
             // ---------------------------  block formations
             &__formations {
+                min-height: 15rem;
                 padding: 1rem;
                 display: flex;
                 flex-direction: column;
@@ -174,6 +175,8 @@ body {
                 border-radius: 10px;
                 transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
                 background-color: $secondaryHover;
+                position: relative;
+                overflow: hidden;
 
                 &:hover {
                     background-color: #1c222b;
@@ -197,6 +200,21 @@ body {
                         color: $green;
                         font-style: italic;
                     }
+                }
+
+                .info-modal h4 {
+                    @include titleCard(1.8rem);
+                    margin-bottom: 2rem;
+                }
+
+                ul li {
+                    margin-bottom: 1rem;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $text;
+                    font-size: 1.8rem;
                 }
             }
             // ---------------------------  block compétences
@@ -366,7 +384,7 @@ body {
 
             //--------------------------  boite prestations
             .services__wrapper {
-                min-height: 45rem;
+                min-height: 41.5rem;
                 font-size: 1.6rem;
                 display: flex;
                 flex-direction: column;
@@ -391,16 +409,15 @@ body {
                 }
 
                 .title {
-                    @include titleCard(2rem);
-                    margin: 1rem 0;
+                    @include titleCard(1.7rem);
+                    margin-bottom: 1rem;
                     letter-spacing: 1px;
                 }
 
                 .sentence {
-                    @include sentenceCard(1.4rem);
-                    margin-bottom: 0.5rem;
+                    @include sentenceCard(1.3rem);
+                    margin-bottom: 1rem;
                     text-decoration: underline;
-
                 }
 
                 ul li {
@@ -420,11 +437,10 @@ body {
                 .price {
                     color: $text;
                     font-family: $titleFamily;
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                     text-transform: uppercase;
                     letter-spacing: 1px;
                     margin: -0.3rem 1rem;
-
 
                     span {
                         color: $green;
@@ -436,7 +452,7 @@ body {
                 }
 
                 &__content {
-                    margin-top: 1.5rem;
+                    margin-top: 1rem;
 
                     .description {
                         font-size: 1.6rem;
