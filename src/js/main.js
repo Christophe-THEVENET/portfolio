@@ -127,3 +127,21 @@ infoModalApplication.addEventListener('mouseleave', (e) => {
     e.preventDefault();
     infoModalApplication.classList.remove('info-modal-show');
 });
+
+
+
+// ***************** modale info diplome *************************
+
+//   -------- freelance ----------
+let infoButtonDiplome = document.querySelector('#info-icon-diplome');
+let infoModalDiplome = document.querySelector('#info-modal-diplome');
+
+infoButtonDiplome.addEventListener('mouseover', (e) => {
+    e.preventDefault();
+    infoModalDiplome.classList.add('info-modal-show');
+});
+
+infoModalDiplome.addEventListener('mouseleave', (e) => {
+    e.preventDefault();
+    infoModalDiplome.classList.remove('info-modal-show');
+});
