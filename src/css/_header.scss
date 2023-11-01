@@ -22,7 +22,7 @@
 
         &__img {
             display: inline-block;
-            width: 11rem;
+            width: 13rem;
             filter: none;
             transition: 1s;
         }
@@ -81,7 +81,7 @@
             padding: 1em;
             margin-top: 0.7rem;
             font-family: $titleFamily;
-            color: $flashy;
+            color: $textWhite;
             font-size: 2rem;
             letter-spacing: 1px;
             transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
@@ -104,13 +104,13 @@
 
 .openIcon--btn,
 .closeIcon--btn {
-    color: $flashy;
+    color: $newGreenlight;
 }
 
 // --------------- modale menu hamburger ------------
 
 .menu-modal {
-    background-color: $primaryHover;
+    background-color: $newDark;
     position: absolute;
     top: 0;
     left: 0;
@@ -135,7 +135,7 @@
             padding: 1em;
             margin-top: 0.7rem;
             font-family: $titleFamily;
-            color: $flashy;
+            color: $newGreenlight;
             font-size: 2rem;
         }
     }

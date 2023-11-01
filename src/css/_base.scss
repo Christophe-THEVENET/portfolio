@@ -17,7 +17,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-   /*  border: 1px solid red;   */ 
+    /*  border: 1px solid red;   */
 }
 
 html {
@@ -36,7 +36,7 @@ html {
 @mixin titlePage {
     font-family: $titleFamily;
     font-size: 3.5vmax;
-    color: $flashy;
+    color: $textWhite;
 }
 
 // ------------------------------------- text
@@ -44,7 +44,7 @@ html {
     font-family: $texteRegular;
     font-size: $fontSize;
     text-align: justify;
-    color: $text;
+    color: $textWhite;
 }
 
 //  ------------------------------------ polices
@@ -54,32 +54,34 @@ $fontSizeText: 1.8rem;
 $titleGreenMobile: 2.2vmax;
 
 // ------------------------------------- couleurs
-$primary: #14191f;
-$secondary: #3a4555;
-$primaryHover : #1c222b;
-$secondaryHover: #3a455593;
-$text: #f8fafb;
-$flashy: #dcf7ff;
+
+$backgroundCard: #3282814f;
+$backgroundCardHover: #2a7c7b;
+$textWhite: #fffffe;
+$newGreenlight: #47b3b1;
+$newGreen: #328281;
+$newGreendark: #2d7977;
+$newDark: #010302;
+$newDarkHover: #1c222b;
+$newGray: #9dd8d7;
+$newDarkLight: #0d4b49;
 $green: #28d49b;
 $alert: rgb(238, 122, 122);
 
 // ---------------------------- éléments des cards
 @mixin titleCard($fontSize) {
     font-family: $titleFamily;
-    color: $green;
+    color: $newDark;
     font-size: $fontSize;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 @mixin sentenceCard($fontSize) {
-    color: $flashy;
-     font-family: $titleFamily; 
+    color: $newDark;
+    font-family: $titleFamily;
     font-size: $fontSize;
     letter-spacing: 1px;
 }
 
 
-/* 
-
-#3a455593 */
