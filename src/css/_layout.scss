@@ -751,7 +751,8 @@ body {
 
     // ------------------------------- popup message envoyé
     .notification {
-        background-color: $newGreen;
+        background-color: $newGreenlight;
+        width: auto !important;
         color: $newDark;
         letter-spacing: 1px;
         padding: 1rem 0.5rem;
