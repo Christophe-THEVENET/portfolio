@@ -535,13 +535,14 @@ body {
 
             // -------------------------------- boite projet
             .project__wrapper {
+                min-height: 20rem;
                 font-size: 1.8rem;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                box-shadow: 1px 1px 8px -2px $newDark;
+                 box-shadow: 1px 1px 8px -2px $newDark; 
                 border-radius: 10px;
-                transition: 0.4s;
+                transition: 0.3 ease-in-out;
 
                 .filter-modale {
                     border-radius: 10px;
@@ -552,10 +553,13 @@ body {
                 // ----------------------------------- modale
                 &__modale {
                     border-radius: 10px;
+
                     height: 100%;
                     width: 100%;
                     display: flex;
                     flex-direction: column;
+                    font-family: $texteRegular;
+                    font-size: 1.6rem;
                     align-items: center;
                     justify-content: center;
                     padding: 1rem;
@@ -568,19 +572,19 @@ body {
 
                         // ----------------------------- effet reveal top
                         & .project__wrapper__title {
-                            letter-spacing: 2px;
+                          /*   letter-spacing: 2px; */
                             opacity: 1;
                         }
 
                         & .project__wrapper__sentence {
                             opacity: 1;
-                            font-family: $texteRegular;
                             color: $textWhite;
-                            font-size: 1.5rem;
+                            font-size: 1.3rem;
                         }
 
                         & .project__wrapper__description {
                             opacity: 1;
+
                         }
 
                         & .project__wrapper__link {
@@ -975,7 +979,7 @@ body {
 
                     .git a svg,
                     .linkedln a svg {
-                        width: 5rem;
+                        width: 4rem;
 
                         path {
                             fill: $newDark;
