@@ -18,11 +18,11 @@
         align-items: center;
         flex-direction: column;
         padding-left: 1rem;
-        margin-top: -0.2rem; 
+        margin-top: -0.2rem;
 
         &__img {
             display: inline-block;
-            width: 11rem;
+            width: 13rem;
             filter: none;
             transition: 1s;
         }
@@ -31,16 +31,6 @@
             filter: hue-rotate(180deg);
             transition: 1s;
         }
-
-        &__jingle {
-            filter: none;
-            transition: 1s;
-            font-family: $texteRegular;
-            color: #bdc7d6;
-            font-size: 1.15rem;
-            margin-top: -0.7rem;
-        }
-       
     }
 
     //nav ----------------------------
@@ -81,7 +71,7 @@
             padding: 1em;
             margin-top: 0.7rem;
             font-family: $titleFamily;
-            color: $flashy;
+            color: $newGreenlight;
             font-size: 2rem;
             letter-spacing: 1px;
             transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
@@ -100,17 +90,15 @@
     display: block;
 }
 
-
-
 .openIcon--btn,
 .closeIcon--btn {
-    color: $flashy;
+    color: $newGreenlight;
 }
 
 // --------------- modale menu hamburger ------------
 
 .menu-modal {
-    background-color: $primaryHover;
+    background-color: $newDark;
     position: absolute;
     top: 0;
     left: 0;
@@ -135,7 +123,7 @@
             padding: 1em;
             margin-top: 0.7rem;
             font-family: $titleFamily;
-            color: $flashy;
+            color: $newGreenlight;
             font-size: 2rem;
         }
     }
