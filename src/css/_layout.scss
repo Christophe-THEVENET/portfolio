@@ -183,11 +183,6 @@ body {
                     background-color: $backgroundCardHover;
                     box-shadow: 2px 2px 10px -2px $newDark;
                     transition: 3s cubic-bezier(0.2, 1.35, 0.82, 0.92);
-
-                    .formations__title {
-                        letter-spacing: 2px;
-                        transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
-                    }
                 }
 
                 .formations__title {
@@ -246,11 +241,6 @@ body {
                     background-color: $backgroundCardHover;
                     box-shadow: 2px 2px 10px -2px $newDark;
                     transition: all 3s cubic-bezier(0.2, 1.35, 0.82, 0.92);
-
-                    .competences__title {
-                        letter-spacing: 2px;
-                        transition: all 3s cubic-bezier(0.2, 1.35, 0.82, 0.92);
-                    }
                 }
 
                 .competences__title {
@@ -410,7 +400,7 @@ body {
                 width: 32rem;
                 border-radius: 10px;
                 transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
-                box-shadow: 1px 1px 8px -2px $newDark;
+               /*  box-shadow: 1px 1px 8px -2px $newDark; */
                 background-color: $backgroundCard;
                 position: relative;
                 overflow: hidden;
@@ -419,10 +409,10 @@ body {
                     background-color: $backgroundCardHover;
                     box-shadow: 2px 2px 10px -2px $newDark;
 
-                    .title {
+                  /*   .title {
                         transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
                         letter-spacing: 2px;
-                    }
+                    } */
                 }
 
                 .title {
@@ -564,7 +554,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                box-shadow: 1px 1px 8px -2px $newDark;
+                
                 border-radius: 10px;
                 transition: 0.3 ease-in-out;
 
@@ -572,7 +562,7 @@ body {
                     border-radius: 10px;
                     height: 100%;
                     width: 100%;
-                    background-color: #01030249;
+                    background-color: #1c222b65;
                 }
 
                 // ----------------------------------- modale
@@ -593,6 +583,7 @@ body {
 
                     &:hover {
                         opacity: 1;
+                        box-shadow: 1px 1px 8px -2px $newDark;
                         background-color: $backgroundCardHover;
 
                         // ----------------------------- effet reveal top
