@@ -584,7 +584,7 @@ body {
                     &:hover {
                         opacity: 1;
                         box-shadow: 1px 1px 8px -2px $newDark;
-                        background-color: $backgroundCardHover;
+                        background-color: $backgroundCardHoverFull;
 
                         // ----------------------------- effet reveal top
                         & .project__wrapper__title {
