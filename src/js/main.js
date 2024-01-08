@@ -145,3 +145,10 @@ infoModalDiplome.addEventListener('mouseleave', (e) => {
     e.preventDefault();
     infoModalDiplome.classList.remove('info-modal-show');
 });
+
+
+
+
+
+
+
