@@ -48,7 +48,7 @@ itemsRight.forEach((itemRight) => {
   observer.observe(itemRight);
 });
 
-// ---------------------------reveal right ----------------------
+// ---------------------------reveal bottom ----------------------
 let itemsBottom = document.querySelectorAll('.reveal-bottom');
 
 itemsBottom.forEach((itemBottom) => {
