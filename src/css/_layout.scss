@@ -978,12 +978,12 @@ body {
 
                 .title-form {
                     @include titleCard(2.2rem);
-                    color: $newDark;
+                    color: $textWhite;
                     letter-spacing: 1px;
                     margin-bottom: 6rem;
 
                     span {
-                        color: $newGreenlight;
+                        color: $newDark;
                     }
                 }
 
@@ -1044,7 +1044,7 @@ body {
 
                     h4 {
                         text-align: center;
-                        color: $newGreenlight;
+                        color: $textWhite;
                         letter-spacing: 2px;
                         font-size: 1.6rem;
                     }
@@ -1088,19 +1088,86 @@ body {
                         }
                     }
 
-                    button {
+                    #btn-message {
                         background-color: $newGreen;
                         padding: 0.7rem 1rem;
                         border: none;
                         border-radius: 2px;
-                        color: $newDark;
-                        font-weight: bold;
-                        transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+                        color: $textWhite;
                         float: right;
+                        position: relative;
+                        transition: 0.3s cubic-bezier(1, 0, 0, 1.02);
+
+                        span {
+                            z-index: 1000;
+                            color: $textWhite;
+                            position: relative;
+                            color: $textWhite;
+                            transition: 0.3s cubic-bezier(1, 0, 0, 1.02);
+                        }
+
+                        &:before,
+                        &:after {
+                            content: '';
+                            background: $newDark;
+                            height: 50%;
+                            width: 0;
+                            position: absolute;
+                            transition: 0.3s cubic-bezier(1, 0, 0, 1.02);
+                        }
+
+                        &:before {
+                            top: 0;
+                            left: 0;
+                            right: auto;
+                        }
+
+                        &:after {
+                            bottom: 0;
+                            right: 0;
+                            left: auto;
+                        }
 
                         &:hover {
-                            background-color: $newGreenlight;
+
+                            border: none;
+                            cursor: pointer;
+
+                            span {
+                                color: $textWhite;
+                            }
+
+                            &:before {
+                                width: 100%;
+                                right: 0;
+                                left: auto;
+                            }
+
+                            &:after {
+                                width: 100%;
+                                left: 0;
+                                right: auto;
+                            }
+
                         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     }
                 }
 
