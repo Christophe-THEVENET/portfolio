@@ -1,7 +1,37 @@
+
+
+/*
+  L'ordre des imports : 
+    - reset
+    - vendors
+    - pages
+    - themes
+    - layout
+    - components
+*/
+
+@use "base/_config";
+@use "base/_animations";
+
+@use "pages/_home";
+@use "pages/_about";
+@use "pages/_prestations";
+@use "pages/_realisations";
+@use "pages/_contact";
+
+@use "layout/_disposition";
+@use "layout/_header";
+@use "layout/_footer";
+
+@use "components/_button.scss";
+
+
+
+
+
 @import 'base';
 @import 'layout';
 @import 'header';
 @import 'effets';
 @import 'media-query';
 @import 'composants';
-
