@@ -1,14 +1,30 @@
 //
 
 //  ------------------------------------ polices
-$fontTitleFamily: 'grifter';
-$fontTextFamily: 'coves', sans-serif;
+$fontGrifterFamily: 'grifter';
+$fontCovesFamily: 'coves', sans-serif;
 $fontSizeTitlePage: 2.5vmax;
 $fontSizeTitlePageMobile: 2.2vmax;
-$fontSizeTitleBlock: 2.5rem;
-$fontSizeTitleBlockMobile: 2rem;
-$fontSizeUnderTitle: 2rem;
-$fontSizeUnderTitleMobile: 1.8rem;
+$fontSizeTitleCard: 2.3rem;
+$fontSizeTitleCardMobile: 2rem;
+$fontSizeUnderTitleCard: 1.2rem;
+$fontSizeUnderTitleCardMobile: 1.4rem;
+$fontSizeSentenceCard: 1.8rem;
+$fontSizeSentenceCardMobile: 1.4rem;
+$fontSizeTextCard: 1.8rem;
+$fontSizeTextCardMobile: 1.4rem;
+// ------------------------------------- couleurs
 
-$fontSizeText: 1.8rem;
-$fontSizeTextMobile: 1.4rem;
+$colorDark: #010302;
+$colorWhite: #fffffe;
+$colorGray: #9dd8d7;
+$colorGreen: #328281;
+$colorGreenLight: #47b3b1;
+$colorGreenDark: #2d7977;
+$colorBackgroundCard: #2c929053;
+$colorBackgroundCardHover: #2c9290a1;
+$colorBackgroundCardHoverFull: #2b9190fe;
+$colorSucces: #28d49b;
+$colorAlert: rgb(238, 122, 122);
+/* $newDarkHover: #1c222b;
+$newDarkLight: #0d4b49; */
