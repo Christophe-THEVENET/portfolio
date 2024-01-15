@@ -1,10 +1,10 @@
 @use "./_variables" as v;
-//
 // ----- Centrer ---------
 @mixin mCenterElement {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 // ------- Title page----------
 @mixin mTitlePage($fontSize) {
@@ -12,7 +12,6 @@
   font-size: $fontSize;
   color: v.$colorWhite;
 }
-
 // ------- Title card -----------
 @mixin mTitleCard($fontSize) {
   font-family: v.$fontCovesFamily;
@@ -21,7 +20,6 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
 // ------- Under title card  -----------
 @mixin mUnderTitleCard($fontSize) {
   font-family: v.$fontGrifterFamily;
@@ -30,7 +28,6 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
 // ------- Sentence card  -----------
 @mixin mSentenceCard($fontSize) {
   font-family: v.$fontCovesFamily;
@@ -39,7 +36,6 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
 // ------- Text card  -----------
 @mixin mTextCard($fontSize) {
   font-family: v.$fontCovesFamily;
@@ -47,7 +43,6 @@
   font-size: $fontSize;
   text-align: justify;
 }
-
 // ------- Hover card -----------
 @mixin mHoverCard() {
   transition: all 3s cubic-bezier(0.2, 1.35, 0.82, 0.92);
