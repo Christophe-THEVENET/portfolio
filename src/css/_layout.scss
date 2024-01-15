@@ -1,38 +1,33 @@
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
 
-.container {
+/* .container {
     width: 100vw;
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow: auto;
-}
+} */
 
-.slide {
+/* .slide {
     width: 100vw;
     height: 100vh;
     background-image: url('../img/background.jpg');
     background-position: center;
     background-size: cover;
     scroll-snap-align: center;
-}
+} */
 
 /*  cacher barre de scroll pour chrome */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
-.page {
+/* .page {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 // ************************* PAGE ACCEUIL ****************************
-.filter-home {
+/* .filter-home {
     height: 0;
 
     .content-home {
@@ -82,7 +77,7 @@ body {
 .scroll-icon {
     display: none;
 }
-
+ */
 // ************************* PAGE A PROPOS **********************
 .filter-about {
     width: 100vw;

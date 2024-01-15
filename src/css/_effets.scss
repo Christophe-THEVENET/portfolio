@@ -1,6 +1,6 @@
 
 // -------------------------------------- icon scroll
-@media screen and (min-width: 940px) {
+/* @media screen and (min-width: 940px) {
     .scroll-icon {
         position: absolute;
         bottom: 4rem;
@@ -58,7 +58,7 @@
         opacity: 0;
         display: block;
     }
-}
+} */
 
 // ------------------------------- animation reveal left
 .reveal-left {
@@ -99,7 +99,7 @@
 }
 
 // titre qui clignote
-@keyframes blink {
+/* @keyframes blink {
     0% {
         opacity: 0;
     }
@@ -109,7 +109,7 @@
     100% {
         opacity: 0;
     }
-}
+} */
 
 // -------------------------------- popup message envoyé
 .notification.show {

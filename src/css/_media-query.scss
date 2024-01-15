@@ -69,12 +69,12 @@
     } */
 
     // ********** MODALE MENU HAMBURGER**********
-    .menu-modal {
+    /* .menu-modal {
         display: none;
-    }
+    } */
 
     // ********************* PAGE ACCEUIL ************************
-    .filter-home {
+  /*   .filter-home {
         .content-home {
             margin-top: 100vh;
             margin-left: 1vw;
@@ -91,7 +91,7 @@
                 width: 80%;
             }
         }
-    }
+    } */
 
     // ********************* PAGE A PROPOS ************************
     .about {
@@ -246,30 +246,13 @@
 //
 //
 // ======================= MEDIA QUERY > 960PX (PC) ===========================
-
 @media screen and (min-width: 960px)
 /* and (max-width: 1239px) */
     {
 
-    // ************** HEADER ******************
-    // affiche la nav
-    .header__nav {
-        &__btn {
-            display: none;
-        }
-
-        .menu {
-            display: flex;
-        }
-    }
-
-    // ********** MODALE MENU HAMBURGER**********
-    .menu-modal {
-        display: none;
-    }
-
+  
     // ********************* PAGE ACCEUIL ************************
-    .filter-home {
+    /* .filter-home {
         .content-home {
             margin-top: 100vh;
             margin-left: -10vw;
@@ -283,7 +266,7 @@
                 width: 35vw;
             }
         }
-    }
+    } */
 
     // ********************* PAGE A PROPOS ************************
     .about {
@@ -1201,7 +1184,7 @@
 @media (orientation: landscape) and (max-height: 430px) {
 
     // ***************** PAGE ACCEUIL *******************
-    .container .slide-home .filter-home .content-home {
+    /* .container .slide-home .filter-home .content-home {
 
         h3,
         h2,
@@ -1214,7 +1197,7 @@
         h2 {
             margin-top: 4rem;
         }
-    }
+    } */
 
     // ***************** PAGE A PROPOS *******************
 
@@ -1303,7 +1286,7 @@
 //
 
 // ================= MEDIA QUERY > 768PX < 960 & height < 740 ( BUG HEADER) =========================
-@media screen and (min-width: 768px) and (max-width: 840px) {
+/* @media screen and (min-width: 768px) and (max-width: 840px) {
     //
     // ************** HEADER ******************
 
@@ -1317,4 +1300,4 @@
         margin: 0;
         font-size: 1.8rem;
     }
-}
+} */
