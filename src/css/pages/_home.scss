@@ -2,6 +2,7 @@
 
 .slide-home {
   position: relative;
+  @include a.mCenterElement;
 }
 
 .text-use-mouse {
@@ -11,6 +12,7 @@
 .scroll-icon {
   display: none;
 }
+
 // ************ block home **********
 .filter-home {
   height: 0;
@@ -22,12 +24,12 @@
 
     h1,
     h2 {
-      font-size: 3vmax;
+      font-size: a.$fontSizeTitlePageMobile;
       font-family: a.$fontGrifterFamily;
     }
 
     h3 {
-      font-size: 2.3rem;
+      font-size: a.$fontSizeTitleCardMobile;
       font-family: a.$fontCovesFamily;
       color: a.$colorGreenLight;
       margin: 2rem 0 2rem;
@@ -42,7 +44,7 @@
     }
 
     p {
-      font-size: a.$fontSizeTextCard;
+      font-size: a.$fontSizeTextCardMobile;
       font-family: a.$fontCovesFamily;
       color: a.$colorWhite;
       text-align: justify;
@@ -51,28 +53,51 @@
   }
 }
 
-
-// ======= MEDIA QUERY > 768PX (TABLETTE) ==========
-@media screen and (min-width: 768px) {
+// ======= MEDIA QUERY > 767PX (TABLETTE) ==========
+@media screen and (min-width: 767px) {
   .filter-home {
     .content-home {
-      margin-left: 1vw;
       padding: 5rem;
 
-      h3,
-      h2,
       h1,
-      div {
-        margin-left: 2rem;
+      h2 {
+        font-size: a.$fontSizeTitlePage;
+      }
+
+
+      p {
+        font-size: a.$fontSizeTextCard;
       }
 
       .text-btn-block {
-        width: 80%;
+        width: 100%;
+        max-width: 60rem;
       }
     }
   }
+}
 
+// ======= MEDIA QUERY > 960PX (PC) ================
+@media screen and (min-width: 960px) {
+  .filter-home {
 
+    .content-home {
+
+      h3 {
+        font-size: 2vmax;
+      }
+    }
+  }
+}
+
+// ====== MEDIA QUERY > ORIENTATION PAYSAGE =========
+@media (orientation: landscape) {
+  .filter-home {
+    .content-home {
+      margin-top: 110vh;
+      padding: 5rem;
+    }
+  }
 }
 
 // ======= MEDIA QUERY ICON SCROLL > 940 ===========
@@ -98,7 +123,6 @@
       color: #dcf7ff;
     }
   }
-
 
   .scroll-icon::after {
     content: '';
@@ -139,25 +163,8 @@
   }
 }
 
-// ======= MEDIA QUERY > 960PX (PC) ================
-@media screen and (min-width: 960px) {
-  .filter-home {
-    .content-home {
-
-      h3 {
-        font-size: 2vmax;
-      }
-
-    }
-  }
-}
-
-
 // ==== MEDIA QUERY >  MOBILE ORIENTATION PAYSAGE ====
-
 @media (orientation: landscape) and (max-height: 430px) {
-
-  // ***************** PAGE ACCEUIL *******************
   .container .slide-home .filter-home .content-home {
 
     h3,
@@ -172,6 +179,4 @@
       margin-top: 4rem;
     }
   }
-
-  //
 }

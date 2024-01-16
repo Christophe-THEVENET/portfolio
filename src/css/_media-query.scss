@@ -1155,8 +1155,7 @@
 //
 //
 // ======================== MEDIA QUERY > ORIENTATION PAYSAGE ========================
-
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
     .filter-home {
         .content-home {
             margin-top: 110vh;
@@ -1176,11 +1175,10 @@
         }
     }
 }
-
+ */
 //
 ///
 // ======================== MEDIA QUERY >  MOBILE ORIENTATION PAYSAGE ========================
-
 @media (orientation: landscape) and (max-height: 430px) {
 
     // ***************** PAGE ACCEUIL *******************

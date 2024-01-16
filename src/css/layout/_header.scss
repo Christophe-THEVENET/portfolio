@@ -156,8 +156,6 @@
       &__menu {
         display: flex;
         margin-right: 2rem;
-
-
       }
     }
   }
@@ -167,6 +165,18 @@
   }
 
 
+}
+
+
+// ===== MEDIA QUERY > ORIENTATION PAYSAGE ===========
+@media (orientation: landscape) {
+ 
+  .menu-modal {
+    ul {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
 }
 
 // ==== MEDIA QUERY > 768PX < 960 & height < 740 ( BUG HEADER) =======
