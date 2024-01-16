@@ -30,13 +30,13 @@
   color: v.$colorWhite;
   font-size: $fontSize;
   letter-spacing: 1px;
-  text-transform: uppercase;
 }// ------- Text card  -----------
 @mixin mTextCard($fontSize) {
   font-family: v.$fontCovesFamily;
   color: v.$colorWhite;
   font-size: $fontSize;
   text-align: justify;
+  line-height: 1.7rem;
 }// ------- Hover card -----------
 @mixin mHoverCard() {
   transition: all 3s cubic-bezier(0.2, 1.35, 0.82, 0.92);

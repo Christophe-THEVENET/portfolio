@@ -34,10 +34,12 @@
 
   &>.title {
     @include a.mTitleCard(a.$fontSizeTitleCardMobile);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     letter-spacing: 1px !important;
     color: a.$colorWhite !important;
   }
+
+  
 }
 
 .info-modal.info-modal-show {
@@ -50,12 +52,13 @@
   }
 
   .sentence {
+    margin-top: 1rem;
     margin-bottom: 2rem;
-    color: a.$colorGray;
+    color: a.$colorGreenLight;
   }
 
   ul li {
-    color: a.$colorGreenLight;
+    color: a.$colorWhite;
 
     span {
       float: right;
