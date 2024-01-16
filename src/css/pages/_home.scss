@@ -24,7 +24,7 @@
 
     h1,
     h2 {
-      font-size: a.$fontSizeTitlePageMobile;
+      font-size: 2em;
       font-family: a.$fontGrifterFamily;
     }
 
@@ -61,7 +61,7 @@
 
       h1,
       h2 {
-        font-size: a.$fontSizeTitlePage;
+        font-size: 3em;
       }
 
 
@@ -82,6 +82,11 @@
   .filter-home {
 
     .content-home {
+
+      h1,h2 {
+        font-size: a.$fontSizeTitlePage;
+      }
+
 
       h3 {
         font-size: 2vmax;

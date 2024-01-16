@@ -5,45 +5,39 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-// ------- Title page----------
+}// ------- Title page----------
 @mixin mTitlePage($fontSize) {
   font-family: v.$fontGrifterFamily;
   font-size: $fontSize;
   color: v.$colorWhite;
-}
-// ------- Title card -----------
+}// ------- Title card -----------
 @mixin mTitleCard($fontSize) {
-  font-family: v.$fontCovesFamily;
+  font-family: v.$fontGrifterFamily;
   color: v.$colorDark;
   font-size: $fontSize;
   letter-spacing: 1px;
   text-transform: uppercase;
-}
-// ------- Under title card  -----------
+}// ------- Under title card  -----------
 @mixin mUnderTitleCard($fontSize) {
   font-family: v.$fontGrifterFamily;
   color: v.$colorDark;
   font-size: $fontSize;
   letter-spacing: 1px;
   text-transform: uppercase;
-}
-// ------- Sentence card  -----------
+}// ------- Sentence card  -----------
 @mixin mSentenceCard($fontSize) {
   font-family: v.$fontCovesFamily;
   color: v.$colorWhite;
   font-size: $fontSize;
   letter-spacing: 1px;
   text-transform: uppercase;
-}
-// ------- Text card  -----------
+}// ------- Text card  -----------
 @mixin mTextCard($fontSize) {
   font-family: v.$fontCovesFamily;
   color: v.$colorWhite;
   font-size: $fontSize;
   text-align: justify;
-}
-// ------- Hover card -----------
+}// ------- Hover card -----------
 @mixin mHoverCard() {
   transition: all 3s cubic-bezier(0.2, 1.35, 0.82, 0.92);
   background-color: v.$colorBackgroundCardHover;

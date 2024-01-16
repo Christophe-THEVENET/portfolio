@@ -2,10 +2,10 @@
 $fontGrifterFamily: 'grifter';
 $fontCovesFamily: 'coves', sans-serif;
 $fontSizeTitlePage: 3vmax;
-$fontSizeTitlePageMobile: 2em;
-$fontSizeTitleCard: 2.3rem;
+$fontSizeTitlePageMobile: 4vmax;
+$fontSizeTitleCard: 2.5rem;
 $fontSizeTitleCardMobile: 2rem;
-$fontSizeUnderTitleCard: 1.2rem;
+$fontSizeUnderTitleCard: 1.7rem;
 $fontSizeUnderTitleCardMobile: 1.4rem;
 $fontSizeSentenceCard: 1.8rem;
 $fontSizeSentenceCardMobile: 1.4rem;
@@ -28,3 +28,6 @@ $newDarkLight: #0d4b49; */
 // --------- Transition -------------
 $transitionButton: all 0.3s cubic-bezier(0, .97, .57, .99);
 $transitionRegular: all 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+$transitionCardHover : all 3s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+// --------- box shadow card -------------
+$boxShadowCardHover: 2px 2px 10px -2px $colorDark;
