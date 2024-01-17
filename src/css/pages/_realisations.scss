@@ -100,7 +100,6 @@
 
             // ----------------------------- effet reveal top
             & .project__wrapper__title {
-              /*   letter-spacing: 2px; */
               opacity: 1;
             }
 
@@ -108,7 +107,6 @@
               opacity: 1;
               color: a.$colorWhite;
               letter-spacing: 1px;
-              /* font-size: 1.3rem; */
             }
 
             & .project__wrapper__description {
@@ -155,12 +153,17 @@
           transition: a.$transitionRegular;
           font-size: a.$fontSizeTextTuile;
 
+          // arya stark
           &.connect {
             font-family: a.$fontGrifterFamily;
             color: a.$colorDark;
             margin: 0;
             padding: 0;
             transition: a.$transitionRegular;
+          }
+
+          &.connect-first {
+            margin-top: -0.5rem;
           }
         }
 
@@ -180,41 +183,26 @@
               width: 2.2rem;
               transition: a.$transitionRegular;
 
+              g {
+                fill: a.$colorGray;
+              }
+
               & g {
                 transition: a.$transitionRegular;
 
                 &:hover {
-                  fill: a.$colorGreenLight;
+                  fill: a.$colorDark;
                 }
               }
             }
           }
 
-
-          &--button {
-            font-family: a.$fontCovesFamily;
-            color: a.$colorWhite;
-            font-weight: bold;
-            background-color: a.$colorDark;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            color: a.$colorWhite;
-            font-size: 1rem;
-            text-decoration: none;
-            transition: 0.5s;
-            opacity: 0;
-            transition: a.$transitionRegular;
-
-            &:hover {
-              background-color: a.$colorGreenLight;
-              color: a.$colorDark;
-              transition: 0.5s;
-            }
-
+          .btn-tuiles {
+            font-size: 1.2rem;
+            padding: 0.2rem 0.3rem;
+            width: 9rem;
           }
         }
-
-
       }
 
       .ecf {
@@ -289,11 +277,6 @@
       // boite réalisations --------------------------
       .project__wrapper {
         margin: 1rem;
-
-        /* height: 30vh; */
-        &__title {
-          /*  font-size: 1.9rem; */
-        }
       }
     }
   }
@@ -314,17 +297,6 @@
       // boite réalisations --------------------------
       .project__wrapper {
         margin: 1rem;
-
-        /* height: 30vh; */
-
-
-        &__sentence {
-          /* font-size: 1vmax; */
-        }
-
-        &__description {
-          /*  font-size: 1.3rem; */
-        }
       }
     }
   }
@@ -378,18 +350,8 @@
         .project__wrapper {
           height: 90%;
 
-          &__title {
-            /*  margin: 0.5rem; */
-            /* font-size: 1.6rem; */
-          }
-
           &__sentence {
             margin: 0.5rem;
-            /*  font-size: 1.2rem; */
-          }
-
-          &__description {
-            /* font-size: 1.4rem; */
           }
         }
       }
