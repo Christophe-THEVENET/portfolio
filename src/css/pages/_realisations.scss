@@ -54,7 +54,7 @@
       background-color: a.$colorWhite;
     }
 
-    // ---------------------------------- block projets
+    // ============= container projets ================
     &__block {
       padding: 0.5rem;
       display: grid;
@@ -65,13 +65,9 @@
       width: 100%;
       height: 100%;
 
-      // -------------------------------- boite projet
+      // ----------- boite projet ---------
       .project__wrapper {
         min-height: 20rem;
-        font-size: 1.8rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         border-radius: 2px;
         transition: 0.3 ease-in-out;
 
@@ -82,20 +78,20 @@
           background-color: #1c222b65;
         }
 
-        // ----------------------------------- modale
+        // ^^^^^^^^ modale description projet ^^^^^^
         &__modale {
           border-radius: 2px;
           height: 100%;
           width: 100%;
           display: flex;
           flex-direction: column;
-          font-family: a.$fontCovesFamily;
-          font-size: 1.6rem;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-start;
+          font-family: a.$fontCovesFamily;
           padding: 1rem;
           opacity: 0;
           transition: a.$transitionRegular;
+          position: relative;
 
           &:hover {
             opacity: 1;
@@ -111,7 +107,8 @@
             & .project__wrapper__sentence {
               opacity: 1;
               color: a.$colorWhite;
-              font-size: 1.3rem;
+              letter-spacing: 1px;
+              /* font-size: 1.3rem; */
             }
 
             & .project__wrapper__description {
@@ -119,34 +116,44 @@
 
             }
 
-            & .project__wrapper__link {
-              opacity: 1;
+            & .project__wrapper__links {
+
+              &--github {
+                opacity: 1;
+              }
+
+              &--button {
+                opacity: 1;
+              }
             }
           }
         }
 
         &__title {
-          @include a.mTitleCard(a.$fontSizeTitleCardMobile);
-          margin: 1rem 0;
+          @include a.mTitleCard(a.$fontSizeTitleTuile);
+          margin: 0.2rem 0;
           opacity: 0;
           transition: a.$transitionRegular;
         }
 
         &__sentence {
-          @include a.mSentenceCard(a.$fontSizeSentenceCardMobile);
-          margin-bottom: 1rem;
+          @include a.mSentenceCard(a.$fontSizeSentenceTuile);
+          margin-bottom: 0.1rem;
           opacity: 0;
+          letter-spacing: 0;
           transition: a.$transitionRegular;
+
         }
 
         &__description {
           color: a.$colorWhite;
           font-family: a.$fontCovesFamily;
-          margin: 1rem 0;
+          margin: 0.2rem 0;
           text-align: justify;
           opacity: 0;
+          line-height: 14px;
           transition: a.$transitionRegular;
-          font-size: 1.2rem;
+          font-size: a.$fontSizeTextTuile;
 
           &.connect {
             font-family: a.$fontGrifterFamily;
@@ -158,35 +165,17 @@
         }
 
         &__links {
+          padding: 1rem;
+          position: absolute;
+          bottom: 5px;
           display: flex;
           width: 100%;
+          height: 3rem;
           justify-content: space-between;
           align-items: center;
-        }
 
-        &__link {
-          font-family: a.$fontCovesFamily;
-          color: a.$colorWhite;
-          font-weight: bold;
-          background-color: a.$colorDark;
-          padding: 0.5rem 1rem;
-          border-radius: 5px;
-          color: a.$colorWhite;
-          font-size: 1rem;
-          text-decoration: none;
-          transition: 0.5s;
-          opacity: 0;
-          transition: a.$transitionRegular;
-
-          &:hover {
-            background-color: a.$colorGreenLight;
-            color: a.$colorDark;
-            transition: 0.5s;
-          }
 
           &--github {
-            margin-top: 0.5rem;
-
             .github-icon {
               width: 2.2rem;
               transition: a.$transitionRegular;
@@ -200,7 +189,32 @@
               }
             }
           }
+
+
+          &--button {
+            font-family: a.$fontCovesFamily;
+            color: a.$colorWhite;
+            font-weight: bold;
+            background-color: a.$colorDark;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            color: a.$colorWhite;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: 0.5s;
+            opacity: 0;
+            transition: a.$transitionRegular;
+
+            &:hover {
+              background-color: a.$colorGreenLight;
+              color: a.$colorDark;
+              transition: 0.5s;
+            }
+
+          }
         }
+
+
       }
 
       .ecf {
@@ -278,7 +292,7 @@
 
         /* height: 30vh; */
         &__title {
-          font-size: 1.9rem;
+          /*  font-size: 1.9rem; */
         }
       }
     }
@@ -305,11 +319,11 @@
 
 
         &__sentence {
-          font-size: 1vmax;
+          /* font-size: 1vmax; */
         }
 
         &__description {
-          font-size: 1.3rem;
+          /*  font-size: 1.3rem; */
         }
       }
     }
@@ -365,17 +379,17 @@
           height: 90%;
 
           &__title {
-            margin: 0.5rem;
-            font-size: 1.6rem;
+            /*  margin: 0.5rem; */
+            /* font-size: 1.6rem; */
           }
 
           &__sentence {
             margin: 0.5rem;
-            font-size: 1.2rem;
+            /*  font-size: 1.2rem; */
           }
 
           &__description {
-            font-size: 1.4rem;
+            /* font-size: 1.4rem; */
           }
         }
       }
