@@ -13,20 +13,17 @@
  */
 }
 
-.contact__wrapper footer {
+/* .contact__wrapper footer {
     margin-top: 6rem;
-}
+} */
 
-// ================= MEDIA QUERY >500px  <768PX (TABLETTE) =========================
+/* // ================= MEDIA QUERY >500px  <768PX (TABLETTE) =========================
 @media screen and (min-width: 500px)
 /* and (max-width: 767px) */
-    {
+  /*  {
     // ********************* PAGE PRESTATION > 500px < 768px  ************************
 
-    .services__content__block {
-        gap: calc(40rem + -35vh) 20px;
-    }
-
+   
     // ********************* PAGE REALISATIONS > 500px < 768px  ************************
     .project {
         &__content__block {
@@ -37,14 +34,14 @@
                 margin: 1rem;
 
                 /* height: 30vh; */
-                &__title {
+          /*      &__title {
                     font-size: 1.9rem;
                 }
             }
         }
     }
 }
-
+ */
 //
 //
 // ================= MEDIA QUERY > 768PX (TABLETTE) =========================
@@ -155,7 +152,7 @@
     } */
 
     // ********************* PAGE REALISATIONS ************************
-    .project {
+    /* .project {
         margin-top: 10vh;
 
         &__content__block {
@@ -166,7 +163,7 @@
                 margin: 1rem;
 
                 /* height: 30vh; */
-                &__title {
+        /*        &__title {
                     font-size: 1.5vmax;
                 }
 
@@ -180,7 +177,7 @@
             }
         }
     }
-
+ */
     // ********************* PAGE CONTACT ************************
     .contact {
         margin-top: 10vh;
@@ -816,7 +813,7 @@
     } */
 
     // ********************* PAGE REALISATIONS ************************
-    .project {
+   /*  .project {
         padding-top: 10rem;
         margin: 5rem;
         height: 80vh; // a bouger en grand ecran
@@ -824,7 +821,7 @@
         &__title {
             width: 80%;
             /* margin-top: -4rem; */
-        }
+      /*  }
 
         &__title__border-right {
             margin-top: 1.5%;
@@ -840,7 +837,7 @@
             }
         }
     }
-
+ */
     // ********************* PAGE CONTACT ************************
     .contact {
         padding-top: 10rem;
@@ -982,7 +979,7 @@
     } */
 
     // ********************* PAGE REALISATIONS ************************
-    .project {
+  /*   .project {
         &__content {
             height: 50rem;
 
@@ -1017,7 +1014,7 @@
             }
         }
     }
-
+ */
     // ********************* PAGE CONTACT ************************
     .contact {
         &__content {
@@ -1222,11 +1219,11 @@
     } */
 
     // ***************** PAGE REALISATIONS *******************
-    .project {
+   /*  .project {
         padding-top: 0rem;
         height: 70vh;
     }
-
+ */
     // ***************** PAGE CONTACT *******************
     .contact {
         padding-top: 3rem;
@@ -1265,11 +1262,11 @@
     }
  */
     // ********************* PAGE REALISATIONS ************************
-    .project {
+   /*  .project {
         margin-top: 20vh;
         height: 70vh;
     }
-
+ */
     // ********************* PAGE CONTACT ************************
     .contact {
         margin-top: 20vh;
