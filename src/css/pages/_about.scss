@@ -200,6 +200,7 @@
     }
 
     &__content__block {
+      margin: 1rem 2rem;
       grid-template-columns: 1fr 1fr;
       font-size: a.$fontSizeTextCard;
 
@@ -262,7 +263,7 @@
 
       // =================== container ====================
       &__block {
-        padding: 0 4rem;
+        padding: 1 4rem;
 
         &__competences {
           flex: 2;
@@ -804,7 +805,7 @@
       }
 
       &__block {
-        margin: 1rem;
+        margin: 0 3rem;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 

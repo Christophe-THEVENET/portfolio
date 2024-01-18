@@ -37,17 +37,17 @@
       padding: 0.5rem;
       display: grid;
       grid-template-columns: 1fr;
-      gap: 20px;
+      gap: 1.4rem;
+      justify-items: center;
       overflow: scroll;
-      transition: all 0.4s;
       width: 100%;
       height: 100%;
 
-      // ----------- boite projet ---------
+      // ----------- boite réalisations ---------
       .project__wrapper {
         min-height: 20rem;
         border-radius: 2px;
-        transition: 0.3 ease-in-out;
+        transition: a.$transitionRegular;
 
         .filter-modale {
           border-radius: 2px;
@@ -295,11 +295,12 @@
     }
 
     &__content__block {
+      margin: 1rem 2rem;
       grid-template-columns: 1fr 1fr;
 
       // boite réalisations --------------------------
       .project__wrapper {
-        margin: 1rem;
+        /* margin: 1rem; */
       }
     }
   }
@@ -324,7 +325,7 @@
 
       // -----------------------------------  container
       &__block {
-        padding: 2rem 4rem;
+        padding: 1 4rem;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 10px;
         margin-top: 0.5rem !important;
@@ -345,13 +346,13 @@
 
       &__block {
         padding: 0;
-        margin: 3rem;
+        margin: 0 3rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 0px;
 
         // boites prestation ---------------------
         .project__wrapper {
-          height: 90%;
+        /*   height: 90%; */
 
           &__sentence {
             margin: 0.5rem;
