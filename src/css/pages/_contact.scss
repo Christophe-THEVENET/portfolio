@@ -31,28 +31,20 @@
     }
 
     &__border-right {
-      flex: 1;
-      height: 1px;
-      background-color: a.$colorWhite;
-      margin-left: 2.5rem;
-      margin-top: 2.5%;
-      width: 70%;
+      @include a.mBorderRightPage();
     }
   }
 
   &__content {
     height: 100%;
-    display: flex;
     width: 100%;
+    display: flex;
 
     &__border-left {
-      height: 50vh;
-      margin-left: 0.1rem;
-      width: 1px;
-      background-color: a.$colorWhite;
+      @include a.mBorderLeftPage();
     }
 
-    //  -------------------------  block contenu contact
+    // ==============  container contact ===================
     &__block {
       padding: 0.5rem;
       @include a.mCenterElement;
@@ -635,7 +627,7 @@
 
   .contact {
     &__content {
-      height: 55rem;
+      height: 50rem;
 
       &__border-left {
         max-height: 90%;
@@ -646,6 +638,7 @@
         // boite contact ---------------------
         .contact__wrapper {
           margin-left: 3rem;
+          margin-top: -6rem;
           display: grid;
           grid-template-columns: 1fr 2fr;
           grid-template-rows: 1fr 1fr 4fr 1fr;
@@ -654,6 +647,7 @@
           gap: 5px;
           height: 100%;
           width: 100%;
+          padding: 0;
 
           .info {
             margin-left: 30%;
