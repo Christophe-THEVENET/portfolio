@@ -62,7 +62,8 @@
       padding: 0.5rem;
       display: grid;
       grid-template-columns: 1fr;
-      gap: calc(30rem + -30vh) 20px !important;
+      gap: 1.4rem;
+
       overflow: scroll;
 
       // -----------  block présentation -----------
@@ -246,7 +247,6 @@
     &__content__block {
       grid-template-columns: 1fr 1fr;
       font-size: a.$fontSizeTextCard;
-      gap: 1.4rem !important;
 
 
       // ---------------------------  block présentation
@@ -855,7 +855,6 @@
         margin: 2rem;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        gap: 10px;
 
         // ---------------------------  block présentation
         &__presentation {
