@@ -83,3 +83,13 @@
   width: 100%;
   height: 80vh; // a bouger en grand ecran
 }
+
+// ------------ slides (pages) ----------
+@mixin mBorderRightPage() {
+  flex: 1;
+  height: 1px;
+  background-color: a.$colorWhite;
+  margin-left: 2.5rem;
+  margin-top: 2.5%;
+  width: 70%;
+}

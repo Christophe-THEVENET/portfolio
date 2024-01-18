@@ -1,13 +1,13 @@
 @use "../abstracts/_all" as a;
 
 .filter-contact {
- @include a.mFilterPage();
+  @include a.mFilterPage();
 }
 
 .contact {
-   @include a.mContainerPage();
-  
-  // ------------------------------- popup message envoyé
+  @include a.mContainerPage();
+
+  // -------- popup message envoyé -------
   .notification {
     background-color: a.$colorGreenLight;
     width: auto !important;
@@ -20,17 +20,18 @@
     transition: all 1s cubic-bezier(1, -0.01, 1, -1.13);
   }
 
-  h2 {
-    @include a.mTitlePage(a.$fontSizeTitlePageMobile);
-  }
-
-  // block titre - - - - - - - - -
+  //  --------- block titre + trait droit page ----------
   &__title {
     display: flex;
     align-items: flex-start;
     margin-bottom: 1rem;
 
+    h2 {
+      @include a.mTitlePage(a.$fontSizeTitlePageMobile);
+    }
+
     &__border-right {
+      flex: 1;
       height: 1px;
       background-color: a.$colorWhite;
       margin-left: 2.5rem;

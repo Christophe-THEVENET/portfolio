@@ -2,21 +2,21 @@
 
 //
 .filter-project {
-@include a.mFilterPage();
+  @include a.mFilterPage();
 }
 
 .project {
   @include a.mContainerPage();
 
-  h2 {
-    @include a.mTitlePage(a.$fontSizeTitlePageMobile);
-  }
-
-  // block titre - - - - - - - - -
+  //  --------- block titre + trait droit page ----------
   &__title {
     display: flex;
     align-items: flex-start;
     margin-bottom: 1rem;
+
+    h2 {
+      @include a.mTitlePage(a.$fontSizeTitlePageMobile);
+    }
 
     &__border-right {
       flex: 1;

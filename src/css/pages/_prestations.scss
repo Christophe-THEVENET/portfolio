@@ -6,17 +6,17 @@
 }
 
 .services {
-   @include a.mContainerPage();
-  
-  h2 {
-    @include a.mTitlePage(a.$fontSizeTitlePageMobile);
-  }
+  @include a.mContainerPage();
 
-  // block titre - - - - - - - - -
+  //  --------- block titre + trait droit page ----------
   &__title {
     display: flex;
     align-items: flex-start;
     margin-bottom: 1rem;
+
+    h2 {
+      @include a.mTitlePage(a.$fontSizeTitlePageMobile);
+    }
 
     &__border-right {
       flex: 1;
