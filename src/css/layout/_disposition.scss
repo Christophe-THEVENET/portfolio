@@ -1,0 +1,29 @@
+@use "../abstracts/_all" as a;
+
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow: auto;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../img/background.jpg');
+  background-position: center;
+  background-size: cover;
+  scroll-snap-align: center;
+}
+
+/*  cacher barre de scroll pour chrome */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

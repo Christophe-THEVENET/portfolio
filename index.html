@@ -27,47 +27,45 @@
   <link rel="stylesheet" href="./src/css/main.scss">
 </head>
 
-
 <body>
 
-  <!-- ************************** HEADER ****************************** -->
+  <!-- ********************** HEADER ************************ -->
   <header class="header">
     <!-- logo -->
     <div class="header__logo" data-aos="fade-in" data-aos-delay="2700" data-aos-duration="2000">
       <a href="https://christophethevenet.fr/"><img class="header__logo__img" src="./src/img/lOGO_DIGITOB_NEW.svg"
           alt="" srcset=""></a>
-
     </div>
-    <!-- nav-->
+    <!-- ==========  nav ============ -->
     <nav class="header__nav">
-      <!-- btn burger -->
+      <!-- btn burger block -->
       <div class="header__nav__btn">
-        <a id="openIcon" class="header__nav__menu openIcon" href="#">
+        <a id="openIcon" class="header__nav__btn__icon openIcon" href="#">
           <i class="fa-solid fa-bars openIcon--btn"></i>
         </a>
-        <a id="closeIcon" class="header__nav__menu closeIcon" href="#">
+        <a id="closeIcon" class="header__nav__btn__icon closeIcon" href="#">
           <i class="fa-solid fa-xmark closeIcon--btn"></i>
         </a>
       </div>
-      <!-- list lien -->
-      <ul class="menu" data-aos="fade-in" data-aos-delay="2700" data-aos-duration="2000">
-        <li class="header__nav__item">
-          <a href="#a-propos" class="nav__link">A propos</a>
+      <!-- Links block -->
+      <ul class="header__nav__menu" data-aos="fade-in" data-aos-delay="2700" data-aos-duration="2000">
+        <li class="header__nav__menu__item">
+          <a href="#a-propos" class="header__nav__menu__item__link">A propos</a>
         </li>
-        <li class="header__nav__item">
-          <a href="#prestations" class="nav__link">Prestations</a>
+        <li class="header__nav__menu__item">
+          <a href="#prestations" class="header__nav__menu__item__link">Prestations</a>
         </li>
-        <li class="header__nav__item">
-          <a href="#realisations" class="nav__link">Réalisations</a>
+        <li class="header__nav__menu__item">
+          <a href="#realisations" class="header__nav__menu__item__link">Réalisations</a>
         </li>
-        <li class="header__nav__item">
-          <a href="#me-contacter" class="nav__link">Contact</a>
+        <li class="header__nav__menu__item">
+          <a href="#me-contacter" class="header__nav__menu__item__link">Contact</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <!-- ********************************************** MODALE MENU &HAMBURGER ******************************************* -->
+  <!-- ^^^^^^^^ modale menu mobile ^^^^^^^^ -->
   <div class="menu-modal">
     <ul>
       <li class="header__nav__item">
@@ -84,9 +82,9 @@
       </li>
     </ul>
   </div>
-
+  <!-- ***************** CONTAINER ******************* -->
   <main class="container">
-    <!-- ************************************************ PAGE ACCEUIL ********************************************** -->
+    <!-- ************* PAGE ACCEUIL ******************** -->
     <section class="slide slide-home" id="slide-home">
       <!--  icon scroll -->
       <p class="text-use-mouse">Utilisez la roulette</p>
@@ -114,7 +112,7 @@
       </div>
     </section>
 
-    <!-- *********************************************** PAGE A PROPOS ********************************************* -->
+    <!-- ************* PAGE A PROPOS ********************* -->
     <section class="slide slide-about" id="a-propos">
       <div class="page filter-about">
         <article class="about">
@@ -124,10 +122,9 @@
           </div>
           <div class="about__content">
             <div class="about__content__border-left reveal-bottom"></div>
-            <!-- ________________________________________________________ container  -->
+            <!-- =================== container ====================  -->
             <div class="about__content__block">
-              <!-- _______________________________________________ block presentation  -->
-
+              <!-- ----------- block presentation -----------  -->
               <div class="about__content__block__presentation reveal-left">
                 <p>Après une formation initiale dans la qualité industrielle,
                   j'ai travaillé 10 ans dans plusieurs grosses entreprises de la région Auvergne.
@@ -140,10 +137,8 @@
                   principal objectif : la
                   satisfaction des clients.
                 </p>
-
               </div>
-              <!-- __________________________________________________ block formation  -->
-
+              <!-- ------------ block formation -------------  -->
               <div class="about__content__block__formations reveal-left">
                 <!-- - - - - - block formations- - - - -->
                 <h4 class="formations__title">Formations web<span>
@@ -153,23 +148,22 @@
                       <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#010302"
                         stroke="none">
                         <path class="info-icon-path-freelance" d="M6095 12794 c-1354 -72 -2631 -552 -3669 -1378 -273 -218 -627 -554
-                                                -842 -801 -821 -944 -1342 -2077 -1518 -3305 -49 -339 -60 -507 -60 -910 0
-                                                -403 11 -571 60 -910 177 -1235 697 -2364 1527 -3314 132 -151 446 -464 592
-                                                -592 944 -821 2077 -1342 3305 -1518 339 -49 507 -60 910 -60 403 0 571 11
-                                                910 60 1128 162 2192 621 3075 1327 371 297 735 662 1031 1033 627 788 1071
-                                                1748 1263 2734 86 439 115 755 115 1240 0 403 -11 571 -60 910 -176 1228 -697
-                                                2361 -1518 3305 -128 146 -441 460 -592 592 -1039 907 -2282 1440 -3659 1568
-                                                -162 15 -716 27 -870 19z m595 -1869 c235 -65 463 -226 587 -416 92 -141 134
-                                                -296 134 -494 1 -177 -28 -302 -102 -448 -120 -238 -310 -399 -556 -473 -80
-                                                -24 -108 -27 -293 -32 -127 -2 -234 0 -278 7 -284 44 -580 257 -706 508 -40
-                                                80 -76 217 -85 326 -25 303 71 567 289 788 112 114 251 192 415 233 94 23 108
-                                                24 325 21 160 -2 219 -6 270 -20z m670 -5550 l0 -2845 380 0 380 0 0 -340 0
-                                                -340 -1720 0 -1720 0 0 340 0 340 380 0 380 0 0 2505 0 2505 -380 0 -380 0 0
-                                                340 0 340 1340 0 1340 0 0 -2845z" />
+                                                    -842 -801 -821 -944 -1342 -2077 -1518 -3305 -49 -339 -60 -507 -60 -910 0
+                                                    -403 11 -571 60 -910 177 -1235 697 -2364 1527 -3314 132 -151 446 -464 592
+                                                    -592 944 -821 2077 -1342 3305 -1518 339 -49 507 -60 910 -60 403 0 571 11
+                                                    910 60 1128 162 2192 621 3075 1327 371 297 735 662 1031 1033 627 788 1071
+                                                    1748 1263 2734 86 439 115 755 115 1240 0 403 -11 571 -60 910 -176 1228 -697
+                                                    2361 -1518 3305 -128 146 -441 460 -592 592 -1039 907 -2282 1440 -3659 1568
+                                                    -162 15 -716 27 -870 19z m595 -1869 c235 -65 463 -226 587 -416 92 -141 134
+                                                    -296 134 -494 1 -177 -28 -302 -102 -448 -120 -238 -310 -399 -556 -473 -80
+                                                    -24 -108 -27 -293 -32 -127 -2 -234 0 -278 7 -284 44 -580 257 -706 508 -40
+                                                    80 -76 217 -85 326 -25 303 71 567 289 788 112 114 251 192 415 233 94 23 108
+                                                    24 325 21 160 -2 219 -6 270 -20z m670 -5550 l0 -2845 380 0 380 0 0 -340 0
+                                                    -340 -1720 0 -1720 0 0 340 0 340 380 0 380 0 0 2505 0 2505 -380 0 -380 0 0
+                                                    340 0 340 1340 0 1340 0 0 -2845z" />
                       </g>
                     </svg>
                   </span></h4>
-
                 <div>
                   <p class="formations__text"> - Développpeur Web <span>OPENCLASSROOM (2019)</span>
                   </p>
@@ -179,34 +173,36 @@
 
                   </p>
                 </div>
-
-
                 <!-- ....... modale info ....... -->
                 <div class="info-modal" id="info-modal-diplome">
                   <h4 class="title">Dîplomes</h4>
                   <ul>
-                    <li> <a href="https://drive.google.com/file/d/1FNUcDZuMMUKZsfKsdMWJiecGTDWBRh7_/view"
-                        target="_blank" rel="noopener noreferrer">Graduate Développeur Web
+                    <li>
+                      <a href="https://drive.google.com/file/d/1FNUcDZuMMUKZsfKsdMWJiecGTDWBRh7_/view" target="_blank"
+                        rel="noopener noreferrer">Graduate Développeur Web
                         et Web Mobile <span><svg xmlns="http://www.w3.org/2000/svg" class="icon-showing"
                             viewBox="0 0 24 24">
                             <path
                               d="M1.18164 12C2.12215 6.87976 6.60812 3 12.0003 3C17.3924 3 21.8784 6.87976 22.8189 12C21.8784 17.1202 17.3924 21 12.0003 21C6.60812 21 2.12215 17.1202 1.18164 12ZM12.0003 17C14.7617 17 17.0003 14.7614 17.0003 12C17.0003 9.23858 14.7617 7 12.0003 7C9.23884 7 7.00026 9.23858 7.00026 12C7.00026 14.7614 9.23884 17 12.0003 17ZM12.0003 15C10.3434 15 9.00026 13.6569 9.00026 12C9.00026 10.3431 10.3434 9 12.0003 9C13.6571 9 15.0003 10.3431 15.0003 12C15.0003 13.6569 13.6571 15 12.0003 15Z">
                             </path>
-                          </svg></span></a></li>
-                    <li> <a href="https://drive.google.com/drive/folders/1tnrd7ksG92qPS1ucqYy2Lh6I9poaOGpu"
-                        target="_blank" rel="noopener noreferrer">Certificats de réussite
+                          </svg></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://drive.google.com/drive/folders/1tnrd7ksG92qPS1ucqYy2Lh6I9poaOGpu" target="_blank"
+                        rel="noopener noreferrer">Certificats de réussite
                         OpenClassrooms <span><svg xmlns="http://www.w3.org/2000/svg" class="icon-showing"
                             viewBox="0 0 24 24">
                             <path
                               d="M1.18164 12C2.12215 6.87976 6.60812 3 12.0003 3C17.3924 3 21.8784 6.87976 22.8189 12C21.8784 17.1202 17.3924 21 12.0003 21C6.60812 21 2.12215 17.1202 1.18164 12ZM12.0003 17C14.7617 17 17.0003 14.7614 17.0003 12C17.0003 9.23858 14.7617 7 12.0003 7C9.23884 7 7.00026 9.23858 7.00026 12C7.00026 14.7614 9.23884 17 12.0003 17ZM12.0003 15C10.3434 15 9.00026 13.6569 9.00026 12C9.00026 10.3431 10.3434 9 12.0003 9C13.6571 9 15.0003 10.3431 15.0003 12C15.0003 13.6569 13.6571 15 12.0003 15Z">
                             </path>
-                          </svg></span></a></li>
+                          </svg></span>
+                      </a>
+                    </li>
                   </ul>
-
                 </div>
               </div>
-              <!-- _________________________________________________ block compétences  -->
-
+              <!-- ----------- block compétences --------------  -->
               <div class="about__content__block__competences reveal-right">
                 <h4 class="competences__title">Compétences</h4>
 
@@ -439,6 +435,20 @@
                     <h3 class="competences__card__sentence">Bonus</h3>
                     <div class="icon">
                       <div class="icon-demi">
+                        <!-- - - -- sass icon- -  - -->
+                        <svg class="sass-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                          <path class="sass-icon-path-1"
+                            d="m26.11 17.572a5.8 5.8 0 0 0 -2.537.588 5.345 5.345 0 0 1 -.568-1.314 3.53 3.53 0 0 1 -.051-1.1 9.811 9.811 0 0 1 .332-1.192c-.005-.051-.061-.292-.624-.3s-1.048.107-1.1.256a6.171 6.171 0 0 0 -.235.834 19.686 19.686 0 0 1 -1.713 3.294 3.186 3.186 0 0 1 -.44-2.066 9.811 9.811 0 0 1 .332-1.192c-.005-.051-.061-.292-.624-.3s-1.048.107-1.1.256-.118.5-.235.834-1.483 3.386-1.841 4.173c-.184.4-.343.726-.455.946a.233.233 0 0 1 -.02.041c-.1.189-.153.292-.153.292v.005c-.077.138-.159.266-.2.266a1.711 1.711 0 0 1 .01-.869c.2-1.059.69-2.705.685-2.762 0-.031.092-.317-.317-.465a.508.508 0 0 0 -.578.1c-.036 0-.061.087-.061.087s.445-1.851-.849-1.851a3.855 3.855 0 0 0 -2.475 1.683c-.348.189-1.089.593-1.882 1.028-.3.169-.614.338-.905.5-.02-.02-.041-.046-.061-.066-1.575-1.678-4.47-2.862-4.345-5.107.046-.818.327-2.966 5.559-5.575 4.306-2.122 7.733-1.534 8.326-.23.849 1.862-1.836 5.319-6.285 5.82a3.351 3.351 0 0 1 -2.813-.711c-.235-.256-.271-.271-.358-.22-.143.077-.051.307 0 .44a2.626 2.626 0 0 0 1.606 1.263 8.55 8.55 0 0 0 5.217-.517c2.7-1.043 4.8-3.943 4.184-6.372-.619-2.465-4.71-3.278-8.582-1.9a19.5 19.5 0 0 0 -6.595 3.783c-2.133 1.995-2.47 3.728-2.332 4.455.5 2.578 4.051 4.255 5.472 5.5-.072.041-.138.077-.194.107-.711.353-3.421 1.77-4.1 3.268-.767 1.7.123 2.915.711 3.079a4.374 4.374 0 0 0 4.71-1.908 4.725 4.725 0 0 0 .423-4.353.107.107 0 0 0 -.02-.031l.557-.327c.363-.215.721-.414 1.028-.578a6.74 6.74 0 0 0 -.363 1.862 3.886 3.886 0 0 0 .834 2.7.921.921 0 0 0 .675.22c.6 0 .875-.5 1.176-1.094.368-.726.7-1.57.7-1.57s-.414 2.281.711 2.281c.409 0 .823-.532 1.008-.8v.005s.01-.015.031-.051l.066-.107v-.01c.164-.286.532-.936 1.079-2.015.706-1.391 1.386-3.13 1.386-3.13a8.888 8.888 0 0 0 .271 1.13 10.643 10.643 0 0 0 .583 1.309c-.164.23-.266.358-.266.358l.005.005c-.133.174-.276.363-.435.547a16.3 16.3 0 0 0 -1.314 1.647.447.447 0 0 0 .123.6 1.116 1.116 0 0 0 .685.113 3.147 3.147 0 0 0 1.028-.235 3.45 3.45 0 0 0 .885-.465 1.98 1.98 0 0 0 .849-1.744 3.521 3.521 0 0 0 -.322-1.233c.051-.072.1-.143.148-.215a23.428 23.428 0 0 0 1.534-2.649 8.888 8.888 0 0 0 .271 1.13 7.57 7.57 0 0 0 .5 1.125 4.861 4.861 0 0 0 -1.497 1.922c-.322.931-.072 1.35.4 1.447a1.425 1.425 0 0 0 .747-.153 3.4 3.4 0 0 0 .946-.486 2.126 2.126 0 0 0 1.043-1.729 3.268 3.268 0 0 0 -.235-1.023 5.356 5.356 0 0 1 2.716-.312c2.434.286 2.915 1.805 2.823 2.445a1.618 1.618 0 0 1 -.772 1.094c-.169.107-.225.143-.21.22.02.113.1.107.245.087a1.9 1.9 0 0 0 1.332-1.69c.077-1.5-1.355-3.145-3.887-3.13zm-18.78 6.328c-.808.88-1.933 1.212-2.419.931-.522-.3-.317-1.6.675-2.532a12.884 12.884 0 0 1 1.9-1.417c.118-.072.292-.174.5-.3l.056-.031.123-.077a3.493 3.493 0 0 1 -.835 3.426zm5.881-4c-.281.685-.869 2.44-1.227 2.342-.307-.082-.5-1.412-.061-2.726a6.193 6.193 0 0 1 .956-1.754c.44-.491.926-.655 1.043-.455a9.062 9.062 0 0 1 -.711 2.593zm4.853 2.322c-.118.061-.23.1-.281.072-.036-.02.051-.1.051-.1s.609-.655.849-.951c.138-.174.3-.378.476-.609v.066c0 .782-.757 1.309-1.094 1.524zm3.744-.854c-.087-.061-.072-.266.22-.905a3.408 3.408 0 0 1 .834-1.074 1.448 1.448 0 0 1 .082.471 1.547 1.547 0 0 1 -1.135 1.509z"
+                            fill="#cd6799" />
+                        </svg>
+                        <!-- - - -- bootstrap icon- -  - -->
+                        <svg class="bootstrap-icon" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                          <path class="bootstrap-icon-path-1"
+                            d="m9.531 112.586h4.161c1.896 0 3.273.27 4.129.81.857.54 1.285 1.398 1.285 2.575 0 .799-.188 1.454-.563 1.966s-.874.82-1.496.924v.091c.848.189 1.459.543 1.834 1.061s.563 1.207.563 2.067c0 1.22-.44 2.171-1.322 2.854-.881.683-2.078 1.024-3.59 1.024h-5.001zm2.835 5.296h1.646c.768 0 1.325-.119 1.669-.356.345-.238.517-.631.517-1.18 0-.512-.187-.879-.562-1.102s-.968-.334-1.779-.334h-1.491zm0 2.25v3.485h1.848c.78 0 1.356-.149 1.729-.448s.558-.756.558-1.372c0-1.109-.793-1.665-2.378-1.665zm21.886-.878c0 2.213-.549 3.915-1.646 5.104s-2.67 1.784-4.719 1.784-3.622-.595-4.719-1.784c-1.098-1.189-1.646-2.896-1.646-5.122s.55-3.925 1.651-5.099 2.678-1.761 4.733-1.761 3.626.592 4.715 1.774c1.087 1.183 1.631 2.885 1.631 5.104zm-9.758 0c0 1.494.283 2.619.851 3.375.567.756 1.414 1.134 2.542 1.134 2.262 0 3.393-1.503 3.393-4.509 0-3.012-1.125-4.518-3.375-4.518-1.128 0-1.979.379-2.552 1.139s-.859 1.885-.859 3.379zm24.667 0c0 2.213-.549 3.915-1.646 5.104s-2.67 1.784-4.719 1.784-3.622-.595-4.719-1.784c-1.098-1.189-1.646-2.896-1.646-5.122s.55-3.925 1.651-5.099 2.678-1.761 4.733-1.761 3.626.592 4.715 1.774c1.086 1.183 1.631 2.885 1.631 5.104zm-9.759 0c0 1.494.283 2.619.851 3.375.567.756 1.414 1.134 2.542 1.134 2.262 0 3.393-1.503 3.393-4.509 0-3.012-1.125-4.518-3.375-4.518-1.128 0-1.979.379-2.552 1.139s-.859 1.885-.859 3.379zm17.688 6.704h-2.835v-11.012h-3.631v-2.36h10.097v2.36h-3.631zm13.581-3.713c0 1.208-.434 2.159-1.303 2.854s-2.078 1.043-3.626 1.043c-1.427 0-2.689-.269-3.786-.805v-2.634c.902.402 1.666.686 2.291.851s1.196.247 1.715.247c.622 0 1.099-.119 1.431-.356.333-.238.499-.591.499-1.061 0-.262-.073-.495-.219-.7-.146-.204-.361-.401-.645-.59s-.861-.491-1.733-.905c-.817-.384-1.43-.753-1.838-1.107-.409-.354-.735-.765-.979-1.234-.244-.47-.366-1.019-.366-1.646 0-1.183.401-2.113 1.203-2.79s1.91-1.015 3.325-1.015c.695 0 1.358.082 1.989.247s1.291.396 1.98.695l-.915 2.204c-.713-.292-1.303-.497-1.77-.613s-.925-.174-1.376-.174c-.537 0-.948.125-1.235.375s-.43.576-.43.979c0 .25.058.468.174.654s.3.366.553.54.852.486 1.797.938c1.25.598 2.107 1.197 2.57 1.797s.694 1.334.694 2.206zm7.583 3.713h-2.835v-11.012h-3.631v-2.36h10.097v2.36h-3.631zm8.524-5.131v5.131h-2.835v-13.372h3.896c1.817 0 3.161.331 4.033.992.872.662 1.308 1.667 1.308 3.014 0 .787-.216 1.486-.649 2.099s-1.046 1.093-1.838 1.44c2.012 3.006 3.323 4.948 3.933 5.826h-3.146l-3.192-5.131h-1.51zm0-2.305h.915c.896 0 1.558-.149 1.985-.448s.64-.769.64-1.409c0-.634-.218-1.085-.654-1.354-.436-.268-1.111-.402-2.026-.402h-.86zm17.716 7.436-.97-3.183h-4.875l-.97 3.183h-3.055l4.719-13.426h3.466l4.738 13.426zm-1.647-5.561c-.896-2.884-1.401-4.515-1.514-4.893s-.193-.677-.242-.896c-.201.78-.777 2.71-1.729 5.789zm15.622-3.64c0 1.439-.45 2.54-1.349 3.301-.899.763-2.178 1.144-3.837 1.144h-1.216v4.756h-2.835v-13.372h4.271c1.622 0 2.855.349 3.7 1.047.844.699 1.266 1.74 1.266 3.124zm-6.402 2.122h.933c.872 0 1.524-.172 1.957-.517s.649-.846.649-1.504c0-.665-.182-1.156-.544-1.473-.363-.317-.932-.476-1.706-.476h-1.29v3.97zm-38.116-62.12c-1.983-.653-4.838-.759-8.565-.759h-13.386v20h14.424c2.502 0 4.259-.249 5.271-.437 1.783-.318 3.274-.93 4.472-1.676 1.198-.744 2.183-1.869 2.955-3.293.771-1.424 1.158-3.087 1.158-4.951 0-2.184-.559-3.98-1.677-5.59-1.117-1.611-2.668-2.642-4.652-3.294zm-2.056-8.612c1.97-.586 3.455-1.646 4.452-3.003.999-1.357 1.498-3.103 1.498-5.154 0-1.943-.466-3.675-1.398-5.154-.932-1.478-2.263-2.481-3.992-3.027-1.732-.544-4.7-.809-8.906-.809h-11.549v18h12.507c3.435 0 5.897-.399 7.388-.853zm45.105-32.021c0-7.802-6.325-14.126-14.127-14.126h-77.746c-7.802 0-14.127 6.324-14.127 14.126v77.748c0 7.802 6.325 14.126 14.127 14.126h77.746c7.802 0 14.127-6.324 14.127-14.126zm-30.43 57.144c-1.157 2.356-2.589 4.173-4.292 5.451-1.704 1.277-3.841 2.446-6.41 3.098-2.569.653-5.717 1.181-9.444 1.181h-22.424v-59h22.065c4.473 0 8.059.62 10.761 1.804 2.703 1.185 4.818 3.021 6.351 5.483 1.53 2.463 2.296 5.046 2.296 7.735 0 2.502-.68 4.861-2.036 7.071-1.358 2.21-3.408 3.995-6.15 5.352 3.54 1.038 6.263 2.811 8.166 5.313 1.903 2.503 2.855 5.458 2.855 8.866-.001 2.742-.579 5.291-1.738 7.646z"
+                            fill="#5b4282" />
+                        </svg>
+                      </div>
+                      <div class="icon-demi">
                         <!-- - - -- git icon- -  - -->
                         <svg class="git-icon" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"
                           preserveAspectRatio="xMinYMin meet">
@@ -457,6 +467,7 @@
                           </g>
                         </svg>
                       </div>
+
                     </div>
                   </div>
                   <p>Gestion de projet selon les méthodes agile, versionning selon workflow,
@@ -499,12 +510,11 @@
 
               </div>
             </div>
+          </div>
         </article>
       </div>
     </section>
-
-
-    <!-- ********************************************** PAGE PRESTATIONS ******************************************* -->
+    <!-- *********** PAGE PRESTATIONS ***************** -->
     <section class="slide slide-services" id="prestations">
       <div class="page filter-services">
         <article class="services">
@@ -544,16 +554,16 @@
                     </svg>
                   </span>
                 </h4>
-                <p class="sentence">Tout type de missions</p>
+                <p class="sentence">Missions toute durée</p>
                 <div class="services__wrapper__content">
-                  <p class="price">Taux journalier moyen: <span>350 €</span></p>
+                  <p class="price">Taux journalier: <span>350 €</span></p>
                   <p class="description">Découvrez un développeur web fullstack spécialisé en React et
                     Symfony, prêt à donner vie à vos projets numériques. De la conception à
                     l'implémentation, je m'engage à créer des solutions web performantes et
                     conviviales pour répondre à vos besoins.</p>
                 </div>
-                <h4 class="title">Assistance</h4>
-                <p class="sentence">Taches administratives</p>
+                <h4 class="title title-assistance">Assistance</h4>
+                <p class="sentence">Taches administratives, webmaster</p>
                 <div class="services__wrapper__content">
                   <p class="price">Taux horaire: <span>40 €</span></p>
                   <p class="description">Simplifiez votre vie numérique avec l'assistance à domicile
@@ -569,13 +579,13 @@
                   <ul>
                     <li>Développement de fonctionnalités</li>
                     <li>Protection contre failles de sécurité</li>
-                    <li>Conception avec Merise ou UML</li>
-                    <li>Maquettage (Figma, adobeXD)</li>
-                    <li>Javascript, PHP, WORDPRESS, POO, MVC</li>
-                    <li>Méthode Agile et WorkFlow</li>
-                    <li>Administration de serveurs ssh</li>
-                    <li>Versionning avec GitFlow</li>
-                    <li>Webmaster</li>
+                    <li>Conception bdd avec merise ou uml</li>
+                    <li>Maquettage (figma, adobexd)</li>
+                    <li>js, php, wp, woo, poo, mvc</li>
+                    <li>Gestion de projet agile</li>
+                    <li>Administration de serveurs linux</li>
+                    <li>Versionning avec gitflow</li>
+                    <li>Webmaster, administrateur</li>
                     <li>Déploiement, refactoring, debug</li>
                   </ul>
                 </div>
@@ -609,20 +619,19 @@
                 </h4>
                 <p class="sentence">Présentez vos services</p>
                 <div class="services__wrapper__content">
-                  <p class="price">Site événementiel: <span>300€</span></p>
-                  <p class="description">Boostez l'impact de votre événement avec un site web
-                    événementiel sur mesure : créez une expérience immersive, informez vos
-                    participants et maximisez votre visibilité en ligne. </p>
+                  <p class="price">événementiel: <span>300€</span></p>
+                  <p class="description">Propulsez votre événement avec mon site spécialisé, optimisé pour attirer,
+                    captiver et fidéliser votre audience.</p>
                 </div>
                 <div class="services__wrapper__content">
-                  <p class="price">Site vitrine de base: <span>350€</span></p>
+                  <p class="price">vitrine base: <span>350€</span></p>
                   <p class="description">La simplicité à son meilleur : obtenez un site vitrine
                     minimaliste d'une page qui met en avant votre message de manière élégante et
                     efficace.</p>
                 </div>
 
                 <div class="services__wrapper__content">
-                  <p class="price">Site vitrine complet: <span>850€</span></p>
+                  <p class="price">vitrine complet: <span>850€</span></p>
                   <p class="description">Transformez votre présence en ligne en une vitrine complète
                     de votre activité : site complet offrant une expérience riche,
                     mettant en valeur votre identité, vos services et vos réalisations de manière
@@ -632,18 +641,18 @@
                 <!-- ....... modale info ....... -->
                 <div class="info-modal" id="info-modal-vitrine">
                   <h4 class="title">Site vitrine</h4>
-                  <p class="sentence">Tout est en formule packagée</p>
+                  <p class="sentence">Formule packagée</p>
                   <ul>
-                    <li>Pack clé en main (1 seul interlocuteur)</li>
+                    <li>Livré clé en main</li>
                     <li>Charte graphique + logo</li>
                     <li>Design avec thème premium</li>
-                    <li>Référencement pour être facilement trouvé</li>
+                    <li>Optimisation du référencement</li>
                     <li>Adapté à tous les écrans</li>
-                    <li>Site sécurisé + certificat SSL</li>
-                    <li>Formation des bases pour administrer le site</li>
-                    <li>Formulaire de contact (site complet)</li>
-                    <li>Articles avec commentaires (site complet)</li>
-                    <li>Nombreuses options possibles</li>
+                    <li>Site sécurisé + certificat ssl</li>
+                    <li>Formation administration site</li>
+                    <li>Formulaire de contact (v2)</li>
+                    <li>Articles avec commentaires (v2)</li>
+                    <li>Nombreuses options disponibles</li>
                   </ul>
                 </div>
               </div>
@@ -674,35 +683,35 @@
                   </span></h4>
                 <p class="sentence">Vendez vos produits en ligne</p>
                 <div class="services__wrapper__content">
-                  <p class="price">Site e-commerce de base: <span>1800€</span></p>
+                  <p class="price">e-commerce base: <span>1800€</span></p>
                   <p class="description">Votre boutique en ligne, simplifiée à l'essentiel : optez
                     pour un site e-commerce minimaliste pour une expérience d'achat fluide et
                     efficace. Catalogue de 20 produits max (au-delà supplément).</p>
                 </div>
                 <div class="services__wrapper__content">
-                  <p class="price">Site e-commerce complet: <span>2500€</span></p>
+                  <p class="price">e-commerce complet: <span>2500€</span></p>
                   <p class="description">Préparez-vous à maximiser vos ventes en ligne avec ma
                     solution e-commerce complète. Offrez à vos clients une expérience d'achat
                     exceptionnelle, gérez facilement votre inventaire et faites prospérer votre
                     entreprise sur le web. Découvrez la puissance du commerce en ligne intégral
-                    !.Catalogue de 50 produits max (au-delà supplément).</p>
+                    ! Catalogue de 50 produits max (au-delà supplément).</p>
                 </div>
 
                 <!-- ....... modale info ....... -->
                 <div class="info-modal" id="info-modal-commerce">
                   <h4 class="title">Site e-commerce</h4>
-                  <p class="sentence">Tout est en formule packagée</p>
+                  <p class="sentence">Formule packagée</p>
                   <ul>
-                    <li>Pack clé en main (1 seul interlocuteur)</li>
+                    <li>Livré clé en main</li>
                     <li>Charte graphique + logo</li>
                     <li>Design avec thème premium</li>
-                    <li>Référencement pour être facilement trouvé</li>
+                    <li>Optimisation du référencement</li>
                     <li>Adapté à tous les écrans</li>
                     <li>Pages boutique avec fiches produits</li>
                     <li>Gestion des commandes et clients</li>
-                    <li>Paiements sécurisé + certificat SSL</li>
-                    <li>Formation des bases pour administrer le site</li>
-                    <li>Nombreuses options possibles</li>
+                    <li>Paiements sécurisé + certificat ssl</li>
+                    <li>Formation administration site</li>
+                    <li>Nombreuses options disponibles</li>
                   </ul>
                 </div>
               </div>
@@ -733,18 +742,18 @@
                   </span></h4>
                 <p class="sentence">Projets sur mesure</p>
                 <div class="services__wrapper__content">
-                  <p class="price">Application web de base: <span>sur devis</span></p>
+                  <p class="price">Appli base: <span>sur devis</span></p>
                   <p class="description">Découvrez la simplicité à son meilleur avec une application
                     web de base. Une solution efficace, conviviale et abordable pour répondre à vos
                     besoins essentiels en ligne. Simplifiez votre quotidien numérique dès maintenant
                     !</p>
                 </div>
                 <div class="services__wrapper__content">
-                  <p class="price">Application web complète: <span>sur devis</span></p>
+                  <p class="price">Appli complète: <span>sur devis</span></p>
                   <p class="description">Ne faites pas de compromis, passez au niveau supérieur avec
                     une application web complète. Une solution robuste, riche en fonctionnalités et
                     sur mesure pour booster votre productivité et répondre à tous vos besoins en
-                    ligne. L'excellence numérique à portée de main, explorez-la dès maintenant !"
+                    ligne. L'excellence numérique à portée de main, explorez-la dès maintenant!
                   </p>
                 </div>
                 <!-- ....... modale info ....... -->
@@ -752,16 +761,16 @@
                   <h4 class="title">Application Web</h4>
                   <p class="sentence">Définissez vos besoins</p>
                   <ul>
-                    <li>Appli découplée en mode API</li>
-                    <li>Front-end en React</li>
-                    <li>Back-end en Synfony</li>
+                    <li>Appli découplée avec api</li>
+                    <li>Front-end en react</li>
+                    <li>Back-end en synfony</li>
                     <li>Intégration de maquettes</li>
                     <li>Exploitation de données</li>
                     <li>Algorithmes de programmation</li>
                     <li>Système d'administration adapté</li>
                     <li>Optimisation du référencement</li>
                     <li>Adapté à tous les écrans</li>
-                    <li>Site sécurisé + certificat SSL</li>
+                    <li>Site sécurisé + certificat ssl</li>
                   </ul>
                 </div>
               </div>
@@ -771,8 +780,7 @@
       </div>
     </section>
 
-
-    <!-- *************************************************** PAGE REALISATIONS ******************************************* -->
+    <!-- ********** PAGE REALISATIONS ***************** -->
     <section class="slide slide-project" id="realisations">
       <div class="page filter-project">
         <article class="project">
@@ -782,10 +790,10 @@
           </div>
           <div class="project__content">
             <div class="project__content__border-left reveal-bottom"></div>
-            <!-- ___________________________________________ block projets -->
+            <!-- ======== container projets ========== -->
             <div class="project__content__block">
 
-              <!-- ___________________________________________ les saveurs de savoie -->
+              <!-- ------ les saveurs de savoie ----- -->
               <div class="project__wrapper reveal-left ecf">
                 <div class="filter-modale">
                   <div class="project__wrapper__modale">
@@ -799,7 +807,7 @@
                     </p>
                     <div class="project__wrapper__links">
                       <a href="https://github.com/Christophe-THEVENET/lessaveursdesavoie.fr.nf"
-                        class=" project__wrapper__link--github" target="_blank"> <svg class=" github-icon"
+                        class=" project__wrapper__links--github" target="_blank"> <svg class=" github-icon"
                           viewBox="0 0 256 249" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
                           <g fill="#010302">
                             <path
@@ -807,56 +815,148 @@
                             <path
                               d="M47.755 181.634c-.28.633-1.278.823-2.185.389-.925-.416-1.445-1.28-1.145-1.916.275-.652 1.273-.834 2.196-.396.927.415 1.455 1.287 1.134 1.923M54.027 187.23c-.608.564-1.797.302-2.604-.589-.834-.889-.99-2.077-.373-2.65.627-.563 1.78-.3 2.616.59.834.899.996 2.08.36 2.65M58.33 194.39c-.782.543-2.06.034-2.849-1.1-.781-1.133-.781-2.493.017-3.038.792-.545 2.05-.055 2.85 1.07.78 1.153.78 2.513-.019 3.069M65.606 202.683c-.699.77-2.187.564-3.277-.488-1.114-1.028-1.425-2.487-.724-3.258.707-.772 2.204-.555 3.302.488 1.107 1.026 1.445 2.496.7 3.258M75.01 205.483c-.307.998-1.741 1.452-3.185 1.028-1.442-.437-2.386-1.607-2.095-2.616.3-1.005 1.74-1.478 3.195-1.024 1.44.435 2.386 1.596 2.086 2.612M85.714 206.67c.036 1.052-1.189 1.924-2.705 1.943-1.525.033-2.758-.818-2.774-1.852 0-1.062 1.197-1.926 2.721-1.951 1.516-.03 2.758.815 2.758 1.86M96.228 206.267c.182 1.026-.872 2.08-2.377 2.36-1.48.27-2.85-.363-3.039-1.38-.184-1.052.89-2.105 2.367-2.378 1.508-.262 2.857.355 3.049 1.398" />
                           </g>
-                        </svg></a>
-                      <a href="https://lessaveursdesavoie.fr.nf" target="_blank" class="project__wrapper__link">Voir
-                        l'appli</a>
+                        </svg>
+                      </a>
+                      <div class='tuiles__icon'>
+                        <!-- - - -- react icon- -  - -->
+                        <svg class="tuiles__icon__item" viewBox="175.7 78 490.6 436.9"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <g class="react-icon-g" fill="#61dafb">
+                            <path
+                              d="m666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9v-22.3c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6v-22.3c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zm-101.4 106.7c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24s9.5 15.8 14.4 23.4zm73.9-208.1c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6s22.9-35.6 58.3-50.6c8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zm53.8 142.9c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6z" />
+                            <circle cx="420.9" cy="296.5" r="45.7" />
+                          </g>
+                        </svg>
+                        <!-- - - -- symfony icon- -  - -->
+                        <svg class="tuiles__icon__item" viewBox="0 0 256 257" xmlns="http://www.w3.org/2000/svg"
+                          preserveAspectRatio="xMinYMin meet">
+                          <circle class="symfony-icon-path-1" fill="#1A171B" cx="128" cy="128.827" r="128" />
+                          <path class="symfony-icon-path-2"
+                            d="M183.706 48.124c-12.986.453-24.32 7.61-32.757 17.51-9.342 10.855-15.557 23.73-20.035 36.872-8.01-6.565-14.19-15.064-27.041-18.77-9.933-2.852-20.366-1.674-29.96 5.474-4.545 3.395-7.676 8.527-9.165 13.351-3.855 12.537 4.053 23.694 7.645 27.7l7.853 8.416c1.619 1.65 5.518 5.955 3.612 12.127-2.06 6.71-10.15 11.055-18.448 8.495-3.706-1.13-9.03-3.891-7.838-7.779.493-1.59 1.631-2.78 2.241-4.155.56-1.181.827-2.067.997-2.587 1.516-4.95-.555-11.39-5.857-13.025-4.946-1.516-10.007-.315-11.969 6.054-2.225 7.235 1.237 20.366 19.783 26.084 21.729 6.676 40.11-5.155 42.717-20.586 1.642-9.665-2.722-16.845-10.717-26.08l-6.514-7.204c-3.946-3.942-5.301-10.661-1.217-15.825 3.446-4.356 8.354-6.215 16.392-4.029 11.733 3.186 16.963 11.327 25.69 17.893-3.603 11.819-5.958 23.682-8.09 34.32l-1.299 7.931c-6.238 32.721-11 50.688-23.375 61.003-2.493 1.773-6.057 4.427-11.429 4.612-2.816.087-3.726-1.85-3.765-2.694-.067-1.977 1.599-2.883 2.706-3.773 1.654-.902 4.155-2.398 3.985-7.191-.18-5.664-4.872-10.575-11.654-10.35-5.08.173-12.823 4.954-12.532 13.705.303 9.039 8.728 15.813 21.43 15.384 6.79-.233 21.952-2.997 36.895-20.76 17.392-20.362 22.256-43.705 25.915-60.79l4.084-22.556c2.269.272 4.695.453 7.334.516 21.661.457 32.496-10.763 32.657-18.924.107-4.939-3.241-9.799-7.928-9.689-3.355.095-7.57 2.328-8.582 6.968-.988 4.552 6.893 8.66.733 12.65-4.376 2.832-12.221 4.828-23.269 3.206l2.009-11.103c4.1-21.055 9.157-46.954 28.341-47.584 1.398-.071 6.514.063 6.633 3.446.035 1.13-.245 1.418-1.568 4.005-1.347 2.017-1.855 3.734-1.792 5.707.185 5.376 4.273 8.909 10.185 8.696 7.916-.256 10.193-7.963 10.063-11.921-.32-9.3-10.122-15.175-23.1-14.75z"
+                            fill="#FFF" />
+                        </svg>
+                        <!-- - - -- sql icon- -  - -->
+                        <svg class="tuiles__icon__item" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 192.756 192.756">
+                          <g fill-rule="evenodd" clip-rule="evenodd">
+                            <path class="sql-icon-path-1" fill="#fff" d="M0 0h192.756v192.756H0V0z" />
+                            <path class="sql-icon-path-2"
+                              d="M8.504 128.227h5.845v-23.023l9.013 20.078c1.07 2.408 2.499 3.256 5.354 3.256 2.856 0 4.284-.848 5.354-3.256l9.013-20.078v23.023h5.8v-22.979c0-2.23-.893-3.303-2.722-3.883-4.417-1.383-7.407-.178-8.745 2.812l-8.834 19.766-8.566-19.766c-1.294-2.99-4.328-4.195-8.745-2.812-1.874.58-2.766 1.652-2.766 3.883v22.979h-.001zM53.746 109.486h5.8v12.672c-.044.713.223 2.32 3.436 2.365 1.606.043 12.537 0 12.626 0v-15.082h5.845c.044 0 0 20.568 0 20.658.044 5.086-6.291 6.156-9.191 6.246H53.88v-3.926s18.338.045 18.382 0c3.748-.357 3.302-2.23 3.302-2.855v-1.518H63.205c-5.756-.088-9.415-2.588-9.459-5.488 0-.267.134-12.937 0-13.072zM179.076 94.896c-3.568-.089-6.291.223-8.656 1.249-.668.268-1.695.268-1.828 1.116.357.355.445.936.713 1.428.58.893 1.518 2.096 2.365 2.721.893.715 1.83 1.428 2.811 2.053 1.785 1.07 3.748 1.65 5.398 2.723 1.027.623 2.008 1.428 2.99 2.141.445.357.803.893 1.383 1.115v-.088c-.312-.402-.402-.982-.67-1.43l-1.338-1.338c-1.293-1.695-2.945-3.213-4.686-4.461-1.383-.982-4.506-2.365-5.086-3.971-.045-.045-.09-.045-.09-.09.982-.135 2.143-.49 3.035-.715 1.518-.4 2.9-.312 4.461-.713.715-.224 1.428-.402 2.143-.625v-.402c-.803-.803-1.338-1.918-2.23-2.632-2.275-1.963-4.775-3.882-7.318-5.488-1.428-.937-3.168-1.517-4.684-2.275-.492-.223-1.385-.357-1.74-.803-.805-.982-1.205-2.276-1.83-3.436a123.45 123.45 0 0 1-3.658-7.764c-.758-1.74-1.295-3.48-2.23-5.087-4.641-7.585-9.594-12.18-17.312-16.687-1.65-.937-3.613-1.338-5.711-1.829-1.115-.09-2.23-.134-3.346-.224-.67-.268-1.383-1.115-2.053-1.517-2.543-1.606-9.102-5.131-10.977-.491-1.205 2.9 1.785 5.756 2.855 7.229.76 1.026 1.695 2.187 2.232 3.346.355.758.4 1.517.713 2.32.758 2.008 1.383 4.194 2.32 6.023.49.937 1.025 1.919 1.65 2.767.357.491 1.027.714 1.115 1.517-.625.892-.668 2.231-1.025 3.346-1.562 5.042-.982 11.244 1.338 14.991.715 1.115 2.365 3.569 4.686 2.633 2.008-.848 1.561-3.347 2.141-5.622.135-.491.045-.848.312-1.205v.089c.58 1.249 1.205 2.454 1.83 3.658 1.338 2.187 3.748 4.507 5.801 6.023 1.025.803 1.873 2.187 3.256 2.632v-.09h-.133c-.268-.4-.67-.579-.982-.892-.803-.803-1.695-1.785-2.365-2.677-1.828-2.499-3.479-5.265-4.996-8.121-.715-1.383-1.34-2.9-1.918-4.283-.225-.535-.225-1.338-.715-1.651-.67 1.026-1.605 1.874-2.143 3.079-.803 1.919-.936 4.283-1.203 6.693-.18.089-.135.044-.225.134-1.426-.357-1.918-1.83-2.453-3.079-1.293-3.168-1.562-8.254-.402-11.913.312-.937 1.697-3.882 1.117-4.774-.27-.848-1.117-1.383-1.607-2.052-.625-.803-1.205-1.874-1.65-2.811-1.07-2.499-1.562-5.265-2.723-7.763-.58-1.205-1.471-2.41-2.23-3.436-.848-1.205-1.785-2.052-2.453-3.48-.223-.491-.535-1.294-.223-1.83.133-.357.268-.491.623-.625.58-.446 2.232.179 2.855.401 1.607.714 2.99 1.339 4.373 2.276.67.446 1.34 1.293 2.143 1.517h.893c1.428.312 3.033.089 4.371.491 2.365.713 4.506 1.829 6.426 3.079 5.889 3.703 10.664 8.968 13.965 15.259.535 1.026.758 1.963 1.205 3.034.938 2.187 2.141 4.417 3.078 6.514.893 2.142 1.83 4.284 3.123 6.023.715.937 3.391 1.428 4.596 1.918.848.357 2.23.758 3.035 1.25 1.561.892 3.033 2.008 4.506 3.034.712.496 2.942 1.611 3.032 2.548z"
+                              fill="#00678c" />
+                            <path class="sql-icon-path-3"
+                              d="M133.566 56.124a7.59 7.59 0 0 0-1.828.224v.089h.133c.357.714.982 1.205 1.428 1.829.312.714.67 1.428.982 2.142l.133-.134c.625-.401.893-1.115.893-2.23-.223-.268-.268-.58-.49-.893-.313-.447-.848-.67-1.251-1.027z"
+                              fill="#00678c" />
+                            <path class="sql-icon-path-4"
+                              d="M85.96 128.227h16.731c1.963 0 3.881-.402 5.398-1.117 2.498-1.158 3.748-2.721 3.748-4.773v-4.283c0-1.65-1.428-3.256-4.148-4.283-1.473-.58-3.258-.848-4.998-.848h-7.049c-2.365 0-3.48-.715-3.748-2.275-.045-.178-.045-.357-.045-.535v-2.633c0-.178 0-.312.045-.49.268-1.205.892-1.562 2.945-1.74.178 0 .401-.045.58-.045h16.642v-3.881H95.687c-2.365 0-3.57.178-4.685.49-3.48 1.115-4.997 2.811-4.997 5.801v3.391c0 2.633 2.989 4.863 7.942 5.398.58 0 1.115.045 1.695.045h6.024c.223 0 .445 0 .623.045 1.875.178 2.633.49 3.213 1.158.312.357.447.67.447 1.072v3.391c0 .402-.268.938-.848 1.383-.492.447-1.34.715-2.455.803-.223 0-.4.045-.625.045H85.96v3.881zM148.156 121.443c0 4.016 2.945 6.246 8.969 6.693.535.045 1.115.09 1.65.09h15.17v-3.883h-15.26c-3.436 0-4.729-.848-4.729-2.9v-20.121h-5.801v20.121h.001zM115.541 121.666v-13.83c0-3.525 2.453-5.666 7.361-6.336.492-.09 1.072-.09 1.562-.09h11.064c.535 0 1.027 0 1.607.09 4.863.67 7.361 2.811 7.361 6.336v13.83c0 2.857-1.07 4.373-3.48 5.355l5.756 5.176h-6.781l-4.641-4.15-4.686.268h-6.201c-1.07 0-2.186-.133-3.436-.49-3.701-.983-5.486-2.946-5.486-6.159zm6.291-.355c0 .223.045.4.09.625.357 1.605 1.873 2.498 4.148 2.498h5.311l-4.863-4.373h6.781l4.238 3.793c.76-.402 1.295-1.027 1.473-1.83.045-.223.045-.4.045-.58v-13.295c0-.135 0-.312-.045-.492-.357-1.516-1.873-2.363-4.105-2.363h-8.834c-2.588 0-4.238 1.115-4.238 2.855v13.162h-.001zM176.623 128.227h.848v-3.213h1.16v-.67h-3.168v.67h1.16v3.213zm6.514 0h.758v-3.883h-1.16l-1.025 2.678-1.025-2.678h-1.205v3.883h.803v-2.945l1.115 2.945h.58l1.115-2.945h.045v2.945h-.001z"
+                              fill="#ce8b2c" />
+                            <path class="sql-icon-path-5"
+                              d="M12.029 92.13L8.771 77.049h1.651l1.874 9.905c.223 1.026.402 2.052.536 3.078l.58-2.811 2.365-10.173h1.918l1.785 7.63c.446 1.874.758 3.658.981 5.354.134-.981.357-2.097.625-3.301l1.918-9.682H24.7L21.265 92.13h-1.562l-2.632-11.467-.402-1.785c-.089.669-.223 1.25-.357 1.785L13.679 92.13h-1.65zM25.727 84.813c0-2.588.58-4.551 1.695-5.935 1.116-1.383 2.543-2.052 4.239-2.052 1.07 0 2.097.268 2.989.892s1.606 1.517 2.142 2.677c.491 1.204.759 2.587.759 4.238 0 2.231-.491 4.016-1.518 5.443-1.115 1.562-2.587 2.32-4.372 2.32-1.83 0-3.302-.803-4.417-2.365-1.027-1.47-1.517-3.21-1.517-5.218zm1.695 0c0 1.874.401 3.302 1.205 4.328.848 1.026 1.829 1.562 2.989 1.562 1.205 0 2.231-.536 3.034-1.562s1.205-2.543 1.205-4.551c0-1.338-.178-2.454-.625-3.479-.312-.803-.803-1.428-1.428-1.874a3.529 3.529 0 0 0-2.142-.714c-1.25 0-2.276.49-3.034 1.517-.803 1.025-1.204 2.631-1.204 4.773zM39.602 92.13V77.049h5.488c1.115 0 1.963.134 2.499.446.58.268 1.026.714 1.338 1.383.357.669.536 1.428.536 2.275 0 1.161-.268 2.053-.892 2.767-.581.714-1.428 1.16-2.588 1.383.491.268.803.536 1.071.803.491.58.893 1.205 1.294 1.918l2.141 4.105h-2.052l-1.651-3.124c-.669-1.205-1.115-2.052-1.472-2.454-.312-.446-.625-.759-.937-.893s-.714-.223-1.249-.223h-1.874v6.693h-1.652v.002zm1.651-8.433h3.48c.758 0 1.338-.089 1.74-.268.401-.178.713-.491.981-.848.223-.402.312-.893.312-1.428 0-.758-.223-1.338-.669-1.784-.446-.446-1.071-.669-1.963-.669h-3.882v4.997h.001zM52.006 92.13V77.049h1.651v7.496l6.113-7.496H62l-5.22 6.113 5.443 8.968h-2.186l-4.372-7.585-2.008 2.365v5.22h-1.651zM62.982 87.267l1.562-.134c.089.803.268 1.472.58 1.918.268.491.714.848 1.249 1.115.536.312 1.16.446 1.83.446.981 0 1.695-.268 2.231-.713.535-.491.803-1.116.803-1.874 0-.446-.089-.803-.268-1.16-.178-.312-.491-.58-.893-.803-.401-.223-1.249-.535-2.543-.892-1.16-.357-2.008-.714-2.499-1.071a3.256 3.256 0 0 1-1.16-1.294c-.268-.536-.402-1.16-.402-1.829 0-1.25.402-2.231 1.16-2.99.803-.803 1.874-1.16 3.212-1.16.892 0 1.695.178 2.409.535.669.357 1.205.892 1.606 1.562a5.06 5.06 0 0 1 .58 2.409l-1.562.134c-.045-.981-.357-1.695-.848-2.186-.536-.491-1.205-.714-2.141-.714-.938 0-1.651.223-2.098.625a1.99 1.99 0 0 0-.758 1.606c0 .625.179 1.071.536 1.428.356.312 1.16.669 2.409 1.026 1.249.312 2.097.625 2.588.848.759.401 1.338.892 1.695 1.517.402.625.58 1.383.58 2.231a4.67 4.67 0 0 1-.625 2.364c-.402.714-.937 1.25-1.651 1.606-.669.401-1.517.58-2.499.58-1.517 0-2.766-.446-3.658-1.383s-1.381-2.186-1.425-3.747zM82.524 92.13l-3.257-15.081h1.651l1.874 9.905c.223 1.026.401 2.052.536 3.078l.58-2.811 2.364-10.173h1.919l1.784 7.63a52.74 52.74 0 0 1 .982 5.354c.134-.981.357-2.097.58-3.301l1.963-9.682h1.695L91.76 92.13h-1.562l-2.633-11.467-.401-1.785c-.089.669-.223 1.25-.357 1.785L84.175 92.13h-1.651zM96.98 92.13V77.049h1.651V92.13H96.98zM104.654 92.13V78.834h-4.06v-1.785h9.771v1.785h-4.103V92.13h-1.608zM111.973 92.13V77.049h1.65v6.202h6.424v-6.202h1.652V92.13h-1.652v-7.094h-6.424v7.094h-1.65z"
+                              fill="#00678c" />
+                          </g>
+                        </svg>
+                      </div>
+                      <a href="https://lessaveursdesavoie.fr.nf" target="_blank"
+                        class="btn btn-secondary btn-tuiles"><span>Voir
+                          l'application</span></a>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- ___________________________________________ planchettes 1 -->
+              <!-- --------- planchettes  ------------->
               <div class="project__wrapper reveal-left planchettes">
                 <div class="filter-modale">
                   <div class="project__wrapper__modale">
                     <h4 class="project__wrapper__title">Site vitrine</h4>
                     <h5 class="project__wrapper__sentence">Pétanque des Planchettes</h5>
-                    <p class="project__wrapper__description">Site actif d'un club de pétanque.
-                      Développé sous wordpress.
-                      Site livré clés-en-main.</p>
+                    <p class="project__wrapper__description">Site actif d'un club de pétanque
+                      développé sous Wordpress.
+                      Site livré clés-en-main. Ce site représente la formule packagée que je propose ou je prends toutes
+                      les étapes en charge.</p>
                     <div class="project__wrapper__links">
+
                       <div> </div>
-                      <a href="https://petanquedesplanchettes.fr/" target="_blank" class="project__wrapper__link">Voir
-                        le
-                        site</a>
+                      <div class='tuiles__icon'>
+                        <!-- - - -- wp icon- -  - -->
+                        <svg class="tuiles__icon__item" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 122.522 122.523">
+                          <path class="wp-icon-path-1"
+                            d="M313.19 48.227h-21.257v2.255c6.649 0 7.718 1.425 7.718 9.856V75.54c0 8.431-1.067 9.976-7.718 9.976-5.104-.713-8.55-3.444-13.3-8.67l-5.462-5.937c7.361-1.308 11.28-5.938 11.28-11.164 0-6.53-5.58-11.518-16.031-11.518h-20.9v2.255c6.649 0 7.718 1.425 7.718 9.856V75.54c0 8.431-1.068 9.976-7.718 9.976v2.256h23.631v-2.256c-6.648 0-7.718-1.545-7.718-9.976v-4.273h2.019l13.182 16.505h34.557c16.981 0 24.345-9.024 24.345-19.832-.002-10.807-7.364-19.713-24.346-19.713zm-49.756 19.355V51.79h4.868c5.343 0 7.719 3.681 7.719 7.956 0 4.157-2.376 7.837-7.719 7.837l-4.868-.001zm50.113 16.508h-.832c-4.274 0-4.868-1.067-4.868-6.53V51.79h5.7c12.35 0 14.604 9.024 14.604 16.031.001 7.243-2.255 16.269-14.604 16.269zM181.378 71.978l8.193-24.228c2.376-7.006 1.308-9.023-6.293-9.023v-2.376h22.325v2.376c-7.48 0-9.262 1.78-12.23 10.449L179.834 89.79h-1.543l-12.114-37.17-12.349 37.17h-1.545l-13.181-40.613c-2.85-8.669-4.75-10.449-11.638-10.449v-2.376h26.363v2.376c-7.008 0-8.908 1.662-6.413 9.023l7.956 24.228 11.993-35.627h2.258l11.757 35.626zM221.752 89.314c-13.062 0-23.75-9.618-23.75-21.376 0-11.638 10.688-21.257 23.75-21.257s23.75 9.619 23.75 21.257c0 11.758-10.687 21.376-23.75 21.376zm0-38.949c-10.924 0-14.726 9.854-14.726 17.574 0 7.839 3.802 17.576 14.726 17.576 11.045 0 14.845-9.737 14.845-17.576 0-7.72-3.8-17.574-14.845-17.574z"
+                            fill="#00749a" />
+                          <path class="wp-icon-path-2"
+                            d="M366.864 85.396v2.375H339.67v-2.375c7.957 0 9.382-2.019 9.382-13.896V52.502c0-11.877-1.425-13.775-9.382-13.775V36.35h24.581c12.23 0 19.002 6.294 19.002 14.727 0 8.194-6.771 14.606-19.002 14.606h-6.77V71.5c.001 11.878 1.425 13.896 9.383 13.896zm-2.613-44.771h-6.77v20.664h6.77c6.65 0 9.737-4.631 9.737-10.212.001-5.7-3.086-10.452-9.737-10.452zM464.833 76.609l-.595 2.137c-1.067 3.919-2.376 5.344-10.807 5.344h-1.663c-6.174 0-7.243-1.425-7.243-9.855v-5.462c9.263 0 9.976.83 9.976 7.006h2.257V58.083h-2.257c0 6.175-.713 7.006-9.976 7.006V51.79h6.53c8.433 0 9.738 1.425 10.807 5.344l.596 2.256h1.898l-.83-11.162h-34.914v2.255c6.649 0 7.719 1.425 7.719 9.856V75.54c0 7.713-.907 9.656-6.15 9.934-4.983-.762-8.404-3.479-13.085-8.628l-5.463-5.937c7.363-1.308 11.282-5.938 11.282-11.164 0-6.53-5.581-11.518-16.031-11.518h-20.9v2.255c6.649 0 7.719 1.425 7.719 9.856V75.54c0 8.431-1.068 9.976-7.719 9.976v2.256h23.632v-2.256c-6.648 0-7.719-1.545-7.719-9.976v-4.273h2.02l13.181 16.505h48.806l.713-11.161-1.784-.002zm-62.937-9.027V51.79h4.868c5.344 0 7.72 3.681 7.72 7.956 0 4.157-2.376 7.837-7.72 7.837l-4.868-.001zM488.939 89.314c-4.75 0-8.907-2.493-10.688-4.038-.595.595-1.662 2.376-1.899 4.038h-2.257V72.927h2.375c.951 7.838 6.412 12.469 13.419 12.469 3.8 0 6.888-2.138 6.888-5.699 0-3.087-2.73-5.463-7.6-7.719l-6.77-3.206c-4.751-2.258-8.312-6.178-8.312-11.401 0-5.7 5.344-10.568 12.707-10.568 3.919 0 7.243 1.426 9.263 3.088.593-.476 1.188-1.782 1.544-3.208h2.256v14.014h-2.494c-.832-5.582-3.919-10.213-10.212-10.213-3.325 0-6.413 1.899-6.413 4.87 0 3.087 2.493 4.749 8.194 7.361l6.53 3.206c5.701 2.731 7.956 7.127 7.956 10.689 0 7.48-6.531 12.704-14.487 12.704zM525.514 89.314c-4.751 0-8.908-2.493-10.688-4.038-.594.595-1.662 2.376-1.898 4.038h-2.257V72.927h2.375c.95 7.838 6.411 12.469 13.419 12.469 3.8 0 6.888-2.138 6.888-5.699 0-3.087-2.731-5.463-7.601-7.719l-6.77-3.206c-4.75-2.258-8.312-6.178-8.312-11.401 0-5.7 5.344-10.568 12.707-10.568 3.919 0 7.242 1.426 9.263 3.088.593-.476 1.187-1.782 1.542-3.208h2.257v14.014h-2.493c-.832-5.582-3.919-10.213-10.212-10.213-3.325 0-6.414 1.899-6.414 4.87 0 3.087 2.494 4.749 8.195 7.361l6.53 3.206c5.7 2.731 7.955 7.127 7.955 10.689 0 7.48-6.531 12.704-14.486 12.704z"
+                            fill="#464342" />
+                          <g class="wp-icon-g" fill="#00749a">
+                            <path
+                              d="M8.708 61.26c0 20.803 12.089 38.779 29.619 47.299L13.258 39.872a52.354 52.354 0 0 0-4.55 21.388zM96.74 58.608c0-6.495-2.333-10.993-4.334-14.494-2.664-4.329-5.16-7.995-5.16-12.324 0-4.831 3.663-9.328 8.824-9.328.233 0 .454.029.682.042-9.351-8.566-21.808-13.796-35.49-13.796-18.36 0-34.513 9.42-43.91 23.688 1.233.037 2.396.062 3.382.062 5.497 0 14.006-.667 14.006-.667 2.833-.167 3.167 3.994.338 4.329 0 0-2.848.335-6.016.501L48.2 93.546l11.502-34.493-8.189-22.433c-2.83-.166-5.511-.501-5.511-.501-2.832-.166-2.5-4.496.332-4.329 0 0 8.679.667 13.843.667 5.496 0 14.006-.667 14.006-.667 2.835-.167 3.168 3.994.337 4.329 0 0-2.853.335-6.015.501l18.992 56.494 5.241-17.517c2.273-7.269 4.002-12.49 4.002-16.989z" />
+                            <path
+                              d="M62.184 65.857l-15.768 45.818a52.516 52.516 0 0 0 14.846 2.142c6.12 0 11.989-1.059 17.452-2.979a4.451 4.451 0 0 1-.374-.724L62.184 65.857zM107.376 36.046c.226 1.674.354 3.472.354 5.404 0 5.333-.996 11.328-3.996 18.824l-16.053 46.413c15.624-9.111 26.133-26.038 26.133-45.427a52.268 52.268 0 0 0-6.438-25.214z" />
+                            <path
+                              d="M61.262 0C27.483 0 0 27.481 0 61.26c0 33.783 27.482 61.264 61.262 61.264 33.778 0 61.265-27.48 61.265-61.264C122.526 27.481 95.04 0 61.262 0zm0 119.715c-32.23 0-58.453-26.223-58.453-58.455 0-32.229 26.222-58.45 58.453-58.45 32.229 0 58.45 26.221 58.45 58.45 0 32.232-26.222 58.455-58.45 58.455z" />
+                          </g>
+                        </svg>
+                      </div>
+                      <a href="https://petanquedesplanchettes.fr/" target="_blank"
+                        class="btn btn-secondary btn-tuiles"><span>Voir
+                          le
+                          site</span></a>
                     </div>
                   </div>
                 </div>
               </div>
 
-
-              <!-- ___________________________________________ la bougie -->
-              <div class="project__wrapper reveal-left labougie">
+              <!-- ---------- la bougie ------------ -->
+              <div class="project__wrapper reveal-right labougie">
                 <div class="filter-modale">
                   <div class="project__wrapper__modale">
                     <h4 class="project__wrapper__title">Boutique en Ligne</h4>
-                    <h5 class="project__wrapper__sentence">LaBougie</h5>
+                    <h5 class="project__wrapper__sentence">La Bougie</h5>
                     <p class="project__wrapper__description">Site e-commerce de démonstration
                       avec woocommerce. Vous
-                      pouvez vous connecter avec l'utilisateur test et simuler des achats en
+                      pouvez vous connecter avec les identifiants ci-dessous et simuler des achats en
                       carte bleue. </p>
-                    <p class="project__wrapper__description connect">pseudo: Arya Stark</p>
+                    <p class="project__wrapper__description connect connect-first">pseudo: Arya Stark</p>
                     <p class="project__wrapper__description connect">pass: 7Couronnes</p>
                     <div class="project__wrapper__links">
                       <div></div>
-                      <a href="https://www.labougie.top/" target="_blank" class="project__wrapper__link">Voir le
-                        site</a>
+                      <div class='tuiles__icon'>
+                        <!-- - - -- wp icon- -  - -->
+                        <svg class="tuiles__icon__item" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 122.522 122.523">
+                          <path class="wp-icon-path-1"
+                            d="M313.19 48.227h-21.257v2.255c6.649 0 7.718 1.425 7.718 9.856V75.54c0 8.431-1.067 9.976-7.718 9.976-5.104-.713-8.55-3.444-13.3-8.67l-5.462-5.937c7.361-1.308 11.28-5.938 11.28-11.164 0-6.53-5.58-11.518-16.031-11.518h-20.9v2.255c6.649 0 7.718 1.425 7.718 9.856V75.54c0 8.431-1.068 9.976-7.718 9.976v2.256h23.631v-2.256c-6.648 0-7.718-1.545-7.718-9.976v-4.273h2.019l13.182 16.505h34.557c16.981 0 24.345-9.024 24.345-19.832-.002-10.807-7.364-19.713-24.346-19.713zm-49.756 19.355V51.79h4.868c5.343 0 7.719 3.681 7.719 7.956 0 4.157-2.376 7.837-7.719 7.837l-4.868-.001zm50.113 16.508h-.832c-4.274 0-4.868-1.067-4.868-6.53V51.79h5.7c12.35 0 14.604 9.024 14.604 16.031.001 7.243-2.255 16.269-14.604 16.269zM181.378 71.978l8.193-24.228c2.376-7.006 1.308-9.023-6.293-9.023v-2.376h22.325v2.376c-7.48 0-9.262 1.78-12.23 10.449L179.834 89.79h-1.543l-12.114-37.17-12.349 37.17h-1.545l-13.181-40.613c-2.85-8.669-4.75-10.449-11.638-10.449v-2.376h26.363v2.376c-7.008 0-8.908 1.662-6.413 9.023l7.956 24.228 11.993-35.627h2.258l11.757 35.626zM221.752 89.314c-13.062 0-23.75-9.618-23.75-21.376 0-11.638 10.688-21.257 23.75-21.257s23.75 9.619 23.75 21.257c0 11.758-10.687 21.376-23.75 21.376zm0-38.949c-10.924 0-14.726 9.854-14.726 17.574 0 7.839 3.802 17.576 14.726 17.576 11.045 0 14.845-9.737 14.845-17.576 0-7.72-3.8-17.574-14.845-17.574z"
+                            fill="#00749a" />
+                          <path class="wp-icon-path-2"
+                            d="M366.864 85.396v2.375H339.67v-2.375c7.957 0 9.382-2.019 9.382-13.896V52.502c0-11.877-1.425-13.775-9.382-13.775V36.35h24.581c12.23 0 19.002 6.294 19.002 14.727 0 8.194-6.771 14.606-19.002 14.606h-6.77V71.5c.001 11.878 1.425 13.896 9.383 13.896zm-2.613-44.771h-6.77v20.664h6.77c6.65 0 9.737-4.631 9.737-10.212.001-5.7-3.086-10.452-9.737-10.452zM464.833 76.609l-.595 2.137c-1.067 3.919-2.376 5.344-10.807 5.344h-1.663c-6.174 0-7.243-1.425-7.243-9.855v-5.462c9.263 0 9.976.83 9.976 7.006h2.257V58.083h-2.257c0 6.175-.713 7.006-9.976 7.006V51.79h6.53c8.433 0 9.738 1.425 10.807 5.344l.596 2.256h1.898l-.83-11.162h-34.914v2.255c6.649 0 7.719 1.425 7.719 9.856V75.54c0 7.713-.907 9.656-6.15 9.934-4.983-.762-8.404-3.479-13.085-8.628l-5.463-5.937c7.363-1.308 11.282-5.938 11.282-11.164 0-6.53-5.581-11.518-16.031-11.518h-20.9v2.255c6.649 0 7.719 1.425 7.719 9.856V75.54c0 8.431-1.068 9.976-7.719 9.976v2.256h23.632v-2.256c-6.648 0-7.719-1.545-7.719-9.976v-4.273h2.02l13.181 16.505h48.806l.713-11.161-1.784-.002zm-62.937-9.027V51.79h4.868c5.344 0 7.72 3.681 7.72 7.956 0 4.157-2.376 7.837-7.72 7.837l-4.868-.001zM488.939 89.314c-4.75 0-8.907-2.493-10.688-4.038-.595.595-1.662 2.376-1.899 4.038h-2.257V72.927h2.375c.951 7.838 6.412 12.469 13.419 12.469 3.8 0 6.888-2.138 6.888-5.699 0-3.087-2.73-5.463-7.6-7.719l-6.77-3.206c-4.751-2.258-8.312-6.178-8.312-11.401 0-5.7 5.344-10.568 12.707-10.568 3.919 0 7.243 1.426 9.263 3.088.593-.476 1.188-1.782 1.544-3.208h2.256v14.014h-2.494c-.832-5.582-3.919-10.213-10.212-10.213-3.325 0-6.413 1.899-6.413 4.87 0 3.087 2.493 4.749 8.194 7.361l6.53 3.206c5.701 2.731 7.956 7.127 7.956 10.689 0 7.48-6.531 12.704-14.487 12.704zM525.514 89.314c-4.751 0-8.908-2.493-10.688-4.038-.594.595-1.662 2.376-1.898 4.038h-2.257V72.927h2.375c.95 7.838 6.411 12.469 13.419 12.469 3.8 0 6.888-2.138 6.888-5.699 0-3.087-2.731-5.463-7.601-7.719l-6.77-3.206c-4.75-2.258-8.312-6.178-8.312-11.401 0-5.7 5.344-10.568 12.707-10.568 3.919 0 7.242 1.426 9.263 3.088.593-.476 1.187-1.782 1.542-3.208h2.257v14.014h-2.493c-.832-5.582-3.919-10.213-10.212-10.213-3.325 0-6.414 1.899-6.414 4.87 0 3.087 2.494 4.749 8.195 7.361l6.53 3.206c5.7 2.731 7.955 7.127 7.955 10.689 0 7.48-6.531 12.704-14.486 12.704z"
+                            fill="#464342" />
+                          <g class="wp-icon-g" fill="#00749a">
+                            <path
+                              d="M8.708 61.26c0 20.803 12.089 38.779 29.619 47.299L13.258 39.872a52.354 52.354 0 0 0-4.55 21.388zM96.74 58.608c0-6.495-2.333-10.993-4.334-14.494-2.664-4.329-5.16-7.995-5.16-12.324 0-4.831 3.663-9.328 8.824-9.328.233 0 .454.029.682.042-9.351-8.566-21.808-13.796-35.49-13.796-18.36 0-34.513 9.42-43.91 23.688 1.233.037 2.396.062 3.382.062 5.497 0 14.006-.667 14.006-.667 2.833-.167 3.167 3.994.338 4.329 0 0-2.848.335-6.016.501L48.2 93.546l11.502-34.493-8.189-22.433c-2.83-.166-5.511-.501-5.511-.501-2.832-.166-2.5-4.496.332-4.329 0 0 8.679.667 13.843.667 5.496 0 14.006-.667 14.006-.667 2.835-.167 3.168 3.994.337 4.329 0 0-2.853.335-6.015.501l18.992 56.494 5.241-17.517c2.273-7.269 4.002-12.49 4.002-16.989z" />
+                            <path
+                              d="M62.184 65.857l-15.768 45.818a52.516 52.516 0 0 0 14.846 2.142c6.12 0 11.989-1.059 17.452-2.979a4.451 4.451 0 0 1-.374-.724L62.184 65.857zM107.376 36.046c.226 1.674.354 3.472.354 5.404 0 5.333-.996 11.328-3.996 18.824l-16.053 46.413c15.624-9.111 26.133-26.038 26.133-45.427a52.268 52.268 0 0 0-6.438-25.214z" />
+                            <path
+                              d="M61.262 0C27.483 0 0 27.481 0 61.26c0 33.783 27.482 61.264 61.262 61.264 33.778 0 61.265-27.48 61.265-61.264C122.526 27.481 95.04 0 61.262 0zm0 119.715c-32.23 0-58.453-26.223-58.453-58.455 0-32.229 26.222-58.45 58.453-58.45 32.229 0 58.45 26.221 58.45 58.45 0 32.232-26.222 58.455-58.45 58.455z" />
+                          </g>
+                        </svg>
+                        <!-- - - -- woo icon- -  - -->
+                        <svg class="tuiles__icon__item" viewBox="0 0 256 153" xmlns="http://www.w3.org/2000/svg"
+                          preserveAspectRatio="xMidYMid">
+                          <path class="woo-icon-path-1"
+                            d="M23.759 0h208.378C245.325 0 256 10.675 256 23.863v79.541c0 13.188-10.675 23.863-23.863 23.863H157.41l10.257 25.118-45.109-25.118H23.863c-13.187 0-23.862-10.675-23.862-23.863V23.863C-.104 10.78 10.57 0 23.759 0z"
+                            fill="#9B5C8F" />
+                          <path class="woo-icon-path-2"
+                            d="M14.578 21.75c1.457-1.978 3.642-3.018 6.556-3.226 5.308-.417 8.326 2.08 9.054 7.492 3.226 21.75 6.764 40.17 10.51 55.259l22.79-43.395c2.082-3.955 4.684-6.036 7.806-6.244 4.579-.312 7.388 2.601 8.533 8.741 2.602 13.84 5.932 25.6 9.886 35.59 2.706-26.432 7.285-45.476 13.737-57.235 1.56-2.914 3.85-4.371 6.868-4.58 2.394-.207 4.579.521 6.556 2.082 1.977 1.561 3.018 3.538 3.226 5.932.104 1.873-.208 3.434-1.04 4.995-4.059 7.493-7.39 20.085-10.095 37.567-2.601 16.963-3.538 30.18-2.914 39.65.209 2.6-.208 4.89-1.248 6.868-1.25 2.289-3.122 3.538-5.516 3.746-2.706.208-5.515-1.04-8.221-3.85-9.678-9.887-17.379-24.664-22.998-44.332-6.765 13.32-11.76 23.31-14.986 29.97-6.14 11.76-11.343 17.796-15.714 18.108-2.81.208-5.203-2.186-7.284-7.18-5.307-13.633-11.031-39.962-17.17-78.986-.417-2.706.207-5.1 1.664-6.972zm223.636 16.338c-3.746-6.556-9.262-10.51-16.65-12.072-1.978-.416-3.85-.624-5.62-.624-9.99 0-18.107 5.203-24.455 15.61-5.412 8.845-8.117 18.627-8.117 29.346 0 8.013 1.665 14.881 4.995 20.605 3.746 6.556 9.262 10.51 16.65 12.071 1.977.417 3.85.625 5.62.625 10.094 0 18.211-5.203 24.455-15.61 5.411-8.95 8.117-18.732 8.117-29.45.104-8.117-1.665-14.882-4.995-20.501zm-13.112 28.826c-1.457 6.868-4.059 11.967-7.91 15.401-3.017 2.706-5.827 3.85-8.428 3.33-2.498-.52-4.58-2.705-6.14-6.764-1.25-3.226-1.873-6.452-1.873-9.47 0-2.601.208-5.203.728-7.596.937-4.267 2.706-8.43 5.515-12.384 3.435-5.1 7.077-7.18 10.823-6.452 2.498.52 4.58 2.706 6.14 6.764 1.249 3.226 1.873 6.452 1.873 9.47 0 2.706-.208 5.307-.728 7.7zm-52.033-28.826c-3.746-6.556-9.366-10.51-16.65-12.072-1.977-.416-3.85-.624-5.62-.624-9.99 0-18.107 5.203-24.455 15.61-5.411 8.845-8.117 18.627-8.117 29.346 0 8.013 1.665 14.881 4.995 20.605 3.746 6.556 9.262 10.51 16.65 12.071 1.978.417 3.85.625 5.62.625 10.094 0 18.211-5.203 24.455-15.61 5.412-8.95 8.117-18.732 8.117-29.45 0-8.117-1.665-14.882-4.995-20.501zm-13.216 28.826c-1.457 6.868-4.059 11.967-7.909 15.401-3.018 2.706-5.828 3.85-8.43 3.33-2.497-.52-4.578-2.705-6.14-6.764-1.248-3.226-1.872-6.452-1.872-9.47 0-2.601.208-5.203.728-7.596.937-4.267 2.706-8.43 5.516-12.384 3.434-5.1 7.076-7.18 10.822-6.452 2.498.52 4.58 2.706 6.14 6.764 1.25 3.226 1.873 6.452 1.873 9.47.105 2.706-.208 5.307-.728 7.7z"
+                            fill="#FFF" />
+                        </svg>
+                      </div>
+                      <a href="https://www.labougie.top/" target="_blank"
+                        class="btn btn-secondary btn-tuiles"><span>Voir la boutique</span></a>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- ___________________________________________ noé biodiversité 2 -->
+              <!-- ------- noé biodiversité -------- -->
               <div class="project__wrapper reveal-right biodiversite">
                 <div class="filter-modale">
                   <div class="project__wrapper__modale">
@@ -870,24 +970,53 @@
                     </p>
                     <div class="project__wrapper__links">
                       <a href="https://github.com/Christophe-THEVENET/eval_html" target="_blank"
-                        class="project__wrapper__link--github"> <svg class=" github-icon" viewBox="0 0 256 249"
-                          xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
+                        class="project__wrapper__links--github">
+                        <svg class=" github-icon" viewBox="0 0 256 249" xmlns="http://www.w3.org/2000/svg"
+                          preserveAspectRatio="xMinYMin meet">
                           <g fill="#010302">
                             <path
                               d="M127.505 0C57.095 0 0 57.085 0 127.505c0 56.336 36.534 104.13 87.196 120.99 6.372 1.18 8.712-2.766 8.712-6.134 0-3.04-.119-13.085-.173-23.739-35.473 7.713-42.958-15.044-42.958-15.044-5.8-14.738-14.157-18.656-14.157-18.656-11.568-7.914.872-7.752.872-7.752 12.804.9 19.546 13.14 19.546 13.14 11.372 19.493 29.828 13.857 37.104 10.6 1.144-8.242 4.449-13.866 8.095-17.05-28.32-3.225-58.092-14.158-58.092-63.014 0-13.92 4.981-25.295 13.138-34.224-1.324-3.212-5.688-16.18 1.235-33.743 0 0 10.707-3.427 35.073 13.07 10.17-2.826 21.078-4.242 31.914-4.29 10.836.048 21.752 1.464 31.942 4.29 24.337-16.497 35.029-13.07 35.029-13.07 6.94 17.563 2.574 30.531 1.25 33.743 8.175 8.929 13.122 20.303 13.122 34.224 0 48.972-29.828 59.756-58.22 62.912 4.573 3.957 8.648 11.717 8.648 23.612 0 17.06-.148 30.791-.148 34.991 0 3.393 2.295 7.369 8.759 6.117 50.634-16.879 87.122-64.656 87.122-120.973C255.009 57.085 197.922 0 127.505 0" />
                             <path
                               d="M47.755 181.634c-.28.633-1.278.823-2.185.389-.925-.416-1.445-1.28-1.145-1.916.275-.652 1.273-.834 2.196-.396.927.415 1.455 1.287 1.134 1.923M54.027 187.23c-.608.564-1.797.302-2.604-.589-.834-.889-.99-2.077-.373-2.65.627-.563 1.78-.3 2.616.59.834.899.996 2.08.36 2.65M58.33 194.39c-.782.543-2.06.034-2.849-1.1-.781-1.133-.781-2.493.017-3.038.792-.545 2.05-.055 2.85 1.07.78 1.153.78 2.513-.019 3.069M65.606 202.683c-.699.77-2.187.564-3.277-.488-1.114-1.028-1.425-2.487-.724-3.258.707-.772 2.204-.555 3.302.488 1.107 1.026 1.445 2.496.7 3.258M75.01 205.483c-.307.998-1.741 1.452-3.185 1.028-1.442-.437-2.386-1.607-2.095-2.616.3-1.005 1.74-1.478 3.195-1.024 1.44.435 2.386 1.596 2.086 2.612M85.714 206.67c.036 1.052-1.189 1.924-2.705 1.943-1.525.033-2.758-.818-2.774-1.852 0-1.062 1.197-1.926 2.721-1.951 1.516-.03 2.758.815 2.758 1.86M96.228 206.267c.182 1.026-.872 2.08-2.377 2.36-1.48.27-2.85-.363-3.039-1.38-.184-1.052.89-2.105 2.367-2.378 1.508-.262 2.857.355 3.049 1.398" />
                           </g>
-                        </svg></a>
-                      <a href="https://noebiodiversite.netlify.app/" target="_blank" class="project__wrapper__link">Voir
-                        le site</a>
+                        </svg>
+                      </a>
+                      <div class='tuiles__icon'>
+                        <!-- - - -- html icon- -  - -->
+                        <svg class="tuiles__icon__item" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 124 141.53199999999998">
+                          <path class="html-icon-path-1" d="M10.383 126.894L0 0l124 .255-10.979 126.639-50.553 14.638z"
+                            fill="#e34f26" />
+                          <path class="html-icon-path-2" d="M62.468 129.277V12.085l51.064.17-9.106 104.851z"
+                            fill="#ef652a" />
+                          <path class="html-icon-path-3"
+                            d="M99.49 41.362l1.446-15.49H22.383l4.34 47.49h54.213L78.81 93.617l-17.362 4.68-17.617-5.106-.936-12.085H27.319l2.128 24.681 32 8.936 32.255-8.936 4.34-48.17H41.107L39.49 41.362z"
+                            fill="#fff" />
+                        </svg>
+                        <!-- - - -- sass icon- -  - -->
+                        <svg class="tuiles__icon__item" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                          <path class="sass-icon-path-1"
+                            d="m26.11 17.572a5.8 5.8 0 0 0 -2.537.588 5.345 5.345 0 0 1 -.568-1.314 3.53 3.53 0 0 1 -.051-1.1 9.811 9.811 0 0 1 .332-1.192c-.005-.051-.061-.292-.624-.3s-1.048.107-1.1.256a6.171 6.171 0 0 0 -.235.834 19.686 19.686 0 0 1 -1.713 3.294 3.186 3.186 0 0 1 -.44-2.066 9.811 9.811 0 0 1 .332-1.192c-.005-.051-.061-.292-.624-.3s-1.048.107-1.1.256-.118.5-.235.834-1.483 3.386-1.841 4.173c-.184.4-.343.726-.455.946a.233.233 0 0 1 -.02.041c-.1.189-.153.292-.153.292v.005c-.077.138-.159.266-.2.266a1.711 1.711 0 0 1 .01-.869c.2-1.059.69-2.705.685-2.762 0-.031.092-.317-.317-.465a.508.508 0 0 0 -.578.1c-.036 0-.061.087-.061.087s.445-1.851-.849-1.851a3.855 3.855 0 0 0 -2.475 1.683c-.348.189-1.089.593-1.882 1.028-.3.169-.614.338-.905.5-.02-.02-.041-.046-.061-.066-1.575-1.678-4.47-2.862-4.345-5.107.046-.818.327-2.966 5.559-5.575 4.306-2.122 7.733-1.534 8.326-.23.849 1.862-1.836 5.319-6.285 5.82a3.351 3.351 0 0 1 -2.813-.711c-.235-.256-.271-.271-.358-.22-.143.077-.051.307 0 .44a2.626 2.626 0 0 0 1.606 1.263 8.55 8.55 0 0 0 5.217-.517c2.7-1.043 4.8-3.943 4.184-6.372-.619-2.465-4.71-3.278-8.582-1.9a19.5 19.5 0 0 0 -6.595 3.783c-2.133 1.995-2.47 3.728-2.332 4.455.5 2.578 4.051 4.255 5.472 5.5-.072.041-.138.077-.194.107-.711.353-3.421 1.77-4.1 3.268-.767 1.7.123 2.915.711 3.079a4.374 4.374 0 0 0 4.71-1.908 4.725 4.725 0 0 0 .423-4.353.107.107 0 0 0 -.02-.031l.557-.327c.363-.215.721-.414 1.028-.578a6.74 6.74 0 0 0 -.363 1.862 3.886 3.886 0 0 0 .834 2.7.921.921 0 0 0 .675.22c.6 0 .875-.5 1.176-1.094.368-.726.7-1.57.7-1.57s-.414 2.281.711 2.281c.409 0 .823-.532 1.008-.8v.005s.01-.015.031-.051l.066-.107v-.01c.164-.286.532-.936 1.079-2.015.706-1.391 1.386-3.13 1.386-3.13a8.888 8.888 0 0 0 .271 1.13 10.643 10.643 0 0 0 .583 1.309c-.164.23-.266.358-.266.358l.005.005c-.133.174-.276.363-.435.547a16.3 16.3 0 0 0 -1.314 1.647.447.447 0 0 0 .123.6 1.116 1.116 0 0 0 .685.113 3.147 3.147 0 0 0 1.028-.235 3.45 3.45 0 0 0 .885-.465 1.98 1.98 0 0 0 .849-1.744 3.521 3.521 0 0 0 -.322-1.233c.051-.072.1-.143.148-.215a23.428 23.428 0 0 0 1.534-2.649 8.888 8.888 0 0 0 .271 1.13 7.57 7.57 0 0 0 .5 1.125 4.861 4.861 0 0 0 -1.497 1.922c-.322.931-.072 1.35.4 1.447a1.425 1.425 0 0 0 .747-.153 3.4 3.4 0 0 0 .946-.486 2.126 2.126 0 0 0 1.043-1.729 3.268 3.268 0 0 0 -.235-1.023 5.356 5.356 0 0 1 2.716-.312c2.434.286 2.915 1.805 2.823 2.445a1.618 1.618 0 0 1 -.772 1.094c-.169.107-.225.143-.21.22.02.113.1.107.245.087a1.9 1.9 0 0 0 1.332-1.69c.077-1.5-1.355-3.145-3.887-3.13zm-18.78 6.328c-.808.88-1.933 1.212-2.419.931-.522-.3-.317-1.6.675-2.532a12.884 12.884 0 0 1 1.9-1.417c.118-.072.292-.174.5-.3l.056-.031.123-.077a3.493 3.493 0 0 1 -.835 3.426zm5.881-4c-.281.685-.869 2.44-1.227 2.342-.307-.082-.5-1.412-.061-2.726a6.193 6.193 0 0 1 .956-1.754c.44-.491.926-.655 1.043-.455a9.062 9.062 0 0 1 -.711 2.593zm4.853 2.322c-.118.061-.23.1-.281.072-.036-.02.051-.1.051-.1s.609-.655.849-.951c.138-.174.3-.378.476-.609v.066c0 .782-.757 1.309-1.094 1.524zm3.744-.854c-.087-.061-.072-.266.22-.905a3.408 3.408 0 0 1 .834-1.074 1.448 1.448 0 0 1 .082.471 1.547 1.547 0 0 1 -1.135 1.509z"
+                            fill="#cd6799" />
+                        </svg>
+                        <!-- - - -- bootstrap icon- -  - -->
+                        <svg class="tuiles__icon__item" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                          <path class="bootstrap-icon-path-1"
+                            d="m9.531 112.586h4.161c1.896 0 3.273.27 4.129.81.857.54 1.285 1.398 1.285 2.575 0 .799-.188 1.454-.563 1.966s-.874.82-1.496.924v.091c.848.189 1.459.543 1.834 1.061s.563 1.207.563 2.067c0 1.22-.44 2.171-1.322 2.854-.881.683-2.078 1.024-3.59 1.024h-5.001zm2.835 5.296h1.646c.768 0 1.325-.119 1.669-.356.345-.238.517-.631.517-1.18 0-.512-.187-.879-.562-1.102s-.968-.334-1.779-.334h-1.491zm0 2.25v3.485h1.848c.78 0 1.356-.149 1.729-.448s.558-.756.558-1.372c0-1.109-.793-1.665-2.378-1.665zm21.886-.878c0 2.213-.549 3.915-1.646 5.104s-2.67 1.784-4.719 1.784-3.622-.595-4.719-1.784c-1.098-1.189-1.646-2.896-1.646-5.122s.55-3.925 1.651-5.099 2.678-1.761 4.733-1.761 3.626.592 4.715 1.774c1.087 1.183 1.631 2.885 1.631 5.104zm-9.758 0c0 1.494.283 2.619.851 3.375.567.756 1.414 1.134 2.542 1.134 2.262 0 3.393-1.503 3.393-4.509 0-3.012-1.125-4.518-3.375-4.518-1.128 0-1.979.379-2.552 1.139s-.859 1.885-.859 3.379zm24.667 0c0 2.213-.549 3.915-1.646 5.104s-2.67 1.784-4.719 1.784-3.622-.595-4.719-1.784c-1.098-1.189-1.646-2.896-1.646-5.122s.55-3.925 1.651-5.099 2.678-1.761 4.733-1.761 3.626.592 4.715 1.774c1.086 1.183 1.631 2.885 1.631 5.104zm-9.759 0c0 1.494.283 2.619.851 3.375.567.756 1.414 1.134 2.542 1.134 2.262 0 3.393-1.503 3.393-4.509 0-3.012-1.125-4.518-3.375-4.518-1.128 0-1.979.379-2.552 1.139s-.859 1.885-.859 3.379zm17.688 6.704h-2.835v-11.012h-3.631v-2.36h10.097v2.36h-3.631zm13.581-3.713c0 1.208-.434 2.159-1.303 2.854s-2.078 1.043-3.626 1.043c-1.427 0-2.689-.269-3.786-.805v-2.634c.902.402 1.666.686 2.291.851s1.196.247 1.715.247c.622 0 1.099-.119 1.431-.356.333-.238.499-.591.499-1.061 0-.262-.073-.495-.219-.7-.146-.204-.361-.401-.645-.59s-.861-.491-1.733-.905c-.817-.384-1.43-.753-1.838-1.107-.409-.354-.735-.765-.979-1.234-.244-.47-.366-1.019-.366-1.646 0-1.183.401-2.113 1.203-2.79s1.91-1.015 3.325-1.015c.695 0 1.358.082 1.989.247s1.291.396 1.98.695l-.915 2.204c-.713-.292-1.303-.497-1.77-.613s-.925-.174-1.376-.174c-.537 0-.948.125-1.235.375s-.43.576-.43.979c0 .25.058.468.174.654s.3.366.553.54.852.486 1.797.938c1.25.598 2.107 1.197 2.57 1.797s.694 1.334.694 2.206zm7.583 3.713h-2.835v-11.012h-3.631v-2.36h10.097v2.36h-3.631zm8.524-5.131v5.131h-2.835v-13.372h3.896c1.817 0 3.161.331 4.033.992.872.662 1.308 1.667 1.308 3.014 0 .787-.216 1.486-.649 2.099s-1.046 1.093-1.838 1.44c2.012 3.006 3.323 4.948 3.933 5.826h-3.146l-3.192-5.131h-1.51zm0-2.305h.915c.896 0 1.558-.149 1.985-.448s.64-.769.64-1.409c0-.634-.218-1.085-.654-1.354-.436-.268-1.111-.402-2.026-.402h-.86zm17.716 7.436-.97-3.183h-4.875l-.97 3.183h-3.055l4.719-13.426h3.466l4.738 13.426zm-1.647-5.561c-.896-2.884-1.401-4.515-1.514-4.893s-.193-.677-.242-.896c-.201.78-.777 2.71-1.729 5.789zm15.622-3.64c0 1.439-.45 2.54-1.349 3.301-.899.763-2.178 1.144-3.837 1.144h-1.216v4.756h-2.835v-13.372h4.271c1.622 0 2.855.349 3.7 1.047.844.699 1.266 1.74 1.266 3.124zm-6.402 2.122h.933c.872 0 1.524-.172 1.957-.517s.649-.846.649-1.504c0-.665-.182-1.156-.544-1.473-.363-.317-.932-.476-1.706-.476h-1.29v3.97zm-38.116-62.12c-1.983-.653-4.838-.759-8.565-.759h-13.386v20h14.424c2.502 0 4.259-.249 5.271-.437 1.783-.318 3.274-.93 4.472-1.676 1.198-.744 2.183-1.869 2.955-3.293.771-1.424 1.158-3.087 1.158-4.951 0-2.184-.559-3.98-1.677-5.59-1.117-1.611-2.668-2.642-4.652-3.294zm-2.056-8.612c1.97-.586 3.455-1.646 4.452-3.003.999-1.357 1.498-3.103 1.498-5.154 0-1.943-.466-3.675-1.398-5.154-.932-1.478-2.263-2.481-3.992-3.027-1.732-.544-4.7-.809-8.906-.809h-11.549v18h12.507c3.435 0 5.897-.399 7.388-.853zm45.105-32.021c0-7.802-6.325-14.126-14.127-14.126h-77.746c-7.802 0-14.127 6.324-14.127 14.126v77.748c0 7.802 6.325 14.126 14.127 14.126h77.746c7.802 0 14.127-6.324 14.127-14.126zm-30.43 57.144c-1.157 2.356-2.589 4.173-4.292 5.451-1.704 1.277-3.841 2.446-6.41 3.098-2.569.653-5.717 1.181-9.444 1.181h-22.424v-59h22.065c4.473 0 8.059.62 10.761 1.804 2.703 1.185 4.818 3.021 6.351 5.483 1.53 2.463 2.296 5.046 2.296 7.735 0 2.502-.68 4.861-2.036 7.071-1.358 2.21-3.408 3.995-6.15 5.352 3.54 1.038 6.263 2.811 8.166 5.313 1.903 2.503 2.855 5.458 2.855 8.866-.001 2.742-.579 5.291-1.738 7.646z"
+                            fill="#5b4282" />
+                        </svg>
+                      </div>
+                      <a href="https://noebiodiversite.netlify.app/" target="_blank"
+                        class="btn btn-secondary btn-tuiles">
+                        <span>Voir le site</span>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- ___________________________________________ dicefighter 3  -->
-              <div class="project__wrapper reveal-right dicefighter">
+              <!-- -------- dicefighter -----------  -->
+              <div class="project__wrapper reveal-left dicefighter">
                 <div class="filter-modale">
                   <div class="project__wrapper__modale">
                     <h4 class="project__wrapper__title">Jeu de dé</h4>
@@ -898,23 +1027,57 @@
                       pour le Design.</p>
                     <div class="project__wrapper__links">
                       <a href="https://github.com/Christophe-THEVENET/eval_javascript_studi" target="_blank"
-                        class="project__wrapper__link--github"> <svg class=" github-icon" viewBox="0 0 256 249"
-                          xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
+                        class="project__wrapper__links--github">
+                        <svg class=" github-icon" viewBox="0 0 256 249" xmlns="http://www.w3.org/2000/svg"
+                          preserveAspectRatio="xMinYMin meet">
                           <g fill="#010302">
                             <path
                               d="M127.505 0C57.095 0 0 57.085 0 127.505c0 56.336 36.534 104.13 87.196 120.99 6.372 1.18 8.712-2.766 8.712-6.134 0-3.04-.119-13.085-.173-23.739-35.473 7.713-42.958-15.044-42.958-15.044-5.8-14.738-14.157-18.656-14.157-18.656-11.568-7.914.872-7.752.872-7.752 12.804.9 19.546 13.14 19.546 13.14 11.372 19.493 29.828 13.857 37.104 10.6 1.144-8.242 4.449-13.866 8.095-17.05-28.32-3.225-58.092-14.158-58.092-63.014 0-13.92 4.981-25.295 13.138-34.224-1.324-3.212-5.688-16.18 1.235-33.743 0 0 10.707-3.427 35.073 13.07 10.17-2.826 21.078-4.242 31.914-4.29 10.836.048 21.752 1.464 31.942 4.29 24.337-16.497 35.029-13.07 35.029-13.07 6.94 17.563 2.574 30.531 1.25 33.743 8.175 8.929 13.122 20.303 13.122 34.224 0 48.972-29.828 59.756-58.22 62.912 4.573 3.957 8.648 11.717 8.648 23.612 0 17.06-.148 30.791-.148 34.991 0 3.393 2.295 7.369 8.759 6.117 50.634-16.879 87.122-64.656 87.122-120.973C255.009 57.085 197.922 0 127.505 0" />
                             <path
                               d="M47.755 181.634c-.28.633-1.278.823-2.185.389-.925-.416-1.445-1.28-1.145-1.916.275-.652 1.273-.834 2.196-.396.927.415 1.455 1.287 1.134 1.923M54.027 187.23c-.608.564-1.797.302-2.604-.589-.834-.889-.99-2.077-.373-2.65.627-.563 1.78-.3 2.616.59.834.899.996 2.08.36 2.65M58.33 194.39c-.782.543-2.06.034-2.849-1.1-.781-1.133-.781-2.493.017-3.038.792-.545 2.05-.055 2.85 1.07.78 1.153.78 2.513-.019 3.069M65.606 202.683c-.699.77-2.187.564-3.277-.488-1.114-1.028-1.425-2.487-.724-3.258.707-.772 2.204-.555 3.302.488 1.107 1.026 1.445 2.496.7 3.258M75.01 205.483c-.307.998-1.741 1.452-3.185 1.028-1.442-.437-2.386-1.607-2.095-2.616.3-1.005 1.74-1.478 3.195-1.024 1.44.435 2.386 1.596 2.086 2.612M85.714 206.67c.036 1.052-1.189 1.924-2.705 1.943-1.525.033-2.758-.818-2.774-1.852 0-1.062 1.197-1.926 2.721-1.951 1.516-.03 2.758.815 2.758 1.86M96.228 206.267c.182 1.026-.872 2.08-2.377 2.36-1.48.27-2.85-.363-3.039-1.38-.184-1.052.89-2.105 2.367-2.378 1.508-.262 2.857.355 3.049 1.398" />
                           </g>
-                        </svg></a>
-                      <a href="https://dicefighter.netlify.app/" target="_blank" class="project__wrapper__link">Voir le
-                        jeu</a>
+                        </svg>
+                      </a>
+                      <div class='tuiles__icon'>
+                        <!-- - - -- html icon- -  - -->
+                        <svg class="tuiles__icon__item" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 124 141.53199999999998">
+                          <path class="html-icon-path-1" d="M10.383 126.894L0 0l124 .255-10.979 126.639-50.553 14.638z"
+                            fill="#e34f26" />
+                          <path class="html-icon-path-2" d="M62.468 129.277V12.085l51.064.17-9.106 104.851z"
+                            fill="#ef652a" />
+                          <path class="html-icon-path-3"
+                            d="M99.49 41.362l1.446-15.49H22.383l4.34 47.49h54.213L78.81 93.617l-17.362 4.68-17.617-5.106-.936-12.085H27.319l2.128 24.681 32 8.936 32.255-8.936 4.34-48.17H41.107L39.49 41.362z"
+                            fill="#fff" />
+                        </svg>
+                        <!-- - - -- css icon- -  - -->
+                        <svg class="tuiles__icon__item" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 124 141.53">
+                          <path class="css-icon-path-1" d="M10.383 126.892L0 0l124 .255-10.979 126.637-50.553 14.638z"
+                            fill="#1b73ba" />
+                          <path class="css-icon-path-2" d="M62.468 129.275V12.085l51.064.17-9.106 104.85z"
+                            fill="#1c88c7" />
+                          <path class="css-icon-path-3"
+                            d="M100.851 27.064H22.298l2.128 15.318h37.276l-36.68 15.745 2.127 14.808h54.043l-1.958 20.68-18.298 3.575-16.595-4.255-1.277-11.745H27.83l2.042 24.426 32.681 9.106 31.32-9.957 4-47.745H64.765l36.085-14.978z"
+                            fill="#fff" />
+                        </svg>
+                        <!-- - - -- js icon- -  - -->
+                        <svg class="tuiles__icon__item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1052 1052">
+                          <path class="js-icon-path-1" fill="#f0db4f" d="M0 0h1052v1052H0z" />
+                          <path class="js-icon-path-2"
+                            d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z"
+                            fill="#323330" />
+                        </svg>
+                      </div>
+                      <a href="https://dicefighter.netlify.app/" target="_blank"
+                        class="btn btn-secondary btn-tuiles"><span>Voir le
+                          jeu</span></a>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- ___________________________________________ portfolio 4 -->
+              <!-- ---------- portfolio ----------- -->
               <div class="project__wrapper reveal-left portfolio">
                 <div class="filter-modale">
                   <div class="project__wrapper__modale">
@@ -927,7 +1090,7 @@
                     </p>
                     <div class="project__wrapper__links">
                       <a href="https://github.com/Christophe-THEVENET/portfolio" target="_blank"
-                        class="project__wrapper__link--github"> <svg class=" github-icon" viewBox="0 0 256 249"
+                        class="project__wrapper__links--github"> <svg class=" github-icon" viewBox="0 0 256 249"
                           xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
                           <g fill="#010302">
                             <path
@@ -936,15 +1099,65 @@
                               d="M47.755 181.634c-.28.633-1.278.823-2.185.389-.925-.416-1.445-1.28-1.145-1.916.275-.652 1.273-.834 2.196-.396.927.415 1.455 1.287 1.134 1.923M54.027 187.23c-.608.564-1.797.302-2.604-.589-.834-.889-.99-2.077-.373-2.65.627-.563 1.78-.3 2.616.59.834.899.996 2.08.36 2.65M58.33 194.39c-.782.543-2.06.034-2.849-1.1-.781-1.133-.781-2.493.017-3.038.792-.545 2.05-.055 2.85 1.07.78 1.153.78 2.513-.019 3.069M65.606 202.683c-.699.77-2.187.564-3.277-.488-1.114-1.028-1.425-2.487-.724-3.258.707-.772 2.204-.555 3.302.488 1.107 1.026 1.445 2.496.7 3.258M75.01 205.483c-.307.998-1.741 1.452-3.185 1.028-1.442-.437-2.386-1.607-2.095-2.616.3-1.005 1.74-1.478 3.195-1.024 1.44.435 2.386 1.596 2.086 2.612M85.714 206.67c.036 1.052-1.189 1.924-2.705 1.943-1.525.033-2.758-.818-2.774-1.852 0-1.062 1.197-1.926 2.721-1.951 1.516-.03 2.758.815 2.758 1.86M96.228 206.267c.182 1.026-.872 2.08-2.377 2.36-1.48.27-2.85-.363-3.039-1.38-.184-1.052.89-2.105 2.367-2.378 1.508-.262 2.857.355 3.049 1.398" />
                           </g>
                         </svg></a>
-                      <a href="https://christophethevenet.fr" target="_blank" class="project__wrapper__link">Voir le
-                        portfolio</a>
+                      <div class='tuiles__icon'>
+                        <!-- - - -- vite icon- -  - -->
+                        <svg class="tuiles__icon__item" viewBox="0 0 410 404" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path class="vite-icon-path-1"
+                            d="M399.641 59.5246L215.643 388.545C211.844 395.338 202.084 395.378 198.228 388.618L10.5817 59.5563C6.38087 52.1896 12.6802 43.2665 21.0281 44.7586L205.223 77.6824C206.398 77.8924 207.601 77.8904 208.776 77.6763L389.119 44.8058C397.439 43.2894 403.768 52.1434 399.641 59.5246Z"
+                            fill="url(#paint0_linear)" />
+                          <path class="vite-icon-path-2"
+                            d="M292.965 1.5744L156.801 28.2552C154.563 28.6937 152.906 30.5903 152.771 32.8664L144.395 174.33C144.198 177.662 147.258 180.248 150.51 179.498L188.42 170.749C191.967 169.931 195.172 173.055 194.443 176.622L183.18 231.775C182.422 235.487 185.907 238.661 189.532 237.56L212.947 230.446C216.577 229.344 220.065 232.527 219.297 236.242L201.398 322.875C200.278 328.294 207.486 331.249 210.492 326.603L212.5 323.5L323.454 102.072C325.312 98.3645 322.108 94.137 318.036 94.9228L279.014 102.454C275.347 103.161 272.227 99.746 273.262 96.1583L298.731 7.86689C299.767 4.27314 296.636 0.855181 292.965 1.5744Z"
+                            fill="url(#paint1_linear)" />
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="6.00017" y1="32.9999" x2="235" y2="344"
+                              gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#41D1FF" />
+                              <stop offset="1" stop-color="#BD34FE" />
+                            </linearGradient>
+                            <linearGradient id="paint1_linear" x1="194.651" y1="8.81818" x2="236.076" y2="292.989"
+                              gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#FFEA83" />
+                              <stop offset="0.0833333" stop-color="#FFDD35" />
+                              <stop offset="1" stop-color="#FFA800" />
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                        <!-- - - -- html icon- -  - -->
+                        <svg class="tuiles__icon__item" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 124 141.53199999999998">
+                          <path class="html-icon-path-1" d="M10.383 126.894L0 0l124 .255-10.979 126.639-50.553 14.638z"
+                            fill="#e34f26" />
+                          <path class="html-icon-path-2" d="M62.468 129.277V12.085l51.064.17-9.106 104.851z"
+                            fill="#ef652a" />
+                          <path class="html-icon-path-3"
+                            d="M99.49 41.362l1.446-15.49H22.383l4.34 47.49h54.213L78.81 93.617l-17.362 4.68-17.617-5.106-.936-12.085H27.319l2.128 24.681 32 8.936 32.255-8.936 4.34-48.17H41.107L39.49 41.362z"
+                            fill="#fff" />
+                        </svg>
+                        <!-- - - -- sass icon- -  - -->
+                        <svg class="tuiles__icon__item" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                          <path class="sass-icon-path-1"
+                            d="m26.11 17.572a5.8 5.8 0 0 0 -2.537.588 5.345 5.345 0 0 1 -.568-1.314 3.53 3.53 0 0 1 -.051-1.1 9.811 9.811 0 0 1 .332-1.192c-.005-.051-.061-.292-.624-.3s-1.048.107-1.1.256a6.171 6.171 0 0 0 -.235.834 19.686 19.686 0 0 1 -1.713 3.294 3.186 3.186 0 0 1 -.44-2.066 9.811 9.811 0 0 1 .332-1.192c-.005-.051-.061-.292-.624-.3s-1.048.107-1.1.256-.118.5-.235.834-1.483 3.386-1.841 4.173c-.184.4-.343.726-.455.946a.233.233 0 0 1 -.02.041c-.1.189-.153.292-.153.292v.005c-.077.138-.159.266-.2.266a1.711 1.711 0 0 1 .01-.869c.2-1.059.69-2.705.685-2.762 0-.031.092-.317-.317-.465a.508.508 0 0 0 -.578.1c-.036 0-.061.087-.061.087s.445-1.851-.849-1.851a3.855 3.855 0 0 0 -2.475 1.683c-.348.189-1.089.593-1.882 1.028-.3.169-.614.338-.905.5-.02-.02-.041-.046-.061-.066-1.575-1.678-4.47-2.862-4.345-5.107.046-.818.327-2.966 5.559-5.575 4.306-2.122 7.733-1.534 8.326-.23.849 1.862-1.836 5.319-6.285 5.82a3.351 3.351 0 0 1 -2.813-.711c-.235-.256-.271-.271-.358-.22-.143.077-.051.307 0 .44a2.626 2.626 0 0 0 1.606 1.263 8.55 8.55 0 0 0 5.217-.517c2.7-1.043 4.8-3.943 4.184-6.372-.619-2.465-4.71-3.278-8.582-1.9a19.5 19.5 0 0 0 -6.595 3.783c-2.133 1.995-2.47 3.728-2.332 4.455.5 2.578 4.051 4.255 5.472 5.5-.072.041-.138.077-.194.107-.711.353-3.421 1.77-4.1 3.268-.767 1.7.123 2.915.711 3.079a4.374 4.374 0 0 0 4.71-1.908 4.725 4.725 0 0 0 .423-4.353.107.107 0 0 0 -.02-.031l.557-.327c.363-.215.721-.414 1.028-.578a6.74 6.74 0 0 0 -.363 1.862 3.886 3.886 0 0 0 .834 2.7.921.921 0 0 0 .675.22c.6 0 .875-.5 1.176-1.094.368-.726.7-1.57.7-1.57s-.414 2.281.711 2.281c.409 0 .823-.532 1.008-.8v.005s.01-.015.031-.051l.066-.107v-.01c.164-.286.532-.936 1.079-2.015.706-1.391 1.386-3.13 1.386-3.13a8.888 8.888 0 0 0 .271 1.13 10.643 10.643 0 0 0 .583 1.309c-.164.23-.266.358-.266.358l.005.005c-.133.174-.276.363-.435.547a16.3 16.3 0 0 0 -1.314 1.647.447.447 0 0 0 .123.6 1.116 1.116 0 0 0 .685.113 3.147 3.147 0 0 0 1.028-.235 3.45 3.45 0 0 0 .885-.465 1.98 1.98 0 0 0 .849-1.744 3.521 3.521 0 0 0 -.322-1.233c.051-.072.1-.143.148-.215a23.428 23.428 0 0 0 1.534-2.649 8.888 8.888 0 0 0 .271 1.13 7.57 7.57 0 0 0 .5 1.125 4.861 4.861 0 0 0 -1.497 1.922c-.322.931-.072 1.35.4 1.447a1.425 1.425 0 0 0 .747-.153 3.4 3.4 0 0 0 .946-.486 2.126 2.126 0 0 0 1.043-1.729 3.268 3.268 0 0 0 -.235-1.023 5.356 5.356 0 0 1 2.716-.312c2.434.286 2.915 1.805 2.823 2.445a1.618 1.618 0 0 1 -.772 1.094c-.169.107-.225.143-.21.22.02.113.1.107.245.087a1.9 1.9 0 0 0 1.332-1.69c.077-1.5-1.355-3.145-3.887-3.13zm-18.78 6.328c-.808.88-1.933 1.212-2.419.931-.522-.3-.317-1.6.675-2.532a12.884 12.884 0 0 1 1.9-1.417c.118-.072.292-.174.5-.3l.056-.031.123-.077a3.493 3.493 0 0 1 -.835 3.426zm5.881-4c-.281.685-.869 2.44-1.227 2.342-.307-.082-.5-1.412-.061-2.726a6.193 6.193 0 0 1 .956-1.754c.44-.491.926-.655 1.043-.455a9.062 9.062 0 0 1 -.711 2.593zm4.853 2.322c-.118.061-.23.1-.281.072-.036-.02.051-.1.051-.1s.609-.655.849-.951c.138-.174.3-.378.476-.609v.066c0 .782-.757 1.309-1.094 1.524zm3.744-.854c-.087-.061-.072-.266.22-.905a3.408 3.408 0 0 1 .834-1.074 1.448 1.448 0 0 1 .082.471 1.547 1.547 0 0 1 -1.135 1.509z"
+                            fill="#cd6799" />
+                        </svg>
+                        <!-- - - -- js icon- -  - -->
+                        <svg class="tuiles__icon__item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1052 1052">
+                          <path class="js-icon-path-1" fill="#f0db4f" d="M0 0h1052v1052H0z" />
+                          <path class="js-icon-path-2"
+                            d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z"
+                            fill="#323330" />
+                        </svg>
+                      </div>
+                      <a href="https://christophethevenet.fr" target="_blank"
+                        class="btn btn-secondary btn-tuiles"><span>Voir le
+                          portfolio</span></a>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- ___________________________________________ reservia 5 -->
-              <div class="project__wrapper reveal-left reservia">
+              <!-- ---------- reservia ----------- -->
+              <div class="project__wrapper reveal-right reservia">
                 <div class="filter-modale">
                   <div class="project__wrapper__modale">
                     <h4 class="project__wrapper__title">Intégration Maquette</h4>
@@ -956,7 +1169,7 @@
                     </p>
                     <div class="project__wrapper__links">
                       <a href="https://github.com/Christophe-THEVENET/ChristopheThevenet_2_12102020" target="_blank"
-                        class="project__wrapper__link--github"> <svg class=" github-icon" viewBox="0 0 256 249"
+                        class="project__wrapper__links--github"> <svg class=" github-icon" viewBox="0 0 256 249"
                           xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
                           <g fill="#010302">
                             <path
@@ -965,14 +1178,39 @@
                               d="M47.755 181.634c-.28.633-1.278.823-2.185.389-.925-.416-1.445-1.28-1.145-1.916.275-.652 1.273-.834 2.196-.396.927.415 1.455 1.287 1.134 1.923M54.027 187.23c-.608.564-1.797.302-2.604-.589-.834-.889-.99-2.077-.373-2.65.627-.563 1.78-.3 2.616.59.834.899.996 2.08.36 2.65M58.33 194.39c-.782.543-2.06.034-2.849-1.1-.781-1.133-.781-2.493.017-3.038.792-.545 2.05-.055 2.85 1.07.78 1.153.78 2.513-.019 3.069M65.606 202.683c-.699.77-2.187.564-3.277-.488-1.114-1.028-1.425-2.487-.724-3.258.707-.772 2.204-.555 3.302.488 1.107 1.026 1.445 2.496.7 3.258M75.01 205.483c-.307.998-1.741 1.452-3.185 1.028-1.442-.437-2.386-1.607-2.095-2.616.3-1.005 1.74-1.478 3.195-1.024 1.44.435 2.386 1.596 2.086 2.612M85.714 206.67c.036 1.052-1.189 1.924-2.705 1.943-1.525.033-2.758-.818-2.774-1.852 0-1.062 1.197-1.926 2.721-1.951 1.516-.03 2.758.815 2.758 1.86M96.228 206.267c.182 1.026-.872 2.08-2.377 2.36-1.48.27-2.85-.363-3.039-1.38-.184-1.052.89-2.105 2.367-2.378 1.508-.262 2.857.355 3.049 1.398" />
                           </g>
                         </svg></a>
+                      <div class='tuiles__icon'>
+                        <!-- - - -- html icon- -  - -->
+                        <svg class="tuiles__icon__item" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 124 141.53199999999998">
+                          <path class="html-icon-path-1" d="M10.383 126.894L0 0l124 .255-10.979 126.639-50.553 14.638z"
+                            fill="#e34f26" />
+                          <path class="html-icon-path-2" d="M62.468 129.277V12.085l51.064.17-9.106 104.851z"
+                            fill="#ef652a" />
+                          <path class="html-icon-path-3"
+                            d="M99.49 41.362l1.446-15.49H22.383l4.34 47.49h54.213L78.81 93.617l-17.362 4.68-17.617-5.106-.936-12.085H27.319l2.128 24.681 32 8.936 32.255-8.936 4.34-48.17H41.107L39.49 41.362z"
+                            fill="#fff" />
+                        </svg>
+                        <!-- - - -- css icon- -  - -->
+                        <svg class="tuiles__icon__item" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 124 141.53">
+                          <path class="css-icon-path-1" d="M10.383 126.892L0 0l124 .255-10.979 126.637-50.553 14.638z"
+                            fill="#1b73ba" />
+                          <path class="css-icon-path-2" d="M62.468 129.275V12.085l51.064.17-9.106 104.85z"
+                            fill="#1c88c7" />
+                          <path class="css-icon-path-3"
+                            d="M100.851 27.064H22.298l2.128 15.318h37.276l-36.68 15.745 2.127 14.808h54.043l-1.958 20.68-18.298 3.575-16.595-4.255-1.277-11.745H27.83l2.042 24.426 32.681 9.106 31.32-9.957 4-47.745H64.765l36.085-14.978z"
+                            fill="#fff" />
+                        </svg>
+
+                      </div>
                       <a href="https://christophe-thevenet.github.io/ChristopheThevenet_2_12102020/" target="_blank"
-                        class="project__wrapper__link">Voir la page</a>
+                        class="btn btn-secondary btn-tuiles"><span>Voir la page</span></a>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- ___________________________________________ avengers memory 6 -->
+              <!-- --------- avengers memory ------- -->
               <div class="project__wrapper reveal-right memory">
                 <div class="filter-modale">
                   <div class="project__wrapper__modale">
@@ -985,7 +1223,7 @@
                       animations</p>
                     <div class="project__wrapper__links">
                       <a href="https://github.com/Christophe-THEVENET/avengers-memory" target="_blank"
-                        class="project__wrapper__link--github"> <svg class=" github-icon" viewBox="0 0 256 249"
+                        class="project__wrapper__links--github"> <svg class=" github-icon" viewBox="0 0 256 249"
                           xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
                           <g fill="#010302">
                             <path
@@ -994,19 +1232,46 @@
                               d="M47.755 181.634c-.28.633-1.278.823-2.185.389-.925-.416-1.445-1.28-1.145-1.916.275-.652 1.273-.834 2.196-.396.927.415 1.455 1.287 1.134 1.923M54.027 187.23c-.608.564-1.797.302-2.604-.589-.834-.889-.99-2.077-.373-2.65.627-.563 1.78-.3 2.616.59.834.899.996 2.08.36 2.65M58.33 194.39c-.782.543-2.06.034-2.849-1.1-.781-1.133-.781-2.493.017-3.038.792-.545 2.05-.055 2.85 1.07.78 1.153.78 2.513-.019 3.069M65.606 202.683c-.699.77-2.187.564-3.277-.488-1.114-1.028-1.425-2.487-.724-3.258.707-.772 2.204-.555 3.302.488 1.107 1.026 1.445 2.496.7 3.258M75.01 205.483c-.307.998-1.741 1.452-3.185 1.028-1.442-.437-2.386-1.607-2.095-2.616.3-1.005 1.74-1.478 3.195-1.024 1.44.435 2.386 1.596 2.086 2.612M85.714 206.67c.036 1.052-1.189 1.924-2.705 1.943-1.525.033-2.758-.818-2.774-1.852 0-1.062 1.197-1.926 2.721-1.951 1.516-.03 2.758.815 2.758 1.86M96.228 206.267c.182 1.026-.872 2.08-2.377 2.36-1.48.27-2.85-.363-3.039-1.38-.184-1.052.89-2.105 2.367-2.378 1.508-.262 2.857.355 3.049 1.398" />
                           </g>
                         </svg></a>
-                      <a href="https://avengers-memory.netlify.app/" target="_blank" class="project__wrapper__link">Voir
-                        le jeu</a>
+                      <div class='tuiles__icon'>
+                        <!-- - - -- html icon- -  - -->
+                        <svg class="tuiles__icon__item" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 124 141.53199999999998">
+                          <path class="html-icon-path-1" d="M10.383 126.894L0 0l124 .255-10.979 126.639-50.553 14.638z"
+                            fill="#e34f26" />
+                          <path class="html-icon-path-2" d="M62.468 129.277V12.085l51.064.17-9.106 104.851z"
+                            fill="#ef652a" />
+                          <path class="html-icon-path-3"
+                            d="M99.49 41.362l1.446-15.49H22.383l4.34 47.49h54.213L78.81 93.617l-17.362 4.68-17.617-5.106-.936-12.085H27.319l2.128 24.681 32 8.936 32.255-8.936 4.34-48.17H41.107L39.49 41.362z"
+                            fill="#fff" />
+                        </svg>
+                        <!-- - - -- sass icon- -  - -->
+                        <svg class="tuiles__icon__item" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                          <path class="sass-icon-path-1"
+                            d="m26.11 17.572a5.8 5.8 0 0 0 -2.537.588 5.345 5.345 0 0 1 -.568-1.314 3.53 3.53 0 0 1 -.051-1.1 9.811 9.811 0 0 1 .332-1.192c-.005-.051-.061-.292-.624-.3s-1.048.107-1.1.256a6.171 6.171 0 0 0 -.235.834 19.686 19.686 0 0 1 -1.713 3.294 3.186 3.186 0 0 1 -.44-2.066 9.811 9.811 0 0 1 .332-1.192c-.005-.051-.061-.292-.624-.3s-1.048.107-1.1.256-.118.5-.235.834-1.483 3.386-1.841 4.173c-.184.4-.343.726-.455.946a.233.233 0 0 1 -.02.041c-.1.189-.153.292-.153.292v.005c-.077.138-.159.266-.2.266a1.711 1.711 0 0 1 .01-.869c.2-1.059.69-2.705.685-2.762 0-.031.092-.317-.317-.465a.508.508 0 0 0 -.578.1c-.036 0-.061.087-.061.087s.445-1.851-.849-1.851a3.855 3.855 0 0 0 -2.475 1.683c-.348.189-1.089.593-1.882 1.028-.3.169-.614.338-.905.5-.02-.02-.041-.046-.061-.066-1.575-1.678-4.47-2.862-4.345-5.107.046-.818.327-2.966 5.559-5.575 4.306-2.122 7.733-1.534 8.326-.23.849 1.862-1.836 5.319-6.285 5.82a3.351 3.351 0 0 1 -2.813-.711c-.235-.256-.271-.271-.358-.22-.143.077-.051.307 0 .44a2.626 2.626 0 0 0 1.606 1.263 8.55 8.55 0 0 0 5.217-.517c2.7-1.043 4.8-3.943 4.184-6.372-.619-2.465-4.71-3.278-8.582-1.9a19.5 19.5 0 0 0 -6.595 3.783c-2.133 1.995-2.47 3.728-2.332 4.455.5 2.578 4.051 4.255 5.472 5.5-.072.041-.138.077-.194.107-.711.353-3.421 1.77-4.1 3.268-.767 1.7.123 2.915.711 3.079a4.374 4.374 0 0 0 4.71-1.908 4.725 4.725 0 0 0 .423-4.353.107.107 0 0 0 -.02-.031l.557-.327c.363-.215.721-.414 1.028-.578a6.74 6.74 0 0 0 -.363 1.862 3.886 3.886 0 0 0 .834 2.7.921.921 0 0 0 .675.22c.6 0 .875-.5 1.176-1.094.368-.726.7-1.57.7-1.57s-.414 2.281.711 2.281c.409 0 .823-.532 1.008-.8v.005s.01-.015.031-.051l.066-.107v-.01c.164-.286.532-.936 1.079-2.015.706-1.391 1.386-3.13 1.386-3.13a8.888 8.888 0 0 0 .271 1.13 10.643 10.643 0 0 0 .583 1.309c-.164.23-.266.358-.266.358l.005.005c-.133.174-.276.363-.435.547a16.3 16.3 0 0 0 -1.314 1.647.447.447 0 0 0 .123.6 1.116 1.116 0 0 0 .685.113 3.147 3.147 0 0 0 1.028-.235 3.45 3.45 0 0 0 .885-.465 1.98 1.98 0 0 0 .849-1.744 3.521 3.521 0 0 0 -.322-1.233c.051-.072.1-.143.148-.215a23.428 23.428 0 0 0 1.534-2.649 8.888 8.888 0 0 0 .271 1.13 7.57 7.57 0 0 0 .5 1.125 4.861 4.861 0 0 0 -1.497 1.922c-.322.931-.072 1.35.4 1.447a1.425 1.425 0 0 0 .747-.153 3.4 3.4 0 0 0 .946-.486 2.126 2.126 0 0 0 1.043-1.729 3.268 3.268 0 0 0 -.235-1.023 5.356 5.356 0 0 1 2.716-.312c2.434.286 2.915 1.805 2.823 2.445a1.618 1.618 0 0 1 -.772 1.094c-.169.107-.225.143-.21.22.02.113.1.107.245.087a1.9 1.9 0 0 0 1.332-1.69c.077-1.5-1.355-3.145-3.887-3.13zm-18.78 6.328c-.808.88-1.933 1.212-2.419.931-.522-.3-.317-1.6.675-2.532a12.884 12.884 0 0 1 1.9-1.417c.118-.072.292-.174.5-.3l.056-.031.123-.077a3.493 3.493 0 0 1 -.835 3.426zm5.881-4c-.281.685-.869 2.44-1.227 2.342-.307-.082-.5-1.412-.061-2.726a6.193 6.193 0 0 1 .956-1.754c.44-.491.926-.655 1.043-.455a9.062 9.062 0 0 1 -.711 2.593zm4.853 2.322c-.118.061-.23.1-.281.072-.036-.02.051-.1.051-.1s.609-.655.849-.951c.138-.174.3-.378.476-.609v.066c0 .782-.757 1.309-1.094 1.524zm3.744-.854c-.087-.061-.072-.266.22-.905a3.408 3.408 0 0 1 .834-1.074 1.448 1.448 0 0 1 .082.471 1.547 1.547 0 0 1 -1.135 1.509z"
+                            fill="#cd6799" />
+                        </svg>
+                        <!-- - - -- js icon- -  - -->
+                        <svg class="tuiles__icon__item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1052 1052">
+                          <path class="js-icon-path-1" fill="#f0db4f" d="M0 0h1052v1052H0z" />
+                          <path class="js-icon-path-2"
+                            d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z"
+                            fill="#323330" />
+                        </svg>
+                      </div>
+                      <a href="https://avengers-memory.netlify.app/" target="_blank"
+                        class="btn btn-secondary btn-tuiles"><span>Voir
+                          le jeu</span></a>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- ___________________________________________ marcetpol 7  -->
-              <div class="project__wrapper reveal-right marcetpol">
+              <!-- ---------- marcetpol ------------ -->
+              <div class="project__wrapper reveal-left marcetpol">
                 <div class="filter-modale">
                   <div class="project__wrapper__modale">
-                    <h4 class="project__wrapper__title">Evaluation Wordpress</h4>
-                    <h5 class="project__wrapper__sentence">Marc & pol</h5>
+                    <h4 class="project__wrapper__title">Site vitrine</h4>
+                    <h5 class="project__wrapper__sentence">Marc&Pol</h5>
                     <p class="project__wrapper__description">Cette évaluation d'entraînement a été
                       faite dans le cadre
                       d'une formation chez Studi. Développé sous Wordpress, le but était de
@@ -1014,26 +1279,64 @@
                       avec 4 pages et une connexion utilisateur.</p>
                     <div class="project__wrapper__links">
                       <div></div>
-                      <a href="https://marcetpol.wordifysites.com/" target="_blank" class="project__wrapper__link">Voir
-                        le site</a>
+                      <div class='tuiles__icon'>
+                        <!-- - - -- wp icon- -  - -->
+                        <svg class="tuiles__icon__item" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 122.522 122.523">
+                          <path class="wp-icon-path-1"
+                            d="M313.19 48.227h-21.257v2.255c6.649 0 7.718 1.425 7.718 9.856V75.54c0 8.431-1.067 9.976-7.718 9.976-5.104-.713-8.55-3.444-13.3-8.67l-5.462-5.937c7.361-1.308 11.28-5.938 11.28-11.164 0-6.53-5.58-11.518-16.031-11.518h-20.9v2.255c6.649 0 7.718 1.425 7.718 9.856V75.54c0 8.431-1.068 9.976-7.718 9.976v2.256h23.631v-2.256c-6.648 0-7.718-1.545-7.718-9.976v-4.273h2.019l13.182 16.505h34.557c16.981 0 24.345-9.024 24.345-19.832-.002-10.807-7.364-19.713-24.346-19.713zm-49.756 19.355V51.79h4.868c5.343 0 7.719 3.681 7.719 7.956 0 4.157-2.376 7.837-7.719 7.837l-4.868-.001zm50.113 16.508h-.832c-4.274 0-4.868-1.067-4.868-6.53V51.79h5.7c12.35 0 14.604 9.024 14.604 16.031.001 7.243-2.255 16.269-14.604 16.269zM181.378 71.978l8.193-24.228c2.376-7.006 1.308-9.023-6.293-9.023v-2.376h22.325v2.376c-7.48 0-9.262 1.78-12.23 10.449L179.834 89.79h-1.543l-12.114-37.17-12.349 37.17h-1.545l-13.181-40.613c-2.85-8.669-4.75-10.449-11.638-10.449v-2.376h26.363v2.376c-7.008 0-8.908 1.662-6.413 9.023l7.956 24.228 11.993-35.627h2.258l11.757 35.626zM221.752 89.314c-13.062 0-23.75-9.618-23.75-21.376 0-11.638 10.688-21.257 23.75-21.257s23.75 9.619 23.75 21.257c0 11.758-10.687 21.376-23.75 21.376zm0-38.949c-10.924 0-14.726 9.854-14.726 17.574 0 7.839 3.802 17.576 14.726 17.576 11.045 0 14.845-9.737 14.845-17.576 0-7.72-3.8-17.574-14.845-17.574z"
+                            fill="#00749a" />
+                          <path class="wp-icon-path-2"
+                            d="M366.864 85.396v2.375H339.67v-2.375c7.957 0 9.382-2.019 9.382-13.896V52.502c0-11.877-1.425-13.775-9.382-13.775V36.35h24.581c12.23 0 19.002 6.294 19.002 14.727 0 8.194-6.771 14.606-19.002 14.606h-6.77V71.5c.001 11.878 1.425 13.896 9.383 13.896zm-2.613-44.771h-6.77v20.664h6.77c6.65 0 9.737-4.631 9.737-10.212.001-5.7-3.086-10.452-9.737-10.452zM464.833 76.609l-.595 2.137c-1.067 3.919-2.376 5.344-10.807 5.344h-1.663c-6.174 0-7.243-1.425-7.243-9.855v-5.462c9.263 0 9.976.83 9.976 7.006h2.257V58.083h-2.257c0 6.175-.713 7.006-9.976 7.006V51.79h6.53c8.433 0 9.738 1.425 10.807 5.344l.596 2.256h1.898l-.83-11.162h-34.914v2.255c6.649 0 7.719 1.425 7.719 9.856V75.54c0 7.713-.907 9.656-6.15 9.934-4.983-.762-8.404-3.479-13.085-8.628l-5.463-5.937c7.363-1.308 11.282-5.938 11.282-11.164 0-6.53-5.581-11.518-16.031-11.518h-20.9v2.255c6.649 0 7.719 1.425 7.719 9.856V75.54c0 8.431-1.068 9.976-7.719 9.976v2.256h23.632v-2.256c-6.648 0-7.719-1.545-7.719-9.976v-4.273h2.02l13.181 16.505h48.806l.713-11.161-1.784-.002zm-62.937-9.027V51.79h4.868c5.344 0 7.72 3.681 7.72 7.956 0 4.157-2.376 7.837-7.72 7.837l-4.868-.001zM488.939 89.314c-4.75 0-8.907-2.493-10.688-4.038-.595.595-1.662 2.376-1.899 4.038h-2.257V72.927h2.375c.951 7.838 6.412 12.469 13.419 12.469 3.8 0 6.888-2.138 6.888-5.699 0-3.087-2.73-5.463-7.6-7.719l-6.77-3.206c-4.751-2.258-8.312-6.178-8.312-11.401 0-5.7 5.344-10.568 12.707-10.568 3.919 0 7.243 1.426 9.263 3.088.593-.476 1.188-1.782 1.544-3.208h2.256v14.014h-2.494c-.832-5.582-3.919-10.213-10.212-10.213-3.325 0-6.413 1.899-6.413 4.87 0 3.087 2.493 4.749 8.194 7.361l6.53 3.206c5.701 2.731 7.956 7.127 7.956 10.689 0 7.48-6.531 12.704-14.487 12.704zM525.514 89.314c-4.751 0-8.908-2.493-10.688-4.038-.594.595-1.662 2.376-1.898 4.038h-2.257V72.927h2.375c.95 7.838 6.411 12.469 13.419 12.469 3.8 0 6.888-2.138 6.888-5.699 0-3.087-2.731-5.463-7.601-7.719l-6.77-3.206c-4.75-2.258-8.312-6.178-8.312-11.401 0-5.7 5.344-10.568 12.707-10.568 3.919 0 7.242 1.426 9.263 3.088.593-.476 1.187-1.782 1.542-3.208h2.257v14.014h-2.493c-.832-5.582-3.919-10.213-10.212-10.213-3.325 0-6.414 1.899-6.414 4.87 0 3.087 2.494 4.749 8.195 7.361l6.53 3.206c5.7 2.731 7.955 7.127 7.955 10.689 0 7.48-6.531 12.704-14.486 12.704z"
+                            fill="#464342" />
+                          <g class="wp-icon-g" fill="#00749a">
+                            <path
+                              d="M8.708 61.26c0 20.803 12.089 38.779 29.619 47.299L13.258 39.872a52.354 52.354 0 0 0-4.55 21.388zM96.74 58.608c0-6.495-2.333-10.993-4.334-14.494-2.664-4.329-5.16-7.995-5.16-12.324 0-4.831 3.663-9.328 8.824-9.328.233 0 .454.029.682.042-9.351-8.566-21.808-13.796-35.49-13.796-18.36 0-34.513 9.42-43.91 23.688 1.233.037 2.396.062 3.382.062 5.497 0 14.006-.667 14.006-.667 2.833-.167 3.167 3.994.338 4.329 0 0-2.848.335-6.016.501L48.2 93.546l11.502-34.493-8.189-22.433c-2.83-.166-5.511-.501-5.511-.501-2.832-.166-2.5-4.496.332-4.329 0 0 8.679.667 13.843.667 5.496 0 14.006-.667 14.006-.667 2.835-.167 3.168 3.994.337 4.329 0 0-2.853.335-6.015.501l18.992 56.494 5.241-17.517c2.273-7.269 4.002-12.49 4.002-16.989z" />
+                            <path
+                              d="M62.184 65.857l-15.768 45.818a52.516 52.516 0 0 0 14.846 2.142c6.12 0 11.989-1.059 17.452-2.979a4.451 4.451 0 0 1-.374-.724L62.184 65.857zM107.376 36.046c.226 1.674.354 3.472.354 5.404 0 5.333-.996 11.328-3.996 18.824l-16.053 46.413c15.624-9.111 26.133-26.038 26.133-45.427a52.268 52.268 0 0 0-6.438-25.214z" />
+                            <path
+                              d="M61.262 0C27.483 0 0 27.481 0 61.26c0 33.783 27.482 61.264 61.262 61.264 33.778 0 61.265-27.48 61.265-61.264C122.526 27.481 95.04 0 61.262 0zm0 119.715c-32.23 0-58.453-26.223-58.453-58.455 0-32.229 26.222-58.45 58.453-58.45 32.229 0 58.45 26.221 58.45 58.45 0 32.232-26.222 58.455-58.45 58.455z" />
+                          </g>
+                        </svg>
+                      </div>
+                      <a href="https://marcetpol.wordifysites.com/" target="_blank"
+                        class="btn btn-secondary btn-tuiles"><span>Voir
+                          le site</span></a>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- ___________________________________________ maquette 8  -->
-              <div class="project__wrapper reveal-right maquette">
+              <!-- ---------- maquette -------------  -->
+              <div class="project__wrapper reveal-left maquette">
                 <div class="filter-modale">
                   <div class="project__wrapper__modale">
                     <h4 class="project__wrapper__title">Maquette Figma</h4>
-                    <h5 class="project__wrapper__sentence">Marc & pol</h5>
+                    <h5 class="project__wrapper__sentence">Marc&Pol</h5>
                     <p class="project__wrapper__description">Cette évaluation d'entraînement a été
                       faite dans le cadre
                       d'une formation chez Studi. Objectif : maîtriser Figma et AdobeXd.</p>
                     <div class="project__wrapper__links">
                       <div></div>
+                      <div class='tuiles__icon'>
+                        <!-- - - -- figma icon- -  - -->
+                        <svg class="tuiles__icon__item" viewBox="0 0 174.38 174.38" xmlns="http://www.w3.org/2000/svg">
+                          <path class="figma-icon-path-1"
+                            d="M50 300c27.6 0 50-22.4 50-50v-50H50c-27.6 0-50 22.4-50 50s22.4 50 50 50z"
+                            fill="#0acf83" />
+                          <path class="figma-icon-path-2"
+                            d="M0 150c0-27.6 22.4-50 50-50h50v100H50c-27.6 0-50-22.4-50-50z" fill="#a259ff" />
+                          <path class="figma-icon-path-3" d="M0 50C0 22.4 22.4 0 50 0h50v100H50C22.4 100 0 77.6 0 50z"
+                            fill="#f24e1e" />
+                          <path class="figma-icon-path-4" d="M100 0h50c27.6 0 50 22.4 50 50s-22.4 50-50 50h-50z"
+                            fill="#ff7262" />
+                          <path class="figma-icon-path-5"
+                            d="M200 150c0 27.6-22.4 50-50 50s-50-22.4-50-50 22.4-50 50-50 50 22.4 50 50z"
+                            fill="#1abcfe" />
+                        </svg>
+                      </div>
                       <a href="https://www.figma.com/proto/lZtWsTW3kZ66Gux7pa4ku7/MARK%26POL?node-id=92%3A2695&scaling=min-zoom&page-id=92%3A2694"
-                        target="_blank" class="project__wrapper__link">Voir la maquette</a>
+                        target="_blank" class="btn btn-secondary btn-tuiles"><span>Voir la maquette</span></a>
                     </div>
                   </div>
                 </div>
@@ -1042,11 +1345,8 @@
         </article>
       </div>
     </section>
-
-
-    <!-- ********************************************** PAGE CONTACT *************************************** -->
+    <!-- ************ PAGE CONTACT ****************** -->
     <section class="slide slide-contact" id="me-contacter">
-
       <div class="page filter-contact">
         <article class="contact">
           <div class="contact__title">
@@ -1055,9 +1355,9 @@
           </div>
           <div class="contact__content">
             <div class="contact__content__border-left reveal-bottom"></div>
-            <!-- ************ block contact *************** -->
+            <!-- ======= container contact ========= -->
             <div class="contact__content__block">
-              <!-- ________________________________  boite formulaire de contact  -->
+              <!-- ------  boite formulaire ----- -->
               <div class="contact__wrapper">
                 <h4 class="title-form  reveal-right">Un projet en tête ? <span>Discutons-en</span> !
                 </h4>
@@ -1135,7 +1435,7 @@
                     <textarea rows="4" name="message" id="message" placeholder="Saisissez votre message"></textarea>
                   </div>
                   <div data-netlify-recaptcha="true" class="div-captcha"></div>
-                  <button id="btn-message" type="submit"><span>Envoyer</span></button>
+                  <button class='btn btn-message' id="btn-message" type="submit"><span>Envoyer</span></button>
                   <div class="notification" id="notification">Message envoyé !</div>
                 </form>
 
@@ -1182,16 +1482,16 @@
           </div>
         </article>
       </div>
-
-      <!-- ******************** MODALE MENTIONS LEGALES ****************************** -->
+      <!-- ^^^^^^ ^modale mentions ^^^^^^ -->
       <section class="mentions" id="mentions">
         <div class="mentions__header">
           <h1> Mentions légales</h1>
           <a href="#" id="btn-close-mentions" class="btn-close-mentions"><i class="fa-solid fa-rectangle-xmark"></i>
           </a>
         </div>
-        <p>En vigueur au 29/09/2020</p>
-        <p>Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la
+        <p class='mentions-date'>En vigueur au 29/09/2020</p>
+        <p class='mentions-first'>Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin
+          2004 pour la
           Confiance
           dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des Utilisateurs du site
           https://christophethevenet.fr/ les présentes mentions légales. La connexion et la navigation sur le
@@ -1245,9 +1545,9 @@
           civil.
         </p>
       </section>
-
-
     </section>
+
+
   </main>
 
   <script type="module" src="./src/js/main.js"></script>

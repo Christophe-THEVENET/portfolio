@@ -1,0 +1,254 @@
+@use "../abstracts/_all" as a;
+
+//
+.filter-services {
+  @include a.mFilterPage();
+}
+
+.services {
+  @include a.mContainerPage();
+
+  //  --------- block titre + trait droit page ----------
+  &__title {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+
+    h2 {
+      @include a.mTitlePage(a.$fontSizeTitlePageMobile);
+    }
+
+    &__border-right {
+      @include a.mBorderRightPage();
+    }
+  }
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    &__border-left {
+      @include a.mBorderLeftPage();
+    }
+
+    // ==============  container prestations ===================
+    &__block {
+      padding: 0.5rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 1.4rem;
+      justify-items: center;
+      overflow: scroll;
+      width: 100%;
+      height: 100%;
+
+      //----------  boite prestations -------------
+      .services__wrapper {
+        min-height: 40rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0.4rem;
+        border-radius: 2px;
+        transition: a.$transitionRegular;
+        background-color: a.$colorBackgroundCard;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+          background-color: a.$colorBackgroundCardHover;
+          box-shadow: a.$boxShadowCardHover;
+        }
+
+        .title {
+          @include a.mTitleCard(a.$fontSizeTitleCardMobile);
+          margin-bottom: 0.4rem;
+        }
+
+        .title-assistance {
+          margin-top: 1rem;
+        }
+
+        .sentence {
+          @include a.mSentenceCard(a.$fontSizeSentenceCardMobile);
+          margin-bottom: 0.7rem;
+        }
+
+        /*  ul li {
+          font-size: 1.6rem;
+          color: a.$colorWhite;
+          font-family: a.$fontCovesFamily;
+          margin-bottom: 0.5rem;
+          transition: 0.1s ease-in-out;
+          padding: 0.2rem 0.5rem;
+          border-radius: 5px;
+        } */
+
+        ul li {
+          margin-bottom: 1rem;
+        }
+
+        &__content {
+          margin-top: 1rem;
+
+          .price {
+            @include a.mUnderTitleCard(a.$fontSizeUnderTitleCardMobile);
+            margin: -0.3rem 1rem;
+
+            span {
+              color: a.$colorDark;
+            }
+          }
+
+          .spec {
+            margin-left: 2rem;
+          }
+
+          .description {
+            @include a.mTextCard(a.$fontSizeTextCardMobile);
+            line-height: 1.8rem;
+            transition: 0.1s ease-in-out;
+            padding: 1rem;
+            border-radius: 2px;
+            margin-bottom: -0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ========== MEDIA QUERY > 767PX (TABLETTE) ============
+@media screen and (min-width: 767px) {
+  .services {
+    margin-top: 10vh;
+
+    h2 {
+      font-size: a.$fontSizeTitlePage;
+    }
+
+    &__content__block {
+      margin: 1rem 2rem;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      //----------  boite prestations -------------
+      .services__wrapper {
+        min-height: 44rem;
+        max-width: 40rem;
+
+        .title {
+          @include a.mTitleCard(a.$fontSizeTitleCard);
+        }
+
+        .sentence {
+          @include a.mSentenceCard(a.$fontSizeSentenceCard);
+        }
+
+        .price {
+          font-size: a.$fontSizeUnderTitleCard;
+        }
+
+        &__content {
+          .description {
+            @include a.mTextCard(a.$fontSizeTextCard);
+            transition: 0.1s ease-in-out;
+            padding: 1rem;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// =============== MEDIA QUERY > 960PX (PC) =================
+@media screen and (min-width: 960px) {
+  .services {
+    padding-top: 10rem;
+    margin: 5rem;
+    height: 80vh; // a bouger en grand ecran
+
+    &__title {
+      width: 80%;
+    }
+
+    &__title__border-right {
+      margin-top: 1.5%;
+    }
+
+    &__content__block {
+      padding: 1 4rem;
+      gap: 3rem;
+    }
+  }
+}
+
+// ========= MEDIA QUERY > 1240PX ( GRAND ECRAN =============
+@media screen and (min-width: 1240px) {
+  .services {
+    &__content {
+      height: 50rem;
+
+      &__border-left {
+        max-height: 90%;
+      }
+
+      &__block {
+        margin: 0 3rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1.4rem;
+        overflow: scroll;
+
+      }
+    }
+  }
+}
+
+// ======= MEDIA QUERY >  MOBILE ORIENTATION PAYSAGE ==========
+@media (orientation: landscape) and (max-height: 430px) {
+  .services {
+    padding-top: 0rem;
+    height: 70vh;
+  }
+}
+
+
+// ======= MEDIA QUERY > 768PX < 960 & height < 740 ( PETIT ECRAN PAYSAGE ) =============
+@media screen and (min-width: 768px) and (max-width: 960px) and (max-height: 740px) {
+
+  .filter-services {
+    z-index: 50;
+  }
+
+  .services {
+    margin-top: 23vh;
+    height: 70vh;
+    gap: 10px;
+  }
+}
+
+// ======= MEDIA QUERY BUG =============
+@media screen and (min-width: 1240px) and (max-width: 1400px) and (max-height: 1100px) {
+
+  .services {
+    &__content__block {
+
+      //----------  boite prestations -------------
+      .services__wrapper {
+        min-height: 46rem;
+
+        .title {
+          font-size: 2rem;
+        }
+
+        .price {
+          font-size: 1.2rem;
+        }
+
+      }
+    }
+  }
+}

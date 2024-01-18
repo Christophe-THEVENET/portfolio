@@ -1,0 +1,373 @@
+@use "../abstracts/_all" as a;
+
+//
+.filter-project {
+  @include a.mFilterPage();
+}
+
+.project {
+  @include a.mContainerPage();
+
+  //  --------- block titre + trait droit page ----------
+  &__title {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+
+    h2 {
+      @include a.mTitlePage(a.$fontSizeTitlePageMobile);
+    }
+
+    &__border-right {
+      @include a.mBorderRightPage();
+    }
+  }
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    &__border-left {
+      @include a.mBorderLeftPage();
+    }
+
+    // ==============  container realisations ===================
+    &__block {
+      padding: 0.5rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.4rem;
+      justify-items: center;
+      overflow: scroll;
+      width: 100%;
+      height: 100%;
+
+      // ----------- boite réalisations ---------
+      .project__wrapper {
+        min-height: 20rem;
+        border-radius: 2px;
+        transition: a.$transitionRegular;
+
+        .filter-modale {
+          border-radius: 2px;
+          height: 100%;
+          width: 100%;
+          background-color: #1c222b65;
+        }
+
+        // ^^^^^^^^ modale description projet ^^^^^^
+        &__modale {
+          border-radius: 2px;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          font-family: a.$fontCovesFamily;
+          padding: 1rem;
+          opacity: 0;
+          transition: a.$transitionRegular;
+          position: relative;
+
+          &:hover {
+            opacity: 1;
+            box-shadow: 1px 1px 8px -2px a.$colorDark;
+            background-color: a.$colorBackgroundCardHoverFull;
+
+            // ----------------------------- effet reveal top
+            & .project__wrapper__title {
+              opacity: 1;
+            }
+
+            & .project__wrapper__sentence {
+              opacity: 1;
+              color: a.$colorWhite;
+              letter-spacing: 1px;
+            }
+
+            & .project__wrapper__description {
+              opacity: 1;
+
+            }
+
+            & .project__wrapper__links {
+
+              &--github {
+                opacity: 1;
+              }
+
+              &--button {
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+        &__title {
+          @include a.mTitleCard(a.$fontSizeTitleTuile);
+          margin: 0.2rem 0;
+          opacity: 0;
+          transition: a.$transitionRegular;
+        }
+
+        &__sentence {
+          @include a.mSentenceCard(a.$fontSizeSentenceTuile);
+          margin-bottom: 0.1rem;
+          opacity: 0;
+          letter-spacing: 0;
+          transition: a.$transitionRegular;
+        }
+
+        &__description {
+          color: a.$colorWhite;
+          font-family: a.$fontCovesFamily;
+          margin: 0.2rem 0;
+          text-align: justify;
+          opacity: 0;
+          line-height: 14px;
+          transition: a.$transitionRegular;
+          font-size: a.$fontSizeTextTuile;
+
+          // arya stark
+          &.connect {
+            font-family: a.$fontGrifterFamily;
+            color: a.$colorGreenFullDark;
+            margin: 0;
+            padding: 0;
+            transition: a.$transitionRegular;
+          }
+
+          &.connect-first {
+            margin-top: -0.5rem;
+          }
+        }
+
+        &__links {
+          padding: 1rem;
+          position: absolute;
+          bottom: 5px;
+          display: flex;
+          width: 100%;
+          height: 3rem;
+          justify-content: space-between;
+          align-items: center;
+
+
+          &--github {
+            .github-icon {
+              width: 2.4rem;
+              transition: a.$transitionRegular;
+
+              g {
+                fill: a.$colorGray;
+              }
+
+              & g {
+                transition: a.$transitionRegular;
+
+                &:hover {
+                  fill: a.$colorDark;
+                }
+              }
+            }
+          }
+
+          .btn-tuiles {
+            font-size: 1.3rem;
+            padding: 0.4rem 0.3rem;
+            width: 9rem;
+          }
+
+          .tuiles__icon {
+            display: flex;
+            margin-left: 2rem;
+
+            .tuiles__icon__item {
+              width: 1.4rem;
+              transition: a.$transitionButton;
+              margin-right: 0.7rem;
+              opacity: 0.5;
+              filter: contrast(0.3);
+              filter: brightness(0.3);
+
+              &:hover {
+                transform: scale(2.4);
+                filter: contrast(1);
+                filter: brightness(1);
+                opacity: 1;
+                z-index: 10;
+              }
+
+            }
+          }
+
+
+        }
+      }
+
+      .ecf {
+        background-image: url('../img/realisations/ecf.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .planchettes {
+        background-image: url('../img/realisations/planchettes.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .labougie {
+        background-image: url('../img/realisations/img_labougie.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .biodiversite {
+        background-image: url('../img/realisations/noe.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .reservia {
+        background-image: url('../img/realisations/reservia.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .portfolio {
+        background-image: url('../img/realisations/portfolio.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .dicefighter {
+        background-image: url('../img/realisations/DiceFighter.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .marcetpol {
+        background-image: url('../img/realisations/marcetpol.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .memory {
+        background-image: url('../img/realisations/memory.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .maquette {
+        background-image: url('../img/realisations/maquette.png');
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}
+
+// ============= MEDIA QUERY >500px  (TABLETTE) ===============
+@media screen and (min-width: 500px) {
+  .project {
+    &__content__block {
+      grid-template-columns: 1fr 1fr;
+
+      // boite réalisations --------------------------
+      .project__wrapper {
+        margin: 1rem;
+      }
+    }
+  }
+}
+
+// ================= MEDIA QUERY > 767PX (TABLETTE) ==================
+@media screen and (min-width: 767px) {
+  .project {
+    margin-top: 10vh;
+
+    h2 {
+      font-size: a.$fontSizeTitlePage;
+    }
+
+    &__content__block {
+      margin: 1rem 2rem;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+// ================ MEDIA QUERY > 960PX (PC) =======================
+@media screen and (min-width: 960px) {
+  .project {
+    padding-top: 10rem;
+    margin: 5rem;
+    height: 80vh; // a bouger en grand ecran
+
+    &__title {
+      width: 80%;
+    }
+
+    &__title__border-right {
+      margin-top: 1.5%;
+    }
+
+    &__content {
+
+      // ============ container ===============
+      &__block {
+        padding: 1 4rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        margin-top: 0.5rem !important;
+      }
+    }
+  }
+}
+
+// ============= MEDIA QUERY > 1240PX ( GRAND ECRAN =================
+@media screen and (min-width: 1240px) {
+  .project {
+    &__content {
+      height: 50rem;
+
+      &__border-left {
+        max-height: 90%;
+      }
+
+      &__block {
+        padding: 0;
+        margin: 0 3rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 0px;
+
+        // boites prestation ---------------------
+        .project__wrapper {
+
+          &__sentence {
+            margin: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ========== MEDIA QUERY >  MOBILE ORIENTATION PAYSAGE =============
+@media (orientation: landscape) and (max-height: 430px) {
+  .project {
+    padding-top: 0rem;
+    height: 70vh;
+  }
+}
+
+// ======== MEDIA QUERY > 768PX < 960 & height < 740 ( PETIT ECRAN PAYSAGE ) ==============
+@media screen and (min-width: 768px) and (max-width: 960px) and (max-height: 740px) {
+  .project {
+    margin-top: 20vh;
+    height: 70vh;
+  }
+}
