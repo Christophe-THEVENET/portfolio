@@ -1,0 +1,40 @@
+//  ---------- Fonts ---------------
+$fontGrifterFamily: 'grifter';
+$fontCovesFamily: 'coves', sans-serif;
+$fontSizeTitlePage: 3.5vmax;
+$fontSizeTitlePageMobile: 4vmax;
+$fontSizeTitleCard: 2.3rem;
+$fontSizeTitleCardMobile: 1.9rem;
+$fontSizeUnderTitleCard: 1.5rem;
+$fontSizeUnderTitleCardMobile: 1.3rem;
+$fontSizeSentenceCard: 1.8rem;
+$fontSizeSentenceCardMobile: 1.7rem;
+$fontSizeTextCard: 1.7rem;
+$fontSizeTextCardMobile: 1.6rem;
+$fontSizeTitleTuile: 2rem;
+$fontSizeSentenceTuile: 2rem;
+$fontSizeTextTuile: 1.4rem;
+
+
+// --------- Colors -------------
+$colorDark: #010302;
+$colorWhite: #fffffe;
+$colorGray: #c9d8d8;
+$colorGreen: #328281;
+$colorGreenLight: #47b3b1;
+$colorGreenDark: #2d7977;
+$colorGreenFullDark: #215454;
+
+$colorBackgroundCard: #2c929053;
+$colorBackgroundCardHover: #2c9290a1;
+$colorBackgroundCardHoverFull: #2b9190fe;
+$colorSucces: #28d49b;
+$colorAlert: rgb(238, 122, 122);
+/* $newDarkHover: #1c222b;
+$newDarkLight: #0d4b49; */
+// --------- Transition -------------
+$transitionButton: all 0.3s cubic-bezier(0, .97, .57, .99);
+$transitionRegular: all 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+$transitionCardHover : all 3s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+// --------- box shadow card -------------
+$boxShadowCardHover: 2px 2px 10px -2px $colorDark;

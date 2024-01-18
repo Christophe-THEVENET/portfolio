@@ -1,0 +1,82 @@
+@use "../abstracts/_all" as a;
+
+.btn {
+  padding: 0.7rem 3rem;
+  border-radius: 2px;
+  font-size: a.$fontSizeTextCard;
+  font-family: a.$fontCovesFamily;
+  text-decoration: none;
+  margin-left: 2rem;
+  z-index: 8;
+  width: 12rem;
+  @include a.mCenterElement;
+  position: relative;
+  color: a.$colorWhite;
+
+  transition: a.$transitionButton span {
+    z-index: 1000;
+    color: a.$colorWhite;
+    position: relative;
+    transition: a.$transitionButton;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    background: a.$colorDark;
+    height: 50%;
+    width: 0;
+    position: absolute;
+    transition: a.$transitionButton;
+  }
+
+  &:before {
+    top: 0;
+    left: 0;
+    right: auto;
+  }
+
+  &:after {
+    bottom: 0;
+    right: 0;
+    left: auto;
+  }
+
+  &:hover {
+    border: 1px solid a.$colorDark;
+    cursor: pointer;
+
+    span {
+      color: a.$colorWhite;
+      z-index: 50;
+    }
+
+    &:before {
+      width: 100%;
+      right: 0;
+      left: auto;
+    }
+
+    &:after {
+      width: 100%;
+      left: 0;
+      right: auto;
+    }
+
+  }
+}
+
+.btn-primary {
+  background-color: a.$colorGreen;
+}
+
+.btn-secondary {
+  background-color: #6beeee00;
+  border: 1px solid a.$colorWhite;
+}
+
+.btn-message {
+  background-color: a.$colorGreen;
+  float: right;
+  border: none;
+}

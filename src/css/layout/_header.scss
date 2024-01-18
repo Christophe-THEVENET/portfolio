@@ -1,0 +1,195 @@
+@use "../abstracts/_all" as a;
+
+// ******************* HEADER *********************
+.header {
+  position: fixed;
+  @include a.mCenterElement;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1rem auto;
+  height: 8rem;
+  z-index: 20;
+
+  // --------- logo block -----------
+  &__logo {
+    height: 100%;
+    @include a.mCenterElement;
+    flex-direction: column;
+    padding-left: 1rem;
+    margin-top: -0.2rem;
+
+    &__img {
+      display: inline-block;
+      width: 13rem;
+      filter: none;
+      transition: a.$transitionRegular;
+    }
+
+    :hover {
+      filter: hue-rotate(180deg);
+      transition: a.$transitionRegular;
+    }
+  }
+
+  // -------------- nav block ---------------
+  &__nav {
+    height: 100%;
+
+    // icones burger  - - - - -
+    &__btn {
+      margin-top: 1.8rem;
+
+      i {
+        margin-right: 2rem;
+        z-index: 20;
+      }
+
+      .openIcon {
+        font-size: 3rem;
+        display: block;
+      }
+
+      .closeIcon {
+        font-size: 4.2rem;
+        display: none;
+      }
+    }
+
+    //  ----- Links block -------
+    &__menu {
+      height: 100%;
+      display: none;
+      list-style: none;
+      margin: 0;
+
+      &__item {
+        &__link {
+          @include a.mCenterElement;
+          text-decoration: none;
+          display: block;
+          padding: 0.7em;
+          margin-top: 1.2rem;
+          font-family: a.$fontGrifterFamily;
+          color: a.$colorGreenLight;
+          font-size: 2rem;
+          letter-spacing: 1px;
+          transition: a.$transitionRegular;
+          text-align: center;
+
+          &:hover {
+            color: a.$colorWhite;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ------------ boutons menu hamburger ------------
+
+// si menu open -> btn ouvrir caché et btn fermer affiché
+.open .openIcon {
+  display: none;
+}
+
+.open .closeIcon {
+  display: block;
+}
+
+.openIcon--btn,
+.closeIcon--btn {
+  color: a.$colorGreenLight;
+}
+
+// ------ modale menu hamburger ----------
+.menu-modal {
+  background-color: a.$colorDark;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 300ms;
+  z-index: 10;
+
+  ul {
+    @include a.mCenterElement;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    min-height: 100vh;
+    padding: 30% 0;
+
+    a {
+      text-decoration: none;
+      display: block;
+      padding: 1em;
+      margin-top: 0.7rem;
+      font-family: a.$fontGrifterFamily;
+      color: a.$colorGreenLight;
+      font-size: 2rem;
+    }
+  }
+}
+
+// effet apparition par la gauche modale
+.open .menu-modal {
+  transform: translateX(0);
+}
+
+// ======= MEDIA QUERY > 768PX (TABLETTE) ============
+@media screen and (min-width: 768px) {
+  .header {
+    margin: 2rem auto;
+
+    &__logo {
+      margin-left: 2rem;
+    }
+
+    // affiche la nav
+    &__nav {
+      &__btn {
+        display: none;
+      }
+
+      &__menu {
+        display: flex;
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  .menu-modal {
+    display: none;
+  }
+
+
+}
+
+
+// ===== MEDIA QUERY > ORIENTATION PAYSAGE ===========
+@media (orientation: landscape) {
+ 
+  .menu-modal {
+    ul {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+}
+
+// ==== MEDIA QUERY > 768PX < 960 & height < 740 ( BUG HEADER) =======
+@media screen and (min-width: 768px) and (max-width: 840px) {
+
+  .menu .header__nav__item {
+    margin: 0.5rem;
+    width: 14rem;
+  }
+
+  .menu .header__nav__item .nav__link {
+    padding: 0;
+    margin: 0;
+    font-size: 1.8rem;
+  }
+}

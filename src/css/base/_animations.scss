@@ -1,0 +1,60 @@
+// -------------- error formulaire
+.error {
+  color: red;
+  text-transform: lowercase;
+  margin-left: 2rem;
+}
+
+// ------------- animation reveal left
+.reveal-left {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.reveal-left.not-visible {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+// ------------- animation reveal right
+
+.reveal-right {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.reveal-right.not-visible {
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+// ------------- animation reveal bottom
+
+.reveal-bottom {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.reveal-bottom.not-visible {
+  transform: translateY(25px);
+  opacity: 0;
+}
+// -------------- popup message envoyé
+.notification.show {
+  transform: translateX(0);
+  transition: all 1s cubic-bezier(0.92, 0.08, 0.28, 1.46);
+  opacity: 1;
+  font-size: 1.2rem !important;
+  padding: 1rem 0.5rem;
+
+}
+
+// -------------- modale mentions
+.mentions.show {
+  transform: translateX(0);
+  transition: all 1s cubic-bezier(0.92, 0.08, 0.28, 1.46);
+  opacity: 1;
+}
