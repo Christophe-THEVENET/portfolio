@@ -22,7 +22,6 @@
     }
   }
 
-  // -------- block  border-left -------
   &__content {
     height: 100%;
     width: 100%;
@@ -36,16 +35,15 @@
     &__block {
       @include a.mTextCard(a.$fontSizeTextCardMobile);
       padding: 0.5rem;
-      overflow: scroll;
       display: grid;
-      gap: 1.4rem;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr;
+      gap: 1.4rem;
+      overflow: scroll;
 
       // -----------  block présentation -----------
       &__presentation {
         @include a.mAboutLayoutCard();
-        @include a.mTextCard(a.$fontSizeTextCardMobile);
 
         &:hover {
           background-color: a.$colorBackgroundCardHover;

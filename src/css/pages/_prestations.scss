@@ -32,16 +32,15 @@
       @include a.mBorderLeftPage();
     }
 
-     // ==============  container prestations ===================
+    // ==============  container prestations ===================
     &__block {
       padding: 0.5rem;
       display: grid;
       grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
       gap: 1.4rem;
       justify-items: center;
-      align-items: flex-start;
       overflow: scroll;
-      transition: all 0.4s;
       width: 100%;
       height: 100%;
 
@@ -52,8 +51,7 @@
         flex-direction: column;
         align-items: center;
         padding: 2rem 0.4rem;
-        margin: 1rem;
-        width: 34rem;
+        /* width: 34rem; */
         border-radius: 2px;
         transition: all 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
         background-color: a.$colorBackgroundCard;
@@ -133,11 +131,14 @@
     }
 
     &__content__block {
+      margin: 1rem 2rem;
       grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
 
       //----------  boite prestations -------------
       .services__wrapper {
-        min-height: 42rem;
+        min-height: 45rem;
+        max-width: 40rem;
 
         .title {
           @include a.mTitleCard(a.$fontSizeTitleCard);
@@ -160,14 +161,6 @@
           }
         }
       }
-
-      .blink {
-        grid-column-start: 1;
-        grid-column-end: 3;
-      }
-
-
-      // boite prestation --------------------------
     }
   }
 }
@@ -186,6 +179,11 @@
     &__title__border-right {
       margin-top: 1.5%;
     }
+
+    &__content__block {
+      padding: 0 4rem;
+      gap: 3rem;
+    }
   }
 }
 
@@ -200,29 +198,11 @@
       }
 
       &__block {
-        margin: 0 2rem;
+        margin: 2rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 3rem 1fr;
-        grid-gap: 1px !important;
+        grid-gap: 1.4rem;
+        overflow: scroll;
 
-        .blink {
-          grid-column-start: 1;
-          grid-column-end: 5;
-          height: 3rem;
-        }
-
-        // boites prestation ---------------------
-        .services__wrapper {
-          min-height: 44rem;
-          width: 95%;
-          /* .title {
-                          margin-bottom: 2rem;
-                      } */
-          /* 
-          ul li {
-            margin-bottom: 0.6rem;
-          } */
-        }
       }
     }
   }
