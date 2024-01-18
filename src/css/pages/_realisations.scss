@@ -156,7 +156,7 @@
           // arya stark
           &.connect {
             font-family: a.$fontGrifterFamily;
-            color: a.$colorDark;
+            color: a.$colorGreenFullDark;
             margin: 0;
             padding: 0;
             transition: a.$transitionRegular;
@@ -180,7 +180,7 @@
 
           &--github {
             .github-icon {
-              width: 2.2rem;
+              width: 2.4rem;
               transition: a.$transitionRegular;
 
               g {
@@ -198,10 +198,35 @@
           }
 
           .btn-tuiles {
-            font-size: 1.2rem;
-            padding: 0.2rem 0.3rem;
+            font-size: 1.3rem;
+            padding: 0.4rem 0.3rem;
             width: 9rem;
           }
+
+          .tuiles__icon {
+            display: flex;
+            margin-left: 2rem;
+
+            .tuiles__icon__item {
+              width: 1.4rem;
+              transition: a.$transitionButton;
+              margin-right: 0.7rem;
+              opacity: 0.5;
+              filter: contrast(0.3);
+              filter: brightness(0.3);
+
+              &:hover {
+                transform: scale(2.4);
+                filter: contrast(1);
+                  filter: brightness(1);
+                opacity: 1;
+                z-index: 10;
+              }
+
+            }
+          }
+
+
         }
       }
 

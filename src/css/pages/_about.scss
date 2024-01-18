@@ -110,7 +110,7 @@
 
         .formations__text {
           span {
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-family: a.$fontGrifterFamily;
             color: a.$colorDark;
             font-style: italic;
@@ -787,6 +787,35 @@
                     }
                   }
 
+
+                  // -------------------------
+                  // sass icon ----------------
+                  .sass-icon-path-1 {
+                    transition: 0.1s ease-in-out;
+                    fill: a.$colorGreenLight;
+                  }
+
+                  .sass-icon:hover {
+                    .sass-icon-path-1 {
+                      transition: 0.1s ease-in-out;
+                      fill: #cd6799;
+                    }
+                  }
+
+                  // -------------------------
+                  // bootstrap icon ----------------
+                  .bootstrap-icon-path-1 {
+                    transition: 0.1s ease-in-out;
+                    fill: a.$colorGreenLight;
+                  }
+
+                  .bootstrap-icon:hover {
+                    .bootstrap-icon-path-1 {
+                      transition: 0.1s ease-in-out;
+                      fill: #5b4282;
+                    }
+                  }
+
                   // -------------------------
                 }
 
@@ -832,8 +861,8 @@
         &__presentation {
           margin-top: 0;
           grid-column: 1 / 2;
-            grid-row: 1 / 4;
-            padding: 2rem;
+          grid-row: 1 / 4;
+          padding: 2rem;
         }
 
         // ---------------------------  block formations
