@@ -1,25 +1,12 @@
 @use "../abstracts/_all" as a;
 
 .filter-contact {
-  width: 100vw;
-  height: 100vh;
-  color: a.$colorBackgroundCardHover;
-  font-family: a.$fontGrifterFamily;
-  font-size: 4rem;
-  background-image: url('../img/background_blur.jpg');
-  background-position: center;
-  background-size: cover;
+ @include a.mFilterPage();
 }
 
 .contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1400px;
-  margin-top: 8rem;
-  height: 80vh; // a bouger en grand ecran
-  width: 100%;
-
+   @include a.mContainerPage();
+  
   // ------------------------------- popup message envoyé
   .notification {
     background-color: a.$colorGreenLight;
@@ -262,6 +249,7 @@
         }
 
         .info-form {
+          font-family: a.$fontGrifterFamily;
           color: a.$colorDark;
           font-size: 1.7rem;
           transition: all 0.5s cubic-bezier(0.92, 0.08, 0.28, 1.46);
@@ -297,6 +285,7 @@
           margin-top: 4rem;
 
           h4 {
+            font-family: a.$fontGrifterFamily;
             text-align: center;
             color: a.$colorWhite;
             letter-spacing: 2px;

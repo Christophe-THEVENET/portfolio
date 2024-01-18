@@ -2,25 +2,11 @@
 
 //
 .filter-project {
-  width: 100vw;
-  height: 100vh;
-  color: a.$colorBackgroundCardHover;
-  font-family: a.$fontGrifterFamily;
-  font-size: 4rem;
-  background-image: url('../img/background_blur.jpg');
-  background-position: center;
-  background-size: cover;
+@include a.mFilterPage();
 }
 
 .project {
-  margin: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1400px;
-  margin-top: 8rem;
-  width: 100%;
-  height: 80vh; // a bouger en grand ecran
+  @include a.mContainerPage();
 
   h2 {
     @include a.mTitlePage(a.$fontSizeTitlePageMobile);
@@ -218,7 +204,7 @@
               &:hover {
                 transform: scale(2.4);
                 filter: contrast(1);
-                  filter: brightness(1);
+                filter: brightness(1);
                 opacity: 1;
                 z-index: 10;
               }
