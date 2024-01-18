@@ -1,11 +1,23 @@
 @use "../abstracts/_all" as a;
+
 //
 .filter-about {
-  @include a.mFilterPage();
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../img/background_blur.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .about {
-  @include a.mContainerPage();
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1400px;
+  margin-top: 8rem;
+  width: 100%;
+  height: 80vh; // a bo
 
   //  --------- block titre + trait droit page ----------
   &__title {

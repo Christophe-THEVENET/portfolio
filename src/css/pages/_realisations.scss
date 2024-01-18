@@ -118,7 +118,6 @@
           opacity: 0;
           letter-spacing: 0;
           transition: a.$transitionRegular;
-
         }
 
         &__description {
@@ -297,11 +296,6 @@
     &__content__block {
       margin: 1rem 2rem;
       grid-template-columns: 1fr 1fr;
-
-      // boite réalisations --------------------------
-      .project__wrapper {
-        /* margin: 1rem; */
-      }
     }
   }
 }
@@ -323,7 +317,7 @@
 
     &__content {
 
-      // -----------------------------------  container
+      // ============ container ===============
       &__block {
         padding: 1 4rem;
         grid-template-columns: 1fr 1fr 1fr;
@@ -352,7 +346,6 @@
 
         // boites prestation ---------------------
         .project__wrapper {
-        /*   height: 90%; */
 
           &__sentence {
             margin: 0.5rem;
