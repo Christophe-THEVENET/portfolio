@@ -9,27 +9,24 @@
 
   // -------- popup message envoyé -------
   .notification {
-    width: 30rem;
     background-color: a.$colorGreenLight;
+    width: auto !important;
     color: a.$colorDark;
-    font-family: a.$fontGrifterFamily;
-    text-align: center;
     letter-spacing: 1px;
     border-radius: 2px;
-    z-index: 500;
+    z-index: 100;
     opacity: 0;
-    transform: translateX(-90rem); 
-    transition: a.$transitionComingAndGoing;
+    transform: translateX(-90rem);
+    transition: all 1s cubic-bezier(1, -0.01, 1, -1.13);
   }
 
   // -------------- popup message envoyé
   .notification.show {
     transform: translateX(0);
-    transition: a.$transitionComingAndGoing;
+    transition: all 1s cubic-bezier(0.92, 0.08, 0.28, 1.46);
     opacity: 1;
     font-size: 1.2rem !important;
     padding: 1rem 0.5rem;
-    z-index: 500;
 
   }
 
