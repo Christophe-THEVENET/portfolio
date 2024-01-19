@@ -42,15 +42,6 @@
   transform: translateY(25px);
   opacity: 0;
 }
-// -------------- popup message envoyé
-.notification.show {
-  transform: translateX(0);
-  transition: all 1s cubic-bezier(0.92, 0.08, 0.28, 1.46);
-  opacity: 1;
-  font-size: 1.2rem !important;
-  padding: 1rem 0.5rem;
-
-}
 
 // -------------- modale mentions
 .mentions.show {

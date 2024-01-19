@@ -9,15 +9,28 @@
 
   // -------- popup message envoyé -------
   .notification {
+    width: 30rem;
     background-color: a.$colorGreenLight;
-    width: auto !important;
     color: a.$colorDark;
+    font-family: a.$fontGrifterFamily;
+    text-align: center;
     letter-spacing: 1px;
     border-radius: 2px;
-    z-index: 100;
+    z-index: 500;
     opacity: 0;
-    transform: translateX(-90rem);
-    transition: all 1s cubic-bezier(1, -0.01, 1, -1.13);
+    transform: translateX(-90rem); 
+    transition: a.$transitionComingAndGoing;
+  }
+
+  // -------------- popup message envoyé
+  .notification.show {
+    transform: translateX(0);
+    transition: a.$transitionComingAndGoing;
+    opacity: 1;
+    font-size: 1.2rem !important;
+    padding: 1rem 0.5rem;
+    z-index: 500;
+
   }
 
   //  --------- block titre + trait droit page ----------

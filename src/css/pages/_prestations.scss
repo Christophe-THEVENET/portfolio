@@ -64,27 +64,17 @@
 
         .title {
           @include a.mTitleCard(a.$fontSizeTitleCardMobile);
-          margin-bottom: 0.4rem;
+          margin-bottom: 0.6rem;
         }
 
         .title-assistance {
-          margin-top: 1rem;
+          margin-top: 1.2rem;
         }
 
         .sentence {
           @include a.mSentenceCard(a.$fontSizeSentenceCardMobile);
-          margin-bottom: 0.7rem;
+          margin-bottom: 1.5rem;
         }
-
-        /*  ul li {
-          font-size: 1.6rem;
-          color: a.$colorWhite;
-          font-family: a.$fontCovesFamily;
-          margin-bottom: 0.5rem;
-          transition: 0.1s ease-in-out;
-          padding: 0.2rem 0.5rem;
-          border-radius: 5px;
-        } */
 
         ul li {
           margin-bottom: 1rem;

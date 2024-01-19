@@ -47,12 +47,12 @@
   transition: all 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
 
   &>.title {
-    padding-top: 0.35rem;
+    padding-top: 0.4rem;
     letter-spacing: 2px !important;
   }
 
   .sentence {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 2rem;
     color: a.$colorGreenLight;
   }
