@@ -12,7 +12,7 @@ $fontSizeSentenceCardMobile: 1.7rem;
 $fontSizeTextCard: 1.7rem;
 $fontSizeTextCardMobile: 1.6rem;
 $fontSizeTitleTuile: 2rem;
-$fontSizeSentenceTuile: 2rem;
+$fontSizeSentenceTuile: 1.8rem;
 $fontSizeTextTuile: 1.4rem;
 
 
@@ -36,5 +36,6 @@ $newDarkLight: #0d4b49; */
 $transitionButton: all 0.3s cubic-bezier(0, .97, .57, .99);
 $transitionRegular: all 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
 $transitionCardHover : all 3s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+$transitionComingAndGoing: all 1s cubic-bezier(1, -0.01, 1, -1.13);
 // --------- box shadow card -------------
-$boxShadowCardHover: 2px 2px 10px -2px $colorDark;
+$boxShadowCardHover: 2px 2px 10px -5px $colorDark;
