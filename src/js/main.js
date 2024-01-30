@@ -60,7 +60,6 @@ let modaleMentions = document.querySelector('#mentions');
 // -------- boutons lien mentions-------------
 mentionsBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log('toto');
     modaleMentions.classList.add('show');
 });
 
@@ -145,10 +144,4 @@ infoModalDiplome.addEventListener('mouseleave', (e) => {
     e.preventDefault();
     infoModalDiplome.classList.remove('info-modal-show');
 });
-
-
-
-
-
-
 
