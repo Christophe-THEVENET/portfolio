@@ -147,8 +147,9 @@ infoModalDiplome.addEventListener('mouseleave', (e) => {
 });
 
 
+// ***************** video presentation*************************
 
-
+videojs('my-video', {});
 
 
 

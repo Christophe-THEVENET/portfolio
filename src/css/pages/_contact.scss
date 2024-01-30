@@ -397,8 +397,10 @@
             justify-content: space-around;
             width: 50%;
 
-            .git a svg,
-            .linkedln a svg {
+           /*  .git a svg,
+            .linkedln a svg,
+            .twitter a svg
+            {
               width: 4rem;
 
               path {
@@ -409,7 +411,53 @@
                   fill: a.$colorGreenLight;
                 }
               }
-            }
+            } */
+
+
+                         .git,
+                         .linkedln,
+                         .twitter {
+                           padding: 1rem;
+                         }
+            
+                         .git a svg,
+                         .linkedln a svg,
+                         .twitter a svg {
+                           width: 3rem;
+            
+                           path {
+                             fill: a.$colorDark;
+                             transition: 0.2s;
+                           }
+                         }
+            
+                         .linkedln a svg:hover {
+                           path {
+                             fill: #0077b5;
+                           }
+                         }
+            
+                         .git a svg:hover {
+                           path {
+                             fill: #F05033;
+                           }
+                         }
+            
+                         .twitter a svg {
+                           fill: a.$colorDark;
+            
+                           path {
+                             fill: #7C908F;
+                           }
+            
+                           &:hover {
+                             fill: #1da1f2;
+                             transition: 0.2s;
+                           }
+                         }
+
+
+
           }
 
           .footer-grid-1 {

@@ -56,12 +56,168 @@
       // -----------  block présentation -----------
       &__presentation {
         @include a.mAboutLayoutCard();
+        min-height: 30rem;
+        padding: 0;
 
         &:hover {
           background-color: a.$colorBackgroundCardHover;
           box-shadow: a.$boxShadowCardHover;
           transition: a.$transitionCardHover;
         }
+
+        .video {
+          width: 100%;
+          height: 100%;
+        }
+
+        .vjs-poster img {
+          width: 100%;
+          height: 100%;
+          transition: a.$transitionRegular;
+
+          &:hover {
+            filter: brightness(1.2);
+          }
+        }
+
+        .vjs-custom-theme {
+          .vjs-control-bar {
+            color: #328281;
+            background-color: transparent !important;
+          }
+
+          .vjs-big-play-button {
+            opacity: 0 !important;
+            color: #328281;
+            border-color: #328281;
+          }
+
+          .vjs-volume-control {
+            align-items: center !important;
+            color: #328281;
+          }
+
+          .vjs-time-tooltip {
+            color: #328281;
+            background-color: #3282811a;
+          }
+
+          .vjs-play-progress:before {
+            top: -4px !important;
+            color: #328281;
+          }
+
+          .vjs-fullscreen-control {
+            color: #328281;
+
+            .vjs-icon-placeholder {
+              color: #328281;
+
+              &:before {
+                line-height: 30px;
+                color: #328281;
+              }
+            }
+          }
+
+          button {
+            color: #328281;
+
+            &:hover {
+              color: #47b3b1;
+            }
+          }
+
+          .vjs-play-progress.vjs-slider-bar {
+            color: #328281 !important;
+            background-color: #328281;
+          }
+
+          .vjs-progress-control .vjs-progress-holder {
+            margin: 0 10px;
+            background: #32828168;
+            height: 1px;
+          }
+
+
+          .vjs-volume-level {
+            color: #328281 !important;
+            background-color: #328281;
+          }
+
+          .vjs-volume-tooltip {
+            color: #328281 !important;
+          }
+
+          .vjs-progress-control {
+            color: #328281;
+
+            &:hover {
+              color: #47b3b1;
+
+              .vjs-play-progress:before {
+                top: -7px !important;
+                color: #47b3b1;
+              }
+            }
+          }
+
+          .vjs-control-bar {
+            height: 54px;
+            background: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            visibility: visible;
+            opacity: 1;
+            -webkit-transition: visibility 0.1s, opacity 0.1s;
+            -o-transition: visibility 0.1s, opacity 0.1s;
+            transition: visibility 0.1s, opacity 0.1s;
+            color: #328281;
+          }
+
+          .vjs-volume-panel {
+            color: #328281;
+            -webkit-box-ordinal-group: 5;
+            -ms-flex-order: 4;
+            order: 4;
+            display: flex;
+            align-items: center;
+          }
+
+          .vjs-fullscreen-control {
+            -webkit-box-ordinal-group: 5;
+            -ms-flex-order: 5;
+            order: 5;
+            color: #328281;
+          }
+
+          /*   .vjs-picture-in-picture-control,
+               .vjs-remaining-time {
+                 display: none;
+               }
+       */
+          .vjs-play-control {
+            color: #328281;
+            width: 5em !important;
+          }
+
+          .vjs-play-control .vjs-icon-placeholder::before {
+            font-size: 13px;
+            letter-spacing: 0.16px;
+            content: "Play" !important;
+            font-family: sans-serif;
+            line-height: 30px;
+            color: #328281;
+          }
+
+          .vjs-play-control.vjs-playing .vjs-icon-placeholder::before {
+            content: "Pause" !important;
+            font-family: sans-serif;
+            color: #328281;
+          }
+        }
+
       }
 
       // ------------  block formations -------------
@@ -118,6 +274,7 @@
       // -------------  block compétences ---------------
       &__competences {
         @include a.mAboutLayoutCard();
+        padding-top: 3rem;
 
         &:hover {
           background-color: a.$colorBackgroundCardHover;
@@ -151,7 +308,8 @@
           }
         }
 
-        .presentation__social__network {
+        /* 
+        .reseaux__social__network {
           width: 100%;
           display: flex;
           justify-content: center;
@@ -196,7 +354,12 @@
           font-weight: bold;
           font-size: 1.2rem;
           width: auto;
-        }
+        } */
+      }
+
+      // ---------------- reseaux ---------------
+      &__reseaux {
+        display: none;
       }
     }
   }
@@ -219,7 +382,6 @@
 
       // ---------------------------  block présentation
       &__presentation {
-        padding: 2rem;
         font-size: a.$fontSizeTextCard;
         line-height: 2.1rem;
       }
@@ -236,6 +398,7 @@
       // ---------------------------  block compétences
       &__competences {
         padding: 2rem;
+        padding-top: 3rem;
         grid-column: 1 / 3;
 
         .competences__title {
@@ -818,31 +981,141 @@
 
       &__block {
         margin: 0 3rem;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1.3fr 1fr;
+        grid-template-rows: 3fr 1fr;
 
         // ------  block présentation --------
         &__presentation {
-          margin-top: 0;
           grid-column: 1 / 2;
-          grid-row: 1 / 4;
-          padding: 2rem;
+          grid-row: 1 / 3;
         }
 
         // ------- block formations ----------
         &__formations {
-          margin-top: 0;
-          grid-column: 1 / 2;
-          grid-row: 4 / 6;
+          grid-column: 2 / 3;
+          grid-row: 2 / 3;
+          min-height: unset;
+
+          h4 {
+            margin-top: 0.5rem;
+            margin-bottom: 1rem !important;
+          }
+
+          div {
+            align-self: start;
+          }
+          .info-modal .title {
+            margin-top: -0.5rem;
+          }
 
         }
 
         // -------  block compétences ---------
         &__competences {
           margin-top: 0;
-          grid-column: 2 / 3;
-          grid-row: 1 / 6;
+          grid-column: 2 / 4;
+          grid-row: 1 / 2;
         }
+
+        // --------- reseaux --------
+        &__reseaux {
+          @include a.mAboutLayoutCard();
+          background-color: a.$colorBackgroundCard;
+          display: flex;
+          overflow: hidden;
+          grid-column: 3 / 4;
+          grid-row: 2 / 3;
+          padding: 1rem;
+
+          &:hover {
+            background-color: a.$colorBackgroundCardHover;
+            box-shadow: a.$boxShadowCardHover;
+            transition: a.$transitionCardHover;
+          }
+
+          .reseaux__title {
+            @include a.mTitleCard(a.$fontSizeTitleCard);
+            @include a.mCenterElement();
+            margin-bottom: 1rem;
+          }
+
+
+          .reseaux__social__network {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transition: 1s;
+
+            .git,
+            .linkedln,
+            .twitter {
+              padding: 1rem;
+            }
+
+            .git a svg,
+            .linkedln a svg,
+            .twitter a svg {
+              width: 3rem;
+
+              path {
+                fill: a.$colorDark;
+                transition: 0.2s;
+              }
+            }
+
+            .linkedln a svg:hover {
+              path {
+                fill: #0077b5;
+              }
+            }
+
+            .git a svg:hover {
+              path {
+                fill: #F05033;
+              }
+            }
+
+            .twitter a svg {
+              fill: a.$colorDark;
+
+              path {
+                fill: #225c5a;
+              }
+
+              &:hover {
+                fill: #1da1f2;
+                transition: 0.2s;
+              }
+            }
+
+            
+          }
+
+
+          .modale-linkedln {
+            background-color: a.$colorDark;
+            color: a.$colorGreenLight;
+            font-family: a.$fontGrifterFamily;
+            letter-spacing: 1px;
+            position: absolute;
+            text-align: center;
+            z-index: 100;
+            bottom: 5rem;
+            @include a.mCenterElement;
+            padding: 1rem;
+            border-radius: 2px;
+            display: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            width: auto;
+          }
+        }
+
+        
+
+
       }
     }
   }
