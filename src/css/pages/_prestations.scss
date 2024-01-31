@@ -100,7 +100,7 @@
             @include a.mTextCard(a.$fontSizeTextCardMobile);
             line-height: 1.8rem;
             transition: 0.1s ease-in-out;
-            padding: 1rem;
+            padding: 0.5rem 1rem 1.5rem 1rem;
             border-radius: 2px;
             margin-bottom: -0.8rem;
           }
@@ -145,7 +145,6 @@
           .description {
             @include a.mTextCard(a.$fontSizeTextCard);
             transition: 0.1s ease-in-out;
-            padding: 1rem;
             border-radius: 2px;
           }
         }

@@ -291,17 +291,14 @@
 
         .competences__card {
           width: 100%;
-          margin-bottom: 2rem;
+          margin-bottom: 1rem;
 
           &__sentence {
             @include a.mUnderTitleCard(a.$fontSizeUnderTitleCardMobile);
-            letter-spacing: 1px;
-            margin-bottom: -0.8rem;
           }
 
           // ,,,,,,,,,,  texte + icones
           &__text__icon {
-            margin-bottom: 1rem;
 
             // ,,,,,,,,,,  icones
             .icon {
@@ -309,26 +306,6 @@
             }
           }
         }
-
-
-        /*
-        .modale-linkedln {
-          background-color: a.$colorDark;
-          color: a.$colorGreenLight;
-          font-family: a.$fontGrifterFamily;
-          letter-spacing: 1px;
-          position: absolute;
-          text-align: center;
-          z-index: 100;
-          bottom: 5rem;
-          @include a.mCenterElement;
-          padding: 1rem;
-          border-radius: 2px;
-          display: none;
-          font-weight: bold;
-          font-size: 1.2rem;
-          width: auto;
-        } */
       }
 
       // ---------------- reseaux ---------------
@@ -339,7 +316,7 @@
   }
 }
 
-// ============ MEDIA QUERY > 767PX (TABLETTE) ===============
+// ====================== MEDIA QUERY > 767PX (TABLETTE) ========================
 @media screen and (min-width: 767px) {
   .about {
     margin-top: 10vh;
@@ -369,6 +346,11 @@
         }
       }
 
+      .info-modal-formation {
+        @include a.mCenterElement();
+      }
+
+
       // ---------------------------  block compétences
       &__competences {
         padding: 2rem;
@@ -380,12 +362,11 @@
         }
 
         .competences__card {
-          margin: 0.1rem 0 2rem 0;
+          margin: 0.1rem 0 1.5rem 0;
           display: grid;
 
           &__sentence {
             @include a.mUnderTitleCard(a.$fontSizeUnderTitleCard);
-            letter-spacing: 1px;
           }
         }
       }
@@ -393,7 +374,7 @@
   }
 }
 
-// ============= MEDIA QUERY > 960PX (PC) ==================
+// ========================= MEDIA QUERY > 960PX (PC) ============================
 @media screen and (min-width: 960px) {
   .about {
     padding-top: 10rem;
@@ -420,11 +401,6 @@
           // ---------------------  compétences card
           .competences__card {
             margin: 1rem;
-
-            &__sentence {
-              letter-spacing: 1px;
-              margin-bottom: 0.1rem;
-            }
 
             // ,,,,,,,,,,  texte + icones
             &__text__icon {
@@ -942,7 +918,7 @@
   }
 }
 
-// ============ MEDIA QUERY > 1240PX ( GRAND ECRAN ) ===========
+// ====================== MEDIA QUERY > 1240PX ( GRAND ECRAN ) ===================
 @media screen and (min-width: 1240px) {
 
   .about {
@@ -970,9 +946,9 @@
           grid-row: 2 / 3;
           min-height: unset;
 
-          h4 {
+          .formations__title {
             margin-top: 0.5rem;
-            margin-bottom: 1rem !important;
+            margin-bottom: 1.5rem;
           }
 
           div {
@@ -980,7 +956,8 @@
           }
 
           .info-modal .title {
-            margin-top: -0.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
           }
 
         }
@@ -991,6 +968,15 @@
           grid-column: 2 / 4;
           grid-row: 1 / 2;
           padding: 1.7rem;
+
+
+          .competences__title {
+            margin-top: 0.5rem;
+          }
+
+          .competences__card {
+            margin-top: 0.7rem;
+          }
         }
 
         // --------- reseaux --------
@@ -1001,7 +987,7 @@
           overflow: hidden;
           grid-column: 3 / 4;
           grid-row: 2 / 3;
-          
+
 
           &:hover {
             background-color: a.$colorBackgroundCardHover;
@@ -1090,7 +1076,7 @@
   }
 }
 
-// ======= MEDIA QUERY >  MOBILE ORIENTATION PAYSAGE <430 height ===========
+// ========= MEDIA QUERY >  MOBILE ORIENTATION PAYSAGE <430 height ===========
 @media (orientation: landscape) and (max-height: 430px) {
   .about {
     height: 70vh;
