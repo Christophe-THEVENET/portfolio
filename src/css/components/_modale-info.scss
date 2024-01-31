@@ -39,7 +39,7 @@
     color: a.$colorWhite !important;
   }
 
-  
+
 }
 
 .info-modal.info-modal-show {
@@ -47,7 +47,7 @@
   transition: all 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
 
   &>.title {
-    padding-top: 0.4rem;
+    margin-top: 0.25rem;
     letter-spacing: 2px !important;
   }
 
