@@ -3,9 +3,9 @@ let scrollMouseIcon = document.querySelector('.scroll-icon');
 let textUseScroll = document.querySelector('.text-use-mouse');
 
 setTimeout(() => {
-  scrollMouseIcon.style.opacity = 1;
-  textUseScroll.style.opacity = 1;
-}, 7000);
+    scrollMouseIcon.style.opacity = 1;
+    textUseScroll.style.opacity = 1;
+}, 3000);
 
 // *********************** reveal global ****************************
 
