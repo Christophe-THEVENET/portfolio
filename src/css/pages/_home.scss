@@ -1,188 +1,191 @@
 @use "../abstracts/_all" as a;
 
 .slide-home {
-  position: relative;
-  @include a.mCenterElement;
+    position: relative;
+    @include a.mCenterElement;
 }
 
 .text-use-mouse {
-  display: none;
+    display: none;
 }
 
 .scroll-icon {
-  display: none;
+    display: none;
 }
 
 // ************ block home **********
 .filter-home {
-  height: 0;
+    height: 0;
 
-  .content-home {
-    color: a.$colorWhite;
-    margin-top: 100vh;
-    padding: 1rem;
+    .content-home {
+        color: a.$colorWhite;
+        margin-top: 100vh;
+        padding: 1rem;
 
-    h1,
-    h2 {
-      font-size: 2em;
-      font-family: a.$fontGrifterFamily;
+        h1,
+        h2 {
+            font-size: 2em;
+            font-family: a.$fontGrifterFamily;
+            transition: a.$transitionRegular;
+        }
+
+        h3 {
+            font-size: a.$fontSizeTitleCardMobile;
+            font-family: a.$fontCovesFamily;
+            color: a.$colorGreenLight;
+            margin: 2rem 0 2rem;
+            transition: a.$transitionRegular;
+        }
+
+        .text-btn-block {
+            .btn-block {
+                margin-top: 1rem;
+                display: flex;
+                justify-content: end;
+            }
+        }
+
+        p {
+            font-size: a.$fontSizeTextCardMobile;
+            font-family: a.$fontCovesFamily;
+            color: a.$colorWhite;
+            text-align: justify;
+            margin-bottom: 2rem;
+            transition: a.$transitionRegular;
+        }
     }
-
-    h3 {
-      font-size: a.$fontSizeTitleCardMobile;
-      font-family: a.$fontCovesFamily;
-      color: a.$colorGreenLight;
-      margin: 2rem 0 2rem;
-    }
-
-    .text-btn-block {
-      .btn-block {
-        margin-top: 1rem;
-        display: flex;
-        justify-content: end;
-      }
-    }
-
-    p {
-      font-size: a.$fontSizeTextCardMobile;
-      font-family: a.$fontCovesFamily;
-      color: a.$colorWhite;
-      text-align: justify;
-      margin-bottom: 2rem;
-    }
-  }
 }
 
 // ======= MEDIA QUERY > 767PX (TABLETTE) ==========
 @media screen and (min-width: 767px) {
-  .filter-home {
-    .content-home {
-      padding: 5rem;
+    .filter-home {
+        .content-home {
+            padding: 5rem;
 
-      h1,
-      h2 {
-        font-size: 3em;
-      }
+            h1,
+            h2 {
+                font-size: 3em;
+            }
 
-      p {
-        font-size: a.$fontSizeTextCard;
-      }
+            p {
+                font-size: a.$fontSizeTextCard;
+            }
 
-      .text-btn-block {
-        width: 100%;
-        max-width: 60rem;
-      }
+            .text-btn-block {
+                width: 100%;
+                max-width: 60rem;
+            }
+        }
     }
-  }
 }
 
 // ======= MEDIA QUERY > 960PX (PC) ================
 @media screen and (min-width: 960px) {
-  .filter-home {
+    .filter-home {
 
-    .content-home {
+        .content-home {
 
-      h1,
-      h2 {
-        font-size: a.$fontSizeTitlePage;
-      }
+            h1,
+            h2 {
+                font-size: a.$fontSizeTitlePage;
+            }
 
-      h3 {
-        font-size: 2vmax;
-      }
+            h3 {
+                font-size: 2vmax;
+            }
+        }
     }
-  }
 }
 
 // ====== MEDIA QUERY > ORIENTATION PAYSAGE =========
 @media (orientation: landscape) {
-  .filter-home {
-    .content-home {
-      margin-top: 110vh;
-      padding: 5rem;
+    .filter-home {
+        .content-home {
+            margin-top: 110vh;
+            padding: 5rem;
+        }
     }
-  }
 }
 
 // ======= MEDIA QUERY ICON SCROLL > 940 ===========
 @media screen and (min-width: 940px) {
-  .scroll-icon {
-    position: absolute;
-    bottom: 4rem;
-    right: 4rem;
-    @include a.mCenterElement;
-    height: 2.7em;
-    width: 1.5em;
-    font-size: 2.2rem;
-    color: rgba(#dcf7ff, 0.3);
-    border-radius: 2em;
-    border: solid 3px;
-    transition: 0.5s;
-    opacity: 0;
+    .scroll-icon {
+        position: absolute;
+        bottom: 4rem;
+        right: 4rem;
+        @include a.mCenterElement;
+        height: 2.7em;
+        width: 1.5em;
+        font-size: 2.2rem;
+        color: rgba(#dcf7ff, 0.3);
+        border-radius: 2em;
+        border: solid 3px;
+        transition: 0.5s;
+        opacity: 0;
 
-    &:hover {
-      background-color: rgba(#dcf7ff, 0.05);
-      color: #dcf7ff;
-    }
-  }
-
-  .scroll-icon::after {
-    content: '';
-    width: 5px;
-    height: 5px;
-    background-color: #dcf7ff79;
-    border-radius: 50%;
-    animation: scroll-icon 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
-  }
-
-  @keyframes scroll-icon {
-    0% {
-      transform: translateY(-12px);
-      opacity: 0;
+        &:hover {
+            background-color: rgba(#dcf7ff, 0.05);
+            color: #dcf7ff;
+        }
     }
 
-    30%,
-    70% {
-      opacity: 1;
+    .scroll-icon::after {
+        content: '';
+        width: 5px;
+        height: 5px;
+        background-color: #dcf7ff79;
+        border-radius: 50%;
+        animation: scroll-icon 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
     }
 
-    100% {
-      transform: translateY(12px);
-      opacity: 0;
-    }
-  }
+    @keyframes scroll-icon {
+        0% {
+            transform: translateY(-12px);
+            opacity: 0;
+        }
 
-  .text-use-mouse {
-    position: absolute;
-    bottom: 1.5rem;
-    right: 1rem;
-    color: rgba(#dcf7ff, 0.3);
-    font-family: a.$fontCovesFamily;
-    font-size: 1.5rem;
-    transition: 0.5;
-    opacity: 0;
-    display: block;
+        30%,
+        70% {
+            opacity: 1;
+        }
 
-    &:hover {
-      color: a.$colorWhite;
+        100% {
+            transform: translateY(12px);
+            opacity: 0;
+        }
     }
-  }
+
+    .text-use-mouse {
+        position: absolute;
+        bottom: 1.5rem;
+        right: 1rem;
+        color: rgba(#dcf7ff, 0.3);
+        font-family: a.$fontCovesFamily;
+        font-size: 1.5rem;
+        transition: 0.5;
+        opacity: 0;
+        display: block;
+
+        &:hover {
+            color: a.$colorWhite;
+        }
+    }
 }
 
 // ==== MEDIA QUERY >  MOBILE ORIENTATION PAYSAGE ====
 @media (orientation: landscape) and (max-height: 430px) {
-  .container .slide-home .filter-home .content-home {
+    .container .slide-home .filter-home .content-home {
 
-    h3,
-    h2,
-    h1 {
-      margin: 0;
-      padding: 0;
-      font-size: 2.8vmax;
-    }
+        h3,
+        h2,
+        h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 2.8vmax;
+        }
 
-    h2 {
-      margin-top: 4rem;
+        h2 {
+            margin-top: 4rem;
+        }
     }
-  }
 }
