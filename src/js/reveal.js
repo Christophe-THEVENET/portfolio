@@ -5,7 +5,7 @@ let textUseScroll = document.querySelector('.text-use-mouse');
 setTimeout(() => {
     scrollMouseIcon.style.opacity = 1;
     textUseScroll.style.opacity = 1;
-}, 3000);
+}, 1500);
 
 // *********************** reveal global ****************************
 
