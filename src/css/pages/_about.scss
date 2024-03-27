@@ -969,16 +969,23 @@
           }
 
           .info-modal-formation {
+            flex-direction: row;
+            align-items:center;
+            justify-content: space-evenly;
 
             .title-formation {
-              margin-top: -3rem;
-              margin-bottom: 3rem;
+             /*  margin-top: -3rem;
+              margin-bottom: 3rem; */
+              margin: 0;
+              padding: 0;
             }
 
-            ul {
-              width: 70%;
+            ul  {
               display: flex;
+              flex-direction: column;
+              height: 100%;
               justify-content: space-around;
+            
             }
 
           }
