@@ -337,6 +337,7 @@
       &__presentation {
         font-size: a.$fontSizeTextCard;
         line-height: 2.1rem;
+        min-height: initial;
       }
 
       // ---------------------------  block formation
