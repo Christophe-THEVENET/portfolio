@@ -132,11 +132,28 @@
                         .info-form--left {
                             display: inline-block;
                             animation: info-name-left 1s ease-in-out;
+                            /* Épaisseur et couleur de la bordure */
+                            -webkit-text-stroke: 1px a.$colorGreenFullDark;
+                            color: white;
+
+                        }
+
+
+                        .info-form--tiret {
+                            display: inline-block;
+                            animation: info-name-left 1s ease-in-out;
+                            /* Épaisseur et couleur de la bordure */
+                            -webkit-text-stroke: 0.5px a.$colorGreenFullDark;
+                            color: a.$colorGreenLight;
+
                         }
 
                         .info-form--right {
                             display: inline-block;
                             animation: info-name-right 1s ease-in-out;
+                            /* Épaisseur et couleur de la bordure */
+                            -webkit-text-stroke: 1px a.$colorGreenFullDark;
+                                color: white;
                         }
                     }
 
