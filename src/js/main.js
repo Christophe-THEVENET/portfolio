@@ -35,18 +35,18 @@ let linkedlnModalFooter = document.querySelector('#linkedlnFooter');
 // -------- boutons a propos -------------
 linkedlnButton.addEventListener('click', (e) => {
     e.preventDefault();
-    linkedlnModal.style.display = 'block';
+    linkedlnModal.classList.add('show-right');
     setTimeout(() => {
-        linkedlnModal.style.display = 'none';
+        linkedlnModal.classList.remove('show-right');
     }, 1500);
 });
 
 // -------- boutons footer -------------
 linkedlnButtonFooter.addEventListener('click', (e) => {
     e.preventDefault();
-    linkedlnModalFooter.style.display = 'block';
+    linkedlnModalFooter.classList.add('show-left');
     setTimeout(() => {
-        linkedlnModalFooter.style.display = 'none';
+       linkedlnModalFooter.classList.remove('show-left');
     }, 1500);
 });
 

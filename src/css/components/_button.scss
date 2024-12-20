@@ -12,6 +12,9 @@
     @include a.mCenterElement;
     position: relative;
     color: a.$colorWhite;
+                border-radius: 0.5rem;
+                overflow: hidden;
+
 
 
     transition: a.$transitionButton span {
