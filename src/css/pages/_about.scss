@@ -58,6 +58,7 @@
                 @include a.mAboutLayoutCard();
                 min-height: 35rem;
                 padding: 0;
+                border-radius: 1rem;
 
                 &:hover {
                     background-color: a.$colorBackgroundCardHover;
@@ -69,6 +70,7 @@
                     width: 100%;
                     height: 100%;
                     overflow: hidden;
+                    border-radius: 1rem;
                 }
 
                 .vjs-poster img {
@@ -227,11 +229,13 @@
                 min-height: 15rem;
                 position: relative;
                 overflow: hidden;
+                border-radius: 1rem;
 
                 &:hover {
                     background-color: a.$colorBackgroundCardHover;
                     box-shadow: a.$boxShadowCardHover;
                     transition: a.$transitionCardHover;
+
                 }
 
                 .formations__title {
@@ -277,6 +281,7 @@
             &__competences {
                 @include a.mAboutLayoutCard();
                 padding-top: 3rem;
+                border-radius: 1rem;
 
                 &:hover {
                     background-color: a.$colorBackgroundCardHover;
@@ -311,6 +316,7 @@
             // ---------------- reseaux ---------------
             &__reseaux {
                 display: none;
+
             }
         }
     }
@@ -866,7 +872,7 @@
 
                                     // -------------------------
                                     // docker icon ----------------
-                                   
+
                                     .docker-icon-path {
                                         transition: 0.1s ease-in-out;
                                         fill: a.$colorGreenLight;
@@ -877,7 +883,7 @@
                                             transition: 0.1s ease-in-out;
                                             fill: #0091e2;
                                         }
-                                                                           }
+                                    }
 
                                     // -------------------------
                                     // sass icon ----------------
@@ -973,6 +979,7 @@
                         flex-wrap: wrap;
                         width: 100%;
 
+
                         .formations__text {
                             margin: 0 0.5rem;
                         }
@@ -982,6 +989,7 @@
                         flex-direction: row;
                         align-items: center;
                         justify-content: space-evenly;
+
 
                         .title-formation {
                             /*  margin-top: -3rem;
@@ -1028,6 +1036,7 @@
                     overflow: hidden;
                     grid-column: 3 / 4;
                     grid-row: 2 / 3;
+                    border-radius: 1rem;
 
                     &:hover {
                         background-color: a.$colorBackgroundCardHover;
@@ -1101,13 +1110,21 @@
                         text-align: center;
                         z-index: 100;
                         bottom: 5rem;
+                        border-radius: 0.5rem;
                         @include a.mCenterElement;
                         padding: 1rem;
-                        border-radius: 2px;
-                        display: none;
                         font-weight: bold;
                         font-size: 1.2rem;
                         width: 25rem;
+                        transform: translateX(400px);
+                        transition: all 0.5s cubic-bezier(0.92, 0.08, 0.28, 1.46);
+                        opacity: 0;
+                    }
+
+                    .show-right {
+                        transform: translateX(0);
+                        transition: all 0.5s cubic-bezier(0.92, 0.08, 0.28, 1.46);
+                        opacity: 1;
                     }
                 }
             }

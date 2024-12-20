@@ -48,12 +48,14 @@
                 min-height: 20rem;
                 border-radius: 2px;
                 transition: a.$transitionRegular;
+                border-radius: 1rem;
 
                 .filter-modale {
                     border-radius: 2px;
                     height: 100%;
                     width: 100%;
                     background-color: #0d353575;
+                border-radius: 1rem;
                 }
 
                 // ^^^^^^^^ modale description projet ^^^^^^
@@ -70,6 +72,9 @@
                     opacity: 0;
                     transition: a.$transitionRegular;
                     position: relative;
+                border-radius: 1rem;
+
+                    
 
                     &:hover {
                         opacity: 1;

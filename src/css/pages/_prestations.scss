@@ -56,10 +56,12 @@
         background-color: a.$colorBackgroundCard;
         position: relative;
         overflow: hidden;
+                border-radius: 1rem;
 
         &:hover {
           background-color: a.$colorBackgroundCardHover;
           box-shadow: a.$boxShadowCardHover;
+          
         }
 
         .title {
