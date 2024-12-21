@@ -425,14 +425,15 @@
                         width: 22rem;
                         @include a.mCenterElement;
                         transform: translateX(-800px);
-                        transition: all 0.5s cubic-bezier(0.92, 0.08, 0.28, 1.46);
+                        /* transition: all 0.5s cubic-bezier(0.92, 0.08, 0.28, 1.46); */
+                        transition: all 1s cubic-bezier(1, -0.39, 0, .99);
                         opacity: 0;
 
                     }
 
                     .show-left {
                         transform: translateX(0px);
-                        transition: all 0.5s cubic-bezier(0.92, 0.08, 0.28, 1.46);
+                        transition: all 0.7s cubic-bezier(0.92, 0.08, 0.28, 1.46);
                         opacity: 1;
                     }
 
@@ -480,8 +481,15 @@
                             }
 
                             &:hover {
-                                fill: #1da1f2;
-                                transition: 0.2s;
+                                path {
+                                    fill: #269DF1 !important;
+                                    transition: 0.2s;
+                                }
+
+                                polygon {
+                                    fill: #225c5a !important;
+                                    transition: 0.2s;
+                                }
                             }
                         }
                     }

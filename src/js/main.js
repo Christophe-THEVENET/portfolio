@@ -3,6 +3,8 @@ import './reveal';
 import './formulaire';
 import '../css/main.scss';
 
+
+
 // ***************** menu mobile *************************
 //
 // ajout supp classe open sur les boutons hamburger
@@ -45,9 +47,12 @@ linkedlnButton.addEventListener('click', (e) => {
 linkedlnButtonFooter.addEventListener('click', (e) => {
     e.preventDefault();
     linkedlnModalFooter.classList.add('show-left');
+
     setTimeout(() => {
        linkedlnModalFooter.classList.remove('show-left');
-    }, 1500);
+    linkedlnModalFooter.classList.add('hide-left');
+
+    }, 2000);
 });
 
 // ***************** boutons mentions légales *************************

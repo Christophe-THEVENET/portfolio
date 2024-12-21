@@ -1077,7 +1077,7 @@
 
                         .linkedln a svg:hover {
                             path {
-                                fill: #0077b5;
+                                fill: #1999df;
                             }
                         }
 
@@ -1095,8 +1095,16 @@
                             }
 
                             &:hover {
-                                fill: #1da1f2;
-                                transition: 0.2s;
+                                path {
+                                    fill: #269DF1 !important;
+                                    transition: 0.2s;
+                                }
+
+                                polygon {
+                                    fill: #225c5a !important;
+                                    transition: 0.2s;
+                                }
+
                             }
                         }
                     }
@@ -1117,7 +1125,8 @@
                         font-size: 1.2rem;
                         width: 25rem;
                         transform: translateX(400px);
-                        transition: all 0.5s cubic-bezier(0.92, 0.08, 0.28, 1.46);
+                        /* transition: all 0.5s cubic-bezier(0.92, 0.08, 0.28, 1.46); */
+                        transition: all 1s cubic-bezier(1, -0.39, 0, .99);
                         opacity: 0;
                     }
 
