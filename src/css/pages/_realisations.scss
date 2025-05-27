@@ -55,7 +55,7 @@
                     height: 100%;
                     width: 100%;
                     background-color: #0d353575;
-                border-radius: 1rem;
+                    border-radius: 1rem;
                 }
 
                 // ^^^^^^^^ modale description projet ^^^^^^
@@ -72,9 +72,9 @@
                     opacity: 0;
                     transition: a.$transitionRegular;
                     position: relative;
-                border-radius: 1rem;
+                    border-radius: 1rem;
 
-                    
+
 
                     &:hover {
                         opacity: 1;
@@ -219,6 +219,12 @@
                 background-position: center;
             }
 
+            .cbd {
+                background-image: url('../img/realisations/cbd.png');
+                background-size: cover;
+                background-position: center;
+            }
+
             .alblse {
                 background-image: url('../img/realisations/alblse.png');
                 background-size: cover;
@@ -251,12 +257,6 @@
 
             .biodiversite {
                 background-image: url('../img/realisations/noe.png');
-                background-size: cover;
-                background-position: center;
-            }
-
-            .reservia {
-                background-image: url('../img/realisations/reservia.png');
                 background-size: cover;
                 background-position: center;
             }
