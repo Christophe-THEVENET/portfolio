@@ -75,7 +75,7 @@
 
         .sentence {
           @include a.mSentenceCard(a.$fontSizeSentenceCardMobile);
-          margin-bottom: 1rem;
+          margin-bottom: 0.5rem;
         }
 
                 .sentence-modale {
