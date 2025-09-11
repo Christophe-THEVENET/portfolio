@@ -195,11 +195,6 @@
                         color: #328281;
                     }
 
-                    /*   .vjs-picture-in-picture-control,
-               .vjs-remaining-time {
-                 display: none;
-               }
-       */
                     .vjs-play-control {
                         color: #328281;
                         width: 5em !important;
@@ -263,12 +258,26 @@
                     color: a.$colorWhite;
                     font-size: 1.6rem;
 
+
+                }
+
+                .info-modal-formation {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+
+                    .title-formation {
+                        margin-bottom: 1rem;
+                        margin-top: -2rem;
+                    }
+
                     .icon-showing {
-                        width: 20px;
+                        width: 17px;
                         fill: a.$colorGreenLight;
-                        position: relative;
-                        top: 6px;
                         transition: 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+                        margin-bottom: -0.4rem;
 
                         &:hover {
                             fill: a.$colorGreen;
@@ -352,9 +361,7 @@
                 }
             }
 
-            .info-modal-formation {
-                @include a.mCenterElement();
-            }
+
 
             // ---------------------------  block compétences
             &__competences {
@@ -965,44 +972,35 @@
                     min-height: unset;
 
                     .formations__title {
-                        margin-top: -1.5rem;
-                        margin-bottom: 3rem;
+                        margin-bottom: 2.7rem;
                     }
 
-                    /*  div {
-            align-self: start;
-          }
-           */
                     .diplomes-block {
-                        display: flex;
+                        /* display: flex;
                         justify-content: space-around;
-                        flex-wrap: wrap;
+                        flex-wrap: wrap; */
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: auto auto;
+                        max-width: 700px;
+                        margin: 0 auto;
+                        gap: 5px;
                         width: 100%;
-
 
                         .formations__text {
                             margin: 0 0.5rem;
                         }
+
+
                     }
 
                     .info-modal-formation {
-                        flex-direction: row;
                         align-items: center;
                         justify-content: space-evenly;
 
-
                         .title-formation {
-                            /*  margin-top: -3rem;
-              margin-bottom: 3rem; */
-                            margin: 0;
-                            padding: 0;
-                        }
-
-                        ul {
-                            display: flex;
-                            flex-direction: column;
-                            height: 100%;
-                            justify-content: space-around;
+                            margin-bottom: 1rem;
+                            margin-top: -1rem!important;
                         }
                     }
                 }
@@ -1032,10 +1030,7 @@
                 &__reseaux {
                     @include a.mAboutLayoutCard();
                     background-color: a.$colorBackgroundCard;
-                    display: flex;
                     overflow: hidden;
-                    grid-column: 3 / 4;
-                    grid-row: 2 / 3;
                     border-radius: 1rem;
 
                     &:hover {
@@ -1047,32 +1042,32 @@
                     .reseaux__title {
                         @include a.mTitleCard(a.$fontSizeTitleCard);
                         @include a.mCenterElement();
-                        margin-bottom: 1.3rem;
+                        margin-top: -1.3rem;
+                        margin-bottom: 2.7rem;
                     }
 
                     .reseaux__social__network {
-                        width: 80%;
+                        width: 100%;
+                        max-width: 200px;
                         display: flex;
                         justify-content: space-around;
                         align-items: center;
-                        position: relative;
                         transition: 1s;
-
-                        .git,
-                        .linkedln,
-                        .twitter {
-                            padding: 1rem;
-                        }
 
                         .git a svg,
                         .linkedln a svg,
-                        .twitter a svg {
+                        .twitter a svg,
+                        .facebook a svg {
                             width: 3rem;
 
                             path {
                                 fill: a.$colorDark;
                                 transition: 0.2s;
                             }
+                        }
+
+                        .facebook a svg:hover path {
+                            fill: #0866FF !important;
                         }
 
                         .linkedln a svg:hover {
@@ -1117,15 +1112,14 @@
                         position: absolute;
                         text-align: center;
                         z-index: 100;
-                        bottom: 5rem;
+                        bottom: 3.5rem;
                         border-radius: 0.5rem;
                         @include a.mCenterElement;
                         padding: 1rem;
                         font-weight: bold;
                         font-size: 1.2rem;
-                        width: 25rem;
+                        width: 96%;
                         transform: translateX(400px);
-                        /* transition: all 0.5s cubic-bezier(0.92, 0.08, 0.28, 1.46); */
                         transition: all 1s cubic-bezier(1, -0.39, 0, .99);
                         opacity: 0;
                     }
