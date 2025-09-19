@@ -156,13 +156,16 @@
                     bottom: 5px;
                     display: flex;
                     width: 100%;
-                    height: 3rem;
+                    height: 3.5rem;
                     justify-content: space-between;
                     align-items: center;
+                    overflow: hidden;
 
 
                     &--github {
                         .github-icon {
+                            margin-top: 0.5rem;
+                            margin-right: 0.2rem;
                             width: 2.4rem;
                             transition: a.$transitionRegular;
 
@@ -180,15 +183,29 @@
                         }
                     }
 
+                    .project__wrapper__links__link {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 0.2rem;
+
+                    }
+
                     .btn-tuiles {
                         font-size: 1.3rem;
                         padding: 0.4rem 0.3rem;
                         width: 9rem;
+                        margin-top: -0.5rem;
                     }
 
                     .tuiles__icon {
                         display: flex;
-                        margin-left: 2rem;
+                        /*  width: 100%;
+                                                               max-width: 13rem; */
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0;
+                        margin: 0;
+                        align-self: center;
 
                         .tuiles__icon__item {
                             width: 1.4rem;
@@ -213,8 +230,14 @@
                 }
             }
 
+            .greengoodies {
+                background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/realisations/greengoodies.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+
             .desidome {
-                background-image: url('../img/realisations/desidome.png');
+                background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/realisations/desidome.png');
                 background-size: cover;
                 background-position: center;
             }
@@ -256,7 +279,7 @@
             }
 
             .labougie {
-                background-image: url('../img/realisations/img_labougie.png');
+                background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/realisations/img_labougie.png');
                 background-size: cover;
                 background-position: center;
             }
