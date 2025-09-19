@@ -235,7 +235,7 @@
 
                 .formations__title {
                     @include a.mTitleCard(a.$fontSizeTitleCardMobile);
-                    margin-bottom: 2rem;
+                    margin-bottom: 1.5rem !important;
                 }
 
                 .formations__text {
@@ -269,8 +269,7 @@
                     overflow: hidden;
 
                     .title-formation {
-                        margin-bottom: 1rem;
-                        margin-top: -2rem;
+                        margin-bottom: 0.5rem !important;
                     }
 
                     .icon-showing {
@@ -1000,7 +999,7 @@
 
                         .title-formation {
                             margin-bottom: 1rem;
-                            margin-top: -1rem!important;
+                            margin-top: -1rem !important;
                         }
                     }
                 }
@@ -1042,8 +1041,8 @@
                     .reseaux__title {
                         @include a.mTitleCard(a.$fontSizeTitleCard);
                         @include a.mCenterElement();
-                        margin-top: -1.3rem;
-                        margin-bottom: 2.7rem;
+                       /*  margin-top: -1.3rem; */
+                        margin-bottom: 2.3rem;
                     }
 
                     .reseaux__social__network {
@@ -1112,7 +1111,7 @@
                         position: absolute;
                         text-align: center;
                         z-index: 100;
-                        bottom: 3.5rem;
+                        bottom: 2.7rem;
                         border-radius: 0.5rem;
                         @include a.mCenterElement;
                         padding: 1rem;
