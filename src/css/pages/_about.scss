@@ -957,6 +957,7 @@
                 margin: 0 3rem;
                 grid-template-columns: 1fr 2.8fr 1fr;
                 grid-template-rows: 2fr 1fr;
+                overflow: hidden!important;
 
                 // ------  block présentation --------
                 &__presentation {
