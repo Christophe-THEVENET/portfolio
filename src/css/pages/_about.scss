@@ -366,7 +366,8 @@
 
                 .formations__title {
                     @include a.mTitleCard(a.$fontSizeTitleCardMobile);
-                    margin-bottom: 1.7rem !important;
+                    margin-bottom: 1rem !important;
+                    margin-top: 0.4rem !important;
                 }
 
                 .formations__text {
@@ -433,12 +434,35 @@
                     margin-bottom: 2rem;
                 }
 
+                .competences__wrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &--left {
+                        width: 100%;
+                    }
+
+                    &--right {
+                        display: none;
+                    }
+                }
+
                 .competences__card {
                     width: 100%;
                     margin-bottom: 1rem;
 
+                    &__label {
+                        text-transform: uppercase;
+                        font-size: 1.2rem;
+                        margin-right: 0.5rem;
+                    }
+
+
+
                     &__sentence {
                         @include a.mUnderTitleCard(a.$fontSizeUnderTitleCardMobile);
+                        margin-bottom: 0.3rem !important;
                     }
 
                     // ,,,,,,,,,,  texte + icones
@@ -455,6 +479,7 @@
             // ---------------- reseaux ---------------
             &__reseaux {
                 display: none;
+
 
             }
         }
@@ -540,26 +565,45 @@
                 &__competences {
                     flex: 2;
 
+                    .competences__wrapper {
+
+                        &--left {
+                            width: 90%;
+                        }
+
+                        &--right {
+                            width: 10%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+
                     // ---------------------  compétences card
                     .competences__card {
                         margin: 1rem;
 
+
+
                         // ,,,,,,,,,,  texte + icones
                         &__text__icon {
-                            display: grid;
-                            align-items: center;
-                            grid-template-columns: 7fr 1fr;
-                            margin-bottom: 0;
 
                             // ,,,,,,,,,,  icones
                             .icon {
                                 display: flex;
-                                justify-self: end;
+                                flex-direction: column;
                                 align-items: center;
+
+                                width: 100%;
+                                gap: 1rem;
 
                                 .icon-demi {
                                     display: flex;
                                     align-items: center;
+                                    justify-content: flex-end;
+                                    width: 100%;
+                                    gap: 1rem;
+
 
                                     // photoshop icon --------
                                     .photoshop-icon-path {
@@ -1054,7 +1098,7 @@
                                 }
 
                                 svg {
-                                    width: 1.6rem;
+                                    width: 2rem;
                                     margin: 0.3rem;
                                     filter: grayscale(0.6);
                                     transition: 0.2s ease-in-out;
@@ -1107,9 +1151,6 @@
                     }
 
                     .diplomes-block {
-                        /* display: flex;
-                        justify-content: space-around;
-                        flex-wrap: wrap; */
                         display: grid;
                         grid-template-columns: 1fr 1fr;
                         grid-template-rows: auto auto;
@@ -1173,8 +1214,8 @@
                     .reseaux__title {
                         @include a.mTitleCard(a.$fontSizeTitleCard);
                         @include a.mCenterElement();
-                        /*  margin-top: -1.3rem; */
-                        margin-bottom: 2.5rem;
+                        margin-bottom: 1.4rem !important;
+                        margin-top: 0.2rem;
                     }
 
                     .reseaux__social__network {
@@ -1243,7 +1284,7 @@
                         position: absolute;
                         text-align: center;
                         z-index: 100;
-                        bottom: 2.5rem;
+                        bottom: 1.7rem;
                         border-radius: 0.5rem;
                         @include a.mCenterElement;
                         padding: 1rem;
