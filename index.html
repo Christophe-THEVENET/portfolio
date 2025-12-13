@@ -218,20 +218,24 @@
                             <div class="about__content__block">
                                 <!-- ----------- block presentation -----------  -->
                                 <article class="about__content__block__presentation reveal-left">
+                                    <button class="video-cta" type="button" aria-label="Lancer la vidéo de présentation">
+                                        <span class="video-cta__icon" aria-hidden="true">▶</span>
+                                    </button>
                                     <video
                                         id="my-video"
                                         class="video-js video vjs-custom-theme vjs-fill"
                                         controls
                                         preload="auto"
-                                        data-setup="{}"
-                                        poster="./src/img/id_portfolio_black_25.jpg"
+                                        controlsList="nofullscreen"
+                                        data-setup='{"controlBar":{"fullscreenToggle":false,"playbackRateMenuButton":false}}'
+                                        poster="./src/img/avatar_green_93.png"
                                     >
                                         <source
-                                            src="./src/video/teaser_digitob_v2.mp4"
+                                            src="./src/video/teaser_digitob_v3.mp4"
                                             type="video/mp4"
                                         />
                                         <source
-                                            src="./src/video/teaser_digitob-v2.webm"
+                                            src="./src/video/teaser_digitob-v3.webm"
                                             type="video/webm"
                                         />
                                         <p class="vjs-no-js">
