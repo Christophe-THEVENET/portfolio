@@ -1,96 +1,94 @@
 @use "../abstracts/_all" as a;
 
 .info-icon {
-  transition: 0.5s;
-  z-index: 5;
+    transition: 0.5s;
+    z-index: 5;
 
-  &:hover {
-    transform: scale(1.4);
-    cursor: pointer;
-  }
+    &:hover {
+        transform: scale(1.4);
+        cursor: pointer;
+    }
 
-  g:hover {
-    fill: a.$colorGreenLight;
-  }
+    g:hover {
+        fill: a.$colorGreenLight;
+    }
 }
 
 .info-modal {
-  background-color: a.$colorDark;
-  font-family: a.$fontCovesFamily;
-  font-size: a.$fontSizeTextCardMobile;
-  line-height: 2rem;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: 0rem;
-  padding: 2rem 0;
-  border-radius: 2px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transform: translateY(100%);
-  transition: a.$transitionRegular;
-                border-radius: 1rem;
+    background-color: a.$colorDark;
+    font-family: a.$fontCovesFamily;
+    font-size: a.$fontSizeTextCardMobile;
+    line-height: 2rem;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0rem;
+    padding: 2rem 0;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(100%);
+    transition: a.$transitionRegular;
+    border-radius: 1rem;
+    z-index: 1000;
 
-  &>.title {
-    @include a.mTitleCard(a.$fontSizeTitleCardMobile);
-    margin-bottom: 3rem;
-    letter-spacing: 1px !important;
-    color: a.$colorWhite !important;
-  }
+    &>.title {
+        @include a.mTitleCard(a.$fontSizeTitleCardMobile);
+        margin-bottom: 3rem;
+        letter-spacing: 1px !important;
+        color: a.$colorWhite !important;
+    }
 
 
 }
 
 .info-modal.info-modal-show {
-  transform: translateY(0);
-  transition: all 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+    transform: translateY(0);
+    transition: all 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
 
-  &>.title {
-    margin-top: 0.25rem;
-    letter-spacing: 2px !important;
-  }
-
-  .sentence {
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
-    color: a.$colorGreenLight;
-  }
-
-  ul li {
-    color: a.$colorWhite;
-
-    span {
-      float: right;
-      margin-top: -0.5rem;
-      padding-left: 1rem;
-
+    &>.title {
+        margin-top: 0.25rem;
+        letter-spacing: 2px !important;
     }
-  }
+
+    .sentence {
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        color: a.$colorGreenLight;
+    }
+
+    ul li {
+        color: a.$colorWhite;
+
+        span {
+            float: right;
+            margin-top: -0.5rem;
+            padding-left: 1rem;
+
+        }
+    }
 }
 
 // ============ MEDIA QUERY > 767PX (TABLETTE) ===============
 @media screen and (min-width: 767px) {
 
-  .info-modal.info-modal-show {
-    transform: translateY(0);
-    transition: all 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
+    .info-modal.info-modal-show {
+        transform: translateY(0);
+        transition: all 1s cubic-bezier(0.2, 1.35, 0.82, 0.92);
 
-    &>.title {
-      padding-top: 0.35rem;
-      letter-spacing: 2px !important;
-      font-size: a.$fontSizeTitleCard;
+        &>.title {
+            padding-top: 0.35rem;
+            letter-spacing: 2px !important;
+            font-size: a.$fontSizeTitleCard;
+        }
+
+        ul li {
+            a {
+                font-size: a.$fontSizeTextCard;
+            }
+        }
+
     }
-
-    ul li {
-      a {
-        font-size: a.$fontSizeTextCard;
-      }
-    }
-
-  }
 }
-
-
-

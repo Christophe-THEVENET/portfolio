@@ -50,11 +50,6 @@
   opacity: 1;
 }
 
-/* Animation au survol des articles de services */
-.services__wrapper:hover .info-icon {
-    animation: pulseRotate 1s ease-in-out infinite;
-}
-
 /* ************ ANIMATION BOUTON INFO  ************** */
 
 /* Animation pour les icônes info au survol des articles */
@@ -64,19 +59,35 @@
 }
 
 .info-icon {
+    position: relative;
     transition: all 0.3s ease;
     transform-origin: center;
     margin-bottom: 1px;
+    border-radius: 50%;
 }
 
 /* Animation au survol de l'article formations */
 .about__content__block__formations:hover .info-icon {
-    animation: infoCallToAction 3s ease-in-out infinite;
+    animation: infoIconPulse 2.5s ease-in-out infinite, infoCallToAction 3s ease-in-out infinite;
 }
 
 /* Animation au survol des articles de services */
 .services__wrapper:hover .info-icon {
-    animation: infoCallToAction 3s ease-in-out infinite;
+    animation: infoIconPulse 2.5s ease-in-out infinite, infoCallToAction 3s ease-in-out infinite;
+}
+/* Animation pulsation CTA autour de l'icône info */
+@keyframes infoIconPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(71, 179, 177, 0.5);
+    }
+
+    70% {
+        box-shadow: 0 0 0 12px rgba(71, 179, 177, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(71, 179, 177, 0);
+    }
 }
 /* Animation d'appel à l'action pour l'icône info */
 @keyframes infoCallToAction {

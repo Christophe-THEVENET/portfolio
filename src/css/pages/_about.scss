@@ -35,6 +35,20 @@
     }
 
     &__content {
+        @keyframes videoCtaPulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(71, 179, 177, 0.55);
+            }
+
+            70% {
+                box-shadow: 0 0 0 20px rgba(71, 179, 177, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(71, 179, 177, 0);
+            }
+        }
+
         height: 100%;
         width: 100%;
         display: flex;
@@ -59,11 +73,55 @@
                 min-height: 35rem;
                 padding: 0;
                 border-radius: 1rem;
+                position: relative;
+                overflow: hidden;
 
                 &:hover {
                     background-color: a.$colorBackgroundCardHover;
                     box-shadow: a.$boxShadowCardHover;
                     transition: a.$transitionCardHover;
+                }
+
+                .video-cta {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 4.4rem;
+                    height: 4.4rem;
+                    padding: 0;
+                    border-radius: 50%;
+                    border: 3px solid rgba(71, 179, 177, 0.55);
+                    background: rgba(71, 179, 177, 0.92);
+                    color: a.$colorWhite;
+                    font-family: a.$fontGrifterFamily;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                    z-index: 2;
+                    transition: transform 0.3s ease, opacity 0.3s ease;
+                    animation: videoCtaPulse 2s ease-in-out infinite;
+
+                    &:hover,
+                    &:focus {
+                        outline: none;
+                        transform: translate(-50%, -50%) scale(1.05);
+                        animation-play-state: paused;
+                    }
+
+                    &__icon {
+                        display: block;
+                        line-height: 1;
+                    }
+
+                    &--hidden {
+                        opacity: 0;
+                        pointer-events: none;
+                        transform: translate(-50%, -50%) scale(0.85);
+                        animation-play-state: paused;
+                    }
                 }
 
                 .video {
@@ -102,82 +160,91 @@
                 }
 
                 .vjs-custom-theme {
+                    .vjs-playback-rate {
+                        display: none !important;
+                    }
+
                     .vjs-control-bar {
-                        color: #328281;
+                        color: rgba(255, 255, 255, 0.5);
                         background-color: transparent !important;
+                        opacity: 0;
+                        pointer-events: none;
+                        transition: opacity 0.3s ease;
+                        visibility: hidden;
                     }
 
                     .vjs-big-play-button {
                         opacity: 0 !important;
-                        color: #328281;
-                        border-color: #328281;
+                        color: rgba(255, 255, 255, 0.5);
+                        border-color: rgba(255, 255, 255, 0.5);
                     }
 
                     .vjs-volume-control {
                         align-items: center !important;
-                        color: #328281;
+                        color: rgba(255, 255, 255, 0.5);
                     }
 
                     .vjs-time-tooltip {
-                        color: #328281;
-                        background-color: #3282811a;
+                        color: #0b161b;
+                        background-color: rgba(255, 255, 255, 0.5);
                     }
 
                     .vjs-play-progress:before {
                         top: -4px !important;
-                        color: #328281;
+                        color: rgba(255, 255, 255, 0.5);
                     }
 
                     .vjs-fullscreen-control {
-                        color: #328281;
+                        color: rgba(255, 255, 255, 0.5);
 
                         .vjs-icon-placeholder {
-                            color: #328281;
+                            color: rgba(255, 255, 255, 0.5);
 
                             &:before {
                                 line-height: 30px;
-                                color: #328281;
+                                color: rgba(255, 255, 255, 0.5);
                             }
                         }
                     }
 
                     button {
-                        color: #328281;
+                        color: rgba(255, 255, 255, 0.5);
 
                         &:hover {
-                            color: #47b3b1;
+                            color: rgba(255, 255, 255, 0.65);
                         }
                     }
 
                     .vjs-play-progress.vjs-slider-bar {
-                        color: #328281 !important;
-                        background-color: #328281;
+                        color: rgba(255, 255, 255, 0.5) !important;
+                        background-color: rgba(255, 255, 255, 0.5);
                     }
 
                     .vjs-progress-control .vjs-progress-holder {
                         margin: 0 10px;
-                        background: #32828168;
+                        background: rgba(255, 255, 255, 0.25);
                         height: 1px;
                     }
 
                     .vjs-volume-level {
-                        color: #328281 !important;
-                        background-color: #328281;
+                        color: rgba(255, 255, 255, 0.5) !important;
+                        background-color: rgba(255, 255, 255, 0.5);
                     }
 
                     .vjs-volume-tooltip {
-                        color: #328281 !important;
+                        color: #0b161b !important;
+                        background-color: rgba(255, 255, 255, 0.5);
                     }
 
                     .vjs-progress-control {
-                        color: #328281;
+                        color: rgba(255, 255, 255, 0.5);
 
                         &:hover {
-                            color: #47b3b1;
+                            color: rgba(255, 255, 255, 0.65);
 
                             .vjs-play-progress:before {
                                 top: -7px !important;
-                                color: #47b3b1;
+                                color: rgba(255, 255, 255, 0.65);
                             }
                         }
                     }
@@ -188,16 +255,20 @@
                         display: -webkit-box;
                         display: -ms-flexbox;
                         display: flex;
-                        visibility: visible;
-                        opacity: 1;
                         -webkit-transition: visibility 0.1s, opacity 0.1s;
                         -o-transition: visibility 0.1s, opacity 0.1s;
                         transition: visibility 0.1s, opacity 0.1s;
-                        color: #328281;
+                        color: rgba(255, 255, 255, 0.5);
+                    }
+
+                    &.video-controls-active .vjs-control-bar {
+                        opacity: 1;
+                        pointer-events: auto;
+                        visibility: visible;
                     }
 
                     .vjs-volume-panel {
-                        color: #328281;
+                        color: rgba(255, 255, 255, 0.5);
                         -webkit-box-ordinal-group: 5;
                         -ms-flex-order: 4;
                         order: 4;
@@ -209,11 +280,11 @@
                         -webkit-box-ordinal-group: 5;
                         -ms-flex-order: 5;
                         order: 5;
-                        color: #328281;
+                        color: rgba(255, 255, 255, 0.5);
                     }
 
                     .vjs-play-control {
-                        color: #328281;
+                        color: rgba(255, 255, 255, 0.5);
                         width: 5em !important;
                     }
 
@@ -223,13 +294,56 @@
                         content: 'Play' !important;
                         font-family: sans-serif;
                         line-height: 30px;
-                        color: #328281;
+                        color: rgba(255, 255, 255, 0.5);
                     }
 
                     .vjs-play-control.vjs-playing .vjs-icon-placeholder::before {
                         content: 'Pause' !important;
                         font-family: sans-serif;
-                        color: #328281;
+                        color: rgba(255, 255, 255, 0.5);
+                    }
+
+                    &.video-controls-active:hover {
+
+                        .vjs-control-bar,
+                        .vjs-volume-control,
+                        .vjs-progress-control,
+                        .vjs-volume-panel,
+                        .vjs-fullscreen-control,
+                        .vjs-play-control,
+                        .vjs-icon-placeholder,
+                        button {
+                            color: #ffffff;
+                        }
+
+                        .vjs-control-bar {
+                            opacity: 1;
+                            pointer-events: auto;
+                        }
+
+                        .vjs-play-progress.vjs-slider-bar,
+                        .vjs-volume-level {
+                            color: #ffffff !important;
+                            background-color: #ffffff;
+                        }
+
+                        .vjs-progress-control .vjs-progress-holder {
+                            background: rgba(255, 255, 255, 0.45);
+                        }
+
+                        .vjs-time-tooltip,
+                        .vjs-volume-tooltip {
+                            background-color: rgba(255, 255, 255, 0.85);
+                        }
+
+                        .vjs-play-progress:before {
+                            color: #ffffff;
+                        }
+
+                        .vjs-play-control .vjs-icon-placeholder::before,
+                        .vjs-play-control.vjs-playing .vjs-icon-placeholder::before {
+                            color: #ffffff;
+                        }
                     }
                 }
             }
@@ -974,7 +1088,7 @@
                 margin: 0 3rem;
                 grid-template-columns: 1fr 2.8fr 1fr;
                 grid-template-rows: 2fr 1fr;
-                overflow: hidden!important;
+                overflow: hidden !important;
 
                 // ------  block présentation --------
                 &__presentation {
@@ -1059,7 +1173,7 @@
                     .reseaux__title {
                         @include a.mTitleCard(a.$fontSizeTitleCard);
                         @include a.mCenterElement();
-                       /*  margin-top: -1.3rem; */
+                        /*  margin-top: -1.3rem; */
                         margin-bottom: 2.5rem;
                     }
 
