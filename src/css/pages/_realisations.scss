@@ -159,7 +159,7 @@
                     /* height: 5rem; */
                     justify-content: space-between;
                     align-items: center;
-                   /* overflow: hidden; */ 
+                    /* overflow: hidden; */
                     margin-top: 1rem;
 
 
@@ -207,20 +207,21 @@
                         padding: 0;
                         margin: 0;
                         align-self: center;
+                        gap: 0.3rem;
 
                         .tuiles__icon__item {
-                            width: 1.4rem;
-                            transition: a.$transitionButton;
-                            margin-right: 0.7rem;
-                            opacity: 0.5;
-                            filter: contrast(0.3);
-                            filter: brightness(0.3);
+                            width: 2rem;
+                            height: 2rem;
+                            padding: 0.4rem;
+                            border-radius: 50%;
+                            background: rgba(38, 41, 40, 0.4);
+                            border: 2px solid rgba(71, 179, 177, 0.4);
+                            transition: all 0.3s ease;
 
                             &:hover {
-                                transform: scale(2.4);
-                                filter: contrast(1);
-                                filter: brightness(1);
-                                opacity: 1;
+                                background: rgba(38, 41, 40, 0.8);
+                                border-color: rgba(71, 179, 177, 0.7);
+                                transform: scale(1.8);
                                 z-index: 10;
                             }
 
@@ -397,7 +398,7 @@
                 margin: 0 3rem;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 grid-gap: 0px;
-                
+
 
                 // boites prestation ---------------------
                 .project__wrapper {
