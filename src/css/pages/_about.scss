@@ -658,7 +658,24 @@
                                     align-items: center;
                                     justify-content: center;
                                     width: 100%;
+                                    gap: 0.8rem;
 
+                                    // Style uniforme pour tous les SVG
+                                        svg {
+                                            width: 3.4rem;
+                                            height: 3.4rem;
+                                            padding: 0.55rem;
+                                            border-radius: 50%;
+                                            background: rgba(38, 41, 40, 0.4);
+                                            border: 2px solid rgba(71, 179, 177, 0.4);
+                                            transition: all 0.3s ease;
+                                    
+                                            &:hover {
+                                                background: rgba(38, 41, 40, 0.8);
+                                                border-color: rgba(71, 179, 177, 0.7);
+                                                transform: scale(1.8);
+                                            }
+                                        }
 
 
                                     // photoshop icon --------
@@ -907,11 +924,7 @@
                                     }
 
                                     // -------------------------
-                                    // woo icon ----------------
-                                    .woo-icon {
-                                        width: 2.4rem;
-                                    }
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                // woo icon ----------------
                                     .woo-icon-path-1 {
                                         transition: 0.1s ease-in-out;
                                         fill: a.$colorGreenLight;
@@ -1030,7 +1043,9 @@
                                     // -------------------------
                                     // php icon ----------------
                                     .php-icon {
-                                        width: 2.6rem;
+                                        width: 3.4rem !important;
+                                            height: 3.4rem !important;
+                                            object-fit: contain;
                                     }
 
                                     .php-icon-path-1 {
@@ -1235,7 +1250,7 @@
                     margin-top: 0;
                     grid-column: 2 / 4;
                     grid-row: 1 / 2;
-                    padding: 1.2rem 2.5rem !important;
+                    padding: 0.7rem 2.5rem !important;
 
 
 
