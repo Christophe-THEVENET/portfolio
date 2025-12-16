@@ -24,7 +24,6 @@
         transform: translateX(-90rem);
         transition: all 1s cubic-bezier(1, -0.01, 1, -1.13);
     }
-
     // -------------- popup message envoyé
     .notification.show {
         transform: translateX(0);
@@ -33,7 +32,6 @@
         font-size: 1.2rem !important;
         padding: 1rem 0.5rem;
         z-index: 1000;
-
     }
 
     //  --------- block titre + trait droit page ----------
@@ -135,9 +133,7 @@
                             /* Épaisseur et couleur de la bordure */
                             -webkit-text-stroke: 1px a.$colorGreenFullDark;
                             color: white;
-
                         }
-
 
                         .info-form--tiret {
                             display: inline-block;
@@ -145,7 +141,6 @@
                             /* Épaisseur et couleur de la bordure */
                             -webkit-text-stroke: 0.5px a.$colorGreenFullDark;
                             color: a.$colorGreenLight;
-
                         }
 
                         .info-form--right {
@@ -158,13 +153,13 @@
                     }
 
                     .address {
+                        transition-delay: 0.5s;
+                        background: a.$colorDark50;
 
                         p,
                         a {
                             transition-delay: 0.5s;
                             color: a.$colorWhite;
-                            letter-spacing: 1px;
-                            font-weight: 500;
                         }
 
                         svg,
@@ -176,13 +171,13 @@
                     }
 
                     .phone {
+                        transition-delay: 1s;
+                        background: a.$colorDark50;
 
                         p,
                         a {
                             transition-delay: 1s;
                             color: a.$colorWhite;
-                            letter-spacing: 1px;
-                            font-weight: 500;
                         }
 
                         svg,
@@ -194,13 +189,13 @@
                     }
 
                     .mail {
+                        transition-delay: 1.5s;
+                        background: a.$colorDark50;
 
                         p,
                         a {
                             transition-delay: 1.5s;
                             color: a.$colorWhite;
-                            letter-spacing: 1px;
-                            font-weight: 500;
                         }
 
                         svg,
@@ -212,13 +207,13 @@
                     }
 
                     .building {
+                        transition-delay: 2s;
+                        background: a.$colorDark50;
 
                         p,
                         a {
                             transition-delay: 2s;
                             color: a.$colorWhite;
-                            letter-spacing: 1px;
-                            font-weight: 500;
                         }
 
                         svg,
@@ -230,13 +225,13 @@
                     }
 
                     .rcp {
+                        transition-delay: 2.5s;
+                        background: a.$colorDark50;
 
                         p,
                         a {
                             transition-delay: 2.5s;
                             color: a.$colorWhite;
-                            letter-spacing: 1px;
-                            font-weight: 500;
                         }
 
                         svg,
@@ -248,13 +243,13 @@
                     }
 
                     .siret {
+                        transition-delay: 3s;
+                        background: a.$colorDark50;
 
                         p,
                         a {
                             transition-delay: 3s;
                             color: a.$colorWhite;
-                            letter-spacing: 1px;
-                            font-weight: 500;
                         }
 
                         svg,
@@ -293,31 +288,41 @@
 
                 .info-form {
                     font-family: a.$fontGrifterFamily;
-                    color: a.$colorDark;
+                    color: a.$colorWhite;
                     font-size: 1.7rem;
                     transition: a.$transitionRegular;
+                    margin-bottom: 2rem;
                 }
 
                 &--item {
                     color: a.$colorDark;
                     display: flex;
-                    margin-top: 1rem;
+                    align-items: center;
+                    margin-bottom: 0.5rem;
                     font-family: a.$fontCovesFamily;
-                    font-weight: bold;
+                    font-weight: 600;
                     font-size: 1.6rem;
+                    padding: 0.6rem 1rem;
+                    border-radius: 5px;
+                    letter-spacing: 1px;
+                    width: 320px;
+                    transition: background 0.5s cubic-bezier(0.92, 0.08, 0.28, 1.46), transform 0.4s, opacity 0.4s;
 
                     svg {
-                        fill: a.$colorDark;
+                        fill: a.$colorWhite;
                         height: 1.6rem;
                         margin-right: 1rem;
-                        transition: all 0.5s cubic-bezier(0.92, 0.08, 0.28, 1.46);
+                        transform: rotate(0deg) scale(1);
+                        transition: transform 0.5s cubic-bezier(0.92, 0.08, 0.28, 1.46), fill 0.5s cubic-bezier(0.92, 0.08, 0.28, 1.46);
                     }
 
                     p,
                     a {
-                        transition: all 0.5s cubic-bezier(0.92, 0.08, 0.28, 1.46);
+                        transition: color 0.5s cubic-bezier(0.92, 0.08, 0.28, 1.46);
                         text-decoration: none;
-                        color: a.$colorDark;
+                        color: a.$colorWhite;
+                        font-weight: 00;
+                        flex: 1;
                     }
                 }
 
@@ -785,35 +790,35 @@
                         grid-column: 2 / 3;
                         grid-row: 3 / 4;
                         justify-self: start;
-                        margin-top: 5.5rem;
+                        margin-top: 6.2rem;
                     }
 
                     .mail {
                         grid-column: 2 / 3;
                         grid-row: 3 / 4;
                         justify-self: start;
-                        margin-top: 7.9rem;
+                        margin-top: 9.4rem;
                     }
 
                     .building {
                         grid-column: 2 / 3;
                         grid-row: 3 / 4;
                         justify-self: start;
-                        margin-top: 10.4rem;
+                        margin-top: 12.6rem;
                     }
 
                     .rcp {
                         grid-column: 2 / 3;
                         grid-row: 3 / 4;
                         justify-self: start;
-                        margin-top: 13.1rem;
+                        margin-top: 15.8rem;
                     }
 
                     .siret {
                         grid-column: 2 / 3;
                         grid-row: 3 / 4;
                         justify-self: start;
-                        margin-top: 16.1rem;
+                        margin-top: 19rem;
                     }
 
                     &--phone {
