@@ -429,7 +429,7 @@
                     .formations__text {
                         background: a.$colorDark20;
 
-                      
+
 
                     }
 
@@ -454,11 +454,42 @@
                 @include a.mAboutLayoutCard();
                 padding-top: 3rem;
                 border-radius: 1rem;
+                position: relative;
 
                 &:hover {
                     background-color: a.$colorBackgroundCardHover;
                     box-shadow: a.$boxShadowCardHover;
                     transition: a.$transitionCardHover;
+                }
+
+                .competences__ribbon {
+                    position: absolute;
+                    top: 25px;
+                    right: -5px;
+                    background: a.$colorDark50;
+                    color: a.$colorWhite;
+                    padding: 0.05rem 1rem;
+                    font-family: a.$fontCovesFamily;
+                    font-size: 1rem;
+                    font-weight: 600 !important;
+                    text-transform: uppercase;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                    z-index: 10;
+                    transition: a.$transitionRegular;
+                    transition-delay: 3.5s;
+                    letter-spacing: 0.5px;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        bottom: -5px;
+                        right: 0;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 5px 5px 0 0;
+                        border-color: #222424 transparent transparent transparent;
+                    }
                 }
 
                 .competences__title {
@@ -512,7 +543,6 @@
                         }
                     }
 
-
                     &__skill {
                         display: inline-block;
                         font-size: 1rem;
@@ -531,7 +561,6 @@
                             transition: a.$transitionRegular;
                         }
                     }
-
 
                     &__sentence {
                         @include a.mUnderTitleCard(a.$fontSizeUnderTitleCardMobile);
@@ -552,7 +581,6 @@
             // ---------------- reseaux ---------------
             &__reseaux {
                 display: none;
-
 
             }
         }
@@ -588,8 +616,6 @@
                     @include a.mTitleCard(a.$fontSizeTitleCard);
                 }
             }
-
-
 
             // ---------------------------  block compétences
             &__competences {
@@ -675,7 +701,6 @@
                                 align-items: center;
                                 width: 100%;
 
-
                                 .icon-demi {
                                     display: flex;
                                     align-items: center;
@@ -699,7 +724,6 @@
                                             transform: scale(1.8);
                                         }
                                     }
-
 
                                     // photoshop icon --------
                                     .photoshop-icon-path {
@@ -1253,9 +1277,8 @@
 
                         .formations__text {
                             margin: 0 0.5rem;
-                            max-width: 310px!important;
+                            max-width: 310px !important;
                         }
-
 
                     }
 
@@ -1276,8 +1299,6 @@
                     grid-row: 1 / 2;
                     padding: 0.7rem 2.5rem !important;
 
-
-
                     .competences__title {
                         margin-top: 1rem;
                         margin-bottom: 0.7rem !important;
@@ -1289,8 +1310,6 @@
                         &__sentence {
                             margin-bottom: -0.2rem;
                         }
-
-
                     }
                 }
 
