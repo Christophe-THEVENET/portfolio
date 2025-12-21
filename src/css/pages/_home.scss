@@ -24,7 +24,7 @@
 
         h1,
         h2 {
-            font-size: 2em;
+            font-size: a.$fontSizeTitlePage;
             font-family: a.$fontGrifterFamily;
             transition: a.$transitionRegular;
         }
@@ -35,9 +35,43 @@
             color: a.$colorGreenLight;
             margin: 2rem 0 2rem;
             transition: a.$transitionRegular;
+
+            @keyframes fadeInLocation {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            span.location-info {
+                display: inline-block;
+                position: relative;
+                z-index: 10;
+                font-size: 0.8rem !important;
+                text-transform: uppercase;
+                background: a.$colorDark50;
+                font-family: a.$fontCovesFamily;
+                color: a.$colorWhite;
+                border-radius: 5px;
+                padding: 0.3rem 0.8rem;
+                margin-right: 0.5rem;
+                font-weight: 600 !important;
+                letter-spacing: 0.5px;
+                transition: transform 0.3s ease, background 0.3s ease;
+                animation: fadeInLocation 1s ease-out 2.5s both;
+
+                &:hover {
+                    background: a.$colorDark !important;
+                    transform: translateX(3px) scale(1.1);
+                }
+            }
         }
 
         .text-btn-block {
+            max-width: 50rem;
+
             .btn-block {
                 margin-top: 3rem;
                 display: flex;
@@ -73,7 +107,7 @@
 
             .text-btn-block {
                 width: 100%;
-                max-width: 60rem;
+                max-width: 55rem;
             }
         }
     }
@@ -90,6 +124,10 @@
                 font-size: a.$fontSizeTitlePage;
             }
 
+            .text-btn-block {
+                max-width: 63rem;
+            }
+
             h3 {
                 font-size: 2vmax;
             }
@@ -97,95 +135,118 @@
     }
 }
 
-// ====== MEDIA QUERY > ORIENTATION PAYSAGE =========
-@media (orientation: landscape) {
+// ======= MEDIA QUERY > 1240PX (GRAND PC) ==========
+@media screen and (min-width: 1240px) {
+
     .filter-home {
+
         .content-home {
-            margin-top: 110vh;
-            padding: 5rem;
+
+            h3 span.location-info {
+                font-size: 1.1rem!important;
+            } 
+
+            .text-btn-block {
+                max-width: 72rem;
+            }
+
+
         }
     }
 }
 
-// ======= MEDIA QUERY ICON SCROLL > 940 ===========
-@media screen and (min-width: 940px) {
-    .scroll-icon {
-        position: absolute;
-        bottom: 4rem;
-        right: 4rem;
-        @include a.mCenterElement;
-        height: 2.7em;
-        width: 1.5em;
-        font-size: 2.2rem;
-        color: rgba(#dcf7ff, 0.3);
-        border-radius: 2em;
-        border: solid 3px;
-        transition: 0.5s;
-        opacity: 0;
+@media screen and (min-width: 960px) {
 
-        &:hover {
-            background-color: rgba(#dcf7ff, 0.05);
-            color: #dcf7ff;
+    // ====== MEDIA QUERY > ORIENTATION PAYSAGE =========
+    @media (orientation: landscape) {
+        .filter-home {
+            .content-home {
+                margin-top: 110vh;
+                padding: 5rem;
+            }
         }
     }
 
-    .scroll-icon::after {
-        content: '';
-        width: 5px;
-        height: 5px;
-        background-color: #dcf7ff79;
-        border-radius: 50%;
-        animation: scroll-icon 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
-    }
-
-    @keyframes scroll-icon {
-        0% {
-            transform: translateY(-12px);
+    // ======= MEDIA QUERY ICON SCROLL > 940 ===========
+    @media screen and (min-width: 940px) {
+        .scroll-icon {
+            position: absolute;
+            bottom: 4rem;
+            right: 4rem;
+            @include a.mCenterElement;
+            height: 2.7em;
+            width: 1.5em;
+            font-size: 2.2rem;
+            color: rgba(#dcf7ff, 0.3);
+            border-radius: 2em;
+            border: solid 3px;
+            transition: 0.5s;
             opacity: 0;
+
+            &:hover {
+                background-color: rgba(#dcf7ff, 0.05);
+                color: #dcf7ff;
+            }
         }
 
-        30%,
-        70% {
-            opacity: 1;
+        .scroll-icon::after {
+            content: '';
+            width: 5px;
+            height: 5px;
+            background-color: #dcf7ff79;
+            border-radius: 50%;
+            animation: scroll-icon 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
         }
 
-        100% {
-            transform: translateY(12px);
+        @keyframes scroll-icon {
+            0% {
+                transform: translateY(-12px);
+                opacity: 0;
+            }
+
+            30%,
+            70% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(12px);
+                opacity: 0;
+            }
+        }
+
+        .text-use-mouse {
+            position: absolute;
+            bottom: 1.5rem;
+            right: 1rem;
+            color: rgba(#dcf7ff, 0.3);
+            font-family: a.$fontCovesFamily;
+            font-size: 1.5rem;
+            transition: 0.5;
             opacity: 0;
+            display: block;
+
+            &:hover {
+                color: a.$colorWhite;
+            }
         }
     }
 
-    .text-use-mouse {
-        position: absolute;
-        bottom: 1.5rem;
-        right: 1rem;
-        color: rgba(#dcf7ff, 0.3);
-        font-family: a.$fontCovesFamily;
-        font-size: 1.5rem;
-        transition: 0.5;
-        opacity: 0;
-        display: block;
+    // ==== MEDIA QUERY >  MOBILE ORIENTATION PAYSAGE ====
+    @media (orientation: landscape) and (max-height: 430px) {
+        .container .slide-home .filter-home .content-home {
 
-        &:hover {
-            color: a.$colorWhite;
-        }
-    }
-}
+            h3,
+            h2,
+            h1 {
+                margin: 0;
+                padding: 0;
+                font-size: 2.8vmax;
+            }
 
-// ==== MEDIA QUERY >  MOBILE ORIENTATION PAYSAGE ====
-@media (orientation: landscape) and (max-height: 430px) {
-    .container .slide-home .filter-home .content-home {
-
-        h3,
-        h2,
-        h1 {
-            margin: 0;
-            padding: 0;
-            font-size: 2.8vmax;
-        }
-
-        h2 {
-            margin-top: 4rem;
+            h2 {
+                margin-top: 4rem;
+            }
         }
     }
 }
